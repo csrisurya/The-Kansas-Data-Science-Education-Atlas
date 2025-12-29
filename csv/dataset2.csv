@@ -1,0 +1,506 @@
+County_Name,City,ZIP,County_Population,City_Population,Zip_Population,Elementary_Schools,Middle_Schools,High_Schools,Virtual_Schools,Other_Schools,Four_Year_Or_Above_Colleges,Two_Year_Colleges,Less_Than_Two_Year_Colleges
+Allen County,Humboldt,66748,12491,1956,2864,1,1,1,1,0,0,0,0
+Allen County,Iola,66749,12491,5368,7452,1,1,1,1,0,0,1,0
+Allen County,Iola,DNE,12491,5368,-1,0,0,0,0,1,0,1,0
+Allen County,Moran,66755,12491,455,825,1,0,1,1,0,0,0,0
+Anderson County,Colony,66015,7819,310,650,1,0,1,0,0,0,0,0
+Anderson County,Garnett,66032,7819,3200,5133,1,0,1,0,0,0,0,0
+Anderson County,Greeley,66033,7819,303,547,1,0,0,0,0,0,0,0
+Anderson County,Westphalia,66093,7819,158,664,0,0,0,0,1,0,0,0
+Atchison County,Atchison,66002,16211,10795,13197,1,1,1,0,1,1,0,0
+Atchison County,Atchison,DNE,16211,10795,-1,0,0,0,0,1,1,0,0
+Atchison County,Effingham,66023,16211,644,954,1,0,1,0,0,0,0,0
+Barber County,Kiowa,67070,4153,780,890,0,0,0,0,2,0,0,0
+Barber County,Medicine Lodge,67104,4153,1518,2087,1,0,1,0,0,0,0,0
+Barton County,Claflin,67525,25275,434,816,0,0,1,0,1,0,0,0
+Barton County,Ellinwood,67526,25275,2117,2569,1,1,1,0,0,0,0,0
+Barton County,Great Bend,67530,25275,14596,17979,5,1,1,0,0,0,1,0
+Barton County,Great Bend,DNE,25275,14596,-1,0,0,0,0,1,0,1,0
+Barton County,Hoisington,67544,25275,2660,2875,2,1,1,0,0,0,0,0
+Bourbon County,Fort Scott,66701,14384,7551,11075,2,1,1,0,0,0,1,0
+Bourbon County,Fort Scott,DNE,14384,7551,-1,0,0,0,0,1,0,1,0
+Bourbon County,Uniontown,66779,14384,492,955,1,0,1,0,0,0,0,0
+Brown County,Everest,66424,9415,387,531,0,1,0,0,0,0,0,0
+Brown County,Hiawatha,66434,9415,3223,4738,1,1,1,0,0,0,0,0
+Brown County,Horton,66439,9415,1708,2585,1,0,1,0,0,0,0,0
+Butler County,Andover,67002,67916,15508,16753,3,2,2,1,0,0,0,2
+Butler County,Andover,DNE,67916,15508,-1,0,0,0,0,1,0,0,2
+Butler County,Augusta,67010,67916,9252,13576,3,1,1,0,0,0,0,0
+Butler County,Benton,67017,67916,896,2058,1,1,0,0,0,0,0,0
+Butler County,Cassoday,66842,67916,129,432,1,0,0,0,0,0,0,0
+Butler County,Douglass,67039,67916,1523,2936,1,1,1,0,0,0,0,0
+Butler County,El Dorado,67042,67916,12882,17486,4,1,1,1,0,0,1,0
+Butler County,El Dorado,DNE,67916,12882,-1,0,0,0,0,1,0,1,0
+Butler County,Leon,67074,67916,519,1309,1,0,1,0,0,0,0,0
+Butler County,Potwin,67123,67916,562,783,1,0,0,0,0,0,0,0
+Butler County,Rosalia,67132,67916,-1,367,0,1,1,0,1,0,0,0
+Butler County,Rose Hill,67133,67916,4353,7052,1,1,1,0,1,0,0,0
+Butler County,Towanda,67144,67916,1748,2775,1,0,1,0,0,0,0,0
+Butler County,Whitewater,67154,67916,900,1561,0,1,1,0,0,0,0,0
+Butler County,Wichita,67228,67916,396488,2529,1,0,0,0,0,0,0,0
+Butler County,Wichita,67230,67916,396488,11822,1,0,0,0,0,0,0,0
+Chase County,Cottonwood Falls,66845,2579,944,1136,0,0,1,0,0,0,0,0
+Chase County,Strong City,66869,2579,492,599,1,0,0,0,0,0,0,0
+Chautauqua County,Cedar Vale,67024,3370,618,928,1,0,1,0,0,0,0,0
+Chautauqua County,Sedan,67361,3370,1066,1797,1,0,1,0,0,0,0,0
+Cherokee County,Baxter Springs,66713,19236,3863,5560,2,0,1,1,0,0,0,0
+Cherokee County,Columbus,66725,19236,2902,5102,3,0,1,0,0,0,0,0
+Cherokee County,Galena,66739,19236,2752,5240,2,1,1,0,0,0,0,0
+Cherokee County,Riverton,66770,19236,-1,860,1,1,1,0,0,0,0,0
+Cherokee County,Weir,66781,19236,910,1155,1,0,0,0,0,0,0,0
+Cheyenne County,Bird City,67731,2628,579,880,1,0,1,0,0,0,0,0
+Cheyenne County,St Francis,67756,2628,-1,1707,1,0,1,0,0,0,0,0
+Clark County,Ashland,67831,1987,807,1048,1,1,1,0,0,0,0,0
+Clark County,Minneola,67865,1987,703,903,1,0,1,0,0,0,0,0
+Clay County,Clay Center,67432,8071,4148,5536,2,1,1,0,0,0,0,0
+Clay County,Wakefield,67487,8071,1031,1503,1,0,1,0,0,0,0,0
+Cloud County,Clyde,66938,8973,823,1248,0,0,1,0,0,0,0,0
+Cloud County,Concordia,66901,8973,5067,6134,1,1,1,0,0,0,1,0
+Cloud County,Concordia,DNE,8973,5067,-1,0,0,0,0,1,0,1,0
+Cloud County,Glasco,67445,8973,337,467,1,0,1,0,0,0,0,0
+Cloud County,Miltonvale,67466,8973,422,665,1,0,1,0,0,0,0,0
+Coffey County,Burlington,66839,8304,2615,3904,1,1,1,0,0,0,0,0
+Coffey County,Gridley,66852,8304,375,519,1,1,0,0,0,0,0,0
+Coffey County,LeRoy,66857,8304,461,807,0,0,1,0,0,0,0,0
+Coffey County,Lebo,66856,8304,806,1739,1,0,1,0,0,0,0,0
+Coffey County,Waverly,66871,8304,528,1257,1,0,1,0,0,0,0,0
+Comanche County,Coldwater,67029,1685,667,954,0,0,1,0,0,0,0,0
+Comanche County,Protection,67127,1685,504,637,1,1,0,0,0,0,0,0
+Cowley County,Arkansas City,67005,34487,11909,15336,6,1,1,0,0,0,1,0
+Cowley County,Arkansas City,DNE,34487,11909,-1,0,0,0,0,1,0,1,0
+Cowley County,Burden,67019,34487,548,962,1,0,1,0,0,0,0,0
+Cowley County,Dexter,67038,34487,508,699,1,0,1,0,0,0,0,0
+Cowley County,Udall,67146,34487,641,2076,1,1,1,1,0,0,0,0
+Cowley County,Winfield,67156,34487,11731,14183,4,1,1,0,0,1,0,0
+Cowley County,Winfield,DNE,34487,11731,-1,0,0,0,0,1,1,0,0
+Crawford County,Arma,66712,38963,1131,1471,1,0,1,1,0,0,0,0
+Crawford County,Cherokee,66724,38963,692,986,0,1,1,0,0,0,0,0
+Crawford County,Frontenac,66763,38963,3381,3381,1,1,1,0,0,0,0,0
+Crawford County,Girard,66743,38963,2706,4384,1,1,1,0,0,0,0,0
+Crawford County,Pittsburg,66762,38963,20606,24814,4,1,1,0,0,1,0,0
+Crawford County,Pittsburg,DNE,38963,20606,-1,0,0,0,0,1,1,0,0
+Decatur County,Oberlin,67749,2746,1763,2152,1,0,1,0,0,0,0,0
+Dickinson County,Abilene,67410,18423,6449,10177,3,1,1,1,0,0,0,0
+Dickinson County,Chapman,67431,18423,1244,1963,3,1,1,0,0,0,0,0
+Dickinson County,Enterprise,67441,18423,831,1041,1,0,0,0,0,0,0,0
+Dickinson County,Herington,67449,18423,2105,2756,1,1,1,0,0,0,0,0
+Dickinson County,Hope,67451,18423,463,915,1,0,1,0,0,0,0,0
+Dickinson County,Solomon,67480,18423,945,1535,1,0,1,0,0,0,0,0
+Doniphan County,Denton,66017,7492,129,224,1,0,0,0,0,0,0,0
+Doniphan County,Elwood,66024,7492,1169,684,1,0,0,0,1,0,0,0
+Doniphan County,Highland,66035,7492,1047,1388,0,0,1,0,0,0,1,0
+Doniphan County,Highland,DNE,7492,1047,-1,0,0,0,0,1,0,1,0
+Doniphan County,Troy,66087,7492,794,2035,1,0,1,0,0,0,0,0
+Doniphan County,Wathena,66090,7492,1463,2513,0,1,1,1,0,0,0,0
+Douglas County,Baldwin City,66006,119547,4881,7843,2,1,1,0,0,1,0,0
+Douglas County,Baldwin City,DNE,119547,4881,-1,0,0,0,0,1,1,0,0
+Douglas County,Eudora,66025,119547,6036,7858,1,1,1,1,0,0,0,0
+Douglas County,Lawerence,66049,119547,-1,31351,1,0,0,0,0,0,0,0
+Douglas County,Lawrence,66044,119547,95459,29052,4,0,0,1,1,2,1,0
+Douglas County,Lawrence,66046,119547,95459,19972,2,1,1,0,0,2,1,0
+Douglas County,Lawrence,66047,119547,95459,20344,1,1,0,0,0,2,1,0
+Douglas County,Lawrence,66049,119547,95459,31351,3,1,1,0,0,2,1,0
+Douglas County,Lawrence,DNE,119547,95459,-1,0,0,0,0,1,2,1,0
+Douglas County,Lecompton,66050,119547,762,1777,1,0,0,0,0,0,0,0
+Edwards County,Kinsley,67547,2817,1342,1658,0,0,1,0,0,0,0,0
+Edwards County,Lewis,67552,2817,477,683,1,0,0,0,0,0,0,0
+Edwards County,Offerle,67563,2817,186,378,1,0,0,0,0,0,0,0
+Elk County,Howard,67349,2464,553,764,0,0,0,1,1,0,0,0
+Elk County,Longton,67352,2464,286,475,1,0,1,0,0,0,0,0
+Ellis County,Ellis,67637,28870,2145,2809,1,0,1,0,0,0,0,0
+Ellis County,Hays,67601,28870,21078,24279,4,1,1,1,0,1,0,1
+Ellis County,Hays,DNE,28870,21078,-1,0,0,0,0,1,1,0,1
+Ellis County,Victoria,67671,28870,994,1369,1,0,1,0,0,0,0,0
+Ellsworth County,Ellsworth,67439,6366,3098,3412,1,0,1,0,0,0,0,0
+Ellsworth County,Holyrood,67450,6366,381,468,1,0,0,0,0,0,0,0
+Ellsworth County,Kanopolis,67454,6366,567,640,0,1,0,0,0,0,0,0
+Ellsworth County,Wilson,67490,6366,824,991,1,0,0,0,0,0,0,0
+Finney County,Garden City,67846,38001,27781,34276,11,2,1,1,3,0,1,0
+Finney County,Garden City,DNE,38001,27781,-1,0,0,0,0,1,0,1,0
+Finney County,Holcomb,67851,38001,2582,3271,2,1,1,1,0,0,0,0
+Ford County,Bucklin,67834,34133,627,866,1,0,1,0,0,0,0,0
+Ford County,Dodge City,67801,34133,27652,30993,8,2,1,0,0,0,1,0
+Ford County,Dodge City,DNE,34133,27652,-1,0,0,0,0,1,0,1,0
+Ford County,Spearville,67876,34133,1054,1588,1,0,1,0,0,0,0,0
+Franklin County,Ottawa,66067,25994,12632,16146,3,1,1,1,0,1,0,0
+Franklin County,Ottawa,DNE,25994,12632,-1,0,0,0,0,1,1,0,0
+Franklin County,Pomona,66076,25994,1210,2231,1,1,1,0,0,0,0,0
+Franklin County,Richmond,66080,25994,504,928,1,0,1,0,0,0,0,0
+Franklin County,Wellsville,66092,25994,2003,4211,1,1,1,0,0,0,0,0
+Franklin County,Williamsburg,66095,25994,383,1024,1,0,0,0,0,0,0,0
+Geary County,Fort Riley,66442,35895,-1,16876,2,1,0,0,0,0,0,0
+Geary County,Ft. Riley,66641,35895,-1,-1,1,0,0,0,0,0,0,0
+Geary County,Junction City,66441,35895,22431,25654,7,1,1,0,0,0,0,0
+Geary County,Milford,66514,35895,307,1658,1,0,0,0,0,0,0,0
+Gove County,Grainfield,67737,2796,243,462,1,0,1,0,0,0,0,0
+Gove County,Grinnell,67738,2796,376,614,1,1,0,0,0,0,0,0
+Gove County,Quinter,67752,2796,951,1603,1,0,1,0,0,0,0,0
+Graham County,Hill City,67642,2406,1536,1779,1,0,1,0,0,0,0,0
+Grant County,Ulysses,67880,7284,5812,7316,2,1,1,0,1,0,0,0
+Gray County,Cimarron,67835,5696,1942,2660,1,0,1,0,0,0,0,0
+Gray County,Copeland,67837,5696,350,957,1,1,0,0,0,0,0,0
+Gray County,Ingalls,67853,5696,305,885,1,0,1,0,0,0,0,0
+Gray County,Montezuma,67867,5696,878,1566,1,0,1,0,0,0,0,0
+Greeley County,Tribune,67879,1296,799,1293,1,0,1,0,0,0,0,0
+Greenwood County,Eureka,67045,5956,2271,3119,1,0,1,0,0,0,0,0
+Greenwood County,Hamilton,66853,5956,205,318,1,0,1,0,0,0,0,0
+Greenwood County,Madison,66860,5956,943,1391,1,0,1,0,0,0,0,0
+Hamilton County,Syracuse,67878,2485,1706,2341,1,0,1,0,0,0,0,0
+Harper County,Anthony,67003,5446,2228,2529,1,0,1,1,0,0,0,0
+Harper County,Attica,67009,5446,529,754,1,0,1,0,0,0,0,0
+Harper County,Harper,67058,5446,1191,1893,1,0,0,0,0,0,0,0
+Harvey County,Burrton,67020,33823,874,1440,1,0,1,0,0,0,0,0
+Harvey County,Halstead,67056,33823,2435,2988,0,1,1,0,0,0,0,0
+Harvey County,Hesston,67062,33823,3747,4005,1,1,1,0,0,1,0,0
+Harvey County,Hesston,DNE,33823,3747,-1,0,0,0,0,1,1,0,0
+Harvey County,Newton,67114,33823,18443,21102,4,1,1,1,1,0,0,0
+Harvey County,North Newton,DNE,33823,2150,-1,0,0,0,0,1,1,0,0
+Harvey County,Sedgwick,67135,33823,1702,3550,1,0,1,0,0,0,0,0
+Haskell County,Satanta,67870,3695,852,1425,1,0,1,0,0,0,0,0
+Haskell County,Sublette,67877,3695,1397,2287,1,1,1,0,0,0,0,0
+Hodgeman County,Jetmore,67854,1676,678,1028,1,0,1,0,0,0,0,0
+Jackson County,HOLTON,66436,13277,-1,5666,0,0,0,1,0,0,0,0
+Jackson County,Holton,66436,13277,3384,5666,2,1,2,0,0,0,0,0
+Jackson County,Hoyt,66440,13277,759,1924,1,0,1,0,0,0,0,0
+Jackson County,Mayetta,66509,13277,347,2426,0,1,0,0,0,0,0,0
+Jefferson County,Blue Rapids,66411,18391,918,1195,0,0,0,1,0,0,0,0
+Jefferson County,McLouth,66054,18391,891,2653,1,1,1,0,0,0,0,0
+Jefferson County,Meriden,66512,18391,798,3476,1,1,1,0,0,0,0,0
+Jefferson County,Nortonville,66060,18391,797,1255,0,1,0,0,0,0,0,0
+Jefferson County,Oskaloosa,66066,18391,1172,2750,1,0,1,0,0,0,0,0
+Jefferson County,Perry,66073,18391,1085,2381,0,1,1,0,0,0,0,0
+Jefferson County,Valley Falls,66088,18391,1305,2723,1,0,1,0,0,0,0,0
+Jefferson County,Winchester,66097,18391,341,939,0,0,1,0,0,0,0,0
+Jewell County,Mankato,66956,2909,801,1190,1,0,1,0,0,0,0,0
+Johnson County,De Soto,66018,614764,6333,6537,1,1,1,1,0,0,0,0
+Johnson County,Edgerton,66021,614764,1787,2792,1,0,0,0,0,0,0,0
+Johnson County,Gardner,66030,614764,24020,25964,6,3,1,0,0,0,0,0
+Johnson County,Leawood,66206,614764,33844,12030,1,0,0,0,0,1,0,0
+Johnson County,Leawood,66209,614764,33844,20201,2,1,0,0,0,1,0,0
+Johnson County,Leawood,66224,614764,33844,12184,1,1,0,0,0,1,0,0
+Johnson County,Leawood,DNE,614764,33844,-1,0,0,0,0,1,1,0,0
+Johnson County,Lenexa,66215,614764,57986,26291,2,0,0,0,0,0,0,0
+Johnson County,Lenexa,66219,614764,57986,13410,3,0,0,0,0,0,0,0
+Johnson County,Lenexa,66220,614764,57986,8166,1,0,0,0,0,0,0,0
+Johnson County,Lenexa,66227,614764,57986,8897,1,1,0,0,0,0,0,0
+Johnson County,Merriam,66202,614764,11036,17321,1,0,0,0,0,0,0,0
+Johnson County,Merriam,66203,614764,11036,19195,1,0,0,0,0,0,0,0
+Johnson County,Mission,66202,614764,9928,17321,1,0,0,0,0,0,0,0
+Johnson County,Mission,66205,614764,9928,13728,1,0,0,0,0,0,0,0
+Johnson County,Olathe,66061,614764,143720,67510,16,5,4,1,0,1,0,0
+Johnson County,Olathe,66062,614764,143720,77794,19,6,2,0,0,1,0,0
+Johnson County,Olathe,66063,614764,143720,-1,1,0,0,0,0,1,0,0
+Johnson County,Olathe,DNE,614764,143720,-1,0,0,0,0,1,1,0,0
+Johnson County,Overland Park,66013,614764,197199,2976,1,0,0,0,0,4,1,3
+Johnson County,Overland Park,66062,614764,197199,77794,1,0,1,0,0,4,1,3
+Johnson County,Overland Park,66085,614764,197199,11412,2,2,1,0,0,4,1,3
+Johnson County,Overland Park,66202,614764,197199,17321,0,0,1,0,0,4,1,3
+Johnson County,Overland Park,66204,614764,197199,18557,5,0,0,0,0,4,1,3
+Johnson County,Overland Park,66207,614764,197199,15149,2,1,1,0,0,4,1,3
+Johnson County,Overland Park,66209,614764,197199,20201,2,1,1,0,0,4,1,3
+Johnson County,Overland Park,66210,614764,197199,20303,1,0,0,0,0,4,1,3
+Johnson County,Overland Park,66212,614764,197199,32804,2,0,1,0,0,4,1,3
+Johnson County,Overland Park,66213,614764,197199,30024,5,1,1,0,0,4,1,3
+Johnson County,Overland Park,66214,614764,197199,12261,2,1,0,0,0,4,1,3
+Johnson County,Overland Park,66221,614764,197199,24835,3,2,0,0,0,4,1,3
+Johnson County,Overland Park,66223,614764,197199,25050,3,1,0,1,0,4,1,3
+Johnson County,Overland Park,66224,614764,197199,12184,1,0,0,0,0,4,1,3
+Johnson County,Overland Park,DNE,614764,197199,-1,0,0,0,0,1,4,1,3
+Johnson County,Prairie Village,66206,614764,22937,12030,1,0,0,0,0,0,0,0
+Johnson County,Prairie Village,66207,614764,22937,15149,1,0,0,0,0,0,0,0
+Johnson County,Prairie Village,66208,614764,22937,21754,2,1,1,0,0,0,0,0
+Johnson County,Roeland Park,66205,614764,6800,13728,1,0,0,0,0,0,0,0
+Johnson County,Shawnee,66203,614764,68175,19195,1,1,0,0,1,0,0,0
+Johnson County,Shawnee,66214,614764,68175,12261,1,0,0,0,0,0,0,0
+Johnson County,Shawnee,66215,614764,68175,26291,1,0,0,0,0,0,0,0
+Johnson County,Shawnee,66216,614764,68175,24955,3,1,1,0,0,0,0,0
+Johnson County,Shawnee,66226,614764,68175,16189,4,1,1,0,0,0,0,0
+Johnson County,Shawnee,66227,614764,68175,8897,2,0,0,0,0,0,0,0
+Johnson County,Shawnee Mission,66202,614764,-1,17321,0,0,0,0,1,0,0,0
+Johnson County,Spring Hill,66083,614764,8691,12832,3,1,1,0,0,0,0,0
+Johnson County,Stilwell,66085,614764,-1,11412,1,0,1,0,0,0,0,0
+Johnson County,Westwood,66205,614764,1851,13728,1,0,0,0,0,0,0,0
+Kearny County,Deerfield,67838,3910,760,1084,1,1,1,0,0,0,0,0
+Kearny County,Lakin,67860,3910,2069,2646,1,1,1,0,0,0,0,0
+Kingman County,Cunningham,67035,7284,457,839,1,0,1,0,0,0,0,0
+Kingman County,Kingman,67068,7284,3003,3881,1,1,1,1,0,0,0,0
+Kingman County,Norwich,67118,7284,483,856,1,1,1,0,0,0,0,0
+Kiowa County,Greensburg,67054,2422,703,1272,0,1,1,0,0,0,0,0
+Kiowa County,Haviland,67059,2422,615,849,1,0,0,0,0,1,0,0
+Kiowa County,Haviland,DNE,2422,615,-1,0,0,0,0,1,1,0,0
+Labette County,Altamont,67330,19949,996,1548,1,0,1,1,0,0,0,0
+Labette County,Bartlett,67332,19949,70,200,1,0,0,0,0,0,0,0
+Labette County,Chetopa,67336,19949,995,1186,1,0,1,0,0,0,0,0
+Labette County,Edna,67342,19949,357,675,1,0,0,0,0,0,0,0
+Labette County,Mound Valley,67354,19949,320,630,1,0,0,0,0,0,0,0
+Labette County,Oswego,67356,19949,1770,2693,1,0,1,1,0,0,0,0
+Labette County,Parsons,67357,19949,9482,11786,1,1,1,0,4,0,1,0
+Labette County,Parsons,DNE,19949,9482,-1,0,0,0,0,1,0,1,0
+Lane County,Dighton,67839,1497,703,941,1,0,1,0,0,0,0,0
+Lane County,Healy,67850,1497,-1,560,1,0,1,0,0,0,0,0
+Leavenworth County,Basehor,66007,82493,7229,10060,3,1,1,1,0,0,0,0
+Leavenworth County,Bonner Springs,66012,82493,7735,10301,1,0,0,0,0,0,0,0
+Leavenworth County,Easton,66020,82493,307,1763,1,1,1,0,0,0,0,0
+Leavenworth County,Fort Leavenworth,66027,82493,-1,7249,3,1,0,0,0,0,0,0
+Leavenworth County,Lansing,66043,82493,11229,10821,1,1,1,0,1,0,0,0
+Leavenworth County,Leavenworth,66048,82493,37176,35551,2,1,1,1,3,1,0,0
+Leavenworth County,Leavenworth,DNE,82493,37176,-1,0,0,0,0,1,1,0,0
+Leavenworth County,Tonganoxie,66086,82493,5693,10935,1,1,1,0,0,0,0,0
+Lincoln County,Lincoln,67455,2924,-1,1609,1,0,1,0,0,0,0,0
+Lincoln County,Sylvan Grove,67481,2924,313,738,0,0,1,0,0,0,0,0
+Linn County,LaCygne,66040,9723,-1,3527,1,1,1,0,0,0,0,0
+Linn County,Mound City,66056,9723,866,1428,1,0,1,0,0,0,0,0
+Linn County,Parker,66072,9723,336,1201,1,0,0,0,0,0,0,0
+Linn County,Pleasanton,66075,9723,1434,2305,1,0,1,0,0,0,0,0
+Logan County,Oakley,67748,2720,2049,2695,1,1,1,0,0,0,0,0
+Logan County,Winona,67764,2720,183,334,1,0,1,0,0,0,0,0
+Lyon County,Allen,66833,32145,276,576,0,0,0,0,1,0,0,0
+Lyon County,Americus,66835,32145,1147,1369,1,0,0,0,0,0,0,0
+Lyon County,Emporia,66801,32145,24098,27348,6,1,1,0,0,1,1,0
+Lyon County,Emporia,DNE,32145,24098,-1,0,0,0,0,1,1,1,0
+Lyon County,Hartford,66854,32145,442,953,0,0,1,0,0,0,0,0
+Lyon County,Neosho Rapids,66864,32145,305,387,1,0,0,0,0,0,0,0
+Lyon County,Olpe,66865,32145,603,1189,1,0,1,0,0,0,0,0
+Marion County,Goessel,67053,11795,541,541,1,0,1,0,0,0,0,0
+Marion County,Hillsboro,67063,11795,2716,3546,1,0,1,0,0,1,0,0
+Marion County,Hillsboro,DNE,11795,2716,-1,0,0,0,0,1,1,0,0
+Marion County,Lost Springs,66859,11795,49,186,0,0,0,1,1,0,0,0
+Marion County,Marion,66861,11795,2010,2929,1,1,1,0,0,0,0,0
+Marion County,Peabody,66866,11795,1152,1714,1,0,1,0,0,0,0,0
+Marshall County,Axtell,66403,10001,466,803,1,0,1,0,0,0,0,0
+Marshall County,Blue Rapids,66411,10001,918,1195,1,0,1,0,0,0,0,0
+Marshall County,Frankfort,66427,10001,731,1241,1,0,1,0,0,0,0,0
+Marshall County,Marysville,66508,10001,3423,4020,1,0,1,0,0,0,0,0
+Marshall County,Waterville,66548,10001,748,924,1,0,0,0,0,0,0,0
+McPherson County,Canton,67428,30130,626,1137,0,0,1,0,0,0,0,0
+McPherson County,Galva,67443,30130,997,2028,1,0,0,0,0,0,0,0
+McPherson County,Inman,67546,30130,1425,2759,1,0,1,0,0,0,0,0
+McPherson County,Lindsborg,67456,30130,3773,5170,1,1,1,1,0,1,0,0
+McPherson County,Lindsborg,DNE,30130,3773,-1,0,0,0,0,1,1,0,0
+McPherson County,McPherson,67460,30130,13956,15933,4,1,1,0,0,2,0,0
+McPherson County,McPherson,DNE,30130,13956,-1,0,0,0,0,1,2,0,0
+McPherson County,Moundridge,67107,30130,1654,2565,1,1,1,0,0,0,0,0
+McPherson County,Windom,67491,30130,52,362,1,0,0,0,0,0,0,0
+Meade County,Fowler,67844,3949,507,726,1,0,1,0,0,0,0,0
+Meade County,Meade,67864,3949,1274,1701,1,0,1,0,0,0,0,0
+Meade County,Plains,67869,3949,1308,1518,1,0,0,0,0,0,0,0
+Miami County,Louisburg,66053,34625,5034,7744,2,1,1,1,0,0,0,0
+Miami County,Osawatomie,66064,34625,4244,5617,1,1,1,1,1,0,0,0
+Miami County,Paola,66071,34625,5757,12425,2,1,1,0,0,0,0,0
+Miami County,Spring Hill,66083,34625,8691,12832,0,1,0,1,1,0,0,0
+Mitchell County,Beloit,67420,5767,3141,3824,1,0,1,0,0,0,1,0
+Mitchell County,Beloit,DNE,5767,3141,-1,0,0,0,0,1,0,1,0
+Mitchell County,Cawker City,67430,5767,413,508,1,0,0,0,0,0,0,0
+Mitchell County,Tipton,67485,5767,211,349,0,0,0,0,1,0,0,0
+Montgomery County,Caney,67333,31143,1450,2534,1,0,1,1,0,0,0,0
+Montgomery County,Cherryvale,67335,31143,2125,3300,1,1,0,0,0,0,0,0
+Montgomery County,Coffeyville,67337,31143,8752,10944,1,1,1,1,0,0,1,0
+Montgomery County,Coffeyville,DNE,31143,8752,-1,0,0,0,0,1,0,1,0
+Montgomery County,Independence,67301,31143,8469,12996,1,1,1,1,1,0,1,0
+Montgomery County,Independence,DNE,31143,8469,-1,0,0,0,0,1,0,1,0
+Morris County,Council Grove,66846,5388,2487,3331,1,0,1,0,0,0,0,0
+Morris County,White City,66872,5388,439,885,1,0,1,0,0,0,0,0
+Morton County,Elkhart,67950,2647,1732,1786,1,1,1,0,1,0,0,0
+Morton County,Newton,67114,2647,18443,21102,0,0,0,1,0,0,0,0
+Morton County,Rolla,67954,2647,545,797,1,0,1,0,0,0,0,0
+Nemaha County,Centralia,66415,10213,496,763,1,0,1,0,0,0,0,0
+Nemaha County,Sabetha,66534,10213,2326,3720,1,1,1,0,0,0,0,0
+Nemaha County,Seneca,66538,10213,2139,3577,0,1,1,0,0,0,0,0
+Neosho County,Chanute,66720,15715,8629,10913,1,1,1,0,0,0,1,0
+Neosho County,Chanute,DNE,15715,8629,-1,0,0,0,0,1,0,1,0
+Neosho County,Cherryvale,67335,15715,2125,3300,0,0,0,0,1,0,0,0
+Neosho County,Erie,66733,15715,1318,1966,1,0,1,0,0,0,0,0
+Neosho County,Galesburg,66740,15715,184,268,0,1,0,0,0,0,0,0
+Neosho County,St. Paul,66771,15715,665,1077,1,1,1,0,0,0,0,0
+Ness County,Bazine,67516,2659,454,563,0,1,0,0,0,0,0,0
+Ness County,Ness City,67560,2659,1136,1394,1,0,1,0,0,0,0,0
+Ness County,Ransom,67572,2659,261,403,1,0,1,0,0,0,0,0
+Norton County,Almena,67622,5392,447,586,1,0,1,0,0,0,0,0
+Norton County,Norton,67654,5392,2704,4209,1,1,1,0,0,0,0,0
+Osage County,Burlingame,66413,15780,976,1697,1,0,1,0,0,0,0,0
+Osage County,Carbondale,66414,15780,1361,2349,0,0,1,0,1,0,0,0
+Osage County,Lyndon,66451,15780,1184,1809,1,0,1,0,0,0,0,0
+Osage County,Melvern,66510,15780,304,619,0,1,1,0,0,0,0,0
+Osage County,Osage City,66523,15780,2837,3873,1,1,1,0,0,0,0,0
+Osage County,Overbrook,66524,15780,1015,2371,0,0,0,0,1,0,0,0
+Osage County,Quenemo,66528,15780,375,876,1,0,0,0,0,0,0,0
+Osborne County,Downs,67437,3473,663,907,0,0,1,0,0,0,0,0
+Osborne County,Natoma,67651,3473,371,493,1,0,1,0,0,0,0,0
+Osborne County,Osborne,67473,3473,1496,1837,1,0,1,0,0,0,0,0
+Ottawa County,Bennington,67422,5782,612,1419,1,0,1,0,0,0,0,0
+Ottawa County,Minneapolis,67467,5782,2101,2701,1,0,1,0,0,0,0,0
+Ottawa County,Tescott,67484,5782,261,995,1,0,1,0,0,0,0,0
+Pawnee County,Larned,67550,6220,3328,5137,1,1,1,0,0,0,0,0
+Pawnee County,Rozel,67574,6220,111,154,1,0,0,0,1,0,0,0
+Phillips County,AGRA,67621,4874,-1,322,0,1,0,0,0,0,0,0
+Phillips County,Logan,67646,4874,626,704,1,0,1,0,0,0,0,0
+Phillips County,Long Island,67647,4874,143,241,0,1,0,0,0,0,0,0
+Phillips County,Phillipsburg,67661,4874,2132,2890,1,1,1,0,0,0,0,0
+Pottawatomie County,Manhattan,66502,25808,53951,43247,1,0,0,0,0,0,0,0
+Pottawatomie County,Olsburg,66520,25808,274,681,1,0,0,0,0,0,0,0
+Pottawatomie County,Onaga,66521,25808,680,1444,1,1,1,0,0,0,0,0
+Pottawatomie County,St George,66535,25808,-1,3729,1,0,1,0,0,0,0,0
+Pottawatomie County,St Marys,66536,25808,-1,4103,1,0,1,0,0,0,0,0
+Pottawatomie County,St. George,66535,25808,1115,3729,0,1,0,0,0,0,0,0
+Pottawatomie County,Wamego,66547,25808,4205,8387,2,1,1,1,0,0,0,0
+Pottawatomie County,Westmoreland,66549,25808,636,1311,1,0,0,0,0,0,0,0
+Pratt County,Pratt,67124,9120,6559,7822,2,1,2,0,1,0,1,0
+Pratt County,Pratt,DNE,9120,6559,-1,0,0,0,0,1,0,1,0
+Rawlins County,Atwood,67730,2533,1388,1828,1,0,1,0,0,0,0,0
+Reno County,Buhler,67522,61693,1311,1988,1,0,1,2,0,0,0,0
+Reno County,Haven,67543,61693,1394,2029,1,1,1,1,0,0,0,0
+Reno County,Hutchinson,67501,61693,39837,24589,3,3,1,2,1,0,1,0
+Reno County,Hutchinson,67502,61693,39837,23617,4,1,0,0,0,0,1,0
+Reno County,Hutchinson,DNE,61693,39837,-1,0,0,0,0,1,0,1,0
+Reno County,Langdon,67583,61693,32,799,0,0,0,0,1,0,0,0
+Reno County,Nickerson,67561,61693,1088,1569,1,0,1,0,0,0,0,0
+Reno County,Pretty Prairie,67570,61693,553,1452,1,1,1,0,0,0,0,0
+Reno County,South Hutchinson,67505,61693,2826,2836,1,0,0,0,0,0,0,0
+Reno County,Yoder,67585,61693,-1,-1,1,0,0,0,0,0,0,0
+Republic County,Belleville,66935,4662,2036,2415,1,0,1,0,0,0,0,0
+Republic County,Courtland,66939,4662,191,322,1,0,0,0,0,0,0,0
+Republic County,Scandia,66966,4662,305,620,0,1,1,0,0,0,0,0
+Rice County,Chase,67524,9389,447,560,1,0,1,0,0,0,0,0
+Rice County,Little River,67457,9389,427,655,0,1,1,0,0,0,0,0
+Rice County,Lyons,67554,9389,3562,4122,2,1,1,0,0,0,0,0
+Rice County,Sterling,67579,9389,2396,2971,1,0,1,0,0,1,0,0
+Rice County,Sterling,DNE,9389,2396,-1,0,0,0,0,1,1,0,0
+Riley County,Fort Riley,66442,71710,-1,16876,1,0,0,0,0,0,0,0
+Riley County,Manhattan,66502,71710,53951,43247,6,2,1,1,0,2,1,1
+Riley County,Manhattan,66503,71710,53951,17272,2,0,0,0,0,2,1,1
+Riley County,Manhattan,DNE,71710,53951,-1,0,0,0,0,1,2,1,1
+Riley County,Ogden,66517,71710,1628,1628,1,0,0,0,0,0,0,0
+Riley County,Randolph,66554,71710,182,744,0,1,1,0,0,0,0,0
+Riley County,Riley,66531,71710,826,1348,1,0,1,0,0,0,0,0
+Rooks County,Damar,67632,4869,150,226,1,0,0,0,0,0,0,0
+Rooks County,Palco,67657,4869,214,303,0,1,1,0,0,0,0,0
+Rooks County,Plainville,67663,4869,1766,2449,1,0,1,0,0,0,0,0
+Rooks County,Stockton,67669,4869,1521,1815,1,0,1,0,0,0,0,0
+Rush County,La Crosse,67548,2957,1081,1290,1,1,1,0,0,0,0,0
+Rush County,OTIS,67565,2957,-1,469,0,0,0,1,0,0,0,0
+Rush County,Otis,67565,2957,434,469,1,0,1,0,0,0,0,0
+Russell County,Lucas,67648,6717,449,574,1,0,0,0,0,0,0,0
+Russell County,Russell,67665,6717,4258,4893,2,1,1,0,0,0,0,0
+Saline County,Brookville,67425,53801,205,593,0,0,1,0,0,0,0,0
+Saline County,Gypsum,67448,53801,385,1123,1,0,1,0,0,0,0,0
+Saline County,Salina,67401,53801,46432,50272,9,2,2,1,0,1,1,1
+Saline County,Salina,DNE,53801,46432,-1,0,0,0,0,1,1,1,1
+Scott County,Scott City,67871,5071,3955,5067,1,1,1,0,1,0,0,0
+Sedgwick County,Andale,67001,524810,1259,2394,0,1,1,0,0,0,0,0
+Sedgwick County,Bel Aire,67220,524810,8654,14779,1,0,0,0,0,0,0,0
+Sedgwick County,Bel Aire,67226,524810,8654,21441,0,0,1,0,0,0,0,0
+Sedgwick County,Bentley,67016,524810,489,489,1,0,0,0,0,0,0,0
+Sedgwick County,Cheney,67025,524810,2386,3943,1,1,1,0,0,0,0,0
+Sedgwick County,Clearwater,67026,524810,2536,5068,1,1,1,0,0,0,0,0
+Sedgwick County,Colwich,67030,524810,1616,2820,1,0,0,0,1,0,0,0
+Sedgwick County,Derby,67037,524810,25801,30108,6,2,1,1,0,0,0,0
+Sedgwick County,Garden Plain,67050,524810,1055,2008,1,0,1,0,0,0,0,0
+Sedgwick County,Goddard,67052,524810,5361,8610,5,2,2,1,2,0,0,0
+Sedgwick County,Haysville,67060,524810,11117,14004,4,2,0,0,0,0,0,0
+Sedgwick County,Maize,67101,524810,5990,6110,4,1,1,1,1,0,0,0
+Sedgwick County,Mulvane,67110,524810,5829,8222,2,1,1,0,0,0,0,0
+Sedgwick County,Park City,67219,524810,7726,12093,1,0,0,0,0,0,0,0
+Sedgwick County,Valley Center,67147,524810,8937,11193,3,1,1,0,2,0,0,0
+Sedgwick County,Wichita,67202,524810,396488,2102,0,0,0,1,0,4,3,5
+Sedgwick County,Wichita,67203,524810,396488,30869,5,1,1,0,0,4,3,5
+Sedgwick County,Wichita,67204,524810,396488,22913,5,1,0,0,0,4,3,5
+Sedgwick County,Wichita,67205,524810,396488,20600,1,1,1,0,1,4,3,5
+Sedgwick County,Wichita,67206,524810,396488,17468,1,1,0,0,1,4,3,5
+Sedgwick County,Wichita,67207,524810,396488,27721,4,0,1,0,0,4,3,5
+Sedgwick County,Wichita,67208,524810,396488,18078,3,1,0,0,0,4,3,5
+Sedgwick County,Wichita,67209,524810,396488,13613,1,0,0,0,0,4,3,5
+Sedgwick County,Wichita,67210,524810,396488,9178,2,1,0,0,0,4,3,5
+Sedgwick County,Wichita,67211,524810,396488,18691,3,2,1,0,1,4,3,5
+Sedgwick County,Wichita,67212,524810,396488,43278,3,2,1,1,2,4,3,5
+Sedgwick County,Wichita,67213,524810,396488,20702,4,2,1,0,0,4,3,5
+Sedgwick County,Wichita,67214,524810,396488,15553,2,0,1,0,4,4,3,5
+Sedgwick County,Wichita,67215,524810,396488,6468,1,0,0,0,0,4,3,5
+Sedgwick County,Wichita,67216,524810,396488,22529,4,1,1,0,0,4,3,5
+Sedgwick County,Wichita,67217,524810,396488,32529,5,1,2,1,1,4,3,5
+Sedgwick County,Wichita,67218,524810,396488,22945,4,1,0,0,0,4,3,5
+Sedgwick County,Wichita,67219,524810,396488,12093,0,0,1,1,0,4,3,5
+Sedgwick County,Wichita,67220,524810,396488,14779,2,2,0,0,0,4,3,5
+Sedgwick County,Wichita,67226,524810,396488,21441,2,0,0,0,0,4,3,5
+Sedgwick County,Wichita,67230,524810,396488,11822,1,0,0,1,0,4,3,5
+Sedgwick County,Wichita,DNE,524810,396488,-1,0,0,0,0,1,4,3,5
+Seward County,Kismet,67859,21640,476,648,1,0,1,0,0,0,0,0
+Seward County,Liberal,67905,21640,19107,-1,5,2,1,0,0,0,1,0
+Seward County,Liberal,DNE,21640,19107,-1,0,0,0,0,1,0,1,0
+Shawnee County,Auburn,66402,178315,1185,3044,1,0,0,0,0,0,0,0
+Shawnee County,Berryton,66409,178315,-1,3478,1,0,0,0,0,0,0,0
+Shawnee County,Rossville,66533,178315,1183,1609,1,0,1,0,0,0,0,0
+Shawnee County,Silver Lake,66539,178315,1549,2723,1,0,1,0,0,0,0,0
+Shawnee County,Tecumseh,66542,178315,-1,3039,2,1,1,0,0,0,0,0
+Shawnee County,Topeka,66604,178315,126103,22876,4,1,1,1,0,2,0,2
+Shawnee County,Topeka,66605,178315,126103,20592,2,1,1,0,1,2,0,2
+Shawnee County,Topeka,66606,178315,126103,10177,1,1,0,0,1,2,0,2
+Shawnee County,Topeka,66607,178315,126103,9873,0,0,0,0,1,2,0,2
+Shawnee County,Topeka,66608,178315,126103,4789,2,0,0,0,0,2,0,2
+Shawnee County,Topeka,66609,178315,126103,7912,0,0,0,2,0,2,0,2
+Shawnee County,Topeka,66610,178315,126103,9728,1,0,0,0,0,2,0,2
+Shawnee County,Topeka,66611,178315,126103,9912,1,1,0,0,0,2,0,2
+Shawnee County,Topeka,66612,178315,126103,1994,0,0,1,0,1,2,0,2
+Shawnee County,Topeka,66614,178315,126103,32586,4,1,0,0,0,2,0,2
+Shawnee County,Topeka,66615,178315,126103,3144,1,0,0,0,0,2,0,2
+Shawnee County,Topeka,66616,178315,126103,6065,1,1,0,0,0,2,0,2
+Shawnee County,Topeka,66617,178315,126103,8748,1,1,1,0,1,2,0,2
+Shawnee County,Topeka,66618,178315,126103,10113,2,0,1,0,0,2,0,2
+Shawnee County,Topeka,66619,178315,126103,3069,1,1,1,0,0,2,0,2
+Shawnee County,Topeka,DNE,178315,126103,-1,0,0,0,0,1,2,0,2
+Shawnee County,Wakarusa,66546,178315,-1,1182,0,0,0,0,1,0,0,0
+Sheridan County,Hoxie,67740,2442,1191,1642,1,0,1,0,0,0,0,0
+Sheridan County,Selden,67757,2442,287,481,1,0,0,0,0,0,0,0
+Sherman County,Goodland,66735,5919,3878,800,0,0,0,0,1,0,1,0
+Sherman County,Goodland,67735,5919,3878,5203,2,0,1,1,0,0,1,0
+Sherman County,Goodland,DNE,5919,3878,-1,0,0,0,0,1,0,1,0
+Smith County,KENSINGTON,66951,3579,-1,826,1,0,1,0,0,0,0,0
+Smith County,Smith Center,66967,3579,1585,2003,1,0,1,0,0,0,0,0
+Stafford County,Macksville,67557,4004,585,678,1,0,1,0,0,0,0,0
+Stafford County,St. John,67576,4004,1247,2010,1,0,1,0,0,0,0,0
+Stafford County,Stafford,67578,4004,680,1033,1,0,1,0,0,0,0,0
+Stanton County,Johnson,67855,2018,-1,1835,1,0,1,0,0,0,0,0
+Stevens County,Hugoton,67951,5212,4065,4610,1,1,1,1,0,0,0,0
+Stevens County,Moscow,67952,5212,197,494,1,0,1,0,0,0,0,0
+Sumner County,Argonia,67004,22386,573,781,1,0,1,0,0,0,0,0
+Sumner County,Belle Plaine,67013,22386,1486,2671,1,1,1,0,0,0,0,0
+Sumner County,Caldwell,67022,22386,1091,1579,1,0,0,1,1,0,0,0
+Sumner County,Conway Springs,67031,22386,1597,2527,0,1,1,0,1,0,0,0
+Sumner County,Oxford,67119,22386,892,1238,1,0,1,1,0,0,0,0
+Sumner County,South Haven,67140,22386,327,995,1,0,1,0,0,0,0,0
+Sumner County,Wellington,67152,22386,7643,9199,4,1,1,1,0,0,0,0
+Thomas County,Brewster,67732,7913,440,698,1,0,1,0,0,0,0,0
+Thomas County,Colby,67701,7913,5389,6166,1,1,1,0,0,0,1,0
+Thomas County,Colby,DNE,7913,5389,-1,0,0,0,0,1,0,1,0
+Thomas County,Rexford,67753,7913,150,422,0,1,1,0,0,0,0,0
+Trego County,WaKeeney,67672,2778,1838,2111,1,0,1,0,0,0,0,0
+Wabaunsee County,Alma,66401,6961,965,1928,1,0,1,0,0,0,0,0
+Wabaunsee County,Alta Vista,66834,6961,484,1030,1,0,0,0,0,0,0,0
+Wabaunsee County,Eskridge,66423,6961,388,830,1,0,1,0,0,0,0,0
+Wabaunsee County,Paxico,66526,6961,231,818,0,1,0,0,0,0,0,0
+Wallace County,Sharon Springs,67758,1459,837,1059,1,0,1,0,0,0,0,0
+Wallace County,Weskan,67762,1459,-1,248,1,0,1,0,0,0,0,0
+Washington County,Clifton,66937,5519,453,919,1,1,0,0,0,0,0,0
+Washington County,Hanover,66945,5519,831,987,1,0,1,0,0,0,0,0
+Washington County,Linn,66953,5519,478,611,1,0,1,0,0,0,0,0
+Washington County,Washington,66968,5519,1199,1435,1,0,1,0,0,0,0,0
+Wichita County,Leoti,67861,2115,1461,2002,0,0,1,0,0,0,0,0
+Wichita County,Leoti,67879,2115,1461,1293,1,0,0,0,0,0,0,0
+Wilson County,Altoona,66710,8559,409,763,1,0,0,0,0,0,0,0
+Wilson County,Buffalo,66717,8559,290,534,0,0,1,0,0,0,0,0
+Wilson County,Fredonia,66736,8559,2113,3517,1,0,1,1,1,0,0,0
+Wilson County,Neodesha,66757,8559,2311,3225,2,0,1,0,0,0,0,0
+Woodson County,Yates Center,66783,3118,1381,2117,1,0,1,0,0,0,0,0
+Wyandotte County,Bonner Springs,66012,167277,7735,10301,1,1,1,0,0,0,0,0
+Wyandotte County,Edwardsville,66111,167277,4721,10449,1,0,0,0,0,0,0,0
+Wyandotte County,Kansas City,66101,167277,154776,12463,3,1,0,1,0,1,1,0
+Wyandotte County,Kansas City,66102,167277,154776,30062,8,1,2,0,0,1,1,0
+Wyandotte County,Kansas City,66103,167277,154776,12841,3,1,0,0,0,1,1,0
+Wyandotte County,Kansas City,66104,167277,154776,26820,6,1,1,1,0,1,1,0
+Wyandotte County,Kansas City,66105,167277,154776,2388,1,0,0,0,0,1,1,0
+Wyandotte County,Kansas City,66106,167277,154776,23762,6,2,2,1,2,1,1,0
+Wyandotte County,Kansas City,66109,167277,154776,27715,4,2,2,1,0,1,1,0
+Wyandotte County,Kansas City,66111,167277,154776,10449,0,0,0,0,1,1,1,0
+Wyandotte County,Kansas City,66112,167277,154776,12968,1,1,0,0,1,1,1,0
+Wyandotte County,Kansas City,66115,167277,154776,0,1,0,0,0,0,1,1,0
+Wyandotte County,Kansas City,66612,167277,154776,1994,0,0,0,0,1,1,1,0
+Wyandotte County,Kansas City,DNE,167277,154776,-1,0,0,0,0,1,1,1,0
