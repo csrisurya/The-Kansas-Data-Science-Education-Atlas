@@ -1,13 +1,38 @@
 # The Kansas Data Science Education Atlas
 
 ## Project Overview
-This research project systematically documents and analyzes the distribution of Data Science (DS) and Artificial Intelligence (AI) educational offerings across all 105 Kansas counties, spanning K-12 schools through graduate programs. Using publicly available datasets and machine learning techniques, we investigate geographic disparities in educational access and their correlation with demographic and economic indicators.
+This research project addresses geographic inequities in Data Science (DS) and Artificial Intelligence (AI) education access across Kansas. Using publicly available datasets, geospatial analysis, and machine learning classification, the study reveals that 88 of 105 counties lack any DS/AI academic offerings, with programs concentrated in counties hosting four-year universities (Lawrence, Manhattan, Wichita).
 
 ### Key Findings
-* <i>Geographic Concentration:</i> DS/AI programs are heavily concentrated in three institutional hubs (Lawrence, Manhattan, Wichita)
-* <i>Educational Pipeline Gap:</i> 83.8% of Kansas counties (88 of 105) have zero DS/AI programs
-* <i>Institutional Capacity Over Wealth:</i> Existing educational infrastructure is the strongest predictor of program presence—not county economic prosperity
-* <i>Digital Infrastructure Uniformity:</i> Broadband access is sufficiently uniform across Kansas that it does not explain program distribution patterns
+* Educational infrastructure (presence of four-year colleges) has the strongest association to DS/AI program availability
+* Population density shows strong correlation with program presence, but creates substantial rural-urban inequity
+* Economic indicators (e.g., median income, poverty rate) show minimal predictive power
+* Digital infrastructure is adequate statewide (e.g., avg broadband index: 0.79) but doesn't drive program creation
+* Machine Learning models achieved 83.8% accuracy (i.e., Random Forest) with 70.6% recall for minority class
+
+## Research Questions
+* <i>RQ1:</i> How do population density and demographics correlate with DS/AI educational offerings, and what are the implications for educational equity?
+* <i>RQ2:</i> How does K-12 school distribution compare to DS/AI program availability, and where are the critical gaps in the educational pipeline?
+* <i>RQ3:</i> To what extent do online DS programs reduce geographic inequality, and how is this limited by digital infrastructure?
+* <i>RQ4:</i> Is there a correlation between county-level economic strength and DS/AI program density?
+
+## Methodology
+
+### Data Sources
+* <i>NCES Common Core of Data (CCD):</i> K-12 school locations and counts
+* <i>NCES IPEDS:</i> College and university information
+* <i>IPUMS NHGIS:</i> Census demographic and economic data (ACS 2019-2023)
+* <i>FCC Broadband Map:</i> Fixed broadband coverage metrics
+* <i>US Census Bureau:</i> County centroid lat/long coordinates
+* <i>Manual Collection:</i> DS/AI course inventory (AI-assisted web scraping)
+
+### Analysis Pipeline
+1. <i>Data Gathering:</i> Multi-source public dataset collection
+2. <i>Data Cleaning:</i> SQL-based standardization in Google BigQuery
+3. <i>Feature Engineering:</i> Impact scores, demographic rates, digital access indices
+4. <i>Statistical Analysis:</i> Correlation matrices, p-value testing, effect size (Eta-squared)
+5. <i>Machine Learning:</i> Random Forest, SVM, Naive Bayes classification (WEKA 3.8)
+6. <i>Geospatial Visualization:</i> Heat maps and distribution analysis (R, Power BI)
 
 ## Datasets
 The project integrates 7 interconnected datasets derived from multiple authoritative sources:
@@ -22,53 +47,29 @@ The project integrates 7 interconnected datasets derived from multiple authorita
 | Dataset 6  | Socioeconomic indicators and program impact                                | 106     | 11       |
 | Dataset 7  | Comprehensive ML-ready integration (Datasets 1-6)                          | 106     | 32       |
 
-### Data Sources
-* <i>Educational Institutions:</i> NCES Common Core of Data (K-12), IPEDS (Colleges)
-* <i>Demographics:</i> IPUMS NHGIS - American Community Survey 5-Year Data (2019-2023)
-* <i>Digital Infrastructure:</i> FCC Broadband Map, ACS Internet Subscription Data
-* <i>Geographic Data:</i> US Census Bureau TIGER/Line Shapefiles
-* <i>Course Data:</i> Manual collection from publicly available college catalogs (AI-assisted)
+## Policy Recommedations
+1. <i>Immediate Expansion:</i> Target the 4 False Positive counties (counties predicted to have programs but lacking them) as high-leverage opportunities
+2. <i>Regional Hub Development:</i> Establish DS/AI centers serving northwest, southwest, and central Kansas clusters
+3. <i>Faculty Fellowship Program:</i> Incentivize DS/AI specialists to teach in underserved counties
+4. <i>2+2 Articulation Agreements:</i> Create community college → university transfer pathways for DS/AI degrees
+5. <i>Hybrid Certificate Programs:</i> Leverage existing broadband with mobile/hybrid delivery combining online instruction and periodic in-person sessions
 
-## Research Questions
-* <i>RQ1:</i> To what extent does population density correlate with DS/AI educational offerings, and what are the implications for educational equity?
-* <i>RQ2:</i> How does the K-12 school distribution compare to undergraduate/graduate DS program availability, and where are critical pipeline gaps?
-* <i>RQ3:</i> Does online DS program availability reduce geographic inequality, and how is this limited by digital infrastructure?
-* <i>RQ4:</i> Is there a correlation between county-level economic strength and DS/AI program density across demographic factors?
-
-## Methodology
-
-### Analytical Techniques
-* Descriptive statistics (SQL aggregations)
-* Geospatial analysis (heat mapping)
-* Correlation analysis (Pearson correlation matrices)
-* Machine learning classification (Random Forest, SVM, Naive Bayes)
-* Feature importance ranking (Information Gain)
-
-### Machine Learning Classification
-<i>Objective:</i> Predict county-level DS/AI program presence using 26 socioeconomic, educational, and digital infrastructure features.
-
-### Models Evaluated
-* Random Forest (50 trees, max depth 5)
-* Support Vector Machine (Polynomial kernel, SMO)
-* Naive Bayes (probabilistic classifier)
-
-### Performance Highlights (10-Fold Cross-Validation)
-* <i>Random Forest:</i> 89.5% accuracy, 70.6% recall, 0.68 Kappa
-* <i>SVM:</i> 87.6% accuracy, 23.5% recall, 0.31 Kappa
-* <i>Naive Bayes:</i> 90.5% accuracy, 52.9% recall, 0.59 Kappa
+## Technology Used
+* <i>Database:</i> Google BigQuery
+* <i>Data Processing:</i> Python (custom scripts), SQL
+* <i>ML Platform:</i> WEKA 3.8
+* <i>Visualization:</i> R, Microsoft Power BI Desktop
+* <i>Development:</i> VS Code
+* <i>Remote Access:</i> Kansas State University Windows Server (via Global Protect VPN), Parallels Desktop software
+* <i>Writing:</i> Microsoft Word, Overleaf
 
 ## Acknowledgements
 * Kansas State University Research Foundation
-* National Center for Education Statistics (NCES)
-* IPUMS NHGIS for demographic data access
-* Federal Communications Commission (FCC) for broadband infrastructure data
-* US Census Bureau for county centroid lat/long coordinates
 
 ## Recognitions
-* Winner of $1,500 Undergraduate Research Scholarship
-* Presented as MINK-WIC Conference (multi-state -> Missouri, Iowa, Nebraska, Kansas)
+* Winner of $1,500 Spring 2026 Undergraduate Research Scholarship (Kansas State University College of Arts & Sciences)
+* Presented at MINK-WIC Conference 2025 (multi-state -> Missouri, Iowa, Nebraska, Kansas)
 * Nominated to be submitted in American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition
-
 
 
 
