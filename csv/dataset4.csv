@@ -1,0 +1,78 @@
+school_name,COUNTYNM,CITY,latitude,longitude,undergrad_courses_school,graduate_courses_school,undergrad_programs_school,graduate_programs_school,impact_score
+University of Kansas,Douglas County,Lawrence,38.958549,-95.247567,15,4,4,2,10.3
+Kansas State University,Riley County,Manhattan,39.188648,-96.581077,8,6,1,3,9.0
+Wichita State University,Sedgwick County,Wichita,37.718882,-97.292361,0,14,0,3,8.8
+MidAmerica Nazarene University,Johnson County,Olathe,38.875244,-94.781526,6,1,1,1,3.8000000000000003
+Fort Hays State University,Ellis County,Hays,38.872156,-99.342503,1,1,1,1,3.3000000000000003
+Pittsburg State University,Crawford County,Pittsburg,37.392071,-94.702473,1,1,1,1,3.3000000000000003
+Newman University,Sedgwick County,Wichita,37.672643,-97.37768,0,3,0,1,2.6
+Kansas Wesleyan University,Saline County,Salina,38.813795,-97.607973,5,0,2,0,2.5
+University of Saint Mary,Leavenworth County,Leavenworth,39.279396,-94.906743,0,2,0,1,2.4
+Washburn University,Shawnee County,Topeka,39.033778,-95.702222,4,0,2,0,2.4
+Emporia State University,Lyon County,Emporia,38.414784,-96.179021,2,0,2,0,2.2
+Butler Community College,Butler County,El Dorado,37.806699,-96.882987,9,0,1,0,1.9
+Central Christian College of Kansas,McPherson County,McPherson,38.357978,-97.668597,4,0,1,0,1.4
+Southwestern College,Cowley County,Winfield,37.248608,-96.975405,4,0,1,0,1.4
+Tabor College,Marion County,Hillsboro,38.34858,-97.199773,3,0,1,0,1.3
+Seward County Community College,Seward County,Liberal,37.059807,-100.917695,2,0,1,0,1.2
+Benedictine College,Atchison County,Atchison,39.573079,-95.113858,1,0,1,0,1.1
+McPherson College,McPherson County,McPherson,38.371422,-97.642996,1,0,1,0,1.1
+Dodge City Community College,Ford County,Dodge City,37.776891,-100.037481,5,0,0,0,0.5
+Cowley County Community College,Cowley County,Arkansas City,37.061668,-97.043075,2,0,0,0,0.2
+Johnson County Community College,Johnson County,Overland Park,38.924125,-94.727798,1,0,0,0,0.1
+Allen County Community College,Allen County,Iola,37.938038,-95.396377,0,0,0,0,0.0
+Baker University,Douglas County,Baldwin City,38.778712,-95.187346,0,0,0,0,0.0
+Barclay College,Kiowa County,Haviland,37.62012,-99.105351,0,0,0,0,0.0
+Barton County Community College,Barton County,Great Bend,38.403529,-98.731648,0,0,0,0,0.0
+Bellus Academy,Riley County,Manhattan,39.191749,-96.60827,0,0,0,0,0.0
+Bethany College,McPherson County,Lindsborg,38.580598,-97.67367,0,0,0,0,0.0
+Bethel College-North Newton,Harvey County,North Newton,38.075169,-97.343256,0,0,0,0,0.0
+Cleveland University-Kansas City,Johnson County,Overland Park,38.932019,-94.679076,0,0,0,0,0.0
+Cloud County Community College,Cloud County,Concordia,39.554199,-97.664147,0,0,0,0,0.0
+Coffeyville Community College,Montgomery County,Coffeyville,37.033814,-95.621374,0,0,0,0,0.0
+Colby Community College,Thomas County,Colby,39.377601,-101.052744,0,0,0,0,0.0
+Crave Beauty Academy,Sedgwick County,Wichita,37.684374,-97.387374,0,0,0,0,0.0
+Donnelly College,Wyandotte County,Kansas City,39.112346,-94.649827,0,0,0,0,0.0
+Eric Fisher Academy,Sedgwick County,Wichita,37.693713,-97.422011,0,0,0,0,0.0
+Flint Hills Technical College,Lyon County,Emporia,38.41888,-96.224141,0,0,0,0,0.0
+Fort Scott Community College,Bourbon County,Fort Scott,37.816206,-94.715334,0,0,0,0,0.0
+Friends University,Sedgwick County,Wichita,37.678459,-97.367048,0,0,0,0,0.0
+Galen Health Institutes-Wichita,Sedgwick County,Wichita,37.696007,-97.299612,0,0,0,0,0.0
+Garden City Community College,Finney County,Garden City,37.970514,-100.84916,0,0,0,0,0.0
+Haskell Indian Nations University,Douglas County,Lawrence,38.938834,-95.232879,0,0,0,0,0.0
+Hays Academy of Hair Design,Ellis County,Hays,38.884873,-99.310623,0,0,0,0,0.0
+Hays Academy of Hair Design,Saline County,Salina,38.8398,-97.607551,0,0,0,0,0.0
+Heartland Welding Academy,Butler County,Andover,37.697688,-97.134406,0,0,0,0,0.0
+Hesston College,Harvey County,Hesston,38.134558,-97.433883,0,0,0,0,0.0
+Highland Community College,Doniphan County,Highland,39.859987,-95.271539,0,0,0,0,0.0
+Hutchinson Community College,Reno County,Hutchinson,38.068035,-97.92135,0,0,0,0,0.0
+Independence Community College,Montgomery County,Independence,37.195614,-95.720518,0,0,0,0,0.0
+Kansas Christian College,Johnson County,Overland Park,38.994848,-94.666878,0,0,0,0,0.0
+Kansas Health Science Center,Sedgwick County,Wichita,37.685373,-97.33594,0,0,0,0,0.0
+Manhattan Area Technical College,Riley County,Manhattan,39.197774,-96.615672,0,0,0,0,0.0
+Manhattan Christian College,Riley County,Manhattan,39.184806,-96.579383,0,0,0,0,0.0
+Midwest Barber College,Shawnee County,Topeka,39.000284,-95.689254,0,0,0,0,0.0
+Mitsu Sato Hair Academy,Johnson County,Overland Park,38.964694,-94.670149,0,0,0,0,0.0
+Neosho County Community College,Neosho County,Chanute,37.670672,-95.464976,0,0,0,0,0.0
+North Central Kansas Technical College,Mitchell County,Beloit,39.482419,-98.110826,0,0,0,0,0.0
+Northwest Kansas Technical College,Sherman County,Goodland,39.346424,-101.70022,0,0,0,0,0.0
+Old Town Barber College-Wichita,Sedgwick County,Wichita,37.68586,-97.323179,0,0,0,0,0.0
+Ottawa University-Kansas City,Johnson County,Overland Park,38.932055,-94.635461,0,0,0,0,0.0
+Ottawa University-Online,Johnson County,Overland Park,38.932055,-94.635461,0,0,0,0,0.0
+Ottawa University-Ottawa,Franklin County,Ottawa,38.603173,-95.264187,0,0,0,0,0.0
+Paul Mitchell the School-Overland Park,Johnson County,Overland Park,38.955861,-94.688051,0,0,0,0,0.0
+Paul Mitchell the School-Wichita,Sedgwick County,Wichita,37.741502,-97.2432,0,0,0,0,0.0
+Pratt Community College,Pratt County,Pratt,37.654451,-98.714538,0,0,0,0,0.0
+Rasmussen University-Kansas,Shawnee County,Topeka,38.998726,-95.704151,0,0,0,0,0.0
+Saint Paul School of Theology,Johnson County,Leawood,38.880458,-94.641277,0,0,0,0,0.0
+Salina Area Technical College,Saline County,Salina,38.793582,-97.636892,0,0,0,0,0.0
+Sami Halaseh Institute,Butler County,Andover,37.704457,-97.133845,0,0,0,0,0.0
+Sterling College,Rice County,Sterling,38.219937,-98.208644,0,0,0,0,0.0
+Washburn Institute of Technology,Shawnee County,Topeka,39.04497,-95.751158,0,0,0,0,0.0
+WellSpring School of Allied Health-Lawrence,Douglas County,Lawrence,38.965848,-95.235123,0,0,0,0,0.0
+WellSpring School of Allied Health-Wichita,Sedgwick County,Wichita,37.673622,-97.443119,0,0,0,0,0.0
+Wichita State University-Campus of Applied Sciences and Technology,Sedgwick County,Wichita,37.75764,-97.224151,0,0,0,0,0.0
+Wichita Technical Institute,Sedgwick County,Wichita,37.656976,-97.371819,0,0,0,0,0.0
+Z Hair Academy,Johnson County,Overland Park,38.867002,-94.666351,0,0,0,0,0.0
+Kansas City Kansas Community College,Wyandotte County,Kansas City,39.121911,-94.748061,0,0,0,0,0.0
+Labette Community College,Labette County,Parsons,37.339062,-95.255368,0,0,0,0,0.0
