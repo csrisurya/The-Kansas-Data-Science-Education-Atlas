@@ -1,0 +1,135 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.PrincipalComponents -R 0.95 -A 5
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     dataset7-weka.filters.unsupervised.attribute.NumericToNominal-R32-weka.filters.unsupervised.attribute.Remove-R1,13,14,15,16,17
+Instances:    105
+Attributes:   26
+              County_Population
+              County_Latitude
+              County_Longitude
+              Elementary_Schools
+              Middle_Schools
+              High_Schools
+              Virtual_Schools
+              Other_Schools
+              Four_Year_Colleges
+              Two_Year_Colleges
+              Less_Than_Two_Year_Colleges
+              Broadband_Access_Index
+              Internet_Adoption_Pct
+              Avg_Broadband_Coverage_Pct
+              Pct_No_Internet
+              Total_Households
+              Effective_Access_Score
+              Median_Household_Income
+              Poverty_Rate
+              Unemployment_Rate
+              Advanced_Degree_Rate
+              Young_Adult_Bachelors_Plus_Rate
+              STEM_Employment_Rate
+              Professional_Services_Rate
+              Low_Income_Digital_Access_Rate
+              Has_Programs
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (unsupervised):
+	Principal Components Attribute Transformer
+
+Correlation matrix
+  1     -0      0.26   0.99   0.97   0.91   0.68   0.76   0.96   0.77   0.85   0.24   0.3    0.13  -0.31   1      0.57   0.38   0.01   0.23   0.51   0.52   0.54   0.56  -0.19   0.47 
+ -0      1      0.04  -0.02  -0.03  -0.04  -0.18  -0.14  -0.01  -0.08  -0.05   0.04   0.12  -0.01  -0.09  -0      0.07   0.09  -0.15  -0.36   0.2    0.16   0.18   0.25  -0.1   -0.04 
+  0.26   0.04   1      0.26   0.29   0.37   0.33   0.27   0.18   0.11   0.11   0.1   -0.24   0.23   0.2    0.26   0.18   0.03   0.18   0.39   0.21   0.21   0.36   0.23   0.18   0.23 
+  0.99  -0.02   0.26   1      0.97   0.92   0.66   0.72   0.93   0.73   0.81   0.24   0.3    0.14  -0.3    0.99   0.56   0.4   -0      0.24   0.48   0.49   0.53   0.55  -0.18   0.46 
+  0.97  -0.03   0.29   0.97   1      0.94   0.73   0.77   0.92   0.76   0.83   0.27   0.3    0.17  -0.32   0.97   0.53   0.43  -0.04   0.26   0.48   0.48   0.56   0.56  -0.17   0.46 
+  0.91  -0.04   0.37   0.92   0.94   1      0.74   0.78   0.88   0.75   0.81   0.25   0.21   0.19  -0.23   0.91   0.47   0.39  -0.04   0.27   0.44   0.44   0.56   0.49  -0.1    0.49 
+  0.68  -0.18   0.33   0.66   0.73   0.74   1      0.82   0.65   0.69   0.65   0.24   0.14   0.21  -0.18   0.67   0.31   0.18   0.14   0.4    0.25   0.27   0.43   0.34  -0.05   0.34 
+  0.76  -0.14   0.27   0.72   0.77   0.78   0.82   1      0.79   0.83   0.8    0.22   0.14   0.19  -0.17   0.75   0.37   0.19   0.13   0.32   0.26   0.3    0.38   0.31  -0.06   0.47 
+  0.96  -0.01   0.18   0.93   0.92   0.88   0.65   0.79   1      0.86   0.95   0.19   0.25   0.09  -0.26   0.96   0.52   0.3    0      0.18   0.45   0.44   0.46   0.46  -0.16   0.43 
+  0.77  -0.08   0.11   0.73   0.76   0.75   0.69   0.83   0.86   1      0.92   0.16   0.18   0.1   -0.18   0.76   0.39   0.11   0.1    0.21   0.19   0.21   0.28   0.25  -0.13   0.3  
+  0.85  -0.05   0.11   0.81   0.83   0.81   0.65   0.8    0.95   0.92   1      0.15   0.2    0.07  -0.19   0.85   0.43   0.2    0.02   0.16   0.31   0.3    0.33   0.32  -0.12   0.36 
+  0.24   0.04   0.1    0.24   0.27   0.25   0.24   0.22   0.19   0.16   0.15   1      0.48   0.91  -0.53   0.23   0.19   0.28  -0.07   0.07   0.16   0.21   0.07   0.16  -0.2    0.24 
+  0.3    0.12  -0.24   0.3    0.3    0.21   0.14   0.14   0.25   0.18   0.2    0.48   1      0.08  -0.94   0.3    0.29   0.44  -0.04  -0.06   0.26   0.35   0.25   0.26  -0.71   0.27 
+  0.13  -0.01   0.23   0.14   0.17   0.19   0.21   0.19   0.09   0.1    0.07   0.91   0.08   1     -0.17   0.13   0.08   0.11  -0.06   0.11   0.06   0.08  -0.04   0.06   0.1    0.15 
+ -0.31  -0.09   0.2   -0.3   -0.32  -0.23  -0.18  -0.17  -0.26  -0.18  -0.19  -0.53  -0.94  -0.17   1     -0.31  -0.32  -0.46   0.04   0.02  -0.32  -0.42  -0.29  -0.28   0.62  -0.3  
+  1     -0      0.26   0.99   0.97   0.91   0.67   0.75   0.96   0.76   0.85   0.23   0.3    0.13  -0.31   1      0.57   0.38   0.01   0.23   0.52   0.52   0.54   0.56  -0.19   0.47 
+  0.57   0.07   0.18   0.56   0.53   0.47   0.31   0.37   0.52   0.39   0.43   0.19   0.29   0.08  -0.32   0.57   1      0.25   0.15   0.16   0.46   0.56   0.47   0.46  -0.22   0.51 
+  0.38   0.09   0.03   0.4    0.43   0.39   0.18   0.19   0.3    0.11   0.2    0.28   0.44   0.11  -0.46   0.38   0.25   1     -0.53  -0.12   0.43   0.45   0.51   0.39  -0.26   0.19 
+  0.01  -0.15   0.18  -0     -0.04  -0.04   0.14   0.13   0      0.1    0.02  -0.07  -0.04  -0.06   0.04   0.01   0.15  -0.53   1      0.35  -0.17  -0.07   0.02  -0.06  -0.1    0.21 
+  0.23  -0.36   0.39   0.24   0.26   0.27   0.4    0.32   0.18   0.21   0.16   0.07  -0.06   0.11   0.02   0.23   0.16  -0.12   0.35   1     -0.07   0.01   0.12  -0.05  -0.03   0.26 
+  0.51   0.2    0.21   0.48   0.48   0.44   0.25   0.26   0.45   0.19   0.31   0.16   0.26   0.06  -0.32   0.52   0.46   0.43  -0.17  -0.07   1      0.95   0.52   0.65  -0.05   0.41 
+  0.52   0.16   0.21   0.49   0.48   0.44   0.27   0.3    0.44   0.21   0.3    0.21   0.35   0.08  -0.42   0.52   0.56   0.45  -0.07   0.01   0.95   1      0.59   0.66  -0.12   0.52 
+  0.54   0.18   0.36   0.53   0.56   0.56   0.43   0.38   0.46   0.28   0.33   0.07   0.25  -0.04  -0.29   0.54   0.47   0.51   0.02   0.12   0.52   0.59   1      0.62  -0.15   0.44 
+  0.56   0.25   0.23   0.55   0.56   0.49   0.34   0.31   0.46   0.25   0.32   0.16   0.26   0.06  -0.28   0.56   0.46   0.39  -0.06  -0.05   0.65   0.66   0.62   1     -0.06   0.31 
+ -0.19  -0.1    0.18  -0.18  -0.17  -0.1   -0.05  -0.06  -0.16  -0.13  -0.12  -0.2   -0.71   0.1    0.62  -0.19  -0.22  -0.26  -0.1   -0.03  -0.05  -0.12  -0.15  -0.06   1     -0.15 
+  0.47  -0.04   0.23   0.46   0.46   0.49   0.34   0.47   0.43   0.3    0.36   0.24   0.27   0.15  -0.3    0.47   0.51   0.19   0.21   0.26   0.41   0.52   0.44   0.31  -0.15   1    
+
+
+eigenvalue	proportion	cumulative
+ 11.01436	  0.42363	  0.42363	0.29 County_Population+0.289Total_Households+0.289Middle_Schools+0.285Elementary_Schools+0.278Four_Year_Colleges...
+  3.27272	  0.12587	  0.5495 	-0.382Internet_Adoption_Pct+0.381Pct_No_Internet-0.299Median_Household_Income+0.264Low_Income_Digital_Access_Rate-0.245Young_Adult_Bachelors_Plus_Rate...
+  2.25751	  0.08683	  0.63633	0.372Broadband_Access_Index-0.322Advanced_Degree_Rate+0.316Internet_Adoption_Pct-0.306Low_Income_Digital_Access_Rate-0.301Pct_No_Internet...
+  1.898  	  0.073  	  0.70933	0.51 Avg_Broadband_Coverage_Pct+0.435County_Longitude+0.398Broadband_Access_Index+0.259Unemployment_Rate+0.216Low_Income_Digital_Access_Rate...
+  1.70099	  0.06542	  0.77475	0.549Poverty_Rate-0.366Avg_Broadband_Coverage_Pct+0.297Unemployment_Rate-0.29Low_Income_Digital_Access_Rate+0.279Has_Programs=1...
+  1.06888	  0.04111	  0.81586	-0.56County_Latitude+0.471Median_Household_Income+0.358Unemployment_Rate-0.327Poverty_Rate-0.181Effective_Access_Score...
+  0.91788	  0.0353 	  0.85117	0.537County_Latitude+0.434County_Longitude-0.309Young_Adult_Bachelors_Plus_Rate-0.297Advanced_Degree_Rate+0.294STEM_Employment_Rate...
+  0.61889	  0.0238 	  0.87497	-0.48Effective_Access_Score+0.431Virtual_Schools-0.358Has_Programs=1+0.347Professional_Services_Rate+0.246Poverty_Rate...
+  0.58016	  0.02231	  0.89728	0.603Has_Programs=1+0.365Other_Schools+0.269STEM_Employment_Rate-0.245Professional_Services_Rate-0.236Unemployment_Rate...
+  0.51283	  0.01972	  0.91701	0.396Advanced_Degree_Rate-0.393Effective_Access_Score-0.382STEM_Employment_Rate-0.325Professional_Services_Rate+0.318Unemployment_Rate...
+  0.42145	  0.01621	  0.93322	-0.52Effective_Access_Score-0.387Unemployment_Rate+0.319Has_Programs=1-0.3Virtual_Schools-0.234County_Latitude...
+  0.3972 	  0.01528	  0.94849	-0.484Unemployment_Rate+0.474County_Longitude-0.317Professional_Services_Rate-0.282Low_Income_Digital_Access_Rate-0.28County_Latitude...
+  0.2869 	  0.01103	  0.95953	-0.572Low_Income_Digital_Access_Rate+0.456Professional_Services_Rate+0.332Pct_No_Internet-0.28STEM_Employment_Rate+0.236Virtual_Schools...
+
+Eigenvectors
+ V1	 V2	 V3	 V4	 V5	 V6	 V7	 V8	 V9	 V10	 V11	 V12	 V13	
+ 0.2898	 0.0614	-0.0154	-0.0845	-0.0368	-0.0287	 0.0054	-0.0783	-0.1752	 0.0034	 0.1443	-0.076 	-0.0446	County_Population
+ 0.004 	-0.2182	-0.2098	-0.0355	-0.0929	-0.5595	 0.5369	-0.1295	 0.1813	 0.2606	-0.234 	-0.2804	-0.0536	County_Latitude
+ 0.0904	 0.1633	-0.187 	 0.435 	 0.0681	 0.1027	 0.4335	-0.09  	-0.0765	 0.2185	 0.1964	 0.474 	-0.0728	County_Longitude
+ 0.2846	 0.0608	-0.0119	-0.0736	-0.046 	 0.0119	 0.0241	-0.1064	-0.2111	-0.0417	 0.1954	-0.1325	-0.0617	Elementary_Schools
+ 0.2888	 0.0648	 0.0018	-0.055 	-0.0784	 0.0501	 0.0574	-0.041 	-0.1269	-0.0282	 0.1169	-0.104 	-0.0219	Middle_Schools
+ 0.2771	 0.1067	-0.0156	-0.0078	-0.0944	 0.0789	 0.0905	-0.0639	 0.0331	 0.0171	 0.1619	-0.0371	-0.0172	High_Schools
+ 0.2221	 0.1874	 0.1026	 0.0672	-0.0215	 0.1308	 0.1146	 0.4311	 0.2101	-0.0468	-0.3002	 0.0441	 0.2357	Virtual_Schools
+ 0.2413	 0.2   	 0.103 	-0.0149	-0.0398	-0.008 	-0.014 	 0.1826	 0.3647	 0.0403	-0.1568	 0.1014	 0.1887	Other_Schools
+ 0.2781	 0.1064	 0.0111	-0.1607	-0.0707	-0.1044	-0.0509	-0.0753	-0.0775	 0.0735	 0.0741	 0.0035	-0.1102	Four_Year_Colleges
+ 0.2321	 0.1996	 0.1417	-0.194 	-0.0794	-0.1665	-0.019 	 0.0645	 0.1177	 0.0385	-0.2168	 0.1785	-0.0494	Two_Year_Colleges
+ 0.2514	 0.1645	 0.073 	-0.2149	-0.1026	-0.1458	-0.0669	-0.0375	 0.0608	 0.0946	-0.0515	 0.0985	-0.1038	Less_Than_Two_Year_Colleges
+ 0.1026	-0.1961	 0.3716	 0.398 	-0.2617	-0.1387	-0.023 	 0.0117	-0.0445	-0.0617	 0.0217	-0.0061	-0.0155	Broadband_Access_Index
+ 0.1196	-0.3818	 0.3157	-0.123 	 0.1466	 0.0305	 0.0533	 0.1228	-0.0044	 0.0572	 0.0298	-0.0447	-0.1861	Internet_Adoption_Pct
+ 0.0606	-0.0458	 0.2756	 0.5095	-0.366 	-0.1735	-0.0509	-0.0442	-0.0508	-0.0944	 0.0101	 0.0127	 0.0695	Avg_Broadband_Coverage_Pct
+-0.1287	 0.3812	-0.3015	 0.0441	-0.1239	-0.0517	 0.0062	-0.1736	-0.0205	-0.039 	 0.0497	 0.0468	 0.3316	Pct_No_Internet
+ 0.2894	 0.0598	-0.0208	-0.0837	-0.0365	-0.0307	 0.0022	-0.0745	-0.1799	 0.0114	 0.158 	-0.0769	-0.0478	Total_Households
+ 0.1906	-0.0856	-0.0711	 0.07  	 0.2385	-0.1811	-0.1741	-0.48  	-0.1823	-0.3929	-0.5204	 0.2379	 0.0673	Effective_Access_Score
+ 0.1383	-0.2987	-0.0763	-0.0437	-0.2259	 0.471 	 0.125 	-0.1713	 0.1345	-0.1619	-0.0525	 0.1027	-0.0688	Median_Household_Income
+ 0.0042	 0.1921	 0.1453	 0.1507	 0.5489	-0.327 	 0.0365	 0.246 	-0.0661	-0.2153	 0.2103	 0.0925	-0.234 	Poverty_Rate
+ 0.0755	 0.2416	 0.1623	 0.2592	 0.297 	 0.3582	 0.1047	-0.1153	-0.2361	 0.3181	-0.3875	-0.4839	-0.0338	Unemployment_Rate
+ 0.1792	-0.2234	-0.3222	 0.1175	 0.0223	-0.0333	-0.2971	 0.1962	-0.097 	 0.396 	-0.0309	 0.1479	-0.0269	Advanced_Degree_Rate
+ 0.1895	-0.2447	-0.2673	 0.1564	 0.1249	-0.0154	-0.3086	 0.1562	-0.0244	 0.2677	-0.1256	 0.1355	-0.024 	Young_Adult_Bachelors_Plus_Rate
+ 0.1925	-0.1172	-0.2456	 0.0823	 0.1665	 0.1803	 0.2939	 0.0908	 0.2686	-0.3817	-0.0364	-0.0079	-0.2805	STEM_Employment_Rate
+ 0.1858	-0.166 	-0.285 	 0.0816	 0.019 	-0.0955	 0.0586	 0.3468	-0.2452	-0.3254	 0.0863	-0.3169	 0.4564	Professional_Services_Rate
+-0.071 	 0.2637	-0.3058	 0.2157	-0.29  	-0.0445	-0.2835	 0.1261	 0.1152	-0.1773	-0.1184	-0.2823	-0.572 	Low_Income_Digital_Access_Rate
+ 0.1735	-0.0403	 0.0011	 0.2061	 0.2791	-0.0312	-0.2702	-0.3575	 0.6031	 0.0677	 0.3188	-0.2584	 0.1901	Has_Programs=1
+
+Ranked attributes:
+ 0.5764   1 0.29 County_Population+0.289Total_Households+0.289Middle_Schools+0.285Elementary_Schools+0.278Four_Year_Colleges...
+ 0.4505   2 -0.382Internet_Adoption_Pct+0.381Pct_No_Internet-0.299Median_Household_Income+0.264Low_Income_Digital_Access_Rate-0.245Young_Adult_Bachelors_Plus_Rate...
+ 0.3637   3 0.372Broadband_Access_Index-0.322Advanced_Degree_Rate+0.316Internet_Adoption_Pct-0.306Low_Income_Digital_Access_Rate-0.301Pct_No_Internet...
+ 0.2907   4 0.51 Avg_Broadband_Coverage_Pct+0.435County_Longitude+0.398Broadband_Access_Index+0.259Unemployment_Rate+0.216Low_Income_Digital_Access_Rate...
+ 0.2252   5 0.549Poverty_Rate-0.366Avg_Broadband_Coverage_Pct+0.297Unemployment_Rate-0.29Low_Income_Digital_Access_Rate+0.279Has_Programs=1...
+ 0.1841   6 -0.56County_Latitude+0.471Median_Household_Income+0.358Unemployment_Rate-0.327Poverty_Rate-0.181Effective_Access_Score...
+ 0.1488   7 0.537County_Latitude+0.434County_Longitude-0.309Young_Adult_Bachelors_Plus_Rate-0.297Advanced_Degree_Rate+0.294STEM_Employment_Rate...
+ 0.125    8 -0.48Effective_Access_Score+0.431Virtual_Schools-0.358Has_Programs=1+0.347Professional_Services_Rate+0.246Poverty_Rate...
+ 0.1027   9 0.603Has_Programs=1+0.365Other_Schools+0.269STEM_Employment_Rate-0.245Professional_Services_Rate-0.236Unemployment_Rate...
+ 0.083   10 0.396Advanced_Degree_Rate-0.393Effective_Access_Score-0.382STEM_Employment_Rate-0.325Professional_Services_Rate+0.318Unemployment_Rate...
+ 0.0668  11 -0.52Effective_Access_Score-0.387Unemployment_Rate+0.319Has_Programs=1-0.3Virtual_Schools-0.234County_Latitude...
+ 0.0515  12 -0.484Unemployment_Rate+0.474County_Longitude-0.317Professional_Services_Rate-0.282Low_Income_Digital_Access_Rate-0.28County_Latitude...
+ 0.0405  13 -0.572Low_Income_Digital_Access_Rate+0.456Professional_Services_Rate+0.332Pct_No_Internet-0.28STEM_Employment_Rate+0.236Virtual_Schools...
+
+Selected attributes: 1,2,3,4,5,6,7,8,9,10,11,12,13 : 13
+
