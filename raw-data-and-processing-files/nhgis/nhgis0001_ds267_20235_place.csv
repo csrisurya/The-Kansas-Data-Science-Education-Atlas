@@ -1,0 +1,741 @@
+GISJOIN,YEAR,STUSAB,REGIONA,DIVISIONA,STATE,STATEA,COUNTYA,COUSUBA,PLACE,PLACEA,TRACTA,BLKGRPA,CONCITA,AIANHHA,RES_ONLYA,TRUSTA,AIHHTLI,AITSA,ANRCA,CBSAA,CSAA,METDIVA,CNECTA,NECTADIV,UAA,CDCURRA,SLDUA,SLDLA,ZCTA5A,SUBMCDA,SDELMA,SDSECA,SDUNIA,PCI,PUMAA,GEO_ID,BTTRA,BTBGA,TL_GEO_ID,NAME_E,ASN1E001,NAME_M,ASN1M001
+"G20000100","2019-2023","KS",,,"Kansas","20",,,"Abbyville city","00100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2000100",,,"2000100","Abbyville city, Kansas",70,"Abbyville city, Kansas",30
+"G20000125","2019-2023","KS",,,"Kansas","20",,,"Abilene city","00125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2000125",,,"2000125","Abilene city, Kansas",6449,"Abilene city, Kansas",23
+"G20000225","2019-2023","KS",,,"Kansas","20",,,"Ada CDP","00225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2000225",,,"2000225","Ada CDP, Kansas",70,"Ada CDP, Kansas",67
+"G20000325","2019-2023","KS",,,"Kansas","20",,,"Admire city","00325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2000325",,,"2000325","Admire city, Kansas",177,"Admire city, Kansas",92
+"G20000475","2019-2023","KS",,,"Kansas","20",,,"Agenda city","00475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2000475",,,"2000475","Agenda city, Kansas",71,"Agenda city, Kansas",34
+"G20000550","2019-2023","KS",,,"Kansas","20",,,"Agra city","00550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2000550",,,"2000550","Agra city, Kansas",222,"Agra city, Kansas",67
+"G20000825","2019-2023","KS",,,"Kansas","20",,,"Albert city","00825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2000825",,,"2000825","Albert city, Kansas",102,"Albert city, Kansas",33
+"G20000950","2019-2023","KS",,,"Kansas","20",,,"Alden city","00950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2000950",,,"2000950","Alden city, Kansas",110,"Alden city, Kansas",47
+"G20001050","2019-2023","KS",,,"Kansas","20",,,"Alexander city","01050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001050",,,"2001050","Alexander city, Kansas",32,"Alexander city, Kansas",13
+"G20001275","2019-2023","KS",,,"Kansas","20",,,"Allen city","01275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001275",,,"2001275","Allen city, Kansas",276,"Allen city, Kansas",95
+"G20001350","2019-2023","KS",,,"Kansas","20",,,"Alma city","01350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001350",,,"2001350","Alma city, Kansas",965,"Alma city, Kansas",195
+"G20001425","2019-2023","KS",,,"Kansas","20",,,"Almena city","01425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001425",,,"2001425","Almena city, Kansas",447,"Almena city, Kansas",155
+"G20001550","2019-2023","KS",,,"Kansas","20",,,"Altamont city","01550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001550",,,"2001550","Altamont city, Kansas",996,"Altamont city, Kansas",216
+"G20001575","2019-2023","KS",,,"Kansas","20",,,"Alta Vista city","01575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001575",,,"2001575","Alta Vista city, Kansas",484,"Alta Vista city, Kansas",125
+"G20001600","2019-2023","KS",,,"Kansas","20",,,"Alton city","01600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001600",,,"2001600","Alton city, Kansas",126,"Alton city, Kansas",51
+"G20001625","2019-2023","KS",,,"Kansas","20",,,"Altoona city","01625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001625",,,"2001625","Altoona city, Kansas",409,"Altoona city, Kansas",105
+"G20001675","2019-2023","KS",,,"Kansas","20",,,"Americus city","01675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001675",,,"2001675","Americus city, Kansas",1147,"Americus city, Kansas",211
+"G20001725","2019-2023","KS",,,"Kansas","20",,,"Ames CDP","01725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001725",,,"2001725","Ames CDP, Kansas",0,"Ames CDP, Kansas",11
+"G20001775","2019-2023","KS",,,"Kansas","20",,,"Andale city","01775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001775",,,"2001775","Andale city, Kansas",1259,"Andale city, Kansas",214
+"G20001800","2019-2023","KS",,,"Kansas","20",,,"Andover city","01800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001800",,,"2001800","Andover city, Kansas",15508,"Andover city, Kansas",374
+"G20001975","2019-2023","KS",,,"Kansas","20",,,"Anthony city","01975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2001975",,,"2001975","Anthony city, Kansas",2228,"Anthony city, Kansas",184
+"G20002175","2019-2023","KS",,,"Kansas","20",,,"Arcadia city","02175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2002175",,,"2002175","Arcadia city, Kansas",271,"Arcadia city, Kansas",144
+"G20002250","2019-2023","KS",,,"Kansas","20",,,"Argonia city","02250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2002250",,,"2002250","Argonia city, Kansas",573,"Argonia city, Kansas",201
+"G20002300","2019-2023","KS",,,"Kansas","20",,,"Arkansas City city","02300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2002300",,,"2002300","Arkansas City city, Kansas",11909,"Arkansas City city, Kansas",49
+"G20002325","2019-2023","KS",,,"Kansas","20",,,"Arlington city","02325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2002325",,,"2002325","Arlington city, Kansas",393,"Arlington city, Kansas",128
+"G20002375","2019-2023","KS",,,"Kansas","20",,,"Arma city","02375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2002375",,,"2002375","Arma city, Kansas",1131,"Arma city, Kansas",246
+"G20002600","2019-2023","KS",,,"Kansas","20",,,"Asherville CDP","02600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2002600",,,"2002600","Asherville CDP, Kansas",0,"Asherville CDP, Kansas",11
+"G20002675","2019-2023","KS",,,"Kansas","20",,,"Ashland city","02675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2002675",,,"2002675","Ashland city, Kansas",807,"Ashland city, Kansas",160
+"G20002850","2019-2023","KS",,,"Kansas","20",,,"Assaria city","02850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2002850",,,"2002850","Assaria city, Kansas",433,"Assaria city, Kansas",108
+"G20002900","2019-2023","KS",,,"Kansas","20",,,"Atchison city","02900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2002900",,,"2002900","Atchison city, Kansas",10795,"Atchison city, Kansas",24
+"G20003025","2019-2023","KS",,,"Kansas","20",,,"Athol city","03025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003025",,,"2003025","Athol city, Kansas",62,"Athol city, Kansas",49
+"G20003050","2019-2023","KS",,,"Kansas","20",,,"Atlanta city","03050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003050",,,"2003050","Atlanta city, Kansas",153,"Atlanta city, Kansas",45
+"G20003100","2019-2023","KS",,,"Kansas","20",,,"Attica city","03100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003100",,,"2003100","Attica city, Kansas",529,"Attica city, Kansas",116
+"G20003150","2019-2023","KS",,,"Kansas","20",,,"Atwood city","03150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003150",,,"2003150","Atwood city, Kansas",1388,"Atwood city, Kansas",141
+"G20003250","2019-2023","KS",,,"Kansas","20",,,"Auburn city","03250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003250",,,"2003250","Auburn city, Kansas",1185,"Auburn city, Kansas",265
+"G20003300","2019-2023","KS",,,"Kansas","20",,,"Augusta city","03300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003300",,,"2003300","Augusta city, Kansas",9252,"Augusta city, Kansas",36
+"G20003425","2019-2023","KS",,,"Kansas","20",,,"Aurora city","03425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003425",,,"2003425","Aurora city, Kansas",32,"Aurora city, Kansas",21
+"G20003600","2019-2023","KS",,,"Kansas","20",,,"Axtell city","03600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003600",,,"2003600","Axtell city, Kansas",466,"Axtell city, Kansas",138
+"G20003675","2019-2023","KS",,,"Kansas","20",,,"Baileyville CDP","03675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003675",,,"2003675","Baileyville CDP, Kansas",77,"Baileyville CDP, Kansas",64
+"G20003800","2019-2023","KS",,,"Kansas","20",,,"Bala CDP","03800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003800",,,"2003800","Bala CDP, Kansas",0,"Bala CDP, Kansas",11
+"G20003900","2019-2023","KS",,,"Kansas","20",,,"Baldwin City city","03900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2003900",,,"2003900","Baldwin City city, Kansas",4881,"Baldwin City city, Kansas",20
+"G20004225","2019-2023","KS",,,"Kansas","20",,,"Barnard city","04225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004225",,,"2004225","Barnard city, Kansas",84,"Barnard city, Kansas",39
+"G20004250","2019-2023","KS",,,"Kansas","20",,,"Barnes city","04250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004250",,,"2004250","Barnes city, Kansas",174,"Barnes city, Kansas",51
+"G20004350","2019-2023","KS",,,"Kansas","20",,,"Bartlett city","04350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004350",,,"2004350","Bartlett city, Kansas",70,"Bartlett city, Kansas",43
+"G20004400","2019-2023","KS",,,"Kansas","20",,,"Basehor city","04400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004400",,,"2004400","Basehor city, Kansas",7229,"Basehor city, Kansas",37
+"G20004450","2019-2023","KS",,,"Kansas","20",,,"Bassett city","04450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004450",,,"2004450","Bassett city, Kansas",21,"Bassett city, Kansas",34
+"G20004575","2019-2023","KS",,,"Kansas","20",,,"Bavaria CDP","04575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004575",,,"2004575","Bavaria CDP, Kansas",21,"Bavaria CDP, Kansas",20
+"G20004625","2019-2023","KS",,,"Kansas","20",,,"Baxter Springs city","04625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004625",,,"2004625","Baxter Springs city, Kansas",3863,"Baxter Springs city, Kansas",19
+"G20004775","2019-2023","KS",,,"Kansas","20",,,"Bazine city","04775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004775",,,"2004775","Bazine city, Kansas",454,"Bazine city, Kansas",109
+"G20004900","2019-2023","KS",,,"Kansas","20",,,"Beattie city","04900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004900",,,"2004900","Beattie city, Kansas",227,"Beattie city, Kansas",62
+"G20004925","2019-2023","KS",,,"Kansas","20",,,"Beaumont CDP","04925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004925",,,"2004925","Beaumont CDP, Kansas",40,"Beaumont CDP, Kansas",32
+"G20004950","2019-2023","KS",,,"Kansas","20",,,"Beaver CDP","04950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2004950",,,"2004950","Beaver CDP, Kansas",13,"Beaver CDP, Kansas",21
+"G20005337","2019-2023","KS",,,"Kansas","20",,,"Bel Aire city","05337",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2005337",,,"2005337","Bel Aire city, Kansas",8654,"Bel Aire city, Kansas",24
+"G20005500","2019-2023","KS",,,"Kansas","20",,,"Belle Plaine city","05500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2005500",,,"2005500","Belle Plaine city, Kansas",1486,"Belle Plaine city, Kansas",237
+"G20005600","2019-2023","KS",,,"Kansas","20",,,"Belleville city","05600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2005600",,,"2005600","Belleville city, Kansas",2036,"Belleville city, Kansas",141
+"G20005775","2019-2023","KS",,,"Kansas","20",,,"Beloit city","05775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2005775",,,"2005775","Beloit city, Kansas",3141,"Beloit city, Kansas",272
+"G20005825","2019-2023","KS",,,"Kansas","20",,,"Belpre city","05825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2005825",,,"2005825","Belpre city, Kansas",57,"Belpre city, Kansas",35
+"G20005925","2019-2023","KS",,,"Kansas","20",,,"Belvue city","05925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2005925",,,"2005925","Belvue city, Kansas",170,"Belvue city, Kansas",55
+"G20005975","2019-2023","KS",,,"Kansas","20",,,"Bendena CDP","05975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2005975",,,"2005975","Bendena CDP, Kansas",140,"Bendena CDP, Kansas",60
+"G20006000","2019-2023","KS",,,"Kansas","20",,,"Benedict city","06000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2006000",,,"2006000","Benedict city, Kansas",65,"Benedict city, Kansas",33
+"G20006075","2019-2023","KS",,,"Kansas","20",,,"Bennington city","06075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2006075",,,"2006075","Bennington city, Kansas",612,"Bennington city, Kansas",158
+"G20006125","2019-2023","KS",,,"Kansas","20",,,"Bentley city","06125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2006125",,,"2006125","Bentley city, Kansas",489,"Bentley city, Kansas",123
+"G20006175","2019-2023","KS",,,"Kansas","20",,,"Benton city","06175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2006175",,,"2006175","Benton city, Kansas",896,"Benton city, Kansas",180
+"G20006275","2019-2023","KS",,,"Kansas","20",,,"Bern city","06275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2006275",,,"2006275","Bern city, Kansas",132,"Bern city, Kansas",62
+"G20006500","2019-2023","KS",,,"Kansas","20",,,"Beverly city","06500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2006500",,,"2006500","Beverly city, Kansas",138,"Beverly city, Kansas",56
+"G20006575","2019-2023","KS",,,"Kansas","20",,,"Big Bow CDP","06575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2006575",,,"2006575","Big Bow CDP, Kansas",148,"Big Bow CDP, Kansas",154
+"G20006825","2019-2023","KS",,,"Kansas","20",,,"Bird City city","06825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2006825",,,"2006825","Bird City city, Kansas",579,"Bird City city, Kansas",136
+"G20006950","2019-2023","KS",,,"Kansas","20",,,"Bison city","06950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2006950",,,"2006950","Bison city, Kansas",201,"Bison city, Kansas",83
+"G20007600","2019-2023","KS",,,"Kansas","20",,,"Blue Mound city","07600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2007600",,,"2007600","Blue Mound city, Kansas",252,"Blue Mound city, Kansas",101
+"G20007650","2019-2023","KS",,,"Kansas","20",,,"Blue Rapids city","07650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2007650",,,"2007650","Blue Rapids city, Kansas",918,"Blue Rapids city, Kansas",148
+"G20007775","2019-2023","KS",,,"Kansas","20",,,"Bluff City city","07775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2007775",,,"2007775","Bluff City city, Kansas",37,"Bluff City city, Kansas",31
+"G20007825","2019-2023","KS",,,"Kansas","20",,,"Bogue city","07825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2007825",,,"2007825","Bogue city, Kansas",106,"Bogue city, Kansas",38
+"G20007975","2019-2023","KS",,,"Kansas","20",,,"Bonner Springs city","07975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2007975",,,"2007975","Bonner Springs city, Kansas",7735,"Bonner Springs city, Kansas",24
+"G20008300","2019-2023","KS",,,"Kansas","20",,,"Bremen CDP","08300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2008300",,,"2008300","Bremen CDP, Kansas",202,"Bremen CDP, Kansas",117
+"G20008425","2019-2023","KS",,,"Kansas","20",,,"Brewster city","08425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2008425",,,"2008425","Brewster city, Kansas",440,"Brewster city, Kansas",164
+"G20008450","2019-2023","KS",,,"Kansas","20",,,"Bridgeport CDP","08450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2008450",,,"2008450","Bridgeport CDP, Kansas",31,"Bridgeport CDP, Kansas",34
+"G20008475","2019-2023","KS",,,"Kansas","20",,,"Bronson city","08475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2008475",,,"2008475","Bronson city, Kansas",573,"Bronson city, Kansas",213
+"G20008575","2019-2023","KS",,,"Kansas","20",,,"Brookville city","08575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2008575",,,"2008575","Brookville city, Kansas",205,"Brookville city, Kansas",97
+"G20008675","2019-2023","KS",,,"Kansas","20",,,"Brownell city","08675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2008675",,,"2008675","Brownell city, Kansas",18,"Brownell city, Kansas",11
+"G20009000","2019-2023","KS",,,"Kansas","20",,,"Bucklin city","09000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009000",,,"2009000","Bucklin city, Kansas",627,"Bucklin city, Kansas",149
+"G20009050","2019-2023","KS",,,"Kansas","20",,,"Bucyrus CDP","09050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009050",,,"2009050","Bucyrus CDP, Kansas",16,"Bucyrus CDP, Kansas",25
+"G20009150","2019-2023","KS",,,"Kansas","20",,,"Buffalo city","09150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009150",,,"2009150","Buffalo city, Kansas",290,"Buffalo city, Kansas",210
+"G20009200","2019-2023","KS",,,"Kansas","20",,,"Buhler city","09200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009200",,,"2009200","Buhler city, Kansas",1311,"Buhler city, Kansas",241
+"G20009225","2019-2023","KS",,,"Kansas","20",,,"Bunker Hill city","09225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009225",,,"2009225","Bunker Hill city, Kansas",109,"Bunker Hill city, Kansas",60
+"G20009250","2019-2023","KS",,,"Kansas","20",,,"Burden city","09250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009250",,,"2009250","Burden city, Kansas",548,"Burden city, Kansas",116
+"G20009275","2019-2023","KS",,,"Kansas","20",,,"Burdett city","09275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009275",,,"2009275","Burdett city, Kansas",313,"Burdett city, Kansas",87
+"G20009300","2019-2023","KS",,,"Kansas","20",,,"Burdick CDP","09300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009300",,,"2009300","Burdick CDP, Kansas",28,"Burdick CDP, Kansas",23
+"G20009350","2019-2023","KS",,,"Kansas","20",,,"Burlingame city","09350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009350",,,"2009350","Burlingame city, Kansas",976,"Burlingame city, Kansas",160
+"G20009400","2019-2023","KS",,,"Kansas","20",,,"Burlington city","09400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009400",,,"2009400","Burlington city, Kansas",2615,"Burlington city, Kansas",18
+"G20009450","2019-2023","KS",,,"Kansas","20",,,"Burns city","09450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009450",,,"2009450","Burns city, Kansas",299,"Burns city, Kansas",95
+"G20009525","2019-2023","KS",,,"Kansas","20",,,"Burr Oak city","09525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009525",,,"2009525","Burr Oak city, Kansas",114,"Burr Oak city, Kansas",35
+"G20009575","2019-2023","KS",,,"Kansas","20",,,"Burrton city","09575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009575",,,"2009575","Burrton city, Kansas",874,"Burrton city, Kansas",179
+"G20009675","2019-2023","KS",,,"Kansas","20",,,"Bushong city","09675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009675",,,"2009675","Bushong city, Kansas",44,"Bushong city, Kansas",48
+"G20009700","2019-2023","KS",,,"Kansas","20",,,"Bushton city","09700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009700",,,"2009700","Bushton city, Kansas",237,"Bushton city, Kansas",94
+"G20009800","2019-2023","KS",,,"Kansas","20",,,"Byers city","09800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009800",,,"2009800","Byers city, Kansas",10,"Byers city, Kansas",9
+"G20009900","2019-2023","KS",,,"Kansas","20",,,"Caldwell city","09900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2009900",,,"2009900","Caldwell city, Kansas",1091,"Caldwell city, Kansas",185
+"G20010125","2019-2023","KS",,,"Kansas","20",,,"Cambridge city","10125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2010125",,,"2010125","Cambridge city, Kansas",74,"Cambridge city, Kansas",29
+"G20010375","2019-2023","KS",,,"Kansas","20",,,"Caney city","10375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2010375",,,"2010375","Caney city, Kansas",1450,"Caney city, Kansas",305
+"G20010475","2019-2023","KS",,,"Kansas","20",,,"Canton city","10475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2010475",,,"2010475","Canton city, Kansas",626,"Canton city, Kansas",134
+"G20010600","2019-2023","KS",,,"Kansas","20",,,"Carbondale city","10600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2010600",,,"2010600","Carbondale city, Kansas",1361,"Carbondale city, Kansas",208
+"G20010675","2019-2023","KS",,,"Kansas","20",,,"Carlton city","10675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2010675",,,"2010675","Carlton city, Kansas",19,"Carlton city, Kansas",13
+"G20010925","2019-2023","KS",,,"Kansas","20",,,"Cassoday city","10925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2010925",,,"2010925","Cassoday city, Kansas",129,"Cassoday city, Kansas",43
+"G20011025","2019-2023","KS",,,"Kansas","20",,,"Catharine CDP","11025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2011025",,,"2011025","Catharine CDP, Kansas",252,"Catharine CDP, Kansas",129
+"G20011175","2019-2023","KS",,,"Kansas","20",,,"Cawker City city","11175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2011175",,,"2011175","Cawker City city, Kansas",413,"Cawker City city, Kansas",122
+"G20011325","2019-2023","KS",,,"Kansas","20",,,"Cedar city","11325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2011325",,,"2011325","Cedar city, Kansas",7,"Cedar city, Kansas",10
+"G20011425","2019-2023","KS",,,"Kansas","20",,,"Cedar Point city","11425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2011425",,,"2011425","Cedar Point city, Kansas",9,"Cedar Point city, Kansas",11
+"G20011450","2019-2023","KS",,,"Kansas","20",,,"Cedar Vale city","11450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2011450",,,"2011450","Cedar Vale city, Kansas",618,"Cedar Vale city, Kansas",146
+"G20012325","2019-2023","KS",,,"Kansas","20",,,"Centerville CDP","12325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012325",,,"2012325","Centerville CDP, Kansas",0,"Centerville CDP, Kansas",11
+"G20012425","2019-2023","KS",,,"Kansas","20",,,"Centralia city","12425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012425",,,"2012425","Centralia city, Kansas",496,"Centralia city, Kansas",107
+"G20012450","2019-2023","KS",,,"Kansas","20",,,"Centropolis CDP","12450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012450",,,"2012450","Centropolis CDP, Kansas",70,"Centropolis CDP, Kansas",64
+"G20012500","2019-2023","KS",,,"Kansas","20",,,"Chanute city","12500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012500",,,"2012500","Chanute city, Kansas",8629,"Chanute city, Kansas",36
+"G20012550","2019-2023","KS",,,"Kansas","20",,,"Chapman city","12550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012550",,,"2012550","Chapman city, Kansas",1244,"Chapman city, Kansas",228
+"G20012650","2019-2023","KS",,,"Kansas","20",,,"Chase city","12650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012650",,,"2012650","Chase city, Kansas",447,"Chase city, Kansas",95
+"G20012675","2019-2023","KS",,,"Kansas","20",,,"Chautauqua city","12675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012675",,,"2012675","Chautauqua city, Kansas",108,"Chautauqua city, Kansas",49
+"G20012775","2019-2023","KS",,,"Kansas","20",,,"Cheney city","12775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012775",,,"2012775","Cheney city, Kansas",2386,"Cheney city, Kansas",169
+"G20012825","2019-2023","KS",,,"Kansas","20",,,"Cherokee city","12825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012825",,,"2012825","Cherokee city, Kansas",692,"Cherokee city, Kansas",164
+"G20012925","2019-2023","KS",,,"Kansas","20",,,"Cherryvale city","12925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012925",,,"2012925","Cherryvale city, Kansas",2125,"Cherryvale city, Kansas",292
+"G20012950","2019-2023","KS",,,"Kansas","20",,,"Chetopa city","12950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2012950",,,"2012950","Chetopa city, Kansas",995,"Chetopa city, Kansas",208
+"G20013100","2019-2023","KS",,,"Kansas","20",,,"Chicopee CDP","13100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2013100",,,"2013100","Chicopee CDP, Kansas",405,"Chicopee CDP, Kansas",226
+"G20013275","2019-2023","KS",,,"Kansas","20",,,"Cimarron city","13275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2013275",,,"2013275","Cimarron city, Kansas",1942,"Cimarron city, Kansas",253
+"G20013375","2019-2023","KS",,,"Kansas","20",,,"Circleville city","13375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2013375",,,"2013375","Circleville city, Kansas",148,"Circleville city, Kansas",42
+"G20013425","2019-2023","KS",,,"Kansas","20",,,"Claflin city","13425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2013425",,,"2013425","Claflin city, Kansas",434,"Claflin city, Kansas",150
+"G20013625","2019-2023","KS",,,"Kansas","20",,,"Clay Center city","13625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2013625",,,"2013625","Clay Center city, Kansas",4148,"Clay Center city, Kansas",18
+"G20013675","2019-2023","KS",,,"Kansas","20",,,"Clayton city","13675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2013675",,,"2013675","Clayton city, Kansas",57,"Clayton city, Kansas",46
+"G20013925","2019-2023","KS",,,"Kansas","20",,,"Clearwater city","13925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2013925",,,"2013925","Clearwater city, Kansas",2536,"Clearwater city, Kansas",339
+"G20014200","2019-2023","KS",,,"Kansas","20",,,"Clifton city","14200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014200",,,"2014200","Clifton city, Kansas",453,"Clifton city, Kansas",110
+"G20014275","2019-2023","KS",,,"Kansas","20",,,"Climax city","14275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014275",,,"2014275","Climax city, Kansas",57,"Climax city, Kansas",36
+"G20014475","2019-2023","KS",,,"Kansas","20",,,"Clyde city","14475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014475",,,"2014475","Clyde city, Kansas",823,"Clyde city, Kansas",142
+"G20014525","2019-2023","KS",,,"Kansas","20",,,"Coats city","14525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014525",,,"2014525","Coats city, Kansas",113,"Coats city, Kansas",61
+"G20014575","2019-2023","KS",,,"Kansas","20",,,"Codell CDP","14575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014575",,,"2014575","Codell CDP, Kansas",54,"Codell CDP, Kansas",47
+"G20014600","2019-2023","KS",,,"Kansas","20",,,"Coffeyville city","14600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014600",,,"2014600","Coffeyville city, Kansas",8752,"Coffeyville city, Kansas",52
+"G20014650","2019-2023","KS",,,"Kansas","20",,,"Colby city","14650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014650",,,"2014650","Colby city, Kansas",5389,"Colby city, Kansas",386
+"G20014700","2019-2023","KS",,,"Kansas","20",,,"Coldwater city","14700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014700",,,"2014700","Coldwater city, Kansas",667,"Coldwater city, Kansas",141
+"G20014900","2019-2023","KS",,,"Kansas","20",,,"Collyer city","14900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014900",,,"2014900","Collyer city, Kansas",87,"Collyer city, Kansas",29
+"G20014950","2019-2023","KS",,,"Kansas","20",,,"Colony city","14950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2014950",,,"2014950","Colony city, Kansas",310,"Colony city, Kansas",103
+"G20015075","2019-2023","KS",,,"Kansas","20",,,"Columbus city","15075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2015075",,,"2015075","Columbus city, Kansas",2902,"Columbus city, Kansas",14
+"G20015100","2019-2023","KS",,,"Kansas","20",,,"Colwich city","15100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2015100",,,"2015100","Colwich city, Kansas",1616,"Colwich city, Kansas",270
+"G20015200","2019-2023","KS",,,"Kansas","20",,,"Concordia city","15200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2015200",,,"2015200","Concordia city, Kansas",5067,"Concordia city, Kansas",19
+"G20015325","2019-2023","KS",,,"Kansas","20",,,"Conway Springs city","15325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2015325",,,"2015325","Conway Springs city, Kansas",1597,"Conway Springs city, Kansas",366
+"G20015400","2019-2023","KS",,,"Kansas","20",,,"Coolidge city","15400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2015400",,,"2015400","Coolidge city, Kansas",53,"Coolidge city, Kansas",29
+"G20015475","2019-2023","KS",,,"Kansas","20",,,"Copeland city","15475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2015475",,,"2015475","Copeland city, Kansas",350,"Copeland city, Kansas",98
+"G20015725","2019-2023","KS",,,"Kansas","20",,,"Corning city","15725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2015725",,,"2015725","Corning city, Kansas",153,"Corning city, Kansas",44
+"G20015900","2019-2023","KS",,,"Kansas","20",,,"Cottonwood Falls city","15900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2015900",,,"2015900","Cottonwood Falls city, Kansas",944,"Cottonwood Falls city, Kansas",145
+"G20015925","2019-2023","KS",,,"Kansas","20",,,"Council Grove city","15925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2015925",,,"2015925","Council Grove city, Kansas",2487,"Council Grove city, Kansas",208
+"G20016025","2019-2023","KS",,,"Kansas","20",,,"Courtland city","16025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2016025",,,"2016025","Courtland city, Kansas",191,"Courtland city, Kansas",54
+"G20016150","2019-2023","KS",,,"Kansas","20",,,"Coyville city","16150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2016150",,,"2016150","Coyville city, Kansas",67,"Coyville city, Kansas",48
+"G20016325","2019-2023","KS",,,"Kansas","20",,,"Crestline CDP","16325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2016325",,,"2016325","Crestline CDP, Kansas",148,"Crestline CDP, Kansas",153
+"G20016475","2019-2023","KS",,,"Kansas","20",,,"Croweburg CDP","16475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2016475",,,"2016475","Croweburg CDP, Kansas",111,"Croweburg CDP, Kansas",95
+"G20016625","2019-2023","KS",,,"Kansas","20",,,"Cuba city","16625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2016625",,,"2016625","Cuba city, Kansas",213,"Cuba city, Kansas",74
+"G20016675","2019-2023","KS",,,"Kansas","20",,,"Cullison city","16675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2016675",,,"2016675","Cullison city, Kansas",118,"Cullison city, Kansas",62
+"G20016700","2019-2023","KS",,,"Kansas","20",,,"Culver city","16700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2016700",,,"2016700","Culver city, Kansas",79,"Culver city, Kansas",38
+"G20016775","2019-2023","KS",,,"Kansas","20",,,"Cunningham city","16775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2016775",,,"2016775","Cunningham city, Kansas",457,"Cunningham city, Kansas",102
+"G20016975","2019-2023","KS",,,"Kansas","20",,,"Damar city","16975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2016975",,,"2016975","Damar city, Kansas",150,"Damar city, Kansas",57
+"G20017000","2019-2023","KS",,,"Kansas","20",,,"Danville city","17000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017000",,,"2017000","Danville city, Kansas",29,"Danville city, Kansas",17
+"G20017150","2019-2023","KS",,,"Kansas","20",,,"Dearing city","17150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017150",,,"2017150","Dearing city, Kansas",325,"Dearing city, Kansas",81
+"G20017225","2019-2023","KS",,,"Kansas","20",,,"Deerfield city","17225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017225",,,"2017225","Deerfield city, Kansas",760,"Deerfield city, Kansas",237
+"G20017525","2019-2023","KS",,,"Kansas","20",,,"Delia city","17525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017525",,,"2017525","Delia city, Kansas",173,"Delia city, Kansas",56
+"G20017600","2019-2023","KS",,,"Kansas","20",,,"Delphos city","17600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017600",,,"2017600","Delphos city, Kansas",314,"Delphos city, Kansas",100
+"G20017625","2019-2023","KS",,,"Kansas","20",,,"Denison city","17625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017625",,,"2017625","Denison city, Kansas",159,"Denison city, Kansas",89
+"G20017675","2019-2023","KS",,,"Kansas","20",,,"Dennis CDP","17675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017675",,,"2017675","Dennis CDP, Kansas",195,"Dennis CDP, Kansas",155
+"G20017750","2019-2023","KS",,,"Kansas","20",,,"Denton city","17750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017750",,,"2017750","Denton city, Kansas",129,"Denton city, Kansas",50
+"G20017800","2019-2023","KS",,,"Kansas","20",,,"Derby city","17800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017800",,,"2017800","Derby city, Kansas",25801,"Derby city, Kansas",32
+"G20017850","2019-2023","KS",,,"Kansas","20",,,"De Soto city","17850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017850",,,"2017850","De Soto city, Kansas",6333,"De Soto city, Kansas",23
+"G20017875","2019-2023","KS",,,"Kansas","20",,,"Detroit CDP","17875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017875",,,"2017875","Detroit CDP, Kansas",100,"Detroit CDP, Kansas",50
+"G20017900","2019-2023","KS",,,"Kansas","20",,,"Devon CDP","17900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017900",,,"2017900","Devon CDP, Kansas",61,"Devon CDP, Kansas",53
+"G20017925","2019-2023","KS",,,"Kansas","20",,,"Dexter city","17925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2017925",,,"2017925","Dexter city, Kansas",508,"Dexter city, Kansas",323
+"G20018050","2019-2023","KS",,,"Kansas","20",,,"Dighton city","18050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2018050",,,"2018050","Dighton city, Kansas",703,"Dighton city, Kansas",120
+"G20018250","2019-2023","KS",,,"Kansas","20",,,"Dodge City city","18250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2018250",,,"2018250","Dodge City city, Kansas",27652,"Dodge City city, Kansas",23
+"G20018325","2019-2023","KS",,,"Kansas","20",,,"Dorrance city","18325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2018325",,,"2018325","Dorrance city, Kansas",193,"Dorrance city, Kansas",84
+"G20018400","2019-2023","KS",,,"Kansas","20",,,"Douglass city","18400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2018400",,,"2018400","Douglass city, Kansas",1523,"Douglass city, Kansas",243
+"G20018500","2019-2023","KS",,,"Kansas","20",,,"Downs city","18500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2018500",,,"2018500","Downs city, Kansas",663,"Downs city, Kansas",105
+"G20018600","2019-2023","KS",,,"Kansas","20",,,"Dresden city","18600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2018600",,,"2018600","Dresden city, Kansas",49,"Dresden city, Kansas",38
+"G20018950","2019-2023","KS",,,"Kansas","20",,,"Dunlap city","18950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2018950",,,"2018950","Dunlap city, Kansas",22,"Dunlap city, Kansas",29
+"G20019050","2019-2023","KS",,,"Kansas","20",,,"Durham city","19050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019050",,,"2019050","Durham city, Kansas",55,"Durham city, Kansas",22
+"G20019125","2019-2023","KS",,,"Kansas","20",,,"Dwight city","19125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019125",,,"2019125","Dwight city, Kansas",194,"Dwight city, Kansas",52
+"G20019275","2019-2023","KS",,,"Kansas","20",,,"Earlton city","19275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019275",,,"2019275","Earlton city, Kansas",116,"Earlton city, Kansas",73
+"G20019300","2019-2023","KS",,,"Kansas","20",,,"Eastborough city","19300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019300",,,"2019300","Eastborough city, Kansas",767,"Eastborough city, Kansas",188
+"G20019600","2019-2023","KS",,,"Kansas","20",,,"Easton city","19600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019600",,,"2019600","Easton city, Kansas",307,"Easton city, Kansas",99
+"G20019700","2019-2023","KS",,,"Kansas","20",,,"Eastshore CDP","19700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019700",,,"2019700","Eastshore CDP, Kansas",17,"Eastshore CDP, Kansas",18
+"G20019825","2019-2023","KS",,,"Kansas","20",,,"Edgerton city","19825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019825",,,"2019825","Edgerton city, Kansas",1787,"Edgerton city, Kansas",342
+"G20019875","2019-2023","KS",,,"Kansas","20",,,"Edmond city","19875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019875",,,"2019875","Edmond city, Kansas",33,"Edmond city, Kansas",35
+"G20019900","2019-2023","KS",,,"Kansas","20",,,"Edna city","19900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019900",,,"2019900","Edna city, Kansas",357,"Edna city, Kansas",89
+"G20019925","2019-2023","KS",,,"Kansas","20",,,"Edson CDP","19925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2019925",,,"2019925","Edson CDP, Kansas",4,"Edson CDP, Kansas",9
+"G20020000","2019-2023","KS",,,"Kansas","20",,,"Edwardsville city","20000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020000",,,"2020000","Edwardsville city, Kansas",4721,"Edwardsville city, Kansas",48
+"G20020025","2019-2023","KS",,,"Kansas","20",,,"Effingham city","20025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020025",,,"2020025","Effingham city, Kansas",644,"Effingham city, Kansas",198
+"G20020050","2019-2023","KS",,,"Kansas","20",,,"Elbing city","20050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020050",,,"2020050","Elbing city, Kansas",287,"Elbing city, Kansas",92
+"G20020075","2019-2023","KS",,,"Kansas","20",,,"El Dorado city","20075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020075",,,"2020075","El Dorado city, Kansas",12882,"El Dorado city, Kansas",29
+"G20020125","2019-2023","KS",,,"Kansas","20",,,"Elgin city","20125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020125",,,"2020125","Elgin city, Kansas",55,"Elgin city, Kansas",32
+"G20020250","2019-2023","KS",,,"Kansas","20",,,"Elk City city","20250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020250",,,"2020250","Elk City city, Kansas",281,"Elk City city, Kansas",118
+"G20020300","2019-2023","KS",,,"Kansas","20",,,"Elk Falls city","20300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020300",,,"2020300","Elk Falls city, Kansas",135,"Elk Falls city, Kansas",50
+"G20020350","2019-2023","KS",,,"Kansas","20",,,"Elkhart city","20350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020350",,,"2020350","Elkhart city, Kansas",1732,"Elkhart city, Kansas",175
+"G20020425","2019-2023","KS",,,"Kansas","20",,,"Ellinwood city","20425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020425",,,"2020425","Ellinwood city, Kansas",2117,"Ellinwood city, Kansas",303
+"G20020450","2019-2023","KS",,,"Kansas","20",,,"Ellis city","20450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020450",,,"2020450","Ellis city, Kansas",2145,"Ellis city, Kansas",317
+"G20020500","2019-2023","KS",,,"Kansas","20",,,"Ellsworth city","20500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020500",,,"2020500","Ellsworth city, Kansas",3098,"Ellsworth city, Kansas",16
+"G20020675","2019-2023","KS",,,"Kansas","20",,,"Elmdale city","20675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020675",,,"2020675","Elmdale city, Kansas",39,"Elmdale city, Kansas",37
+"G20020875","2019-2023","KS",,,"Kansas","20",,,"Elsmore city","20875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020875",,,"2020875","Elsmore city, Kansas",49,"Elsmore city, Kansas",35
+"G20020950","2019-2023","KS",,,"Kansas","20",,,"Elwood city","20950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020950",,,"2020950","Elwood city, Kansas",1169,"Elwood city, Kansas",239
+"G20020975","2019-2023","KS",,,"Kansas","20",,,"Elyria CDP","20975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2020975",,,"2020975","Elyria CDP, Kansas",291,"Elyria CDP, Kansas",240
+"G20021100","2019-2023","KS",,,"Kansas","20",,,"Emmett city","21100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021100",,,"2021100","Emmett city, Kansas",186,"Emmett city, Kansas",76
+"G20021275","2019-2023","KS",,,"Kansas","20",,,"Emporia city","21275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021275",,,"2021275","Emporia city, Kansas",24098,"Emporia city, Kansas",32
+"G20021350","2019-2023","KS",,,"Kansas","20",,,"Englewood city","21350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021350",,,"2021350","Englewood city, Kansas",84,"Englewood city, Kansas",38
+"G20021400","2019-2023","KS",,,"Kansas","20",,,"Ensign city","21400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021400",,,"2021400","Ensign city, Kansas",113,"Ensign city, Kansas",43
+"G20021425","2019-2023","KS",,,"Kansas","20",,,"Enterprise city","21425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021425",,,"2021425","Enterprise city, Kansas",831,"Enterprise city, Kansas",147
+"G20021500","2019-2023","KS",,,"Kansas","20",,,"Erie city","21500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021500",,,"2021500","Erie city, Kansas",1318,"Erie city, Kansas",237
+"G20021600","2019-2023","KS",,,"Kansas","20",,,"Esbon city","21600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021600",,,"2021600","Esbon city, Kansas",59,"Esbon city, Kansas",29
+"G20021650","2019-2023","KS",,,"Kansas","20",,,"Eskridge city","21650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021650",,,"2021650","Eskridge city, Kansas",388,"Eskridge city, Kansas",112
+"G20021675","2019-2023","KS",,,"Kansas","20",,,"Eudora city","21675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021675",,,"2021675","Eudora city, Kansas",6036,"Eudora city, Kansas",521
+"G20021800","2019-2023","KS",,,"Kansas","20",,,"Eureka city","21800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2021800",,,"2021800","Eureka city, Kansas",2271,"Eureka city, Kansas",235
+"G20022025","2019-2023","KS",,,"Kansas","20",,,"Everest city","22025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2022025",,,"2022025","Everest city, Kansas",387,"Everest city, Kansas",88
+"G20022425","2019-2023","KS",,,"Kansas","20",,,"Fairview city","22425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2022425",,,"2022425","Fairview city, Kansas",287,"Fairview city, Kansas",94
+"G20022700","2019-2023","KS",,,"Kansas","20",,,"Fairway city","22700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2022700",,,"2022700","Fairway city, Kansas",4177,"Fairway city, Kansas",40
+"G20022775","2019-2023","KS",,,"Kansas","20",,,"Fall River city","22775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2022775",,,"2022775","Fall River city, Kansas",148,"Fall River city, Kansas",85
+"G20022900","2019-2023","KS",,,"Kansas","20",,,"Falun CDP","22900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2022900",,,"2022900","Falun CDP, Kansas",151,"Falun CDP, Kansas",96
+"G20023050","2019-2023","KS",,,"Kansas","20",,,"Farlington CDP","23050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2023050",,,"2023050","Farlington CDP, Kansas",68,"Farlington CDP, Kansas",61
+"G20023600","2019-2023","KS",,,"Kansas","20",,,"Florence city","23600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2023600",,,"2023600","Florence city, Kansas",537,"Florence city, Kansas",123
+"G20023650","2019-2023","KS",,,"Kansas","20",,,"Fontana city","23650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2023650",,,"2023650","Fontana city, Kansas",447,"Fontana city, Kansas",218
+"G20023725","2019-2023","KS",,,"Kansas","20",,,"Ford city","23725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2023725",,,"2023725","Ford city, Kansas",195,"Ford city, Kansas",82
+"G20023825","2019-2023","KS",,,"Kansas","20",,,"Formoso city","23825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2023825",,,"2023825","Formoso city, Kansas",81,"Formoso city, Kansas",34
+"G20023890","2019-2023","KS",,,"Kansas","20",,,"Fort Dodge CDP","23890",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2023890",,,"2023890","Fort Dodge CDP, Kansas",145,"Fort Dodge CDP, Kansas",54
+"G20023975","2019-2023","KS",,,"Kansas","20",,,"Fort Riley CDP","23975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2023975",,,"2023975","Fort Riley CDP, Kansas",8595,"Fort Riley CDP, Kansas",584
+"G20024000","2019-2023","KS",,,"Kansas","20",,,"Fort Scott city","24000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2024000",,,"2024000","Fort Scott city, Kansas",7551,"Fort Scott city, Kansas",43
+"G20024175","2019-2023","KS",,,"Kansas","20",,,"Fowler city","24175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2024175",,,"2024175","Fowler city, Kansas",507,"Fowler city, Kansas",189
+"G20024275","2019-2023","KS",,,"Kansas","20",,,"Frankfort city","24275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2024275",,,"2024275","Frankfort city, Kansas",731,"Frankfort city, Kansas",118
+"G20024325","2019-2023","KS",,,"Kansas","20",,,"Franklin CDP","24325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2024325",,,"2024325","Franklin CDP, Kansas",763,"Franklin CDP, Kansas",266
+"G20024550","2019-2023","KS",,,"Kansas","20",,,"Frederick city","24550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2024550",,,"2024550","Frederick city, Kansas",39,"Frederick city, Kansas",36
+"G20024575","2019-2023","KS",,,"Kansas","20",,,"Fredonia city","24575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2024575",,,"2024575","Fredonia city, Kansas",2113,"Fredonia city, Kansas",295
+"G20024850","2019-2023","KS",,,"Kansas","20",,,"Frontenac city","24850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2024850",,,"2024850","Frontenac city, Kansas",3381,"Frontenac city, Kansas",26
+"G20024925","2019-2023","KS",,,"Kansas","20",,,"Fulton city","24925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2024925",,,"2024925","Fulton city, Kansas",121,"Fulton city, Kansas",58
+"G20024975","2019-2023","KS",,,"Kansas","20",,,"Furley CDP","24975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2024975",,,"2024975","Furley CDP, Kansas",48,"Furley CDP, Kansas",50
+"G20025050","2019-2023","KS",,,"Kansas","20",,,"Galatia city","25050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025050",,,"2025050","Galatia city, Kansas",23,"Galatia city, Kansas",14
+"G20025100","2019-2023","KS",,,"Kansas","20",,,"Galena city","25100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025100",,,"2025100","Galena city, Kansas",2752,"Galena city, Kansas",32
+"G20025150","2019-2023","KS",,,"Kansas","20",,,"Galesburg city","25150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025150",,,"2025150","Galesburg city, Kansas",184,"Galesburg city, Kansas",85
+"G20025200","2019-2023","KS",,,"Kansas","20",,,"Galva city","25200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025200",,,"2025200","Galva city, Kansas",997,"Galva city, Kansas",247
+"G20025325","2019-2023","KS",,,"Kansas","20",,,"Garden City city","25325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025325",,,"2025325","Garden City city, Kansas",27781,"Garden City city, Kansas",27
+"G20025375","2019-2023","KS",,,"Kansas","20",,,"Garden Plain city","25375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025375",,,"2025375","Garden Plain city, Kansas",1055,"Garden Plain city, Kansas",262
+"G20025425","2019-2023","KS",,,"Kansas","20",,,"Gardner city","25425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025425",,,"2025425","Gardner city, Kansas",24020,"Gardner city, Kansas",46
+"G20025750","2019-2023","KS",,,"Kansas","20",,,"Garfield city","25750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025750",,,"2025750","Garfield city, Kansas",109,"Garfield city, Kansas",62
+"G20025900","2019-2023","KS",,,"Kansas","20",,,"Garland CDP","25900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025900",,,"2025900","Garland CDP, Kansas",25,"Garland CDP, Kansas",21
+"G20025925","2019-2023","KS",,,"Kansas","20",,,"Garnett city","25925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025925",,,"2025925","Garnett city, Kansas",3200,"Garnett city, Kansas",51
+"G20025975","2019-2023","KS",,,"Kansas","20",,,"Gas city","25975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2025975",,,"2025975","Gas city, Kansas",581,"Gas city, Kansas",155
+"G20026000","2019-2023","KS",,,"Kansas","20",,,"Gaylord city","26000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026000",,,"2026000","Gaylord city, Kansas",85,"Gaylord city, Kansas",32
+"G20026050","2019-2023","KS",,,"Kansas","20",,,"Gem city","26050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026050",,,"2026050","Gem city, Kansas",125,"Gem city, Kansas",72
+"G20026075","2019-2023","KS",,,"Kansas","20",,,"Geneseo city","26075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026075",,,"2026075","Geneseo city, Kansas",224,"Geneseo city, Kansas",72
+"G20026200","2019-2023","KS",,,"Kansas","20",,,"Geuda Springs city","26200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026200",,,"2026200","Geuda Springs city, Kansas",190,"Geuda Springs city, Kansas",103
+"G20026300","2019-2023","KS",,,"Kansas","20",,,"Girard city","26300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026300",,,"2026300","Girard city, Kansas",2706,"Girard city, Kansas",281
+"G20026325","2019-2023","KS",,,"Kansas","20",,,"Glade city","26325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026325",,,"2026325","Glade city, Kansas",58,"Glade city, Kansas",25
+"G20026375","2019-2023","KS",,,"Kansas","20",,,"Glasco city","26375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026375",,,"2026375","Glasco city, Kansas",337,"Glasco city, Kansas",108
+"G20026500","2019-2023","KS",,,"Kansas","20",,,"Glen Elder city","26500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026500",,,"2026500","Glen Elder city, Kansas",520,"Glen Elder city, Kansas",163
+"G20026725","2019-2023","KS",,,"Kansas","20",,,"Goddard city","26725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026725",,,"2026725","Goddard city, Kansas",5361,"Goddard city, Kansas",557
+"G20026750","2019-2023","KS",,,"Kansas","20",,,"Goessel city","26750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026750",,,"2026750","Goessel city, Kansas",541,"Goessel city, Kansas",116
+"G20026775","2019-2023","KS",,,"Kansas","20",,,"Goff city","26775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026775",,,"2026775","Goff city, Kansas",90,"Goff city, Kansas",57
+"G20026875","2019-2023","KS",,,"Kansas","20",,,"Goodland city","26875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2026875",,,"2026875","Goodland city, Kansas",3878,"Goodland city, Kansas",297
+"G20027000","2019-2023","KS",,,"Kansas","20",,,"Gorham city","27000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2027000",,,"2027000","Gorham city, Kansas",355,"Gorham city, Kansas",107
+"G20027125","2019-2023","KS",,,"Kansas","20",,,"Gove City city","27125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2027125",,,"2027125","Gove City city, Kansas",66,"Gove City city, Kansas",33
+"G20027200","2019-2023","KS",,,"Kansas","20",,,"Grainfield city","27200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2027200",,,"2027200","Grainfield city, Kansas",243,"Grainfield city, Kansas",40
+"G20027425","2019-2023","KS",,,"Kansas","20",,,"Grandview Plaza city","27425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2027425",,,"2027425","Grandview Plaza city, Kansas",1801,"Grandview Plaza city, Kansas",335
+"G20028200","2019-2023","KS",,,"Kansas","20",,,"Grantville CDP","28200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028200",,,"2028200","Grantville CDP, Kansas",130,"Grantville CDP, Kansas",108
+"G20028300","2019-2023","KS",,,"Kansas","20",,,"Great Bend city","28300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028300",,,"2028300","Great Bend city, Kansas",14596,"Great Bend city, Kansas",37
+"G20028350","2019-2023","KS",,,"Kansas","20",,,"Greeley city","28350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028350",,,"2028350","Greeley city, Kansas",303,"Greeley city, Kansas",121
+"G20028412","2019-2023","KS",,,"Kansas","20",,,"Greeley County unified government (balance)","28412",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028412",,,"2028412","Greeley County unified government (balance), Kansas",420,"Greeley County unified government (balance), Kansas",100
+"G20028425","2019-2023","KS",,,"Kansas","20",,,"Green city","28425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028425",,,"2028425","Green city, Kansas",121,"Green city, Kansas",63
+"G20028625","2019-2023","KS",,,"Kansas","20",,,"Greenleaf city","28625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028625",,,"2028625","Greenleaf city, Kansas",315,"Greenleaf city, Kansas",69
+"G20028675","2019-2023","KS",,,"Kansas","20",,,"Greensburg city","28675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028675",,,"2028675","Greensburg city, Kansas",703,"Greensburg city, Kansas",97
+"G20028700","2019-2023","KS",,,"Kansas","20",,,"Greenwich CDP","28700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028700",,,"2028700","Greenwich CDP, Kansas",56,"Greenwich CDP, Kansas",34
+"G20028800","2019-2023","KS",,,"Kansas","20",,,"Grenola city","28800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028800",,,"2028800","Grenola city, Kansas",149,"Grenola city, Kansas",49
+"G20028850","2019-2023","KS",,,"Kansas","20",,,"Gridley city","28850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028850",,,"2028850","Gridley city, Kansas",375,"Gridley city, Kansas",92
+"G20028900","2019-2023","KS",,,"Kansas","20",,,"Grinnell city","28900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2028900",,,"2028900","Grinnell city, Kansas",376,"Grinnell city, Kansas",117
+"G20029250","2019-2023","KS",,,"Kansas","20",,,"Gypsum city","29250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2029250",,,"2029250","Gypsum city, Kansas",385,"Gypsum city, Kansas",106
+"G20029400","2019-2023","KS",,,"Kansas","20",,,"Haddam city","29400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2029400",,,"2029400","Haddam city, Kansas",103,"Haddam city, Kansas",71
+"G20029550","2019-2023","KS",,,"Kansas","20",,,"Hallowell CDP","29550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2029550",,,"2029550","Hallowell CDP, Kansas",53,"Hallowell CDP, Kansas",37
+"G20029600","2019-2023","KS",,,"Kansas","20",,,"Halstead city","29600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2029600",,,"2029600","Halstead city, Kansas",2435,"Halstead city, Kansas",315
+"G20029675","2019-2023","KS",,,"Kansas","20",,,"Hamilton city","29675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2029675",,,"2029675","Hamilton city, Kansas",205,"Hamilton city, Kansas",66
+"G20029700","2019-2023","KS",,,"Kansas","20",,,"Hamlin city","29700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2029700",,,"2029700","Hamlin city, Kansas",21,"Hamlin city, Kansas",19
+"G20029875","2019-2023","KS",,,"Kansas","20",,,"Hanover city","29875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2029875",,,"2029875","Hanover city, Kansas",831,"Hanover city, Kansas",145
+"G20029925","2019-2023","KS",,,"Kansas","20",,,"Hanston city","29925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2029925",,,"2029925","Hanston city, Kansas",260,"Hanston city, Kansas",79
+"G20030000","2019-2023","KS",,,"Kansas","20",,,"Hardtner city","30000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2030000",,,"2030000","Hardtner city, Kansas",240,"Hardtner city, Kansas",72
+"G20030175","2019-2023","KS",,,"Kansas","20",,,"Harper city","30175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2030175",,,"2030175","Harper city, Kansas",1191,"Harper city, Kansas",164
+"G20030250","2019-2023","KS",,,"Kansas","20",,,"Harris CDP","30250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2030250",,,"2030250","Harris CDP, Kansas",11,"Harris CDP, Kansas",16
+"G20030475","2019-2023","KS",,,"Kansas","20",,,"Hartford city","30475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2030475",,,"2030475","Hartford city, Kansas",442,"Hartford city, Kansas",116
+"G20030575","2019-2023","KS",,,"Kansas","20",,,"Harveyville city","30575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2030575",,,"2030575","Harveyville city, Kansas",167,"Harveyville city, Kansas",55
+"G20030700","2019-2023","KS",,,"Kansas","20",,,"Havana city","30700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2030700",,,"2030700","Havana city, Kansas",68,"Havana city, Kansas",38
+"G20030725","2019-2023","KS",,,"Kansas","20",,,"Haven city","30725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2030725",,,"2030725","Haven city, Kansas",1394,"Haven city, Kansas",334
+"G20030775","2019-2023","KS",,,"Kansas","20",,,"Havensville city","30775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2030775",,,"2030775","Havensville city, Kansas",184,"Havensville city, Kansas",114
+"G20030825","2019-2023","KS",,,"Kansas","20",,,"Haviland city","30825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2030825",,,"2030825","Haviland city, Kansas",615,"Haviland city, Kansas",69
+"G20031100","2019-2023","KS",,,"Kansas","20",,,"Hays city","31100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031100",,,"2031100","Hays city, Kansas",21078,"Hays city, Kansas",32
+"G20031125","2019-2023","KS",,,"Kansas","20",,,"Haysville city","31125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031125",,,"2031125","Haysville city, Kansas",11117,"Haysville city, Kansas",280
+"G20031150","2019-2023","KS",,,"Kansas","20",,,"Hazelton city","31150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031150",,,"2031150","Hazelton city, Kansas",89,"Hazelton city, Kansas",46
+"G20031200","2019-2023","KS",,,"Kansas","20",,,"Healy CDP","31200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031200",,,"2031200","Healy CDP, Kansas",419,"Healy CDP, Kansas",148
+"G20031375","2019-2023","KS",,,"Kansas","20",,,"Hepler city","31375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031375",,,"2031375","Hepler city, Kansas",118,"Hepler city, Kansas",79
+"G20031400","2019-2023","KS",,,"Kansas","20",,,"Herington city","31400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031400",,,"2031400","Herington city, Kansas",2105,"Herington city, Kansas",225
+"G20031425","2019-2023","KS",,,"Kansas","20",,,"Herkimer CDP","31425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031425",,,"2031425","Herkimer CDP, Kansas",0,"Herkimer CDP, Kansas",11
+"G20031475","2019-2023","KS",,,"Kansas","20",,,"Herndon city","31475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031475",,,"2031475","Herndon city, Kansas",105,"Herndon city, Kansas",40
+"G20031600","2019-2023","KS",,,"Kansas","20",,,"Hesston city","31600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031600",,,"2031600","Hesston city, Kansas",3747,"Hesston city, Kansas",179
+"G20031675","2019-2023","KS",,,"Kansas","20",,,"Hiawatha city","31675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031675",,,"2031675","Hiawatha city, Kansas",3223,"Hiawatha city, Kansas",64
+"G20031850","2019-2023","KS",,,"Kansas","20",,,"Highland city","31850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2031850",,,"2031850","Highland city, Kansas",1047,"Highland city, Kansas",124
+"G20032175","2019-2023","KS",,,"Kansas","20",,,"Hill City city","32175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2032175",,,"2032175","Hill City city, Kansas",1536,"Hill City city, Kansas",122
+"G20032275","2019-2023","KS",,,"Kansas","20",,,"Hillsboro city","32275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2032275",,,"2032275","Hillsboro city, Kansas",2716,"Hillsboro city, Kansas",32
+"G20032300","2019-2023","KS",,,"Kansas","20",,,"Hillsdale CDP","32300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2032300",,,"2032300","Hillsdale CDP, Kansas",115,"Hillsdale CDP, Kansas",87
+"G20032550","2019-2023","KS",,,"Kansas","20",,,"Hoisington city","32550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2032550",,,"2032550","Hoisington city, Kansas",2660,"Hoisington city, Kansas",18
+"G20032575","2019-2023","KS",,,"Kansas","20",,,"Holcomb city","32575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2032575",,,"2032575","Holcomb city, Kansas",2582,"Holcomb city, Kansas",326
+"G20032650","2019-2023","KS",,,"Kansas","20",,,"Hollenberg city","32650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2032650",,,"2032650","Hollenberg city, Kansas",15,"Hollenberg city, Kansas",13
+"G20032825","2019-2023","KS",,,"Kansas","20",,,"Holton city","32825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2032825",,,"2032825","Holton city, Kansas",3384,"Holton city, Kansas",18
+"G20032850","2019-2023","KS",,,"Kansas","20",,,"Holyrood city","32850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2032850",,,"2032850","Holyrood city, Kansas",381,"Holyrood city, Kansas",98
+"G20032875","2019-2023","KS",,,"Kansas","20",,,"Home CDP","32875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2032875",,,"2032875","Home CDP, Kansas",76,"Home CDP, Kansas",44
+"G20033075","2019-2023","KS",,,"Kansas","20",,,"Hope city","33075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033075",,,"2033075","Hope city, Kansas",463,"Hope city, Kansas",159
+"G20033150","2019-2023","KS",,,"Kansas","20",,,"Horace city","33150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033150",,,"2033150","Horace city, Kansas",77,"Horace city, Kansas",41
+"G20033200","2019-2023","KS",,,"Kansas","20",,,"Horton city","33200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033200",,,"2033200","Horton city, Kansas",1708,"Horton city, Kansas",174
+"G20033250","2019-2023","KS",,,"Kansas","20",,,"Howard city","33250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033250",,,"2033250","Howard city, Kansas",553,"Howard city, Kansas",92
+"G20033350","2019-2023","KS",,,"Kansas","20",,,"Hoxie city","33350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033350",,,"2033350","Hoxie city, Kansas",1191,"Hoxie city, Kansas",139
+"G20033375","2019-2023","KS",,,"Kansas","20",,,"Hoyt city","33375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033375",,,"2033375","Hoyt city, Kansas",759,"Hoyt city, Kansas",196
+"G20033400","2019-2023","KS",,,"Kansas","20",,,"Hudson city","33400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033400",,,"2033400","Hudson city, Kansas",88,"Hudson city, Kansas",37
+"G20033425","2019-2023","KS",,,"Kansas","20",,,"Hugoton city","33425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033425",,,"2033425","Hugoton city, Kansas",4065,"Hugoton city, Kansas",266
+"G20033450","2019-2023","KS",,,"Kansas","20",,,"Humboldt city","33450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033450",,,"2033450","Humboldt city, Kansas",1956,"Humboldt city, Kansas",305
+"G20033500","2019-2023","KS",,,"Kansas","20",,,"Hunnewell city","33500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033500",,,"2033500","Hunnewell city, Kansas",84,"Hunnewell city, Kansas",64
+"G20033525","2019-2023","KS",,,"Kansas","20",,,"Hunter city","33525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033525",,,"2033525","Hunter city, Kansas",65,"Hunter city, Kansas",44
+"G20033575","2019-2023","KS",,,"Kansas","20",,,"Huron city","33575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033575",,,"2033575","Huron city, Kansas",33,"Huron city, Kansas",17
+"G20033625","2019-2023","KS",,,"Kansas","20",,,"Hutchinson city","33625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033625",,,"2033625","Hutchinson city, Kansas",39837,"Hutchinson city, Kansas",71
+"G20033700","2019-2023","KS",,,"Kansas","20",,,"Idana CDP","33700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033700",,,"2033700","Idana CDP, Kansas",30,"Idana CDP, Kansas",44
+"G20033875","2019-2023","KS",,,"Kansas","20",,,"Independence city","33875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2033875",,,"2033875","Independence city, Kansas",8469,"Independence city, Kansas",27
+"G20034225","2019-2023","KS",,,"Kansas","20",,,"Ingalls city","34225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2034225",,,"2034225","Ingalls city, Kansas",305,"Ingalls city, Kansas",97
+"G20034275","2019-2023","KS",,,"Kansas","20",,,"Inman city","34275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2034275",,,"2034275","Inman city, Kansas",1425,"Inman city, Kansas",257
+"G20034300","2019-2023","KS",,,"Kansas","20",,,"Iola city","34300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2034300",,,"2034300","Iola city, Kansas",5368,"Iola city, Kansas",18
+"G20034350","2019-2023","KS",,,"Kansas","20",,,"Ionia CDP","34350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2034350",,,"2034350","Ionia CDP, Kansas",0,"Ionia CDP, Kansas",11
+"G20034550","2019-2023","KS",,,"Kansas","20",,,"Isabel city","34550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2034550",,,"2034550","Isabel city, Kansas",103,"Isabel city, Kansas",56
+"G20034625","2019-2023","KS",,,"Kansas","20",,,"Iuka city","34625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2034625",,,"2034625","Iuka city, Kansas",226,"Iuka city, Kansas",82
+"G20034975","2019-2023","KS",,,"Kansas","20",,,"Jamestown city","34975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2034975",,,"2034975","Jamestown city, Kansas",207,"Jamestown city, Kansas",54
+"G20035375","2019-2023","KS",,,"Kansas","20",,,"Jennings city","35375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2035375",,,"2035375","Jennings city, Kansas",89,"Jennings city, Kansas",43
+"G20035450","2019-2023","KS",,,"Kansas","20",,,"Jetmore city","35450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2035450",,,"2035450","Jetmore city, Kansas",678,"Jetmore city, Kansas",110
+"G20035475","2019-2023","KS",,,"Kansas","20",,,"Jewell city","35475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2035475",,,"2035475","Jewell city, Kansas",409,"Jewell city, Kansas",108
+"G20035600","2019-2023","KS",,,"Kansas","20",,,"Johnson City city","35600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2035600",,,"2035600","Johnson City city, Kansas",1244,"Johnson City city, Kansas",282
+"G20035750","2019-2023","KS",,,"Kansas","20",,,"Junction City city","35750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2035750",,,"2035750","Junction City city, Kansas",22431,"Junction City city, Kansas",34
+"G20035950","2019-2023","KS",,,"Kansas","20",,,"Kanopolis city","35950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2035950",,,"2035950","Kanopolis city, Kansas",567,"Kanopolis city, Kansas",114
+"G20035975","2019-2023","KS",,,"Kansas","20",,,"Kanorado city","35975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2035975",,,"2035975","Kanorado city, Kansas",232,"Kanorado city, Kansas",116
+"G20036000","2019-2023","KS",,,"Kansas","20",,,"Kansas City city","36000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036000",,,"2036000","Kansas City city, Kansas",154776,"Kansas City city, Kansas",26
+"G20036200","2019-2023","KS",,,"Kansas","20",,,"Keats CDP","36200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036200",,,"2036200","Keats CDP, Kansas",129,"Keats CDP, Kansas",144
+"G20036225","2019-2023","KS",,,"Kansas","20",,,"Kechi city","36225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036225",,,"2036225","Kechi city, Kansas",2935,"Kechi city, Kansas",448
+"G20036375","2019-2023","KS",,,"Kansas","20",,,"Kelly CDP","36375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036375",,,"2036375","Kelly CDP, Kansas",1,"Kelly CDP, Kansas",3
+"G20036550","2019-2023","KS",,,"Kansas","20",,,"Kensington city","36550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036550",,,"2036550","Kensington city, Kansas",572,"Kensington city, Kansas",135
+"G20036735","2019-2023","KS",,,"Kansas","20",,,"Kickapoo Site 1 CDP","36735",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036735",,,"2036735","Kickapoo Site 1 CDP, Kansas",75,"Kickapoo Site 1 CDP, Kansas",37
+"G20036736","2019-2023","KS",,,"Kansas","20",,,"Kickapoo Site 2 CDP","36736",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036736",,,"2036736","Kickapoo Site 2 CDP, Kansas",19,"Kickapoo Site 2 CDP, Kansas",12
+"G20036739","2019-2023","KS",,,"Kansas","20",,,"Kickapoo Site 5 CDP","36739",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036739",,,"2036739","Kickapoo Site 5 CDP, Kansas",106,"Kickapoo Site 5 CDP, Kansas",37
+"G20036740","2019-2023","KS",,,"Kansas","20",,,"Kickapoo Site 6 CDP","36740",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036740",,,"2036740","Kickapoo Site 6 CDP, Kansas",0,"Kickapoo Site 6 CDP, Kansas",11
+"G20036741","2019-2023","KS",,,"Kansas","20",,,"Kickapoo Site 7 CDP","36741",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036741",,,"2036741","Kickapoo Site 7 CDP, Kansas",50,"Kickapoo Site 7 CDP, Kansas",25
+"G20036744","2019-2023","KS",,,"Kansas","20",,,"Kickapoo Tribal Center CDP","36744",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036744",,,"2036744","Kickapoo Tribal Center CDP, Kansas",136,"Kickapoo Tribal Center CDP, Kansas",52
+"G20036875","2019-2023","KS",,,"Kansas","20",,,"Kincaid city","36875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036875",,,"2036875","Kincaid city, Kansas",178,"Kincaid city, Kansas",124
+"G20036950","2019-2023","KS",,,"Kansas","20",,,"Kingman city","36950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2036950",,,"2036950","Kingman city, Kansas",3003,"Kingman city, Kansas",20
+"G20037075","2019-2023","KS",,,"Kansas","20",,,"Kinsley city","37075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037075",,,"2037075","Kinsley city, Kansas",1342,"Kinsley city, Kansas",96
+"G20037125","2019-2023","KS",,,"Kansas","20",,,"Kiowa city","37125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037125",,,"2037125","Kiowa city, Kansas",780,"Kiowa city, Kansas",114
+"G20037200","2019-2023","KS",,,"Kansas","20",,,"Kipp CDP","37200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037200",,,"2037200","Kipp CDP, Kansas",81,"Kipp CDP, Kansas",106
+"G20037275","2019-2023","KS",,,"Kansas","20",,,"Kirwin city","37275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037275",,,"2037275","Kirwin city, Kansas",84,"Kirwin city, Kansas",37
+"G20037325","2019-2023","KS",,,"Kansas","20",,,"Kismet city","37325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037325",,,"2037325","Kismet city, Kansas",476,"Kismet city, Kansas",231
+"G20037375","2019-2023","KS",,,"Kansas","20",,,"Labette city","37375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037375",,,"2037375","Labette city, Kansas",23,"Labette city, Kansas",13
+"G20037500","2019-2023","KS",,,"Kansas","20",,,"La Crosse city","37500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037500",,,"2037500","La Crosse city, Kansas",1081,"La Crosse city, Kansas",148
+"G20037575","2019-2023","KS",,,"Kansas","20",,,"La Cygne city","37575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037575",,,"2037575","La Cygne city, Kansas",1368,"La Cygne city, Kansas",161
+"G20037675","2019-2023","KS",,,"Kansas","20",,,"Lafontaine CDP","37675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037675",,,"2037675","Lafontaine CDP, Kansas",51,"Lafontaine CDP, Kansas",43
+"G20037725","2019-2023","KS",,,"Kansas","20",,,"La Harpe city","37725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037725",,,"2037725","La Harpe city, Kansas",424,"La Harpe city, Kansas",131
+"G20037875","2019-2023","KS",,,"Kansas","20",,,"Lake City CDP","37875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037875",,,"2037875","Lake City CDP, Kansas",0,"Lake City CDP, Kansas",11
+"G20037975","2019-2023","KS",,,"Kansas","20",,,"Lake Quivira city","37975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2037975",,,"2037975","Lake Quivira city, Kansas",942,"Lake Quivira city, Kansas",145
+"G20038175","2019-2023","KS",,,"Kansas","20",,,"Lakin city","38175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2038175",,,"2038175","Lakin city, Kansas",2069,"Lakin city, Kansas",310
+"G20038325","2019-2023","KS",,,"Kansas","20",,,"Lancaster city","38325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2038325",,,"2038325","Lancaster city, Kansas",356,"Lancaster city, Kansas",121
+"G20038400","2019-2023","KS",,,"Kansas","20",,,"Lane city","38400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2038400",,,"2038400","Lane city, Kansas",170,"Lane city, Kansas",50
+"G20038500","2019-2023","KS",,,"Kansas","20",,,"Langdon city","38500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2038500",,,"2038500","Langdon city, Kansas",32,"Langdon city, Kansas",22
+"G20038650","2019-2023","KS",,,"Kansas","20",,,"Lansing city","38650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2038650",,,"2038650","Lansing city, Kansas",11229,"Lansing city, Kansas",25
+"G20038700","2019-2023","KS",,,"Kansas","20",,,"Larned city","38700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2038700",,,"2038700","Larned city, Kansas",3328,"Larned city, Kansas",231
+"G20038775","2019-2023","KS",,,"Kansas","20",,,"Latham city","38775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2038775",,,"2038775","Latham city, Kansas",164,"Latham city, Kansas",120
+"G20038800","2019-2023","KS",,,"Kansas","20",,,"Latimer city","38800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2038800",,,"2038800","Latimer city, Kansas",66,"Latimer city, Kansas",70
+"G20038900","2019-2023","KS",,,"Kansas","20",,,"Lawrence city","38900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2038900",,,"2038900","Lawrence city, Kansas",95459,"Lawrence city, Kansas",30
+"G20039000","2019-2023","KS",,,"Kansas","20",,,"Leavenworth city","39000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039000",,,"2039000","Leavenworth city, Kansas",37176,"Leavenworth city, Kansas",32
+"G20039075","2019-2023","KS",,,"Kansas","20",,,"Leawood city","39075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039075",,,"2039075","Leawood city, Kansas",33844,"Leawood city, Kansas",44
+"G20039100","2019-2023","KS",,,"Kansas","20",,,"Lebanon city","39100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039100",,,"2039100","Lebanon city, Kansas",188,"Lebanon city, Kansas",61
+"G20039125","2019-2023","KS",,,"Kansas","20",,,"Lebo city","39125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039125",,,"2039125","Lebo city, Kansas",806,"Lebo city, Kansas",193
+"G20039150","2019-2023","KS",,,"Kansas","20",,,"Lecompton city","39150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039150",,,"2039150","Lecompton city, Kansas",762,"Lecompton city, Kansas",235
+"G20039225","2019-2023","KS",,,"Kansas","20",,,"Lehigh city","39225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039225",,,"2039225","Lehigh city, Kansas",189,"Lehigh city, Kansas",80
+"G20039350","2019-2023","KS",,,"Kansas","20",,,"Lenexa city","39350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039350",,,"2039350","Lenexa city, Kansas",57986,"Lenexa city, Kansas",77
+"G20039400","2019-2023","KS",,,"Kansas","20",,,"Lenora city","39400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039400",,,"2039400","Lenora city, Kansas",199,"Lenora city, Kansas",86
+"G20039450","2019-2023","KS",,,"Kansas","20",,,"Leon city","39450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039450",,,"2039450","Leon city, Kansas",519,"Leon city, Kansas",104
+"G20039475","2019-2023","KS",,,"Kansas","20",,,"Leona city","39475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039475",,,"2039475","Leona city, Kansas",49,"Leona city, Kansas",33
+"G20039500","2019-2023","KS",,,"Kansas","20",,,"Leonardville city","39500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039500",,,"2039500","Leonardville city, Kansas",600,"Leonardville city, Kansas",178
+"G20039550","2019-2023","KS",,,"Kansas","20",,,"Leoti city","39550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039550",,,"2039550","Leoti city, Kansas",1461,"Leoti city, Kansas",163
+"G20039650","2019-2023","KS",,,"Kansas","20",,,"LeRoy city","39650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039650",,,"2039650","LeRoy city, Kansas",461,"LeRoy city, Kansas",120
+"G20039700","2019-2023","KS",,,"Kansas","20",,,"Levant CDP","39700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039700",,,"2039700","Levant CDP, Kansas",57,"Levant CDP, Kansas",60
+"G20039725","2019-2023","KS",,,"Kansas","20",,,"Lewis city","39725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039725",,,"2039725","Lewis city, Kansas",477,"Lewis city, Kansas",99
+"G20039825","2019-2023","KS",,,"Kansas","20",,,"Liberal city","39825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2039825",,,"2039825","Liberal city, Kansas",19107,"Liberal city, Kansas",474
+"G20040250","2019-2023","KS",,,"Kansas","20",,,"Liberty city","40250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2040250",,,"2040250","Liberty city, Kansas",128,"Liberty city, Kansas",65
+"G20040400","2019-2023","KS",,,"Kansas","20",,,"Liebenthal city","40400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2040400",,,"2040400","Liebenthal city, Kansas",85,"Liebenthal city, Kansas",35
+"G20041300","2019-2023","KS",,,"Kansas","20",,,"Lincoln Center city","41300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2041300",,,"2041300","Lincoln Center city, Kansas",1015,"Lincoln Center city, Kansas",143
+"G20041325","2019-2023","KS",,,"Kansas","20",,,"Lincolnville city","41325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2041325",,,"2041325","Lincolnville city, Kansas",204,"Lincolnville city, Kansas",64
+"G20041375","2019-2023","KS",,,"Kansas","20",,,"Lindsborg city","41375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2041375",,,"2041375","Lindsborg city, Kansas",3773,"Lindsborg city, Kansas",30
+"G20041425","2019-2023","KS",,,"Kansas","20",,,"Linn city","41425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2041425",,,"2041425","Linn city, Kansas",478,"Linn city, Kansas",95
+"G20041465","2019-2023","KS",,,"Kansas","20",,,"Linn Valley city","41465",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2041465",,,"2041465","Linn Valley city, Kansas",944,"Linn Valley city, Kansas",170
+"G20041475","2019-2023","KS",,,"Kansas","20",,,"Linwood city","41475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2041475",,,"2041475","Linwood city, Kansas",317,"Linwood city, Kansas",117
+"G20041575","2019-2023","KS",,,"Kansas","20",,,"Little River city","41575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2041575",,,"2041575","Little River city, Kansas",427,"Little River city, Kansas",96
+"G20042100","2019-2023","KS",,,"Kansas","20",,,"Logan city","42100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2042100",,,"2042100","Logan city, Kansas",626,"Logan city, Kansas",168
+"G20042425","2019-2023","KS",,,"Kansas","20",,,"Lone Elm city","42425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2042425",,,"2042425","Lone Elm city, Kansas",34,"Lone Elm city, Kansas",38
+"G20042575","2019-2023","KS",,,"Kansas","20",,,"Longford city","42575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2042575",,,"2042575","Longford city, Kansas",44,"Longford city, Kansas",30
+"G20042600","2019-2023","KS",,,"Kansas","20",,,"Long Island city","42600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2042600",,,"2042600","Long Island city, Kansas",143,"Long Island city, Kansas",53
+"G20042650","2019-2023","KS",,,"Kansas","20",,,"Longton city","42650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2042650",,,"2042650","Longton city, Kansas",286,"Longton city, Kansas",71
+"G20042800","2019-2023","KS",,,"Kansas","20",,,"Lorraine city","42800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2042800",,,"2042800","Lorraine city, Kansas",152,"Lorraine city, Kansas",67
+"G20042825","2019-2023","KS",,,"Kansas","20",,,"Lost Springs city","42825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2042825",,,"2042825","Lost Springs city, Kansas",49,"Lost Springs city, Kansas",43
+"G20042875","2019-2023","KS",,,"Kansas","20",,,"Louisburg city","42875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2042875",,,"2042875","Louisburg city, Kansas",5034,"Louisburg city, Kansas",34
+"G20042925","2019-2023","KS",,,"Kansas","20",,,"Louisville city","42925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2042925",,,"2042925","Louisville city, Kansas",174,"Louisville city, Kansas",110
+"G20043050","2019-2023","KS",,,"Kansas","20",,,"Lowell CDP","43050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043050",,,"2043050","Lowell CDP, Kansas",304,"Lowell CDP, Kansas",149
+"G20043150","2019-2023","KS",,,"Kansas","20",,,"Lucas city","43150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043150",,,"2043150","Lucas city, Kansas",449,"Lucas city, Kansas",110
+"G20043175","2019-2023","KS",,,"Kansas","20",,,"Ludell CDP","43175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043175",,,"2043175","Ludell CDP, Kansas",14,"Ludell CDP, Kansas",15
+"G20043250","2019-2023","KS",,,"Kansas","20",,,"Luray city","43250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043250",,,"2043250","Luray city, Kansas",159,"Luray city, Kansas",77
+"G20043350","2019-2023","KS",,,"Kansas","20",,,"Lyndon city","43350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043350",,,"2043350","Lyndon city, Kansas",1184,"Lyndon city, Kansas",184
+"G20043525","2019-2023","KS",,,"Kansas","20",,,"Lyons city","43525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043525",,,"2043525","Lyons city, Kansas",3562,"Lyons city, Kansas",54
+"G20043675","2019-2023","KS",,,"Kansas","20",,,"McConnell AFB CDP","43675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043675",,,"2043675","McConnell AFB CDP, Kansas",1952,"McConnell AFB CDP, Kansas",303
+"G20043700","2019-2023","KS",,,"Kansas","20",,,"McCracken city","43700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043700",,,"2043700","McCracken city, Kansas",120,"McCracken city, Kansas",42
+"G20043725","2019-2023","KS",,,"Kansas","20",,,"McCune city","43725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043725",,,"2043725","McCune city, Kansas",268,"McCune city, Kansas",64
+"G20043750","2019-2023","KS",,,"Kansas","20",,,"McDonald city","43750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043750",,,"2043750","McDonald city, Kansas",190,"McDonald city, Kansas",75
+"G20043775","2019-2023","KS",,,"Kansas","20",,,"McFarland city","43775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043775",,,"2043775","McFarland city, Kansas",356,"McFarland city, Kansas",118
+"G20043850","2019-2023","KS",,,"Kansas","20",,,"Macksville city","43850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043850",,,"2043850","Macksville city, Kansas",585,"Macksville city, Kansas",133
+"G20043900","2019-2023","KS",,,"Kansas","20",,,"McLouth city","43900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043900",,,"2043900","McLouth city, Kansas",891,"McLouth city, Kansas",212
+"G20043950","2019-2023","KS",,,"Kansas","20",,,"McPherson city","43950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2043950",,,"2043950","McPherson city, Kansas",13956,"McPherson city, Kansas",35
+"G20044050","2019-2023","KS",,,"Kansas","20",,,"Madison city","44050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044050",,,"2044050","Madison city, Kansas",943,"Madison city, Kansas",169
+"G20044150","2019-2023","KS",,,"Kansas","20",,,"Mahaska city","44150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044150",,,"2044150","Mahaska city, Kansas",40,"Mahaska city, Kansas",22
+"G20044200","2019-2023","KS",,,"Kansas","20",,,"Maize city","44200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044200",,,"2044200","Maize city, Kansas",5990,"Maize city, Kansas",727
+"G20044225","2019-2023","KS",,,"Kansas","20",,,"Manchester city","44225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044225",,,"2044225","Manchester city, Kansas",77,"Manchester city, Kansas",48
+"G20044250","2019-2023","KS",,,"Kansas","20",,,"Manhattan city","44250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044250",,,"2044250","Manhattan city, Kansas",53951,"Manhattan city, Kansas",56
+"G20044300","2019-2023","KS",,,"Kansas","20",,,"Mankato city","44300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044300",,,"2044300","Mankato city, Kansas",801,"Mankato city, Kansas",111
+"G20044375","2019-2023","KS",,,"Kansas","20",,,"Manter city","44375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044375",,,"2044375","Manter city, Kansas",92,"Manter city, Kansas",74
+"G20044500","2019-2023","KS",,,"Kansas","20",,,"Maple Hill city","44500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044500",,,"2044500","Maple Hill city, Kansas",768,"Maple Hill city, Kansas",163
+"G20044550","2019-2023","KS",,,"Kansas","20",,,"Mapleton city","44550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044550",,,"2044550","Mapleton city, Kansas",269,"Mapleton city, Kansas",198
+"G20044600","2019-2023","KS",,,"Kansas","20",,,"Marienthal CDP","44600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044600",,,"2044600","Marienthal CDP, Kansas",15,"Marienthal CDP, Kansas",18
+"G20044750","2019-2023","KS",,,"Kansas","20",,,"Marion city","44750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044750",,,"2044750","Marion city, Kansas",2010,"Marion city, Kansas",230
+"G20044925","2019-2023","KS",,,"Kansas","20",,,"Marquette city","44925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2044925",,,"2044925","Marquette city, Kansas",637,"Marquette city, Kansas",137
+"G20045050","2019-2023","KS",,,"Kansas","20",,,"Marysville city","45050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045050",,,"2045050","Marysville city, Kansas",3423,"Marysville city, Kansas",18
+"G20045150","2019-2023","KS",,,"Kansas","20",,,"Matfield Green city","45150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045150",,,"2045150","Matfield Green city, Kansas",60,"Matfield Green city, Kansas",41
+"G20045250","2019-2023","KS",,,"Kansas","20",,,"Mayetta city","45250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045250",,,"2045250","Mayetta city, Kansas",347,"Mayetta city, Kansas",96
+"G20045275","2019-2023","KS",,,"Kansas","20",,,"Mayfield city","45275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045275",,,"2045275","Mayfield city, Kansas",74,"Mayfield city, Kansas",35
+"G20045325","2019-2023","KS",,,"Kansas","20",,,"Meade city","45325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045325",,,"2045325","Meade city, Kansas",1274,"Meade city, Kansas",159
+"G20045500","2019-2023","KS",,,"Kansas","20",,,"Medicine Lodge city","45500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045500",,,"2045500","Medicine Lodge city, Kansas",1518,"Medicine Lodge city, Kansas",225
+"G20045700","2019-2023","KS",,,"Kansas","20",,,"Melvern city","45700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045700",,,"2045700","Melvern city, Kansas",304,"Melvern city, Kansas",88
+"G20045750","2019-2023","KS",,,"Kansas","20",,,"Menlo city","45750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045750",,,"2045750","Menlo city, Kansas",33,"Menlo city, Kansas",25
+"G20045875","2019-2023","KS",,,"Kansas","20",,,"Mentor CDP","45875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045875",,,"2045875","Mentor CDP, Kansas",85,"Mentor CDP, Kansas",63
+"G20045950","2019-2023","KS",,,"Kansas","20",,,"Meriden city","45950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2045950",,,"2045950","Meriden city, Kansas",798,"Meriden city, Kansas",222
+"G20046000","2019-2023","KS",,,"Kansas","20",,,"Merriam city","46000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2046000",,,"2046000","Merriam city, Kansas",11036,"Merriam city, Kansas",28
+"G20046450","2019-2023","KS",,,"Kansas","20",,,"Milan city","46450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2046450",,,"2046450","Milan city, Kansas",82,"Milan city, Kansas",69
+"G20046500","2019-2023","KS",,,"Kansas","20",,,"Mildred CDP","46500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2046500",,,"2046500","Mildred CDP, Kansas",6,"Mildred CDP, Kansas",8
+"G20046525","2019-2023","KS",,,"Kansas","20",,,"Milford city","46525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2046525",,,"2046525","Milford city, Kansas",307,"Milford city, Kansas",102
+"G20046925","2019-2023","KS",,,"Kansas","20",,,"Milton CDP","46925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2046925",,,"2046925","Milton CDP, Kansas",166,"Milton CDP, Kansas",143
+"G20046950","2019-2023","KS",,,"Kansas","20",,,"Miltonvale city","46950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2046950",,,"2046950","Miltonvale city, Kansas",422,"Miltonvale city, Kansas",96
+"G20047075","2019-2023","KS",,,"Kansas","20",,,"Minneapolis city","47075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2047075",,,"2047075","Minneapolis city, Kansas",2101,"Minneapolis city, Kansas",256
+"G20047150","2019-2023","KS",,,"Kansas","20",,,"Minneola city","47150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2047150",,,"2047150","Minneola city, Kansas",703,"Minneola city, Kansas",137
+"G20047225","2019-2023","KS",,,"Kansas","20",,,"Mission city","47225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2047225",,,"2047225","Mission city, Kansas",9928,"Mission city, Kansas",49
+"G20047350","2019-2023","KS",,,"Kansas","20",,,"Mission Hills city","47350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2047350",,,"2047350","Mission Hills city, Kansas",3556,"Mission Hills city, Kansas",37
+"G20047425","2019-2023","KS",,,"Kansas","20",,,"Mission Woods city","47425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2047425",,,"2047425","Mission Woods city, Kansas",182,"Mission Woods city, Kansas",43
+"G20047600","2019-2023","KS",,,"Kansas","20",,,"Moline city","47600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2047600",,,"2047600","Moline city, Kansas",375,"Moline city, Kansas",76
+"G20047875","2019-2023","KS",,,"Kansas","20",,,"Montezuma city","47875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2047875",,,"2047875","Montezuma city, Kansas",878,"Montezuma city, Kansas",136
+"G20047975","2019-2023","KS",,,"Kansas","20",,,"Mont Ida CDP","47975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2047975",,,"2047975","Mont Ida CDP, Kansas",0,"Mont Ida CDP, Kansas",11
+"G20048025","2019-2023","KS",,,"Kansas","20",,,"Monument CDP","48025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048025",,,"2048025","Monument CDP, Kansas",81,"Monument CDP, Kansas",58
+"G20048125","2019-2023","KS",,,"Kansas","20",,,"Moran city","48125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048125",,,"2048125","Moran city, Kansas",455,"Moran city, Kansas",162
+"G20048225","2019-2023","KS",,,"Kansas","20",,,"Morganville city","48225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048225",,,"2048225","Morganville city, Kansas",170,"Morganville city, Kansas",64
+"G20048275","2019-2023","KS",,,"Kansas","20",,,"Morland city","48275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048275",,,"2048275","Morland city, Kansas",143,"Morland city, Kansas",52
+"G20048300","2019-2023","KS",,,"Kansas","20",,,"Morrill city","48300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048300",,,"2048300","Morrill city, Kansas",213,"Morrill city, Kansas",87
+"G20048450","2019-2023","KS",,,"Kansas","20",,,"Morrowville city","48450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048450",,,"2048450","Morrowville city, Kansas",147,"Morrowville city, Kansas",52
+"G20048600","2019-2023","KS",,,"Kansas","20",,,"Moscow city","48600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048600",,,"2048600","Moscow city, Kansas",197,"Moscow city, Kansas",105
+"G20048750","2019-2023","KS",,,"Kansas","20",,,"Mound City city","48750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048750",,,"2048750","Mound City city, Kansas",866,"Mound City city, Kansas",196
+"G20048800","2019-2023","KS",,,"Kansas","20",,,"Moundridge city","48800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048800",,,"2048800","Moundridge city, Kansas",1654,"Moundridge city, Kansas",240
+"G20048825","2019-2023","KS",,,"Kansas","20",,,"Mound Valley city","48825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048825",,,"2048825","Mound Valley city, Kansas",320,"Mound Valley city, Kansas",112
+"G20048900","2019-2023","KS",,,"Kansas","20",,,"Mount Hope city","48900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2048900",,,"2048900","Mount Hope city, Kansas",754,"Mount Hope city, Kansas",150
+"G20049025","2019-2023","KS",,,"Kansas","20",,,"Mulberry city","49025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049025",,,"2049025","Mulberry city, Kansas",419,"Mulberry city, Kansas",133
+"G20049075","2019-2023","KS",,,"Kansas","20",,,"Mullinville city","49075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049075",,,"2049075","Mullinville city, Kansas",230,"Mullinville city, Kansas",69
+"G20049100","2019-2023","KS",,,"Kansas","20",,,"Mulvane city","49100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049100",,,"2049100","Mulvane city, Kansas",5829,"Mulvane city, Kansas",532
+"G20049150","2019-2023","KS",,,"Kansas","20",,,"Munden city","49150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049150",,,"2049150","Munden city, Kansas",178,"Munden city, Kansas",76
+"G20049200","2019-2023","KS",,,"Kansas","20",,,"Munjor CDP","49200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049200",,,"2049200","Munjor CDP, Kansas",115,"Munjor CDP, Kansas",73
+"G20049250","2019-2023","KS",,,"Kansas","20",,,"Murdock CDP","49250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049250",,,"2049250","Murdock CDP, Kansas",39,"Murdock CDP, Kansas",26
+"G20049325","2019-2023","KS",,,"Kansas","20",,,"Muscotah city","49325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049325",,,"2049325","Muscotah city, Kansas",138,"Muscotah city, Kansas",48
+"G20049350","2019-2023","KS",,,"Kansas","20",,,"Narka city","49350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049350",,,"2049350","Narka city, Kansas",62,"Narka city, Kansas",36
+"G20049400","2019-2023","KS",,,"Kansas","20",,,"Nashville city","49400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049400",,,"2049400","Nashville city, Kansas",52,"Nashville city, Kansas",27
+"G20049425","2019-2023","KS",,,"Kansas","20",,,"Natoma city","49425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049425",,,"2049425","Natoma city, Kansas",371,"Natoma city, Kansas",86
+"G20049525","2019-2023","KS",,,"Kansas","20",,,"Navarre CDP","49525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049525",,,"2049525","Navarre CDP, Kansas",68,"Navarre CDP, Kansas",94
+"G20049550","2019-2023","KS",,,"Kansas","20",,,"Neal CDP","49550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049550",,,"2049550","Neal CDP, Kansas",39,"Neal CDP, Kansas",37
+"G20049650","2019-2023","KS",,,"Kansas","20",,,"Neodesha city","49650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049650",,,"2049650","Neodesha city, Kansas",2311,"Neodesha city, Kansas",276
+"G20049825","2019-2023","KS",,,"Kansas","20",,,"Neosho Falls city","49825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049825",,,"2049825","Neosho Falls city, Kansas",139,"Neosho Falls city, Kansas",62
+"G20049875","2019-2023","KS",,,"Kansas","20",,,"Neosho Rapids city","49875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049875",,,"2049875","Neosho Rapids city, Kansas",305,"Neosho Rapids city, Kansas",145
+"G20049925","2019-2023","KS",,,"Kansas","20",,,"Ness City city","49925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049925",,,"2049925","Ness City city, Kansas",1136,"Ness City city, Kansas",153
+"G20049950","2019-2023","KS",,,"Kansas","20",,,"Netawaka city","49950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2049950",,,"2049950","Netawaka city, Kansas",158,"Netawaka city, Kansas",59
+"G20050150","2019-2023","KS",,,"Kansas","20",,,"New Albany city","50150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050150",,,"2050150","New Albany city, Kansas",66,"New Albany city, Kansas",51
+"G20050250","2019-2023","KS",,,"Kansas","20",,,"Newbury CDP","50250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050250",,,"2050250","Newbury CDP, Kansas",44,"Newbury CDP, Kansas",42
+"G20050300","2019-2023","KS",,,"Kansas","20",,,"New Cambria city","50300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050300",,,"2050300","New Cambria city, Kansas",131,"New Cambria city, Kansas",79
+"G20050425","2019-2023","KS",,,"Kansas","20",,,"New Salem CDP","50425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050425",,,"2050425","New Salem CDP, Kansas",24,"New Salem CDP, Kansas",24
+"G20050450","2019-2023","KS",,,"Kansas","20",,,"New Strawn city","50450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050450",,,"2050450","New Strawn city, Kansas",408,"New Strawn city, Kansas",80
+"G20050475","2019-2023","KS",,,"Kansas","20",,,"Newton city","50475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050475",,,"2050475","Newton city, Kansas",18443,"Newton city, Kansas",35
+"G20050525","2019-2023","KS",,,"Kansas","20",,,"Nickerson city","50525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050525",,,"2050525","Nickerson city, Kansas",1088,"Nickerson city, Kansas",210
+"G20050550","2019-2023","KS",,,"Kansas","20",,,"Nicodemus CDP","50550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050550",,,"2050550","Nicodemus CDP, Kansas",0,"Nicodemus CDP, Kansas",11
+"G20050600","2019-2023","KS",,,"Kansas","20",,,"Niles CDP","50600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050600",,,"2050600","Niles CDP, Kansas",120,"Niles CDP, Kansas",85
+"G20050750","2019-2023","KS",,,"Kansas","20",,,"Niotaze city","50750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050750",,,"2050750","Niotaze city, Kansas",130,"Niotaze city, Kansas",63
+"G20050925","2019-2023","KS",,,"Kansas","20",,,"Norcatur city","50925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2050925",,,"2050925","Norcatur city, Kansas",202,"Norcatur city, Kansas",77
+"G20051225","2019-2023","KS",,,"Kansas","20",,,"North Newton city","51225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2051225",,,"2051225","North Newton city, Kansas",2150,"North Newton city, Kansas",246
+"G20051500","2019-2023","KS",,,"Kansas","20",,,"Norton city","51500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2051500",,,"2051500","Norton city, Kansas",2704,"Norton city, Kansas",36
+"G20051525","2019-2023","KS",,,"Kansas","20",,,"Nortonville city","51525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2051525",,,"2051525","Nortonville city, Kansas",797,"Nortonville city, Kansas",171
+"G20051550","2019-2023","KS",,,"Kansas","20",,,"Norway CDP","51550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2051550",,,"2051550","Norway CDP, Kansas",6,"Norway CDP, Kansas",11
+"G20051600","2019-2023","KS",,,"Kansas","20",,,"Norwich city","51600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2051600",,,"2051600","Norwich city, Kansas",483,"Norwich city, Kansas",103
+"G20051700","2019-2023","KS",,,"Kansas","20",,,"Oak Hill city","51700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2051700",,,"2051700","Oak Hill city, Kansas",14,"Oak Hill city, Kansas",11
+"G20051810","2019-2023","KS",,,"Kansas","20",,,"Oaklawn-Sunview CDP","51810",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2051810",,,"2051810","Oaklawn-Sunview CDP, Kansas",2952,"Oaklawn-Sunview CDP, Kansas",378
+"G20051825","2019-2023","KS",,,"Kansas","20",,,"Oakley city","51825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2051825",,,"2051825","Oakley city, Kansas",2049,"Oakley city, Kansas",123
+"G20052000","2019-2023","KS",,,"Kansas","20",,,"Oberlin city","52000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052000",,,"2052000","Oberlin city, Kansas",1763,"Oberlin city, Kansas",160
+"G20052175","2019-2023","KS",,,"Kansas","20",,,"Odin CDP","52175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052175",,,"2052175","Odin CDP, Kansas",62,"Odin CDP, Kansas",64
+"G20052200","2019-2023","KS",,,"Kansas","20",,,"Offerle city","52200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052200",,,"2052200","Offerle city, Kansas",186,"Offerle city, Kansas",56
+"G20052225","2019-2023","KS",,,"Kansas","20",,,"Ogallah CDP","52225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052225",,,"2052225","Ogallah CDP, Kansas",12,"Ogallah CDP, Kansas",17
+"G20052275","2019-2023","KS",,,"Kansas","20",,,"Ogden city","52275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052275",,,"2052275","Ogden city, Kansas",1628,"Ogden city, Kansas",342
+"G20052525","2019-2023","KS",,,"Kansas","20",,,"Oketo city","52525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052525",,,"2052525","Oketo city, Kansas",105,"Oketo city, Kansas",72
+"G20052575","2019-2023","KS",,,"Kansas","20",,,"Olathe city","52575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052575",,,"2052575","Olathe city, Kansas",143720,"Olathe city, Kansas",63
+"G20052700","2019-2023","KS",,,"Kansas","20",,,"Olivet city","52700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052700",,,"2052700","Olivet city, Kansas",111,"Olivet city, Kansas",51
+"G20052750","2019-2023","KS",,,"Kansas","20",,,"Olmitz city","52750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052750",,,"2052750","Olmitz city, Kansas",77,"Olmitz city, Kansas",38
+"G20052800","2019-2023","KS",,,"Kansas","20",,,"Olpe city","52800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052800",,,"2052800","Olpe city, Kansas",603,"Olpe city, Kansas",156
+"G20052825","2019-2023","KS",,,"Kansas","20",,,"Olsburg city","52825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052825",,,"2052825","Olsburg city, Kansas",274,"Olsburg city, Kansas",94
+"G20052875","2019-2023","KS",,,"Kansas","20",,,"Onaga city","52875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052875",,,"2052875","Onaga city, Kansas",680,"Onaga city, Kansas",147
+"G20052900","2019-2023","KS",,,"Kansas","20",,,"Oneida city","52900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052900",,,"2052900","Oneida city, Kansas",155,"Oneida city, Kansas",106
+"G20052925","2019-2023","KS",,,"Kansas","20",,,"Opolis CDP","52925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2052925",,,"2052925","Opolis CDP, Kansas",12,"Opolis CDP, Kansas",19
+"G20053200","2019-2023","KS",,,"Kansas","20",,,"Osage City city","53200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053200",,,"2053200","Osage City city, Kansas",2837,"Osage City city, Kansas",27
+"G20053225","2019-2023","KS",,,"Kansas","20",,,"Osawatomie city","53225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053225",,,"2053225","Osawatomie city, Kansas",4244,"Osawatomie city, Kansas",27
+"G20053325","2019-2023","KS",,,"Kansas","20",,,"Osborne city","53325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053325",,,"2053325","Osborne city, Kansas",1496,"Osborne city, Kansas",162
+"G20053375","2019-2023","KS",,,"Kansas","20",,,"Oskaloosa city","53375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053375",,,"2053375","Oskaloosa city, Kansas",1172,"Oskaloosa city, Kansas",287
+"G20053450","2019-2023","KS",,,"Kansas","20",,,"Oswego city","53450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053450",,,"2053450","Oswego city, Kansas",1770,"Oswego city, Kansas",226
+"G20053525","2019-2023","KS",,,"Kansas","20",,,"Otis city","53525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053525",,,"2053525","Otis city, Kansas",434,"Otis city, Kansas",155
+"G20053550","2019-2023","KS",,,"Kansas","20",,,"Ottawa city","53550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053550",,,"2053550","Ottawa city, Kansas",12632,"Ottawa city, Kansas",20
+"G20053725","2019-2023","KS",,,"Kansas","20",,,"Overbrook city","53725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053725",,,"2053725","Overbrook city, Kansas",1015,"Overbrook city, Kansas",198
+"G20053775","2019-2023","KS",,,"Kansas","20",,,"Overland Park city","53775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053775",,,"2053775","Overland Park city, Kansas",197199,"Overland Park city, Kansas",94
+"G20053850","2019-2023","KS",,,"Kansas","20",,,"Oxford city","53850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053850",,,"2053850","Oxford city, Kansas",892,"Oxford city, Kansas",149
+"G20053925","2019-2023","KS",,,"Kansas","20",,,"Ozawkie city","53925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2053925",,,"2053925","Ozawkie city, Kansas",599,"Ozawkie city, Kansas",146
+"G20054125","2019-2023","KS",,,"Kansas","20",,,"Palco city","54125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054125",,,"2054125","Palco city, Kansas",214,"Palco city, Kansas",77
+"G20054200","2019-2023","KS",,,"Kansas","20",,,"Palmer city","54200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054200",,,"2054200","Palmer city, Kansas",138,"Palmer city, Kansas",46
+"G20054250","2019-2023","KS",,,"Kansas","20",,,"Paola city","54250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054250",,,"2054250","Paola city, Kansas",5757,"Paola city, Kansas",17
+"G20054325","2019-2023","KS",,,"Kansas","20",,,"Paradise city","54325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054325",,,"2054325","Paradise city, Kansas",35,"Paradise city, Kansas",26
+"G20054400","2019-2023","KS",,,"Kansas","20",,,"Park city","54400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054400",,,"2054400","Park city, Kansas",79,"Park city, Kansas",30
+"G20054450","2019-2023","KS",,,"Kansas","20",,,"Park City city","54450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054450",,,"2054450","Park City city, Kansas",7726,"Park City city, Kansas",518
+"G20054500","2019-2023","KS",,,"Kansas","20",,,"Parker city","54500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054500",,,"2054500","Parker city, Kansas",336,"Parker city, Kansas",116
+"G20054560","2019-2023","KS",,,"Kansas","20",,,"Parkerfield city","54560",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054560",,,"2054560","Parkerfield city, Kansas",545,"Parkerfield city, Kansas",135
+"G20054575","2019-2023","KS",,,"Kansas","20",,,"Parkerville city","54575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054575",,,"2054575","Parkerville city, Kansas",76,"Parkerville city, Kansas",53
+"G20054675","2019-2023","KS",,,"Kansas","20",,,"Parsons city","54675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054675",,,"2054675","Parsons city, Kansas",9482,"Parsons city, Kansas",22
+"G20054700","2019-2023","KS",,,"Kansas","20",,,"Partridge city","54700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054700",,,"2054700","Partridge city, Kansas",181,"Partridge city, Kansas",68
+"G20054875","2019-2023","KS",,,"Kansas","20",,,"Pawnee Rock city","54875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054875",,,"2054875","Pawnee Rock city, Kansas",293,"Pawnee Rock city, Kansas",109
+"G20054950","2019-2023","KS",,,"Kansas","20",,,"Paxico city","54950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2054950",,,"2054950","Paxico city, Kansas",231,"Paxico city, Kansas",79
+"G20055100","2019-2023","KS",,,"Kansas","20",,,"Peabody city","55100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2055100",,,"2055100","Peabody city, Kansas",1152,"Peabody city, Kansas",193
+"G20055175","2019-2023","KS",,,"Kansas","20",,,"Peck CDP","55175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2055175",,,"2055175","Peck CDP, Kansas",98,"Peck CDP, Kansas",127
+"G20055225","2019-2023","KS",,,"Kansas","20",,,"Penalosa city","55225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2055225",,,"2055225","Penalosa city, Kansas",3,"Penalosa city, Kansas",6
+"G20055450","2019-2023","KS",,,"Kansas","20",,,"Perry city","55450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2055450",,,"2055450","Perry city, Kansas",1085,"Perry city, Kansas",267
+"G20055525","2019-2023","KS",,,"Kansas","20",,,"Peru city","55525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2055525",,,"2055525","Peru city, Kansas",165,"Peru city, Kansas",80
+"G20055675","2019-2023","KS",,,"Kansas","20",,,"Phillipsburg city","55675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2055675",,,"2055675","Phillipsburg city, Kansas",2132,"Phillipsburg city, Kansas",191
+"G20055750","2019-2023","KS",,,"Kansas","20",,,"Piedmont CDP","55750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2055750",,,"2055750","Piedmont CDP, Kansas",38,"Piedmont CDP, Kansas",27
+"G20055775","2019-2023","KS",,,"Kansas","20",,,"Pierceville CDP","55775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2055775",,,"2055775","Pierceville CDP, Kansas",0,"Pierceville CDP, Kansas",11
+"G20055875","2019-2023","KS",,,"Kansas","20",,,"Pilsen CDP","55875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2055875",,,"2055875","Pilsen CDP, Kansas",29,"Pilsen CDP, Kansas",30
+"G20056000","2019-2023","KS",,,"Kansas","20",,,"Piqua CDP","56000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2056000",,,"2056000","Piqua CDP, Kansas",72,"Piqua CDP, Kansas",52
+"G20056025","2019-2023","KS",,,"Kansas","20",,,"Pittsburg city","56025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2056025",,,"2056025","Pittsburg city, Kansas",20606,"Pittsburg city, Kansas",37
+"G20056100","2019-2023","KS",,,"Kansas","20",,,"Plains city","56100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2056100",,,"2056100","Plains city, Kansas",1308,"Plains city, Kansas",241
+"G20056150","2019-2023","KS",,,"Kansas","20",,,"Plainville city","56150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2056150",,,"2056150","Plainville city, Kansas",1766,"Plainville city, Kansas",164
+"G20056450","2019-2023","KS",,,"Kansas","20",,,"Pleasanton city","56450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2056450",,,"2056450","Pleasanton city, Kansas",1434,"Pleasanton city, Kansas",284
+"G20056725","2019-2023","KS",,,"Kansas","20",,,"Plevna city","56725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2056725",,,"2056725","Plevna city, Kansas",116,"Plevna city, Kansas",46
+"G20057000","2019-2023","KS",,,"Kansas","20",,,"Pomona city","57000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057000",,,"2057000","Pomona city, Kansas",1210,"Pomona city, Kansas",300
+"G20057100","2019-2023","KS",,,"Kansas","20",,,"Portis city","57100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057100",,,"2057100","Portis city, Kansas",94,"Portis city, Kansas",44
+"G20057300","2019-2023","KS",,,"Kansas","20",,,"Potwin city","57300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057300",,,"2057300","Potwin city, Kansas",562,"Potwin city, Kansas",177
+"G20057350","2019-2023","KS",,,"Kansas","20",,,"Powhattan city","57350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057350",,,"2057350","Powhattan city, Kansas",89,"Powhattan city, Kansas",42
+"G20057525","2019-2023","KS",,,"Kansas","20",,,"Prairie View city","57525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057525",,,"2057525","Prairie View city, Kansas",156,"Prairie View city, Kansas",85
+"G20057575","2019-2023","KS",,,"Kansas","20",,,"Prairie Village city","57575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057575",,,"2057575","Prairie Village city, Kansas",22937,"Prairie Village city, Kansas",39
+"G20057625","2019-2023","KS",,,"Kansas","20",,,"Pratt city","57625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057625",,,"2057625","Pratt city, Kansas",6559,"Pratt city, Kansas",43
+"G20057650","2019-2023","KS",,,"Kansas","20",,,"Prescott city","57650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057650",,,"2057650","Prescott city, Kansas",275,"Prescott city, Kansas",94
+"G20057675","2019-2023","KS",,,"Kansas","20",,,"Preston city","57675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057675",,,"2057675","Preston city, Kansas",127,"Preston city, Kansas",60
+"G20057700","2019-2023","KS",,,"Kansas","20",,,"Pretty Prairie city","57700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057700",,,"2057700","Pretty Prairie city, Kansas",553,"Pretty Prairie city, Kansas",122
+"G20057725","2019-2023","KS",,,"Kansas","20",,,"Princeton city","57725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057725",,,"2057725","Princeton city, Kansas",208,"Princeton city, Kansas",80
+"G20057850","2019-2023","KS",,,"Kansas","20",,,"Protection city","57850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2057850",,,"2057850","Protection city, Kansas",504,"Protection city, Kansas",111
+"G20058100","2019-2023","KS",,,"Kansas","20",,,"Quenemo city","58100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058100",,,"2058100","Quenemo city, Kansas",375,"Quenemo city, Kansas",115
+"G20058250","2019-2023","KS",,,"Kansas","20",,,"Quinter city","58250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058250",,,"2058250","Quinter city, Kansas",951,"Quinter city, Kansas",104
+"G20058300","2019-2023","KS",,,"Kansas","20",,,"Radium city","58300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058300",,,"2058300","Radium city, Kansas",13,"Radium city, Kansas",11
+"G20058325","2019-2023","KS",,,"Kansas","20",,,"Radley CDP","58325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058325",,,"2058325","Radley CDP, Kansas",123,"Radley CDP, Kansas",115
+"G20058375","2019-2023","KS",,,"Kansas","20",,,"Ramona city","58375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058375",,,"2058375","Ramona city, Kansas",77,"Ramona city, Kansas",32
+"G20058450","2019-2023","KS",,,"Kansas","20",,,"Randall city","58450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058450",,,"2058450","Randall city, Kansas",208,"Randall city, Kansas",81
+"G20058475","2019-2023","KS",,,"Kansas","20",,,"Randolph city","58475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058475",,,"2058475","Randolph city, Kansas",182,"Randolph city, Kansas",78
+"G20058500","2019-2023","KS",,,"Kansas","20",,,"Ransom city","58500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058500",,,"2058500","Ransom city, Kansas",261,"Ransom city, Kansas",67
+"G20058525","2019-2023","KS",,,"Kansas","20",,,"Rantoul city","58525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058525",,,"2058525","Rantoul city, Kansas",114,"Rantoul city, Kansas",38
+"G20058550","2019-2023","KS",,,"Kansas","20",,,"Raymond city","58550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058550",,,"2058550","Raymond city, Kansas",126,"Raymond city, Kansas",54
+"G20058600","2019-2023","KS",,,"Kansas","20",,,"Reading city","58600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058600",,,"2058600","Reading city, Kansas",195,"Reading city, Kansas",71
+"G20058725","2019-2023","KS",,,"Kansas","20",,,"Redfield city","58725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2058725",,,"2058725","Redfield city, Kansas",97,"Redfield city, Kansas",60
+"G20059000","2019-2023","KS",,,"Kansas","20",,,"Republic city","59000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2059000",,,"2059000","Republic city, Kansas",144,"Republic city, Kansas",58
+"G20059050","2019-2023","KS",,,"Kansas","20",,,"Reserve city","59050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2059050",,,"2059050","Reserve city, Kansas",85,"Reserve city, Kansas",57
+"G20059125","2019-2023","KS",,,"Kansas","20",,,"Rexford city","59125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2059125",,,"2059125","Rexford city, Kansas",150,"Rexford city, Kansas",70
+"G20059200","2019-2023","KS",,,"Kansas","20",,,"Richfield city","59200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2059200",,,"2059200","Richfield city, Kansas",19,"Richfield city, Kansas",12
+"G20059675","2019-2023","KS",,,"Kansas","20",,,"Richmond city","59675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2059675",,,"2059675","Richmond city, Kansas",504,"Richmond city, Kansas",160
+"G20059875","2019-2023","KS",,,"Kansas","20",,,"Riley city","59875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2059875",,,"2059875","Riley city, Kansas",826,"Riley city, Kansas",192
+"G20059975","2019-2023","KS",,,"Kansas","20",,,"Ringo CDP","59975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2059975",,,"2059975","Ringo CDP, Kansas",57,"Ringo CDP, Kansas",34
+"G20060200","2019-2023","KS",,,"Kansas","20",,,"Riverton CDP","60200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2060200",,,"2060200","Riverton CDP, Kansas",683,"Riverton CDP, Kansas",274
+"G20060325","2019-2023","KS",,,"Kansas","20",,,"Robinson city","60325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2060325",,,"2060325","Robinson city, Kansas",180,"Robinson city, Kansas",53
+"G20060400","2019-2023","KS",,,"Kansas","20",,,"Rock CDP","60400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2060400",,,"2060400","Rock CDP, Kansas",123,"Rock CDP, Kansas",78
+"G20060825","2019-2023","KS",,,"Kansas","20",,,"Roeland Park city","60825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2060825",,,"2060825","Roeland Park city, Kansas",6800,"Roeland Park city, Kansas",34
+"G20060900","2019-2023","KS",,,"Kansas","20",,,"Rolla city","60900",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2060900",,,"2060900","Rolla city, Kansas",545,"Rolla city, Kansas",137
+"G20061100","2019-2023","KS",,,"Kansas","20",,,"Rosalia CDP","61100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2061100",,,"2061100","Rosalia CDP, Kansas",179,"Rosalia CDP, Kansas",91
+"G20061250","2019-2023","KS",,,"Kansas","20",,,"Rose Hill city","61250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2061250",,,"2061250","Rose Hill city, Kansas",4353,"Rose Hill city, Kansas",194
+"G20061275","2019-2023","KS",,,"Kansas","20",,,"Roseland city","61275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2061275",,,"2061275","Roseland city, Kansas",58,"Roseland city, Kansas",39
+"G20061400","2019-2023","KS",,,"Kansas","20",,,"Rossville city","61400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2061400",,,"2061400","Rossville city, Kansas",1183,"Rossville city, Kansas",279
+"G20061550","2019-2023","KS",,,"Kansas","20",,,"Roxbury CDP","61550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2061550",,,"2061550","Roxbury CDP, Kansas",8,"Roxbury CDP, Kansas",11
+"G20061600","2019-2023","KS",,,"Kansas","20",,,"Rozel city","61600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2061600",,,"2061600","Rozel city, Kansas",111,"Rozel city, Kansas",60
+"G20061775","2019-2023","KS",,,"Kansas","20",,,"Rush Center city","61775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2061775",,,"2061775","Rush Center city, Kansas",226,"Rush Center city, Kansas",71
+"G20061825","2019-2023","KS",,,"Kansas","20",,,"Russell city","61825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2061825",,,"2061825","Russell city, Kansas",4258,"Russell city, Kansas",266
+"G20061875","2019-2023","KS",,,"Kansas","20",,,"Russell Springs city","61875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2061875",,,"2061875","Russell Springs city, Kansas",27,"Russell Springs city, Kansas",20
+"G20062025","2019-2023","KS",,,"Kansas","20",,,"Sabetha city","62025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2062025",,,"2062025","Sabetha city, Kansas",2326,"Sabetha city, Kansas",288
+"G20062075","2019-2023","KS",,,"Kansas","20",,,"St. Benedict CDP","62075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2062075",,,"2062075","St. Benedict CDP, Kansas",59,"St. Benedict CDP, Kansas",62
+"G20062175","2019-2023","KS",,,"Kansas","20",,,"St. Francis city","62175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2062175",,,"2062175","St. Francis city, Kansas",1268,"St. Francis city, Kansas",172
+"G20062200","2019-2023","KS",,,"Kansas","20",,,"St. George city","62200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2062200",,,"2062200","St. George city, Kansas",1115,"St. George city, Kansas",275
+"G20062275","2019-2023","KS",,,"Kansas","20",,,"St. John city","62275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2062275",,,"2062275","St. John city, Kansas",1247,"St. John city, Kansas",176
+"G20062375","2019-2023","KS",,,"Kansas","20",,,"St. Marks CDP","62375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2062375",,,"2062375","St. Marks CDP, Kansas",87,"St. Marks CDP, Kansas",117
+"G20062400","2019-2023","KS",,,"Kansas","20",,,"St. Marys city","62400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2062400",,,"2062400","St. Marys city, Kansas",2795,"St. Marys city, Kansas",330
+"G20062500","2019-2023","KS",,,"Kansas","20",,,"St. Paul city","62500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2062500",,,"2062500","St. Paul city, Kansas",665,"St. Paul city, Kansas",134
+"G20062700","2019-2023","KS",,,"Kansas","20",,,"Salina city","62700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2062700",,,"2062700","Salina city, Kansas",46432,"Salina city, Kansas",31
+"G20063150","2019-2023","KS",,,"Kansas","20",,,"Satanta city","63150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063150",,,"2063150","Satanta city, Kansas",852,"Satanta city, Kansas",180
+"G20063200","2019-2023","KS",,,"Kansas","20",,,"Savonburg city","63200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063200",,,"2063200","Savonburg city, Kansas",120,"Savonburg city, Kansas",56
+"G20063275","2019-2023","KS",,,"Kansas","20",,,"Sawyer city","63275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063275",,,"2063275","Sawyer city, Kansas",119,"Sawyer city, Kansas",55
+"G20063325","2019-2023","KS",,,"Kansas","20",,,"Scammon city","63325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063325",,,"2063325","Scammon city, Kansas",397,"Scammon city, Kansas",88
+"G20063350","2019-2023","KS",,,"Kansas","20",,,"Scandia city","63350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063350",,,"2063350","Scandia city, Kansas",305,"Scandia city, Kansas",68
+"G20063425","2019-2023","KS",,,"Kansas","20",,,"Schoenchen city","63425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063425",,,"2063425","Schoenchen city, Kansas",228,"Schoenchen city, Kansas",74
+"G20063600","2019-2023","KS",,,"Kansas","20",,,"Scott City city","63600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063600",,,"2063600","Scott City city, Kansas",3955,"Scott City city, Kansas",341
+"G20063650","2019-2023","KS",,,"Kansas","20",,,"Scottsville city","63650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063650",,,"2063650","Scottsville city, Kansas",20,"Scottsville city, Kansas",19
+"G20063675","2019-2023","KS",,,"Kansas","20",,,"Scranton city","63675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063675",,,"2063675","Scranton city, Kansas",891,"Scranton city, Kansas",172
+"G20063750","2019-2023","KS",,,"Kansas","20",,,"Sedan city","63750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063750",,,"2063750","Sedan city, Kansas",1066,"Sedan city, Kansas",142
+"G20063800","2019-2023","KS",,,"Kansas","20",,,"Sedgwick city","63800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063800",,,"2063800","Sedgwick city, Kansas",1702,"Sedgwick city, Kansas",269
+"G20063875","2019-2023","KS",,,"Kansas","20",,,"Selden city","63875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063875",,,"2063875","Selden city, Kansas",287,"Selden city, Kansas",74
+"G20063950","2019-2023","KS",,,"Kansas","20",,,"Seneca city","63950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2063950",,,"2063950","Seneca city, Kansas",2139,"Seneca city, Kansas",292
+"G20064025","2019-2023","KS",,,"Kansas","20",,,"Severance city","64025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2064025",,,"2064025","Severance city, Kansas",46,"Severance city, Kansas",36
+"G20064050","2019-2023","KS",,,"Kansas","20",,,"Severy city","64050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2064050",,,"2064050","Severy city, Kansas",185,"Severy city, Kansas",55
+"G20064100","2019-2023","KS",,,"Kansas","20",,,"Seward city","64100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2064100",,,"2064100","Seward city, Kansas",88,"Seward city, Kansas",40
+"G20064200","2019-2023","KS",,,"Kansas","20",,,"Shallow Water CDP","64200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2064200",,,"2064200","Shallow Water CDP, Kansas",0,"Shallow Water CDP, Kansas",11
+"G20064325","2019-2023","KS",,,"Kansas","20",,,"Sharon city","64325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2064325",,,"2064325","Sharon city, Kansas",129,"Sharon city, Kansas",34
+"G20064375","2019-2023","KS",,,"Kansas","20",,,"Sharon Springs city","64375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2064375",,,"2064375","Sharon Springs city, Kansas",837,"Sharon Springs city, Kansas",118
+"G20064500","2019-2023","KS",,,"Kansas","20",,,"Shawnee city","64500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2064500",,,"2064500","Shawnee city, Kansas",68175,"Shawnee city, Kansas",55
+"G20065550","2019-2023","KS",,,"Kansas","20",,,"Silverdale CDP","65550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2065550",,,"2065550","Silverdale CDP, Kansas",37,"Silverdale CDP, Kansas",31
+"G20065600","2019-2023","KS",,,"Kansas","20",,,"Silver Lake city","65600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2065600",,,"2065600","Silver Lake city, Kansas",1549,"Silver Lake city, Kansas",371
+"G20065650","2019-2023","KS",,,"Kansas","20",,,"Simpson city","65650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2065650",,,"2065650","Simpson city, Kansas",149,"Simpson city, Kansas",89
+"G20065925","2019-2023","KS",,,"Kansas","20",,,"Smith Center city","65925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2065925",,,"2065925","Smith Center city, Kansas",1585,"Smith Center city, Kansas",126
+"G20066100","2019-2023","KS",,,"Kansas","20",,,"Smolan city","66100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2066100",,,"2066100","Smolan city, Kansas",171,"Smolan city, Kansas",44
+"G20066175","2019-2023","KS",,,"Kansas","20",,,"Soldier city","66175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2066175",,,"2066175","Soldier city, Kansas",74,"Soldier city, Kansas",36
+"G20066275","2019-2023","KS",,,"Kansas","20",,,"Solomon city","66275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2066275",,,"2066275","Solomon city, Kansas",945,"Solomon city, Kansas",197
+"G20066475","2019-2023","KS",,,"Kansas","20",,,"Somerset CDP","66475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2066475",,,"2066475","Somerset CDP, Kansas",43,"Somerset CDP, Kansas",49
+"G20066650","2019-2023","KS",,,"Kansas","20",,,"South Haven city","66650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2066650",,,"2066650","South Haven city, Kansas",327,"South Haven city, Kansas",91
+"G20066750","2019-2023","KS",,,"Kansas","20",,,"South Hutchinson city","66750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2066750",,,"2066750","South Hutchinson city, Kansas",2826,"South Hutchinson city, Kansas",250
+"G20066800","2019-2023","KS",,,"Kansas","20",,,"South Mound CDP","66800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2066800",,,"2066800","South Mound CDP, Kansas",17,"South Mound CDP, Kansas",26
+"G20067125","2019-2023","KS",,,"Kansas","20",,,"Spearville city","67125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2067125",,,"2067125","Spearville city, Kansas",1054,"Spearville city, Kansas",223
+"G20067175","2019-2023","KS",,,"Kansas","20",,,"Speed city","67175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2067175",,,"2067175","Speed city, Kansas",23,"Speed city, Kansas",19
+"G20067250","2019-2023","KS",,,"Kansas","20",,,"Spivey city","67250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2067250",,,"2067250","Spivey city, Kansas",147,"Spivey city, Kansas",125
+"G20067625","2019-2023","KS",,,"Kansas","20",,,"Spring Hill city","67625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2067625",,,"2067625","Spring Hill city, Kansas",8691,"Spring Hill city, Kansas",22
+"G20067775","2019-2023","KS",,,"Kansas","20",,,"Stafford city","67775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2067775",,,"2067775","Stafford city, Kansas",680,"Stafford city, Kansas",108
+"G20068025","2019-2023","KS",,,"Kansas","20",,,"Stark city","68025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2068025",,,"2068025","Stark city, Kansas",81,"Stark city, Kansas",46
+"G20068200","2019-2023","KS",,,"Kansas","20",,,"Sterling city","68200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2068200",,,"2068200","Sterling city, Kansas",2396,"Sterling city, Kansas",226
+"G20068350","2019-2023","KS",,,"Kansas","20",,,"Stockton city","68350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2068350",,,"2068350","Stockton city, Kansas",1521,"Stockton city, Kansas",180
+"G20068650","2019-2023","KS",,,"Kansas","20",,,"Strong City city","68650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2068650",,,"2068650","Strong City city, Kansas",492,"Strong City city, Kansas",118
+"G20068750","2019-2023","KS",,,"Kansas","20",,,"Stuttgart CDP","68750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2068750",,,"2068750","Stuttgart CDP, Kansas",64,"Stuttgart CDP, Kansas",28
+"G20068775","2019-2023","KS",,,"Kansas","20",,,"Sublette city","68775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2068775",,,"2068775","Sublette city, Kansas",1397,"Sublette city, Kansas",195
+"G20068950","2019-2023","KS",,,"Kansas","20",,,"Summerfield city","68950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2068950",,,"2068950","Summerfield city, Kansas",166,"Summerfield city, Kansas",50
+"G20069275","2019-2023","KS",,,"Kansas","20",,,"Sun City city","69275",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2069275",,,"2069275","Sun City city, Kansas",38,"Sun City city, Kansas",29
+"G20069525","2019-2023","KS",,,"Kansas","20",,,"Susank city","69525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2069525",,,"2069525","Susank city, Kansas",29,"Susank city, Kansas",14
+"G20069725","2019-2023","KS",,,"Kansas","20",,,"Sycamore CDP","69725",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2069725",,,"2069725","Sycamore CDP, Kansas",43,"Sycamore CDP, Kansas",39
+"G20069775","2019-2023","KS",,,"Kansas","20",,,"Sylvan Grove city","69775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2069775",,,"2069775","Sylvan Grove city, Kansas",313,"Sylvan Grove city, Kansas",84
+"G20069800","2019-2023","KS",,,"Kansas","20",,,"Sylvia city","69800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2069800",,,"2069800","Sylvia city, Kansas",180,"Sylvia city, Kansas",67
+"G20069850","2019-2023","KS",,,"Kansas","20",,,"Syracuse city","69850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2069850",,,"2069850","Syracuse city, Kansas",1706,"Syracuse city, Kansas",266
+"G20069925","2019-2023","KS",,,"Kansas","20",,,"Talmage CDP","69925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2069925",,,"2069925","Talmage CDP, Kansas",94,"Talmage CDP, Kansas",80
+"G20070000","2019-2023","KS",,,"Kansas","20",,,"Tampa city","70000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2070000",,,"2070000","Tampa city, Kansas",151,"Tampa city, Kansas",59
+"G20070075","2019-2023","KS",,,"Kansas","20",,,"Tecumseh CDP","70075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2070075",,,"2070075","Tecumseh CDP, Kansas",339,"Tecumseh CDP, Kansas",182
+"G20070250","2019-2023","KS",,,"Kansas","20",,,"Tescott city","70250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2070250",,,"2070250","Tescott city, Kansas",261,"Tescott city, Kansas",125
+"G20070300","2019-2023","KS",,,"Kansas","20",,,"Thayer city","70300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2070300",,,"2070300","Thayer city, Kansas",454,"Thayer city, Kansas",152
+"G20070357","2019-2023","KS",,,"Kansas","20",,,"The Highlands city","70357",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2070357",,,"2070357","The Highlands city, Kansas",474,"The Highlands city, Kansas",131
+"G20070625","2019-2023","KS",,,"Kansas","20",,,"Timken city","70625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2070625",,,"2070625","Timken city, Kansas",47,"Timken city, Kansas",20
+"G20070675","2019-2023","KS",,,"Kansas","20",,,"Tipton city","70675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2070675",,,"2070675","Tipton city, Kansas",211,"Tipton city, Kansas",71
+"G20070800","2019-2023","KS",,,"Kansas","20",,,"Tonganoxie city","70800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2070800",,,"2070800","Tonganoxie city, Kansas",5693,"Tonganoxie city, Kansas",413
+"G20071000","2019-2023","KS",,,"Kansas","20",,,"Topeka city","71000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2071000",,,"2071000","Topeka city, Kansas",126103,"Topeka city, Kansas",43
+"G20071050","2019-2023","KS",,,"Kansas","20",,,"Toronto city","71050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2071050",,,"2071050","Toronto city, Kansas",250,"Toronto city, Kansas",90
+"G20071125","2019-2023","KS",,,"Kansas","20",,,"Towanda city","71125",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2071125",,,"2071125","Towanda city, Kansas",1748,"Towanda city, Kansas",247
+"G20071450","2019-2023","KS",,,"Kansas","20",,,"Tribune city","71450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2071450",,,"2071450","Tribune city, Kansas",799,"Tribune city, Kansas",103
+"G20071575","2019-2023","KS",,,"Kansas","20",,,"Troy city","71575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2071575",,,"2071575","Troy city, Kansas",794,"Troy city, Kansas",157
+"G20071800","2019-2023","KS",,,"Kansas","20",,,"Turon city","71800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2071800",,,"2071800","Turon city, Kansas",290,"Turon city, Kansas",92
+"G20071925","2019-2023","KS",,,"Kansas","20",,,"Tyro city","71925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2071925",,,"2071925","Tyro city, Kansas",191,"Tyro city, Kansas",119
+"G20071950","2019-2023","KS",,,"Kansas","20",,,"Udall city","71950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2071950",,,"2071950","Udall city, Kansas",641,"Udall city, Kansas",177
+"G20071975","2019-2023","KS",,,"Kansas","20",,,"Ulysses city","71975",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2071975",,,"2071975","Ulysses city, Kansas",5812,"Ulysses city, Kansas",369
+"G20072525","2019-2023","KS",,,"Kansas","20",,,"Uniontown city","72525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2072525",,,"2072525","Uniontown city, Kansas",492,"Uniontown city, Kansas",236
+"G20072600","2019-2023","KS",,,"Kansas","20",,,"Urbana CDP","72600",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2072600",,,"2072600","Urbana CDP, Kansas",18,"Urbana CDP, Kansas",28
+"G20072650","2019-2023","KS",,,"Kansas","20",,,"Utica city","72650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2072650",,,"2072650","Utica city, Kansas",119,"Utica city, Kansas",37
+"G20073250","2019-2023","KS",,,"Kansas","20",,,"Valley Center city","73250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2073250",,,"2073250","Valley Center city, Kansas",8937,"Valley Center city, Kansas",905
+"G20073300","2019-2023","KS",,,"Kansas","20",,,"Valley Falls city","73300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2073300",,,"2073300","Valley Falls city, Kansas",1305,"Valley Falls city, Kansas",255
+"G20073450","2019-2023","KS",,,"Kansas","20",,,"Vassar CDP","73450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2073450",,,"2073450","Vassar CDP, Kansas",870,"Vassar CDP, Kansas",216
+"G20073525","2019-2023","KS",,,"Kansas","20",,,"Vermillion city","73525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2073525",,,"2073525","Vermillion city, Kansas",57,"Vermillion city, Kansas",30
+"G20073775","2019-2023","KS",,,"Kansas","20",,,"Victoria city","73775",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2073775",,,"2073775","Victoria city, Kansas",994,"Victoria city, Kansas",217
+"G20073950","2019-2023","KS",,,"Kansas","20",,,"Vining city","73950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2073950",,,"2073950","Vining city, Kansas",52,"Vining city, Kansas",39
+"G20074025","2019-2023","KS",,,"Kansas","20",,,"Viola city","74025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074025",,,"2074025","Viola city, Kansas",200,"Viola city, Kansas",137
+"G20074075","2019-2023","KS",,,"Kansas","20",,,"Virgil city","74075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074075",,,"2074075","Virgil city, Kansas",26,"Virgil city, Kansas",16
+"G20074225","2019-2023","KS",,,"Kansas","20",,,"Wabaunsee CDP","74225",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074225",,,"2074225","Wabaunsee CDP, Kansas",76,"Wabaunsee CDP, Kansas",45
+"G20074425","2019-2023","KS",,,"Kansas","20",,,"Wakarusa CDP","74425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074425",,,"2074425","Wakarusa CDP, Kansas",207,"Wakarusa CDP, Kansas",101
+"G20074450","2019-2023","KS",,,"Kansas","20",,,"WaKeeney city","74450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074450",,,"2074450","WaKeeney city, Kansas",1838,"WaKeeney city, Kansas",163
+"G20074525","2019-2023","KS",,,"Kansas","20",,,"Wakefield city","74525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074525",,,"2074525","Wakefield city, Kansas",1031,"Wakefield city, Kansas",178
+"G20074575","2019-2023","KS",,,"Kansas","20",,,"Waldo city","74575",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074575",,,"2074575","Waldo city, Kansas",22,"Waldo city, Kansas",19
+"G20074625","2019-2023","KS",,,"Kansas","20",,,"Waldron city","74625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074625",,,"2074625","Waldron city, Kansas",12,"Waldron city, Kansas",12
+"G20074750","2019-2023","KS",,,"Kansas","20",,,"Wallace city","74750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074750",,,"2074750","Wallace city, Kansas",54,"Wallace city, Kansas",36
+"G20074950","2019-2023","KS",,,"Kansas","20",,,"Walnut city","74950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2074950",,,"2074950","Walnut city, Kansas",230,"Walnut city, Kansas",103
+"G20075200","2019-2023","KS",,,"Kansas","20",,,"Walton city","75200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2075200",,,"2075200","Walton city, Kansas",293,"Walton city, Kansas",150
+"G20075325","2019-2023","KS",,,"Kansas","20",,,"Wamego city","75325",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2075325",,,"2075325","Wamego city, Kansas",4205,"Wamego city, Kansas",665
+"G20075825","2019-2023","KS",,,"Kansas","20",,,"Washington city","75825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2075825",,,"2075825","Washington city, Kansas",1199,"Washington city, Kansas",167
+"G20075950","2019-2023","KS",,,"Kansas","20",,,"Waterville city","75950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2075950",,,"2075950","Waterville city, Kansas",748,"Waterville city, Kansas",175
+"G20076000","2019-2023","KS",,,"Kansas","20",,,"Wathena city","76000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076000",,,"2076000","Wathena city, Kansas",1463,"Wathena city, Kansas",258
+"G20076050","2019-2023","KS",,,"Kansas","20",,,"Waverly city","76050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076050",,,"2076050","Waverly city, Kansas",528,"Waverly city, Kansas",163
+"G20076175","2019-2023","KS",,,"Kansas","20",,,"Wayside CDP","76175",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076175",,,"2076175","Wayside CDP, Kansas",0,"Wayside CDP, Kansas",11
+"G20076250","2019-2023","KS",,,"Kansas","20",,,"Webber city","76250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076250",,,"2076250","Webber city, Kansas",24,"Webber city, Kansas",19
+"G20076350","2019-2023","KS",,,"Kansas","20",,,"Weir city","76350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076350",,,"2076350","Weir city, Kansas",910,"Weir city, Kansas",302
+"G20076425","2019-2023","KS",,,"Kansas","20",,,"Welda CDP","76425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076425",,,"2076425","Welda CDP, Kansas",221,"Welda CDP, Kansas",119
+"G20076475","2019-2023","KS",,,"Kansas","20",,,"Wellington city","76475",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076475",,,"2076475","Wellington city, Kansas",7643,"Wellington city, Kansas",36
+"G20076550","2019-2023","KS",,,"Kansas","20",,,"Wells CDP","76550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076550",,,"2076550","Wells CDP, Kansas",0,"Wells CDP, Kansas",11
+"G20076625","2019-2023","KS",,,"Kansas","20",,,"Wellsville city","76625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076625",,,"2076625","Wellsville city, Kansas",2003,"Wellsville city, Kansas",262
+"G20076675","2019-2023","KS",,,"Kansas","20",,,"Weskan CDP","76675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2076675",,,"2076675","Weskan CDP, Kansas",163,"Weskan CDP, Kansas",55
+"G20077150","2019-2023","KS",,,"Kansas","20",,,"West Mineral city","77150",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2077150",,,"2077150","West Mineral city, Kansas",155,"West Mineral city, Kansas",62
+"G20077200","2019-2023","KS",,,"Kansas","20",,,"Westmoreland city","77200",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2077200",,,"2077200","Westmoreland city, Kansas",636,"Westmoreland city, Kansas",152
+"G20077250","2019-2023","KS",,,"Kansas","20",,,"Westphalia city","77250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2077250",,,"2077250","Westphalia city, Kansas",158,"Westphalia city, Kansas",78
+"G20077500","2019-2023","KS",,,"Kansas","20",,,"Westwood city","77500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2077500",,,"2077500","Westwood city, Kansas",1851,"Westwood city, Kansas",288
+"G20077525","2019-2023","KS",,,"Kansas","20",,,"Westwood Hills city","77525",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2077525",,,"2077525","Westwood Hills city, Kansas",484,"Westwood Hills city, Kansas",92
+"G20077550","2019-2023","KS",,,"Kansas","20",,,"Wetmore city","77550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2077550",,,"2077550","Wetmore city, Kansas",325,"Wetmore city, Kansas",89
+"G20077700","2019-2023","KS",,,"Kansas","20",,,"Wheaton city","77700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2077700",,,"2077700","Wheaton city, Kansas",83,"Wheaton city, Kansas",36
+"G20077825","2019-2023","KS",,,"Kansas","20",,,"White City city","77825",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2077825",,,"2077825","White City city, Kansas",439,"White City city, Kansas",132
+"G20077850","2019-2023","KS",,,"Kansas","20",,,"White Cloud city","77850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2077850",,,"2077850","White Cloud city, Kansas",136,"White Cloud city, Kansas",58
+"G20078050","2019-2023","KS",,,"Kansas","20",,,"Whitewater city","78050",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2078050",,,"2078050","Whitewater city, Kansas",900,"Whitewater city, Kansas",285
+"G20078100","2019-2023","KS",,,"Kansas","20",,,"Whiting city","78100",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2078100",,,"2078100","Whiting city, Kansas",316,"Whiting city, Kansas",97
+"G20079000","2019-2023","KS",,,"Kansas","20",,,"Wichita city","79000",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079000",,,"2079000","Wichita city, Kansas",396488,"Wichita city, Kansas",82
+"G20079250","2019-2023","KS",,,"Kansas","20",,,"Willard city","79250",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079250",,,"2079250","Willard city, Kansas",71,"Willard city, Kansas",29
+"G20079300","2019-2023","KS",,,"Kansas","20",,,"Williamsburg city","79300",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079300",,,"2079300","Williamsburg city, Kansas",383,"Williamsburg city, Kansas",117
+"G20079375","2019-2023","KS",,,"Kansas","20",,,"Williamstown CDP","79375",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079375",,,"2079375","Williamstown CDP, Kansas",40,"Williamstown CDP, Kansas",54
+"G20079400","2019-2023","KS",,,"Kansas","20",,,"Willis city","79400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079400",,,"2079400","Willis city, Kansas",40,"Willis city, Kansas",23
+"G20079425","2019-2023","KS",,,"Kansas","20",,,"Willowbrook city","79425",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079425",,,"2079425","Willowbrook city, Kansas",76,"Willowbrook city, Kansas",42
+"G20079550","2019-2023","KS",,,"Kansas","20",,,"Wilmore city","79550",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079550",,,"2079550","Wilmore city, Kansas",37,"Wilmore city, Kansas",19
+"G20079625","2019-2023","KS",,,"Kansas","20",,,"Wilroads Gardens CDP","79625",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079625",,,"2079625","Wilroads Gardens CDP, Kansas",736,"Wilroads Gardens CDP, Kansas",352
+"G20079650","2019-2023","KS",,,"Kansas","20",,,"Wilsey city","79650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079650",,,"2079650","Wilsey city, Kansas",192,"Wilsey city, Kansas",55
+"G20079675","2019-2023","KS",,,"Kansas","20",,,"Wilson city","79675",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079675",,,"2079675","Wilson city, Kansas",824,"Wilson city, Kansas",140
+"G20079800","2019-2023","KS",,,"Kansas","20",,,"Winchester city","79800",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079800",,,"2079800","Winchester city, Kansas",341,"Winchester city, Kansas",83
+"G20079850","2019-2023","KS",,,"Kansas","20",,,"Windom city","79850",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079850",,,"2079850","Windom city, Kansas",52,"Windom city, Kansas",23
+"G20079950","2019-2023","KS",,,"Kansas","20",,,"Winfield city","79950",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2079950",,,"2079950","Winfield city, Kansas",11731,"Winfield city, Kansas",55
+"G20080075","2019-2023","KS",,,"Kansas","20",,,"Winona city","80075",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080075",,,"2080075","Winona city, Kansas",183,"Winona city, Kansas",83
+"G20080350","2019-2023","KS",,,"Kansas","20",,,"Woodbine city","80350",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080350",,,"2080350","Woodbine city, Kansas",127,"Woodbine city, Kansas",56
+"G20080400","2019-2023","KS",,,"Kansas","20",,,"Woodruff CDP","80400",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080400",,,"2080400","Woodruff CDP, Kansas",9,"Woodruff CDP, Kansas",16
+"G20080450","2019-2023","KS",,,"Kansas","20",,,"Woodston city","80450",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080450",,,"2080450","Woodston city, Kansas",95,"Woodston city, Kansas",75
+"G20080500","2019-2023","KS",,,"Kansas","20",,,"Wright CDP","80500",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080500",,,"2080500","Wright CDP, Kansas",44,"Wright CDP, Kansas",35
+"G20080650","2019-2023","KS",,,"Kansas","20",,,"Yale CDP","80650",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080650",,,"2080650","Yale CDP, Kansas",72,"Yale CDP, Kansas",61
+"G20080700","2019-2023","KS",,,"Kansas","20",,,"Yates Center city","80700",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080700",,,"2080700","Yates Center city, Kansas",1381,"Yates Center city, Kansas",167
+"G20080750","2019-2023","KS",,,"Kansas","20",,,"Yoder CDP","80750",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080750",,,"2080750","Yoder CDP, Kansas",43,"Yoder CDP, Kansas",35
+"G20080875","2019-2023","KS",,,"Kansas","20",,,"Zeandale CDP","80875",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080875",,,"2080875","Zeandale CDP, Kansas",21,"Zeandale CDP, Kansas",38
+"G20080925","2019-2023","KS",,,"Kansas","20",,,"Zenda city","80925",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2080925",,,"2080925","Zenda city, Kansas",67,"Zenda city, Kansas",34
+"G20081025","2019-2023","KS",,,"Kansas","20",,,"Zurich city","81025",,,,,,,,,,,,,".",".",,,,,,,,,,,,"1600000US2081025",,,"2081025","Zurich city, Kansas",70,"Zurich city, Kansas",38
