@@ -1,0 +1,224 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     dataset7-weka.filters.unsupervised.attribute.NumericToNominal-R32-weka.filters.unsupervised.attribute.Remove-R1,13,14,15,16,17
+Instances:    105
+Attributes:   26
+              County_Population
+              County_Latitude
+              County_Longitude
+              Elementary_Schools
+              Middle_Schools
+              High_Schools
+              Virtual_Schools
+              Other_Schools
+              Four_Year_Colleges
+              Two_Year_Colleges
+              Less_Than_Two_Year_Colleges
+              Broadband_Access_Index
+              Internet_Adoption_Pct
+              Avg_Broadband_Coverage_Pct
+              Pct_No_Internet
+              Total_Households
+              Effective_Access_Score
+              Median_Household_Income
+              Poverty_Rate
+              Unemployment_Rate
+              Advanced_Degree_Rate
+              Young_Adult_Bachelors_Plus_Rate
+              STEM_Employment_Rate
+              Professional_Services_Rate
+              Low_Income_Digital_Access_Rate
+              Has_Programs
+Test mode:    split 60.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                        Class
+Attribute                                   0           1
+                                       (0.83)      (0.17)
+==========================================================
+County_Population
+  mean                              10558.3636 115616.4706
+  std. dev.                          19768.653 171006.6928
+  weight sum                                88          17
+  precision                               5956        5956
+
+County_Latitude
+  mean                                 38.5015     38.3996
+  std. dev.                             0.8668      0.7301
+  weight sum                                88          17
+  precision                             0.0257      0.0257
+
+County_Longitude
+  mean                                -98.3128    -96.9123
+  std. dev.                             2.2054      1.7294
+  weight sum                                88          17
+  precision                             0.0678      0.0678
+
+Elementary_Schools
+  mean                                  2.2222     20.4902
+  std. dev.                             4.9768     29.0399
+  weight sum                                88          17
+  precision                             6.1111      6.1111
+
+Middle_Schools
+  mean                                  1.0545      6.7765
+  std. dev.                              1.787      9.1095
+  weight sum                                88          17
+  precision                                3.2         3.2
+
+High_Schools
+  mean                                  1.9568      6.0529
+  std. dev.                             1.6691      5.8907
+  weight sum                                88          17
+  precision                                2.1         2.1
+
+Virtual_Schools
+  mean                                  0.5303      1.8039
+  std. dev.                             1.0158       1.826
+  weight sum                                88          17
+  precision                             1.3333      1.3333
+
+Other_Schools
+  mean                                   0.483       2.875
+  std. dev.                             1.1429      3.9883
+  weight sum                                88          17
+  precision                              2.125       2.125
+
+Four_Year_Colleges
+  mean                                  0.1429     11.8319
+  std. dev.                             2.0952     25.3163
+  weight sum                                88          17
+  precision                            12.5714     12.5714
+
+Two_Year_Colleges
+  mean                                  0.1071      5.5462
+  std. dev.                             1.5714     15.8626
+  weight sum                                88          17
+  precision                             9.4286      9.4286
+
+Less_Than_Two_Year_Colleges
+  mean                                       0     10.7843
+  std. dev.                             3.0556     27.4524
+  weight sum                                88          17
+  precision                            18.3333     18.3333
+
+Broadband_Access_Index
+  mean                                    0.79      0.8236
+  std. dev.                             0.0519      0.0232
+  weight sum                                88          17
+  precision                             0.0043      0.0043
+
+Internet_Adoption_Pct
+  mean                                 85.4973     88.4684
+  std. dev.                             4.0826      3.1704
+  weight sum                                88          17
+  precision                             0.3292      0.3292
+
+Avg_Broadband_Coverage_Pct
+  mean                                 72.5132     76.0677
+  std. dev.                             9.5163      3.0037
+  weight sum                                88          17
+  precision                             1.0987      1.0987
+
+Pct_No_Internet
+  mean                                 11.9254        8.76
+  std. dev.                             3.7697      3.2119
+  weight sum                                88          17
+  precision                             0.2914      0.2914
+
+Total_Households
+  mean                                4392.458  45474.8589
+  std. dev.                          7435.1437  67712.2444
+  weight sum                                88          17
+  precision                          2371.3883   2371.3883
+
+Effective_Access_Score
+  mean                                       0      1.0068
+  std. dev.                             0.1141      1.5239
+  weight sum                                88          17
+  precision                             0.6846      0.6846
+
+Median_Household_Income
+  mean                              63662.3047  68470.1538
+  std. dev.                          8442.9116  13027.9442
+  weight sum                                88          17
+  precision                           568.3558    568.3558
+
+Poverty_Rate
+  mean                                  0.1111      0.1329
+  std. dev.                             0.0353      0.0417
+  weight sum                                88          17
+  precision                             0.0018      0.0018
+
+Unemployment_Rate
+  mean                                  0.0272      0.0383
+  std. dev.                             0.0159      0.0089
+  weight sum                                88          17
+  precision                             0.0006      0.0006
+
+Advanced_Degree_Rate
+  mean                                  0.1609      0.2082
+  std. dev.                             0.0291      0.0688
+  weight sum                                88          17
+  precision                              0.003       0.003
+
+Young_Adult_Bachelors_Plus_Rate
+  mean                                  0.2341      0.3298
+  std. dev.                             0.0421      0.1088
+  weight sum                                88          17
+  precision                             0.0043      0.0043
+
+STEM_Employment_Rate
+  mean                                  0.0279      0.0501
+  std. dev.                             0.0151      0.0224
+  weight sum                                88          17
+  precision                             0.0011      0.0011
+
+Professional_Services_Rate
+  mean                                  0.0411      0.0599
+  std. dev.                             0.0179      0.0334
+  weight sum                                88          17
+  precision                             0.0015      0.0015
+
+Low_Income_Digital_Access_Rate
+  mean                                  1.4096      1.3454
+  std. dev.                              0.158      0.1117
+  weight sum                                88          17
+  precision                             0.0079      0.0079
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          36               85.7143 %
+Incorrectly Classified Instances         6               14.2857 %
+Kappa statistic                          0.5758
+Mean absolute error                      0.1495
+Root mean squared error                  0.3696
+Relative absolute error                 50.9671 %
+Root relative squared error             88.5675 %
+Total Number of Instances               42     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.909    0.333    0.909      0.909    0.909      0.576    0.875     0.964     0
+                 0.667    0.091    0.667      0.667    0.667      0.576    0.875     0.737     1
+Weighted Avg.    0.857    0.281    0.857      0.857    0.857      0.576    0.875     0.915     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 30  3 |  a = 0
+  3  6 |  b = 1
+
