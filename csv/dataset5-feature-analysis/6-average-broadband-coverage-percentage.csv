@@ -1,0 +1,5 @@
+Coverage_Range,County_Count,Avg_Coverage,Min_Coverage,Max_Coverage
+80%+,9,81.2,80.0,82.5
+70-79%,77,75.1,70.1,79.9
+60-69%,17,64.9,60.0,68.6
+Below 60%,2,29.4,-1.0,59.7
