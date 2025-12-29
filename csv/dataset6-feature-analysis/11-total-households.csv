@@ -1,0 +1,7 @@
+Population_Range,County_Count,Avg_Population,Total_Population_In_Range
+100K+ (Very Large),5,320943.0,1604713
+50K-99K (Large),5,67523.0,337613
+25K-49K (Medium-Large),14,32092.0,449292
+10K-24K (Medium),15,15993.0,239892
+5K-9K (Small),28,7027.0,196758
+Below 5K (Very Small),38,2876.0,109301
