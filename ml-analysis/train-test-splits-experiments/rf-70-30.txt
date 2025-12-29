@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 50 -num-slots 1 -K 0 -M 5.0 -V 0.001 -S 42 -depth 5
+Relation:     dataset7-weka.filters.unsupervised.attribute.NumericToNominal-R32-weka.filters.unsupervised.attribute.Remove-R1,13,14,15,16,17
+Instances:    105
+Attributes:   26
+              County_Population
+              County_Latitude
+              County_Longitude
+              Elementary_Schools
+              Middle_Schools
+              High_Schools
+              Virtual_Schools
+              Other_Schools
+              Four_Year_Colleges
+              Two_Year_Colleges
+              Less_Than_Two_Year_Colleges
+              Broadband_Access_Index
+              Internet_Adoption_Pct
+              Avg_Broadband_Coverage_Pct
+              Pct_No_Internet
+              Total_Households
+              Effective_Access_Score
+              Median_Household_Income
+              Poverty_Rate
+              Unemployment_Rate
+              Advanced_Degree_Rate
+              Young_Adult_Bachelors_Plus_Rate
+              STEM_Employment_Rate
+              Professional_Services_Rate
+              Low_Income_Digital_Access_Rate
+              Has_Programs
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 50 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 5.0 -V 0.001 -S 42 -depth 5 -do-not-check-capabilities
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          26               83.871  %
+Incorrectly Classified Instances         5               16.129  %
+Kappa statistic                          0.5201
+Mean absolute error                      0.1713
+Root mean squared error                  0.2908
+Relative absolute error                 61.8182 %
+Root relative squared error             79.0379 %
+Total Number of Instances               31     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.846    0.200    0.957      0.846    0.898      0.543    0.938     0.989     0
+                 0.800    0.154    0.500      0.800    0.615      0.543    0.938     0.743     1
+Weighted Avg.    0.839    0.193    0.883      0.839    0.852      0.543    0.938     0.949     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 22  4 |  a = 0
+  1  4 |  b = 1
+
