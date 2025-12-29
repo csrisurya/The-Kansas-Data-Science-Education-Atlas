@@ -1,0 +1,373 @@
+City,Num_of_Institutions
+Wichita,110
+Kansas City,60
+Olathe,55
+Overland Park,55
+Topeka,47
+Lawrence,20
+Garden City,19
+Shawnee,18
+Manhattan,17
+Salina,17
+Hutchinson,16
+Dodge City,12
+Goddard,12
+Andover,10
+Gardner,10
+Emporia,10
+Derby,10
+Hays,9
+Liberal,9
+Junction City,9
+Newton,9
+Arkansas City,9
+Leavenworth,9
+Maize,8
+Great Bend,8
+El Dorado,8
+Spring Hill,8
+McPherson,8
+Lenexa,8
+Parsons,8
+Pittsburg,7
+Leawood,7
+Valley Center,7
+Wellington,7
+Pratt,7
+Winfield,7
+Ottawa,7
+Haysville,6
+Abilene,6
+Independence,6
+Goodland,6
+Prairie Village,6
+Basehor,6
+Chapman,5
+Holton,5
+Baldwin City,5
+Osawatomie,5
+Wamego,5
+Louisburg,5
+Iola,5
+Ulysses,5
+Lindsborg,5
+Holcomb,5
+Fort Scott,5
+Atchison,5
+Augusta,5
+Coffeyville,5
+Bonner Springs,4
+Scott City,4
+Humboldt,4
+Hugoton,4
+Concordia,4
+Udall,4
+Clay Center,4
+Paola,4
+Colby,4
+Fredonia,4
+Elkhart,4
+Chanute,4
+Galena,4
+Columbus,4
+Baxter Springs,4
+Fort Leavenworth,4
+De Soto,4
+Tecumseh,4
+Mulvane,4
+Hesston,4
+Buhler,4
+Haven,4
+Fort Riley,4
+Rose Hill,4
+Lyons,4
+Eudora,4
+Lansing,4
+Russell,4
+Hoisington,4
+Kingman,4
+Easton,3
+McLouth,3
+Caney,3
+Neodesha,3
+Oxford,3
+Conway Springs,3
+Caldwell,3
+Belle Plaine,3
+Ellinwood,3
+Hiawatha,3
+Clearwater,3
+Cheney,3
+Douglass,3
+La Crosse,3
+Sterling,3
+Rosalia,3
+Wathena,3
+Pomona,3
+Pretty Prairie,3
+Wellsville,3
+Onaga,3
+Phillipsburg,3
+Larned,3
+Osage City,3
+Norton,3
+St. Paul,3
+Riverton,3
+Sabetha,3
+Cherryvale,3
+Beloit,3
+Ashland,3
+Moundridge,3
+Marion,3
+Hillsboro,3
+Oakley,3
+LaCygne,3
+Tonganoxie,3
+Burlington,3
+Moran,3
+Anthony,3
+Oswego,3
+Altamont,3
+Norwich,3
+Lakin,3
+Deerfield,3
+Arma,3
+Frontenac,3
+Girard,3
+Herington,3
+Sublette,3
+Meriden,3
+Blue Rapids,3
+Colony,2
+Spearville,2
+Yates Center,2
+Hope,2
+Longton,2
+Jetmore,2
+Garnett,2
+Oskaloosa,2
+Perry,2
+Valley Falls,2
+Leoti,2
+Mankato,2
+Satanta,2
+Washington,2
+Linn,2
+Oberlin,2
+Sedgwick,2
+Merriam,2
+Mission,2
+Hanover,2
+Cherokee,2
+Solomon,2
+Clifton,2
+Dexter,2
+Weskan,2
+Burden,2
+Stilwell,2
+Sharon Springs,2
+Eskridge,2
+Halstead,2
+Cunningham,2
+Protection,2
+Burrton,2
+Greensburg,2
+Haviland,2
+Alma,2
+WaKeeney,2
+Chetopa,2
+Rexford,2
+Brewster,2
+Attica,2
+South Haven,2
+Dighton,2
+Healy,2
+Waverly,2
+Lebo,2
+Ellis,2
+Gridley,2
+Syracuse,2
+Madison,2
+Hamilton,2
+Lincoln,2
+Victoria,2
+Eureka,2
+Mound City,2
+Ellsworth,2
+Pleasanton,2
+Tribune,2
+Winona,2
+Argonia,2
+Moscow,2
+Miltonvale,2
+Effingham,2
+Johnson,2
+Olpe,2
+Goessel,2
+Montezuma,2
+Lost Springs,2
+Ingalls,2
+Peabody,2
+Axtell,2
+Frankfort,2
+Marysville,2
+Stafford,2
+St. John,2
+Macksville,2
+Inman,2
+Randolph,2
+Smith Center,2
+Copeland,2
+KENSINGTON,2
+Fowler,2
+Meade,2
+Kiowa,2
+Wakefield,2
+Minneola,2
+Cimarron,2
+Elwood,2
+Hoxie,2
+Medicine Lodge,2
+Howard,2
+Hill City,2
+St Francis,2
+Bird City,2
+Council Grove,2
+White City,2
+Claflin,2
+Rolla,2
+Centralia,2
+Quinter,2
+Seneca,2
+Grinnell,2
+Erie,2
+Silver Lake,2
+Grainfield,2
+Rossville,2
+Ness City,2
+Ransom,2
+Almena,2
+Kismet,2
+Burlingame,2
+Carbondale,2
+Lyndon,2
+Melvern,2
+Highland,2
+Uniontown,2
+Natoma,2
+Hoyt,2
+Horton,2
+Osborne,2
+Bennington,2
+Minneapolis,2
+Tescott,2
+Benton,2
+Rozel,2
+Garden Plain,2
+Logan,2
+Colwich,2
+Troy,2
+Sedan,2
+Bel Aire,2
+Andale,2
+St George,2
+St Marys,2
+Leon,2
+Cedar Vale,2
+Gypsum,2
+Otis,2
+Atwood,2
+Bucklin,2
+Whitewater,2
+Towanda,2
+Stockton,2
+Nickerson,2
+Richmond,2
+Plainville,2
+Palco,2
+Belleville,2
+Riley,2
+Scandia,2
+Chase,2
+Little River,2
+Glasco,2
+Quenemo,1
+Offerle,1
+Lawerence,1
+Courtland,1
+Damar,1
+Yoder,1
+South Hutchinson,1
+Langdon,1
+Cottonwood Falls,1
+OTIS,1
+Strong City,1
+Lucas,1
+Potwin,1
+Brookville,1
+Westmoreland,1
+St. George,1
+Lecompton,1
+Williamsburg,1
+Olsburg,1
+Bentley,1
+Kinsley,1
+Wilson,1
+Long Island,1
+Cassoday,1
+AGRA,1
+Ft. Riley,1
+Downs,1
+Kanopolis,1
+Everest,1
+Park City,1
+Overbrook,1
+Milford,1
+Holyrood,1
+Auburn,1
+Berryton,1
+Bazine,1
+Galesburg,1
+Weir,1
+Tipton,1
+Wakarusa,1
+Cawker City,1
+Selden,1
+Plains,1
+Windom,1
+Clyde,1
+Galva,1
+Canton,1
+Waterville,1
+Neosho Rapids,1
+Hartford,1
+Americus,1
+Allen,1
+Parker,1
+Sylvan Grove,1
+Lewis,1
+LeRoy,1
+Coldwater,1
+Westphalia,1
+Mound Valley,1
+Greeley,1
+Edna,1
+Bartlett,1
+Harper,1
+Alta Vista,1
+Denton,1
+Paxico,1
+Westwood,1
+Shawnee Mission,1
+Roeland Park,1
+North Newton,1
+Enterprise,1
+Edgerton,1
+Winchester,1
+Altoona,1
+Buffalo,1
+Nortonville,1
+HOLTON,1
+Mayetta,1
+Edwardsville,1
+Ogden,1
