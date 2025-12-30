@@ -63,6 +63,10 @@ The project integrates 7 interconnected datasets derived from multiple authorita
 * <i>Remote Access:</i> Kansas State University Windows Server (via Global Protect VPN), Parallels Desktop software
 * <i>Writing:</i> Microsoft Word, Overleaf
 
+## Future Work
+* Expand to K-12 DS/AI curriculum mapping (high school focus)
+* Develop interactive public dashboard for educators and policymakers
+
 ## Acknowledgements
 * Kansas State University Research Foundation
 
