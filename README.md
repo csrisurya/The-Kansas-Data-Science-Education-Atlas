@@ -1,5 +1,8 @@
 # The Kansas Data Science Education Atlas
 
+## Repository Status
+This repository is currently under development. I am actively building out the interactive public dashboard to allow educators and policymakers to visualize these gaps in real-time.
+
 ## Project Overview
 This research project addresses geographic inequities in Data Science (DS) and Artificial Intelligence (AI) education access across Kansas. Using publicly available datasets, geospatial analysis, and machine learning classification, the study reveals that 88 of 105 counties lack any DS/AI academic offerings, with programs concentrated in counties hosting four-year universities (Lawrence, Manhattan, Wichita).
 
@@ -62,10 +65,6 @@ The project integrates 7 interconnected datasets derived from multiple authorita
 * <i>Development:</i> VS Code
 * <i>Remote Access:</i> Kansas State University Windows Server (via Global Protect VPN), Parallels Desktop software
 * <i>Writing:</i> Microsoft Word, Overleaf
-
-## Future Work
-* Expand to K-12 DS/AI curriculum mapping (high school focus)
-* Develop interactive public dashboard for educators and policymakers
 
 ## Acknowledgements
 * Kansas State University Research Foundation
