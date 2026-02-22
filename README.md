@@ -74,4 +74,25 @@ The project integrates 7 interconnected datasets derived from multiple authorita
 * Presented at MINK-WIC Conference 2025 (multi-state -> Missouri, Iowa, Nebraska, Kansas)
 * Nominated to be submitted in American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition
 
+## Tech Stack
 
+- **Frontend**: React + TypeScript + Tailwind CSS
+- **Backend**: Python FastAPI + PostgreSQL
+- **Mapping**: Leaflet.js
+- **Hosting**: Vercel (frontend) + Railway (backend)
+
+
+## Development
+```bash
+# Frontend
+cd frontend
+npm install
+npm run dev
+
+# Backend
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
