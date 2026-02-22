@@ -74,7 +74,7 @@ The project integrates 7 interconnected datasets derived from multiple authorita
 * Presented at MINK-WIC Conference 2025 (multi-state -> Missouri, Iowa, Nebraska, Kansas)
 * Nominated to be submitted in American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition
 
-## Tech Stack
+## Dashboard Tech Stack
 
 - **Frontend**: React + TypeScript + Tailwind CSS
 - **Backend**: Python FastAPI + PostgreSQL
@@ -82,7 +82,7 @@ The project integrates 7 interconnected datasets derived from multiple authorita
 - **Hosting**: Vercel (frontend) + Railway (backend)
 
 
-## Development
+## Dashboard Development
 ```bash
 # Frontend
 cd frontend
