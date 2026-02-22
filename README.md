@@ -75,6 +75,4 @@ The project integrates 7 interconnected datasets derived from multiple authorita
 * Presented at MINK-WIC Conference 2025 (multi-state -> Missouri, Iowa, Nebraska, Kansas)
 * Nominated to be submitted in American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition
 
-## Documentation
-The [documentation](./documentation.pdf) has my raw notes and data collection/processing steps.
-(Updated as of 02/03/2026)
+
