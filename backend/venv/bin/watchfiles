@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/Users/srisurya/Documents/01. academic/01. Kansas State University/02. BA - ICS/ATLAS/Dashboard/The-Kansas-Data-Science-Education-Atlas/backend/venv/bin/python3" "$0" "$@"
+' '''
+import sys
+from watchfiles.cli import cli
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(cli())
