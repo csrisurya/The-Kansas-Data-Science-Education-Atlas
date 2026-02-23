@@ -1,3 +1,4 @@
+from app.api import counties, programs, visualizations
 from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
@@ -11,8 +12,39 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 
 
+tags_metadata = [
+    {
+        "name": "counties",
+        "description": "Endpoints for county-level data and statistics."
+    },
+    {
+        "name": "programs",
+        "description": "Endpoints for DS/AI programs and courses."
+    },
+    {
+        "name": "visualizations",
+        "description": "Endpoints for visualization and analytics data."
+    },
+    {
+        "name": "admin",
+        "description": "Administrative and health endpoints."
+    }
+]
+
 app = FastAPI(
-    title=settings.PROJECT_NAME,
+    title="Kansas Data Science Education Atlas API",
+    description="A comprehensive API for exploring Kansas county-level data, DS/AI programs, and educational impact visualizations.",
+    version="1.0.0",
+    contact={
+        "name": "Kansas State University Data Science Atlas Team",
+        "email": "atlas-support@ksu.edu",
+        "url": "https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas"
+    },
+    license_info={
+        "name": "MIT License",
+        "url": "https://opensource.org/licenses/MIT"
+    },
+    openapi_tags=tags_metadata,
     openapi_url=f"{settings.API_V1_STR}/openapi.json"
 )
 
@@ -36,6 +68,7 @@ def read_root():
 
 
 # --- New Endpoints ---
+# --- New Endpoints ---
 @app.get("/api/v1/test/db-connection")
 def test_db_connection(db: Session = Depends(get_db)):
     try:
@@ -53,6 +86,12 @@ def get_top_counties(db: Session = Depends(get_db)):
         .all()
     )
     return [AtlasSummary.model_validate(c) for c in counties]
+
+# --- API Routers ---
+# --- API Routers ---
+app.include_router(counties.router, prefix="/api/v1", tags=["counties"])
+app.include_router(programs.router, prefix="/api/v1", tags=["programs"])
+app.include_router(visualizations.router, prefix="/api/v1/visualizations", tags=["visualizations"])
 
 @app.get("/health")
 def health_check():
