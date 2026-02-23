@@ -1,0 +1,28 @@
+{
+  "name": "the-kansas-data-science-education-atlas",
+  "version": "1.0.0",
+  "description": "This repository is currently under development. I am actively building out the interactive public dashboard to allow educators and policymakers to visualize these gaps in real-time.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas/issues"
+  },
+  "homepage": "https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas#readme",
+  "dependencies": {
+    "tailwindcss": "^4.2.0"
+  }
+}
