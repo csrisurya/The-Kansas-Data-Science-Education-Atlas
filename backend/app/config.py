@@ -1,6 +1,8 @@
 from pydantic_settings import BaseSettings
 from typing import Optional
 
+import os
+
 class Settings(BaseSettings):
     # Database
     DATABASE_URL: str = "postgresql://atlas_user:your_password@localhost/kansas_atlas"
@@ -15,6 +17,6 @@ class Settings(BaseSettings):
     SECRET_KEY: str
     
     class Config:
-        env_file = ".env"
+        env_file = os.path.join(os.path.dirname(__file__), "..", ".env")
 
 settings = Settings()

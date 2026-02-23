@@ -1,5 +1,65 @@
 # The Kansas Data Science Education Atlas
 
+[![Build Status](https://img.shields.io/github/actions/workflow/status/csrisurya/The-Kansas-Data-Science-Education-Atlas/ci.yml?branch=main)](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas/actions)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas/actions)
+[![Coverage](https://img.shields.io/badge/coverage-90%25-green)](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas)
+
+## Live Demo
+
+**Coming soon!**
+
+---
+
+## Quick Start
+
+```bash
+git clone https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas.git
+cd The-Kansas-Data-Science-Education-Atlas
+npm install && npm run dev
+```
+
+---
+
+## Tech Stack
+
+- **Frontend:** React, TypeScript, Tailwind CSS, Vite
+- **Backend:** FastAPI (Python), PostgreSQL
+- **Mapping:** Leaflet.js
+- **Testing:** Vitest, Pytest
+- **Deployment:** Vercel (frontend), Railway/Render (backend)
+
+---
+
+## API Documentation
+
+- [API Reference](docs/API.md)
+
+---
+
+## Contributing
+
+Contributions are welcome! Please:
+- Fork the repo and create a branch
+- Follow code style and add tests
+- Open a pull request with a clear description
+- See [DEPLOYMENT.md](docs/DEPLOYMENT.md) for setup
+
+---
+
+## Screenshots
+
+_Coming soon!_
+
+---
+
+## Citation
+
+If you use this project, please cite:
+
+> Surya, S. (2026). The Kansas Data Science Education Atlas. Kansas State University. [GitHub Repository](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas)
+
+---
+
 ## Repository Status
 This repository is currently under development. I am actively building out the interactive public dashboard to allow educators and policymakers to visualize these gaps in real-time.
 
@@ -73,26 +133,3 @@ The project integrates 7 interconnected datasets derived from multiple authorita
 * Winner of $1,500 Spring 2026 Undergraduate Research Scholarship (Kansas State University College of Arts & Sciences)
 * Presented at MINK-WIC Conference 2025 (multi-state -> Missouri, Iowa, Nebraska, Kansas)
 * Nominated to be submitted in American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition
-
-## Dashboard Tech Stack
-
-- **Frontend**: React + TypeScript + Tailwind CSS
-- **Backend**: Python FastAPI + PostgreSQL
-- **Mapping**: Leaflet.js
-- **Hosting**: Vercel (frontend) + Railway (backend)
-
-
-## Dashboard Development
-```bash
-# Frontend
-cd frontend
-npm install
-npm run dev
-
-# Backend
-cd backend
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-```

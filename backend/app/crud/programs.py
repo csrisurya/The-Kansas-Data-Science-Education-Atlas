@@ -23,7 +23,7 @@ def get_course_by_id(db: Session, course_id: int) -> Optional[Course]:
 def search_courses(db: Session, query: str, filters: Optional[Dict] = None) -> List[Course]:
     q = db.query(Course).filter(
         or_(
-            Course.name.ilike(f"%{query}%"),
+            Course.course_name.ilike(f"%{query}%"),
             Course.description.ilike(f"%{query}%")
         )
     )

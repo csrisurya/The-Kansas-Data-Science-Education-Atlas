@@ -24,5 +24,10 @@
   "homepage": "https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas#readme",
   "dependencies": {
     "tailwindcss": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "@vitest/ui": "^4.0.18",
+    "vitest": "^4.0.18"
   }
 }

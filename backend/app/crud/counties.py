@@ -16,13 +16,13 @@ def get_counties(
 ) -> List[Atlas]:
     query = db.query(Atlas)
     if has_programs is not None:
-        query = query.filter(Atlas.total_programs > 0 if has_programs else Atlas.total_programs == 0)
+        query = query.filter(Atlas.has_programs == has_programs)
     return query.offset(skip).limit(limit).all()
 
 def get_counties_count(db: Session, has_programs: Optional[int] = None) -> int:
     query = db.query(Atlas)
     if has_programs is not None:
-        query = query.filter(Atlas.total_programs > 0 if has_programs else Atlas.total_programs == 0)
+        query = query.filter(Atlas.has_programs == has_programs)
     return query.count()
 
 def get_top_counties_by_impact(db: Session, limit: int = 10) -> List[Atlas]:
