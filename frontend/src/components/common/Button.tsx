@@ -6,6 +6,7 @@ interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 const variantClasses: Record<NonNullable<ButtonProps['variant']>, string> = {
@@ -29,10 +30,11 @@ const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size = 'md',
   disabled = false,
+  type = 'button',
 }) => {
   return (
     <button
-      type="button"
+      type={type}
       className={`rounded font-semibold transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-ksu-purple/50 disabled:opacity-50 disabled:cursor-not-allowed ${variantClasses[variant]} ${sizeClasses[size]}`}
       onClick={onClick}
       disabled={disabled}
