@@ -71,6 +71,8 @@ const DataRequestPage: React.FC = () => {
 
   const [datasetErrors, setDatasetErrors] = useState<FormErrors>({});
   const [datasetSuccess, setDatasetSuccess] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   const [citationCopied, setCitationCopied] = useState(false);
 
   /* ---- Dataset helpers ---- */
@@ -90,24 +92,51 @@ const DataRequestPage: React.FC = () => {
 
   const validateDataset = (): boolean => {
     const errors: FormErrors = {};
-    if (dataset.datasets.length === 0) errors.datasets = 'Select at least one dataset';
+    if (dataset.datasets.length === 0) errors.datasets = 'Dataset Selection';
+    if (!dataset.intendedUse.trim()) errors.intendedUse = 'Intended Use';
+    if (!dataset.geoScope) errors.geoScope = 'Geographic Scope';
     if (dataset.geoScope === 'specific' && dataset.specificCounties.length === 0)
-      errors.specificCounties = 'Select at least one county';
-    if (dataset.geoScope === 'region' && !dataset.regionType) errors.regionType = 'Select a region type';
-    if (!dataset.intendedUse.trim()) errors.intendedUse = 'Describe the intended use';
-    if (!dataset.name.trim()) errors.name = 'Name is required';
-    if (!dataset.email.trim()) errors.email = 'Email is required';
-    else if (!validateEmail(dataset.email)) errors.email = 'Enter a valid email';
-    if (!dataset.agreeTerms) errors.agreeTerms = 'You must agree to the terms';
+      errors.specificCounties = 'Specific Counties';
+    if (dataset.geoScope === 'region' && !dataset.regionType) errors.regionType = 'Region Type';
+    if (!dataset.dataFormat) errors.dataFormat = 'Data Format';
+    if (!dataset.name.trim()) errors.name = 'Contact Name';
+    if (!dataset.email.trim()) errors.email = 'Contact Email';
+    else if (!validateEmail(dataset.email)) errors.email = 'A valid Email address';
+    if (!dataset.agreeTerms) errors.agreeTerms = 'Terms Agreement';
     setDatasetErrors(errors);
     return Object.keys(errors).length === 0;
   };
 
-  const handleSubmitDataset = () => {
+  const [successMessage, setSuccessMessage] = useState('');
+
+  const handleSubmitDataset = async () => {
     if (!validateDataset()) return;
-    // POST /api/v1/data-request would go here
-    setDatasetSuccess(true);
-    setTimeout(() => setDatasetSuccess(false), 5000);
+    setDatasetErrors({});
+    setSubmitError('');
+    setSubmitting(true);
+
+    try {
+      const { apiService } = await import('../services/api');
+      const result = await apiService.submitDataRequest({
+        request_type: 'dataset',
+        datasets: dataset.datasets,
+        geographic_scope: dataset.geoScope,
+        counties: dataset.geoScope === 'specific' ? dataset.specificCounties : undefined,
+        data_format: dataset.dataFormat,
+        intended_use: dataset.intendedUse,
+        name: dataset.name,
+        email: dataset.email,
+        organization: dataset.organization || undefined,
+        agree_to_terms: dataset.agreeTerms,
+      });
+
+      setSuccessMessage(result.message);
+      setDatasetSuccess(true);
+    } catch (err: any) {
+      setSubmitError(err?.message || 'Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const copyCitation = () => {
@@ -231,7 +260,7 @@ const DataRequestPage: React.FC = () => {
                 checkbox(d.label, dataset.datasets.includes(d.key), () => toggleDataset(d.key)),
               )}
             </div>
-            {fieldError(datasetErrors.datasets)}
+            {datasetErrors.datasets && <p className="text-red-500 text-sm mt-1">⚠ Select at least one dataset</p>}
           </div>
 
           {/* Intended use */}
@@ -246,7 +275,7 @@ const DataRequestPage: React.FC = () => {
                 datasetErrors.intendedUse ? 'border-red-400' : 'border-gray-300'
               }`}
             />
-            {fieldError(datasetErrors.intendedUse)}
+            {datasetErrors.intendedUse && <p className="text-red-500 text-sm mt-1">⚠ Describe the intended use</p>}
           </div>
 
           {/* Terms */}
@@ -257,7 +286,7 @@ const DataRequestPage: React.FC = () => {
               () => setDataset(prev => ({ ...prev, agreeTerms: !prev.agreeTerms })),
               !!datasetErrors.agreeTerms,
             )}
-            {fieldError(datasetErrors.agreeTerms)}
+            {datasetErrors.agreeTerms && <p className="text-red-500 text-sm mt-1">⚠ You must agree to the terms</p>}
           </div>
         </div>
 
@@ -278,7 +307,7 @@ const DataRequestPage: React.FC = () => {
             {dataset.geoScope === 'specific' && (
               <div className="mt-2">
                 <CountyMultiSelect selected={dataset.specificCounties} toggle={toggleDatasetCounty} id="dataset" />
-                {fieldError(datasetErrors.specificCounties)}
+                {datasetErrors.specificCounties && <p className="text-red-500 text-sm mt-1">⚠ Select at least one county</p>}
               </div>
             )}
 
@@ -290,7 +319,7 @@ const DataRequestPage: React.FC = () => {
                 {radioBtn('regionType', 'Rural', dataset.regionType === 'Rural', () =>
                   setDataset(prev => ({ ...prev, regionType: 'Rural' })),
                 )}
-                {fieldError(datasetErrors.regionType)}
+                {datasetErrors.regionType && <p className="text-red-500 text-sm mt-1">⚠ Select a region type</p>}
               </div>
             )}
           </div>
@@ -321,7 +350,7 @@ const DataRequestPage: React.FC = () => {
                     datasetErrors.name ? 'border-red-400' : 'border-gray-300'
                   }`}
                 />
-                {fieldError(datasetErrors.name)}
+                {datasetErrors.name && <p className="text-red-500 text-sm mt-1">⚠ Name is required</p>}
               </div>
               <div>
                 <input
@@ -333,7 +362,7 @@ const DataRequestPage: React.FC = () => {
                     datasetErrors.email ? 'border-red-400' : 'border-gray-300'
                   }`}
                 />
-                {fieldError(datasetErrors.email)}
+                {datasetErrors.email && <p className="text-red-500 text-sm mt-1">⚠ {dataset.email.trim() ? 'Enter a valid email address' : 'Email is required'}</p>}
               </div>
               <input
                 type="text"
@@ -349,22 +378,48 @@ const DataRequestPage: React.FC = () => {
 
       {/* ── Submit button (centered) ───────────────────────── */}
       <div className="flex flex-col items-center gap-3">
+        {/* Consolidated error banner */}
+        {Object.keys(datasetErrors).length > 0 && (
+          <div className="w-full max-w-xl bg-red-50 border border-red-300 rounded-lg px-5 py-4 text-sm">
+            <p className="font-semibold text-red-700 mb-2 flex items-center gap-2">
+              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-red-600 text-white text-xs font-bold shrink-0">!</span>
+              Please complete the following required fields:
+            </p>
+            <ul className="list-disc list-inside text-red-600 space-y-0.5 pl-1">
+              {Object.values(datasetErrors).map((msg, i) => (
+                <li key={i}>{msg}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <button
           type="button"
           onClick={handleSubmitDataset}
-          className="px-16 bg-indigo-600 text-white rounded-lg py-3 text-base font-semibold hover:bg-indigo-700 transition"
+          disabled={submitting}
+          className={`px-16 rounded-lg py-3 text-base font-semibold transition ${
+            submitting
+              ? 'bg-indigo-400 text-white cursor-not-allowed'
+              : 'bg-indigo-600 text-white hover:bg-indigo-700'
+          }`}
         >
-          Submit Request
+          {submitting ? 'Submitting…' : 'Submit Request'}
         </button>
 
-        <p className="italic text-sm text-indigo-600 flex items-center gap-1.5">
-          <span className="not-italic inline-flex items-center justify-center w-5 h-5 rounded-full bg-indigo-600 text-white text-xs font-bold shrink-0">i</span>
-          Requests processed within 2 business days. You'll receive download link via email.
-        </p>
+        {submitError && (
+          <div className="w-full max-w-xl bg-red-50 border border-red-300 text-red-700 rounded-lg px-5 py-3 text-sm flex items-center gap-2">
+            <span className="text-red-600 text-lg">✕</span>
+            {submitError}
+          </div>
+        )}
 
         {datasetSuccess && (
-          <div className="bg-green-50 border border-green-200 text-green-700 rounded-lg px-4 py-3 text-sm">
-            ✓ Request submitted! A confirmation email has been sent to {dataset.email}.
+          <div className="w-full max-w-xl bg-green-50 border border-green-200 text-green-700 rounded-lg px-5 py-4 text-sm">
+            <p className="flex items-center gap-2 font-semibold mb-1">
+              <span className="text-green-600 text-lg">✓</span>
+              Request submitted successfully!
+            </p>
+            <p>{successMessage || `A download link has been sent to ${dataset.email}. Please check your inbox (and spam folder).`}</p>
           </div>
         )}
       </div>

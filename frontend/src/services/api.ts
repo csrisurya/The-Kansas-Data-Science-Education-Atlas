@@ -87,24 +87,24 @@ export const apiService = {
   },
 
   async submitDataRequest(payload: {
-    type: 'report' | 'dataset';
-    reportType?: string;
+    request_type: 'report' | 'dataset';
+    report_type?: string;
     counties?: string[];
-    sections?: string[];
-    outputFormat?: string;
+    geographic_scope: string;
+    data_format: string;
     datasets?: string[];
-    geoScope?: string;
-    dataFormat?: string;
-    intendedUse?: string;
-    name?: string;
-    email?: string;
+    intended_use: string;
+    name: string;
+    email: string;
     organization?: string;
-  }) {
+    agree_to_terms: boolean;
+  }): Promise<{ request_id: string; status: string; message: string }> {
     try {
       const res = await api.post('/api/v1/data-request', payload);
       return res.data;
     } catch (error) {
       handleError(error);
+      throw error;
     }
   },
 };

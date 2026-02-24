@@ -1,4 +1,4 @@
-from app.api import counties, programs, visualizations
+from app.api import counties, programs, visualizations, data_request
 from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
@@ -24,6 +24,10 @@ tags_metadata = [
     {
         "name": "visualizations",
         "description": "Endpoints for visualization and analytics data."
+    },
+    {
+        "name": "data-request",
+        "description": "Endpoints for data requests and report generation."
     },
     {
         "name": "admin",
@@ -92,6 +96,7 @@ def get_top_counties(db: Session = Depends(get_db)):
 app.include_router(counties.router, prefix="/api/v1", tags=["counties"])
 app.include_router(programs.router, prefix="/api/v1", tags=["programs"])
 app.include_router(visualizations.router, prefix="/api/v1/visualizations", tags=["visualizations"])
+app.include_router(data_request.router, prefix="/api/v1", tags=["data-request"])
 
 @app.get("/health")
 def health_check():

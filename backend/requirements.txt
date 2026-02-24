@@ -28,3 +28,9 @@ pytest-asyncio==0.23.3
 # Utilities
 openpyxl==3.1.2  # For Excel file reading
 geojson==3.1.0   # For GeoJSON handling
+
+# Data Request & Report Generation
+email-validator==2.1.0  # For Pydantic EmailStr
+fpdf2==2.7.8            # PDF report generation
+python-pptx==0.6.23     # PowerPoint report generation
+sendgrid==6.11.0        # SendGrid email backend (optional)
