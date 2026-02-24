@@ -85,6 +85,28 @@ export const apiService = {
       handleError(error);
     }
   },
+
+  async submitDataRequest(payload: {
+    type: 'report' | 'dataset';
+    reportType?: string;
+    counties?: string[];
+    sections?: string[];
+    outputFormat?: string;
+    datasets?: string[];
+    geoScope?: string;
+    dataFormat?: string;
+    intendedUse?: string;
+    name?: string;
+    email?: string;
+    organization?: string;
+  }) {
+    try {
+      const res = await api.post('/api/v1/data-request', payload);
+      return res.data;
+    } catch (error) {
+      handleError(error);
+    }
+  },
 };
 
 export { api };
