@@ -77,6 +77,23 @@ export const apiService = {
     }
   },
 
+  async getPrograms(params?: {
+    search_query?: string;
+    level?: string;
+    modality?: string;
+    school_name?: string;
+    skip?: number;
+    limit?: number;
+  }) {
+    try {
+      const res = await api.get('/api/v1/programs', { params });
+      return res.data as { total: number; programs: Program[] };
+    } catch (error) {
+      handleError(error);
+      throw error;
+    }
+  },
+
   async getHeatMapData(metric: string) {
     try {
       const res = await api.get<HeatMapData[]>(`/api/v1/heatmap/${metric}`);

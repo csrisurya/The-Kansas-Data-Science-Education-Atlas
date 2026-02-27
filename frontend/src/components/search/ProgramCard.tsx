@@ -1,0 +1,224 @@
+import { useState } from 'react';
+import type { Course } from '../../types/atlas';
+
+/* ------------------------------------------------------------------ */
+/*  Props                                                              */
+/* ------------------------------------------------------------------ */
+
+interface ProgramCardProps {
+  /** Representative course entry (carries school-level info) */
+  program: Course;
+  /** All courses belonging to this program / school */
+  courses?: Course[];
+  onExpand: () => void;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Helpers                                                            */
+/* ------------------------------------------------------------------ */
+
+const MODALITY_STYLES: Record<string, { bg: string; text: string }> = {
+  online:    { bg: 'bg-green-100',  text: 'text-green-700' },
+  'in-person': { bg: 'bg-blue-100',   text: 'text-blue-700' },
+  hybrid:    { bg: 'bg-purple-100', text: 'text-purple-700' },
+};
+
+function modalityStyle(modality: string) {
+  const key = modality.toLowerCase().trim();
+  return MODALITY_STYLES[key] ?? { bg: 'bg-gray-100', text: 'text-gray-600' };
+}
+
+function levelBadge(level: string) {
+  const lower = level.toLowerCase();
+  if (lower.includes('graduate') && !lower.includes('under'))
+    return { label: 'Graduate', bg: 'bg-amber-100', text: 'text-amber-700' };
+  return { label: 'Undergraduate', bg: 'bg-sky-100', text: 'text-sky-700' };
+}
+
+/** Deduplicate & collect unique values from an array of Courses */
+function uniqueValues(courses: Course[], key: keyof Course): string[] {
+  const set = new Set<string>();
+  for (const c of courses) {
+    const val = String(c[key] ?? '').trim();
+    if (val && val !== 'DNE') set.add(val);
+  }
+  return [...set];
+}
+
+/* ------------------------------------------------------------------ */
+/*  Component                                                          */
+/* ------------------------------------------------------------------ */
+
+const ProgramCard: React.FC<ProgramCardProps> = ({ program, courses = [], onExpand }) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const allCourses = courses.length > 0 ? courses : [program];
+  const courseCount = allCourses.filter(
+    (c) => c.course_name && c.course_name !== 'DNE',
+  ).length;
+
+  const degreeLevels = uniqueValues(allCourses, 'level');
+  const modalities = uniqueValues(allCourses, 'modality');
+  const degreeNames = uniqueValues(allCourses, 'degree_name');
+
+  const featuredCourses = allCourses
+    .filter((c) => c.course_name && c.course_name !== 'DNE')
+    .slice(0, 3);
+
+  const remainingCourses = allCourses.filter(
+    (c) => c.course_name && c.course_name !== 'DNE',
+  ).slice(3);
+
+  const handleToggle = () => {
+    setExpanded((prev) => !prev);
+    if (!expanded) onExpand();
+  };
+
+  return (
+    <div className="group rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-200">
+      {/* ---- Header ---- */}
+      <div className="px-5 pt-5 pb-3">
+        <div className="flex items-start justify-between gap-3">
+          {/* School name + institution badge */}
+          <div className="flex items-center gap-2 flex-wrap">
+            <h3 className="text-base font-bold text-gray-900 leading-snug">
+              {program.school_name}
+            </h3>
+            <span className="inline-flex items-center rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700">
+              Institution
+            </span>
+          </div>
+
+          {/* Course count pill */}
+          {courseCount > 0 && (
+            <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-semibold text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              {courseCount} {courseCount === 1 ? 'Course' : 'Courses'}
+            </span>
+          )}
+        </div>
+
+        {/* Department */}
+        {program.dept_name && program.dept_name !== 'DNE' && (
+          <p className="mt-1 text-sm text-gray-500">{program.dept_name}</p>
+        )}
+      </div>
+
+      {/* ---- Badges row ---- */}
+      <div className="px-5 pb-3 flex flex-wrap gap-1.5">
+        {/* Degree-level badges */}
+        {degreeLevels.map((lvl) => {
+          const b = levelBadge(lvl);
+          return (
+            <span key={lvl} className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${b.bg} ${b.text}`}>
+              {b.label}
+            </span>
+          );
+        })}
+
+        {/* Degree name badges */}
+        {degreeNames.map((d) => (
+          <span key={d} className="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600">
+            {d}
+          </span>
+        ))}
+
+        {/* Modality badges */}
+        {modalities.map((mod) => {
+          const s = modalityStyle(mod);
+          return (
+            <span key={mod} className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${s.bg} ${s.text}`}>
+              {mod}
+            </span>
+          );
+        })}
+      </div>
+
+      {/* ---- Featured courses ---- */}
+      {featuredCourses.length > 0 && (
+        <div className="px-5 pb-3">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
+            Featured Courses
+          </p>
+          <ul className="space-y-1">
+            {featuredCourses.map((c) => (
+              <li key={c.id} className="flex items-baseline gap-2 text-sm">
+                {c.course_code && c.course_code !== 'DNE' && (
+                  <span className="shrink-0 font-mono text-xs text-indigo-600">{c.course_code}</span>
+                )}
+                <span className="text-gray-700">{c.course_name}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* ---- Expanded course list ---- */}
+      {expanded && remainingCourses.length > 0 && (
+        <div className="px-5 pb-3 border-t border-gray-100 pt-3">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
+            All Courses
+          </p>
+          <ul className="space-y-1 max-h-60 overflow-y-auto">
+            {allCourses
+              .filter((c) => c.course_name && c.course_name !== 'DNE')
+              .map((c) => (
+                <li key={c.id} className="flex items-baseline gap-2 text-sm">
+                  {c.course_code && c.course_code !== 'DNE' && (
+                    <span className="shrink-0 font-mono text-xs text-indigo-600">{c.course_code}</span>
+                  )}
+                  <span className="text-gray-700">{c.course_name}</span>
+                </li>
+              ))}
+          </ul>
+        </div>
+      )}
+
+      {/* ---- Footer actions ---- */}
+      <div className="flex items-center justify-between gap-3 px-5 py-3 border-t border-gray-100 bg-gray-50 rounded-b-lg">
+        <div className="flex items-center gap-3">
+          {/* View catalog link */}
+          {program.course_url && program.course_url !== 'DNE' && (
+            <a
+              href={program.course_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs font-medium text-indigo-600 hover:text-indigo-800 hover:underline"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              View Catalog
+            </a>
+          )}
+        </div>
+
+        {/* Expand / Collapse */}
+        {courseCount > 3 && (
+          <button
+            type="button"
+            onClick={handleToggle}
+            className="inline-flex items-center gap-1 text-xs font-medium text-gray-600 hover:text-indigo-600 transition-colors"
+          >
+            {expanded ? 'Show Less' : `Show All ${courseCount} Courses`}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className={`h-3.5 w-3.5 transition-transform ${expanded ? 'rotate-180' : ''}`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default ProgramCard;
