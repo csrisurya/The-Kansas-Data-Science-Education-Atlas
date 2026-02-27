@@ -247,6 +247,7 @@ const DataRequestPage: React.FC = () => {
      ============================================================ */
   return (
     <div className="space-y-8">
+      <div style={{ height: '2rem' }} />
       {/* ── Two-panel grid ──────────────────────────────────── */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 

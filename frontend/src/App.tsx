@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import ErrorBoundary from './components/common/ErrorBoundary';
 import ExplorePage from './pages/ExplorePage';
 import ComparePage from './pages/ComparePage';
 import SearchPage from './pages/SearchPage';
@@ -58,11 +59,13 @@ const App: React.FC = () => {
       {/* Main Content Area: Only show the active tab's content */}
       <main className="flex-1 w-full px-8 py-6">
         <div className="bg-white rounded-lg border border-gray-200 p-8 min-h-[400px]">
-          {activeTab === 'explore' && <ExplorePage />}
-          {activeTab === 'compare' && <ComparePage />}
-          {activeTab === 'search' && <SearchPage />}
-          {activeTab === 'recommendations' && <RecommendationPage />}
-          {activeTab === 'datarequest' && <DataRequestPage />}
+          <ErrorBoundary>
+            {activeTab === 'explore' && <ExplorePage />}
+            {activeTab === 'compare' && <ComparePage />}
+            {activeTab === 'search' && <SearchPage />}
+            {activeTab === 'recommendations' && <RecommendationPage />}
+            {activeTab === 'datarequest' && <DataRequestPage />}
+          </ErrorBoundary>
         </div>
       </main>
     </div>
