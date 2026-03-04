@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import type { Course } from '../../types/atlas';
 
 /* ------------------------------------------------------------------ */
@@ -20,7 +19,6 @@ interface ProgramCardProps {
 const MODALITY_STYLES: Record<string, { bg: string; text: string }> = {
   online:    { bg: 'bg-green-100',  text: 'text-green-700' },
   'in-person': { bg: 'bg-blue-100',   text: 'text-blue-700' },
-  hybrid:    { bg: 'bg-purple-100', text: 'text-purple-700' },
 };
 
 function modalityStyle(modality: string) {
@@ -49,30 +47,15 @@ function uniqueValues(courses: Course[], key: keyof Course): string[] {
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
-const ProgramCard: React.FC<ProgramCardProps> = ({ program, courses = [], onExpand }) => {
-  const [expanded, setExpanded] = useState(false);
-
+const ProgramCard: React.FC<ProgramCardProps> = ({ program, courses = [] }) => {
   const allCourses = courses.length > 0 ? courses : [program];
   const courseCount = allCourses.filter(
     (c) => c.course_name && c.course_name !== 'DNE',
   ).length;
 
-  const degreeLevels = uniqueValues(allCourses, 'level');
-  const modalities = uniqueValues(allCourses, 'modality');
-  const degreeNames = uniqueValues(allCourses, 'degree_name');
-
-  const featuredCourses = allCourses
-    .filter((c) => c.course_name && c.course_name !== 'DNE')
-    .slice(0, 3);
-
-  const remainingCourses = allCourses.filter(
+  const allValidCourses = allCourses.filter(
     (c) => c.course_name && c.course_name !== 'DNE',
-  ).slice(3);
-
-  const handleToggle = () => {
-    setExpanded((prev) => !prev);
-    if (!expanded) onExpand();
-  };
+  );
 
   return (
     <div className="group rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-200">
@@ -100,79 +83,45 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ program, courses = [], onExpa
             </span>
           )}
         </div>
-
-        {/* Department */}
-        {program.dept_name && program.dept_name !== 'DNE' && (
-          <p className="mt-1 text-sm text-gray-500">{program.dept_name}</p>
-        )}
       </div>
 
-      {/* ---- Badges row ---- */}
-      <div className="px-5 pb-3 flex flex-wrap gap-1.5">
-        {/* Degree-level badges */}
-        {degreeLevels.map((lvl) => {
-          const b = levelBadge(lvl);
-          return (
-            <span key={lvl} className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${b.bg} ${b.text}`}>
-              {b.label}
-            </span>
-          );
-        })}
-
-        {/* Degree name badges */}
-        {degreeNames.map((d) => (
-          <span key={d} className="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600">
-            {d}
-          </span>
-        ))}
-
-        {/* Modality badges */}
-        {modalities.map((mod) => {
-          const s = modalityStyle(mod);
-          return (
-            <span key={mod} className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${s.bg} ${s.text}`}>
-              {mod}
-            </span>
-          );
-        })}
-      </div>
-
-      {/* ---- Featured courses ---- */}
-      {featuredCourses.length > 0 && (
+      {/* ---- Courses ---- */}
+      {allValidCourses.length > 0 && (
         <div className="px-5 pb-3">
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
-            Featured Courses
+            Courses
           </p>
-          <ul className="space-y-1">
-            {featuredCourses.map((c) => (
-              <li key={c.id} className="flex items-baseline gap-2 text-sm">
-                {c.course_code && c.course_code !== 'DNE' && (
-                  <span className="shrink-0 font-mono text-xs text-indigo-600">{c.course_code}</span>
-                )}
-                <span className="text-gray-700">{c.course_name}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {/* ---- Expanded course list ---- */}
-      {expanded && remainingCourses.length > 0 && (
-        <div className="px-5 pb-3 border-t border-gray-100 pt-3">
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
-            All Courses
-          </p>
-          <ul className="space-y-1 max-h-60 overflow-y-auto">
-            {allCourses
-              .filter((c) => c.course_name && c.course_name !== 'DNE')
-              .map((c) => (
-                <li key={c.id} className="flex items-baseline gap-2 text-sm">
+          <ul className="space-y-1.5 max-h-60 overflow-y-auto">
+            {allValidCourses.map((c) => {
+              const lvl = (c.level ?? '').trim();
+              const mod = (c.modality ?? '').trim();
+              const showLevel = lvl && lvl !== 'DNE';
+              const showMod = mod && mod !== 'DNE';
+              const modTags = mod.toLowerCase() === 'both'
+                ? ['In-person', 'Online']
+                : [mod];
+              return (
+                <li key={c.id} className="flex items-center gap-2 text-sm">
                   {c.course_code && c.course_code !== 'DNE' && (
                     <span className="shrink-0 font-mono text-xs text-indigo-600">{c.course_code}</span>
                   )}
                   <span className="text-gray-700">{c.course_name}</span>
+                  {showLevel && (
+                    <span className={`shrink-0 inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium ${levelBadge(lvl).bg} ${levelBadge(lvl).text}`}>
+                      {levelBadge(lvl).label}
+                    </span>
+                  )}
+                  {showMod && modTags.map((m) => {
+                    const s = modalityStyle(m);
+                    return (
+                      <span key={m} className={`shrink-0 inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium ${s.bg} ${s.text}`}>
+                        {m}
+                      </span>
+                    );
+                  })}
                 </li>
-              ))}
+              );
+            })}
           </ul>
         </div>
       )}
@@ -195,27 +144,6 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ program, courses = [], onExpa
             </a>
           )}
         </div>
-
-        {/* Expand / Collapse */}
-        {courseCount > 3 && (
-          <button
-            type="button"
-            onClick={handleToggle}
-            className="inline-flex items-center gap-1 text-xs font-medium text-gray-600 hover:text-indigo-600 transition-colors"
-          >
-            {expanded ? 'Show Less' : `Show All ${courseCount} Courses`}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className={`h-3.5 w-3.5 transition-transform ${expanded ? 'rotate-180' : ''}`}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-        )}
       </div>
     </div>
   );

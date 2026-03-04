@@ -1,11 +1,13 @@
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import ErrorBoundary from './components/common/ErrorBoundary';
 import ExplorePage from './pages/ExplorePage';
 import ComparePage from './pages/ComparePage';
 import SearchPage from './pages/SearchPage';
 import RecommendationPage from './pages/RecommendationPage';
 import DataRequestPage from './pages/DataRequestPage';
+
+const MAX_COUNTIES = 4;
 
 const navTabs = [
   { name: 'Explore', key: 'explore', section: 'Geographic Distribution' },
@@ -17,6 +19,23 @@ const navTabs = [
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState('explore');
+  const [selectedCounties, setSelectedCounties] = useState<(number | null)[]>([
+    null, null, null, null,
+  ]);
+
+  const handleCountyChange = useCallback((slotIndex: number, countyId: number | null) => {
+    setSelectedCounties((prev) => {
+      if (countyId != null) {
+        const next = [...prev];
+        next[slotIndex] = countyId;
+        return next;
+      }
+      const next = [...prev];
+      next[slotIndex] = null;
+      const filled = next.filter((id) => id != null);
+      return Array.from({ length: MAX_COUNTIES }, (_, i) => filled[i] ?? null);
+    });
+  }, []);
   const activeSection = navTabs.find(tab => tab.key === activeTab)?.section || '';
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900 font-sans">
@@ -61,7 +80,7 @@ const App: React.FC = () => {
         <div className="bg-white rounded-lg border border-gray-200 p-8 min-h-[400px]">
           <ErrorBoundary>
             {activeTab === 'explore' && <ExplorePage />}
-            {activeTab === 'compare' && <ComparePage />}
+            {activeTab === 'compare' && <ComparePage selectedCounties={selectedCounties} onCountyChange={handleCountyChange} />}
             {activeTab === 'search' && <SearchPage />}
             {activeTab === 'recommendations' && <RecommendationPage />}
             {activeTab === 'datarequest' && <DataRequestPage />}

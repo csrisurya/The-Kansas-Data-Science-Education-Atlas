@@ -14,6 +14,8 @@ class Course(Base):
     level = Column(String(50))
     modality = Column(String(50))
     course_url = Column(Text)
+    institution_type = Column(String(50))
+    county_name = Column(String(255))
 
     def __repr__(self):
         return f"<Course(id={self.id}, school_name='{self.school_name}', course_name='{self.course_name}')>"

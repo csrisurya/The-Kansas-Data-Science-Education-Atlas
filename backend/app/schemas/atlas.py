@@ -65,6 +65,8 @@ class CourseBase(BaseModel):
     level: Optional[str] = None
     modality: Optional[str] = None
     course_url: Optional[str] = None
+    institution_type: Optional[str] = None
+    county_name: Optional[str] = None
 
 class CourseResponse(CourseBase):
     id: int

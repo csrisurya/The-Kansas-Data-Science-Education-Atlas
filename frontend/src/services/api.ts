@@ -81,6 +81,8 @@ export const apiService = {
     search_query?: string;
     level?: string;
     modality?: string;
+    institution_type?: string;
+    county_name?: string;
     school_name?: string;
     skip?: number;
     limit?: number;

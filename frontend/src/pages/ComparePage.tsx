@@ -1,4 +1,3 @@
-import { useState, useCallback } from 'react';
 import { useQueries } from '@tanstack/react-query';
 import { apiService } from '../services/api';
 import type { County } from '../types/atlas';
@@ -7,30 +6,12 @@ import CountyComparisonCard from '../components/compare/CountyComparisonCard';
 
 const MAX_COUNTIES = 4;
 
-const ComparePage: React.FC = () => {
-  const [selectedCounties, setSelectedCounties] = useState<(number | null)[]>([
-    null,
-    null,
-    null,
-    null,
-  ]);
+interface ComparePageProps {
+  selectedCounties: (number | null)[];
+  onCountyChange: (slotIndex: number, countyId: number | null) => void;
+}
 
-  const handleCountyChange = useCallback((slotIndex: number, countyId: number | null) => {
-    setSelectedCounties((prev) => {
-      if (countyId != null) {
-        // Adding a county — place it in the given slot
-        const next = [...prev];
-        next[slotIndex] = countyId;
-        return next;
-      }
-      // Removing a county — shift subsequent counties left to fill the gap
-      const next = [...prev];
-      next[slotIndex] = null;
-      // Compact: pull non-null values to the front, pad with nulls
-      const filled = next.filter((id) => id != null);
-      return Array.from({ length: MAX_COUNTIES }, (_, i) => filled[i] ?? null);
-    });
-  }, []);
+const ComparePage: React.FC<ComparePageProps> = ({ selectedCounties, onCountyChange: handleCountyChange }) => {
 
   // Fetch full data for each selected county
   const countyQueries = useQueries({

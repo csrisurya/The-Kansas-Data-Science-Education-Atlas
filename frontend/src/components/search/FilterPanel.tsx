@@ -10,8 +10,8 @@ import type { County } from '../../types/atlas';
 export interface FilterState {
   institutionType: string[];   // '4-Year' | '2-Year' | '<2-Year'
   degreeLevel: string[];       // 'Undergraduate' | 'Graduate'
-  modality: string[];          // 'In-Person' | 'Online' | 'Hybrid'
-  county: number | null;       // county id or null = All Counties
+  modality: string[];          // 'In-Person' | 'Online' | 'Both'
+  county: string | null;       // county name or null = All Counties
 }
 
 export const EMPTY_FILTERS: FilterState = {
@@ -27,7 +27,7 @@ export const EMPTY_FILTERS: FilterState = {
 
 const INSTITUTION_TYPES = ['4-Year', '2-Year', '<2-Year'] as const;
 const DEGREE_LEVELS    = ['Undergraduate', 'Graduate'] as const;
-const MODALITIES       = ['In-Person', 'Online', 'Hybrid'] as const;
+const MODALITIES       = ['In-Person', 'Online', 'Both'] as const;
 
 /* ------------------------------------------------------------------ */
 /*  Props                                                              */
@@ -74,7 +74,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({ filters, onFilterChange }) =>
   const handleCountyChange = useCallback(
     (e: React.ChangeEvent<HTMLSelectElement>) => {
       const val = e.target.value;
-      onFilterChange({ ...filters, county: val ? Number(val) : null });
+      onFilterChange({ ...filters, county: val || null });
     },
     [filters, onFilterChange],
   );
@@ -176,7 +176,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({ filters, onFilterChange }) =>
               .slice()
               .sort((a, b) => a.county_name.localeCompare(b.county_name))
               .map((c) => (
-                <option key={c.id} value={c.id}>
+                <option key={c.id} value={c.county_name}>
                   {c.county_name}
                 </option>
               ))}

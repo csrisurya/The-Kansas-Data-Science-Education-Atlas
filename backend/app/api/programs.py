@@ -11,17 +11,23 @@ router = APIRouter()
 def list_programs(
     skip: int = 0,
     limit: int = 100,
-    level: Optional[str] = Query(None),
-    modality: Optional[str] = Query(None),
+    level: Optional[str] = Query(None, description="Comma-separated degree levels, e.g. Undergraduate,Graduate"),
+    modality: Optional[str] = Query(None, description="Comma-separated modalities, e.g. In-person,Online,Both"),
+    institution_type: Optional[str] = Query(None, description="Comma-separated institution types, e.g. 4-Year,2-Year,<2-Year"),
+    county_name: Optional[str] = Query(None, description="County name to filter by"),
     school_name: Optional[str] = Query(None),
     search_query: Optional[str] = Query(None),
     db: Session = Depends(get_db)
 ):
     filters = {}
     if level:
-        filters['level'] = level
+        filters['level'] = [v.strip() for v in level.split(',') if v.strip()]
     if modality:
-        filters['modality'] = modality
+        filters['modality'] = [v.strip() for v in modality.split(',') if v.strip()]
+    if institution_type:
+        filters['institution_type'] = [v.strip() for v in institution_type.split(',') if v.strip()]
+    if county_name:
+        filters['county_name'] = county_name
     if school_name:
         filters['school_name'] = school_name
     if search_query:

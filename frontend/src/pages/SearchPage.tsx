@@ -19,8 +19,7 @@ function filtersFromParams(params: URLSearchParams): FilterState {
   const institutionType = params.get('institution')?.split(',').filter(Boolean) ?? [];
   const degreeLevel = params.get('level')?.split(',').filter(Boolean) ?? [];
   const modality = params.get('modality')?.split(',').filter(Boolean) ?? [];
-  const countyRaw = params.get('county');
-  const county = countyRaw ? Number(countyRaw) : null;
+  const county = params.get('county') || null;
   return { institutionType, degreeLevel, modality, county };
 }
 
@@ -72,8 +71,10 @@ const SearchPage: React.FC = () => {
       limit: page * PAGE_SIZE,
     };
     if (searchQuery) params.search_query = searchQuery;
-    if (filters.degreeLevel.length === 1) params.level = filters.degreeLevel[0];
-    if (filters.modality.length === 1) params.modality = filters.modality[0];
+    if (filters.degreeLevel.length > 0) params.level = filters.degreeLevel.join(',');
+    if (filters.modality.length > 0) params.modality = filters.modality.join(',');
+    if (filters.institutionType.length > 0) params.institution_type = filters.institutionType.join(',');
+    if (filters.county) params.county_name = filters.county;
     return params;
   }, [searchQuery, filters, page]);
 

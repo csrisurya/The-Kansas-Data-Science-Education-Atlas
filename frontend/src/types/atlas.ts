@@ -45,4 +45,6 @@ export interface Course {
   level: string;
   modality: string;
   course_url: string;
+  institution_type: string;
+  county_name: string;
 }
