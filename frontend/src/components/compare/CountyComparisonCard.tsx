@@ -29,14 +29,14 @@ function impactBg(score: number): string {
 }
 
 function povertyColor(rate: number): string {
-  if (rate <= 10) return 'text-green-600';
-  if (rate <= 20) return 'text-yellow-600';
+  if (rate <= 0.10) return 'text-green-600';
+  if (rate <= 0.20) return 'text-yellow-600';
   return 'text-red-600';
 }
 
 function unemploymentColor(rate: number): string {
-  if (rate <= 4) return 'text-green-600';
-  if (rate <= 7) return 'text-yellow-600';
+  if (rate <= 0.04) return 'text-green-600';
+  if (rate <= 0.07) return 'text-yellow-600';
   return 'text-red-600';
 }
 
@@ -136,8 +136,8 @@ const CountyComparisonCard: React.FC<CountyComparisonCardProps> = ({ county, onR
         {/* 📍 Location */}
         <div className="pb-2">
           <SectionHeader icon="📍" title="Location" />
-          <StatRow label="Latitude" value={county.county_latitude.toFixed(4)} />
-          <StatRow label="Longitude" value={county.county_longitude.toFixed(4)} />
+          <StatRow label="Latitude" value={county.county_latitude} />
+          <StatRow label="Longitude" value={county.county_longitude} />
         </div>
 
         {/* 🏫 K-12 Schools */}
@@ -147,6 +147,7 @@ const CountyComparisonCard: React.FC<CountyComparisonCardProps> = ({ county, onR
           <StatRow label="Middle" value={fmt(county.middle_schools)} />
           <StatRow label="High" value={fmt(county.high_schools)} />
           <StatRow label="Virtual" value={fmt(county.virtual_schools)} />
+          <StatRow label="Other" value={fmt(county.other_schools)} />
         </div>
 
         {/* 🎓 Higher Education */}
@@ -185,12 +186,12 @@ const CountyComparisonCard: React.FC<CountyComparisonCardProps> = ({ county, onR
           <StatRow label="Median Income" value={currency(county.median_household_income)} />
           <StatRow
             label="Poverty Rate"
-            value={pct(county.poverty_rate)}
+            value={`${(county.poverty_rate * 100).toFixed(1)}%`}
             color={povertyColor(county.poverty_rate)}
           />
           <StatRow
             label="Unemployment"
-            value={pct(county.unemployment_rate)}
+            value={`${(county.unemployment_rate * 100).toFixed(1)}%`}
             color={unemploymentColor(county.unemployment_rate)}
           />
         </div>
