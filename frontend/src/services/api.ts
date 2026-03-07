@@ -41,7 +41,7 @@ export const apiService = {
     }
   },
 
-  async getCounties(params?: { limit?: number; offset?: number; has_programs?: boolean }) {
+  async getCounties(params?: { limit?: number; skip?: number; has_programs?: boolean }) {
     try {
       const res = await api.get<County[]>('/api/v1/counties', { params });
       return res.data;

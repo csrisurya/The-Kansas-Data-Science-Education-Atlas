@@ -165,8 +165,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({
             1–{showingCount}
           </span>{' '}
           of{' '}
-          <span className="font-semibold text-gray-800">{totalCount}</span>{' '}
-          results
+          <span className="font-semibold text-gray-800">{totalCount}</span>
         </p>
 
         {/* Sort dropdown */}

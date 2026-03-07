@@ -49,7 +49,6 @@ def search_courses(db: Session, query: str, filters: Optional[Dict] = None) -> L
         or_(
             Course.course_name.ilike(f"%{query}%"),
             Course.description.ilike(f"%{query}%"),
-            Course.school_name.ilike(f"%{query}%"),
         )
     )
     q = _apply_filters(q, filters)

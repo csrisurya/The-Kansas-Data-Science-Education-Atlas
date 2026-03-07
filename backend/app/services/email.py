@@ -114,7 +114,7 @@ def _build_confirmation_html(
             <!-- Contact -->
             <p style="font-size:14px;color:#666;">
               Questions? Reply to this email or contact us at
-              <a href="mailto:atlas-support@ksu.edu" style="color:#512888;">atlas-support@ksu.edu</a>.
+              <a href="mailto:csrisurya@gmail.com" style="color:#512888;">csrisurya@gmail.com</a>.
             </p>
 
             <p style="font-size:15px;margin-bottom:0;">

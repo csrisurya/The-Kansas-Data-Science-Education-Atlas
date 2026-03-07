@@ -74,7 +74,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
         onChange={handleChange}
         onKeyDown={handleKeyDown}
         placeholder={placeholder}
-        className={`w-full rounded-lg border border-gray-300 bg-white py-2.5 ${isLoading ? 'pl-10' : 'pl-4'} pr-20 text-sm text-gray-700 shadow-sm placeholder:text-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors`}
+        className={`w-full rounded-lg border border-gray-300 bg-white py-2.5 ${isLoading ? 'pl-10' : 'pl-4'} pr-10 text-sm text-gray-700 shadow-sm placeholder:text-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors`}
       />
 
       {/* Clear button */}
@@ -82,7 +82,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
         <button
           type="button"
           onClick={handleClear}
-          className="absolute right-14 flex items-center justify-center h-5 w-5 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-500 transition-colors"
+          className="absolute right-3 flex items-center justify-center h-5 w-5 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-500 transition-colors"
           aria-label="Clear search"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
@@ -90,16 +90,6 @@ const SearchBar: React.FC<SearchBarProps> = ({
           </svg>
         </button>
       )}
-
-      {/* Search button */}
-      <button
-        type="button"
-        onClick={handleSearchClick}
-        disabled={isLoading}
-        className="absolute right-1.5 rounded-md bg-indigo-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-      >
-        Search
-      </button>
     </div>
   );
 };

@@ -195,13 +195,6 @@ const FilterPanel: React.FC<FilterPanelProps> = ({ filters, onFilterChange }) =>
           >
             Clear
           </button>
-          <button
-            type="button"
-            onClick={handleApply}
-            className="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-700 transition-colors"
-          >
-            Apply
-          </button>
         </div>
       </div>
     </div>

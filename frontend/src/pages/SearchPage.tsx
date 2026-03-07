@@ -113,17 +113,25 @@ const SearchPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="space-y-4">
+    <div>
       {/* Search bar */}
-      <SearchBar
-        onSearch={handleSearch}
-        isLoading={isLoading}
-        placeholder="Search programs, courses, institutions…"
-        initialValue={searchQuery}
-      />
+      <div>
+        <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Search</h4>
+        <SearchBar
+          onSearch={handleSearch}
+          isLoading={isLoading}
+          placeholder="Search programs, courses, institutions…"
+          initialValue={searchQuery}
+        />
+      </div>
+
+      <div style={{ height: '2rem' }} />
 
       {/* Horizontal filters */}
-      <FilterPanel filters={filters} onFilterChange={handleFilterChange} />
+      <div>
+        <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Filter</h4>
+        <FilterPanel filters={filters} onFilterChange={handleFilterChange} />
+      </div>
 
       {/* Default state — no search or filter active */}
       {!hasActiveSearch && (
@@ -153,7 +161,15 @@ const SearchPage: React.FC = () => {
       {hasActiveSearch && (
         <>
           {/* Quick insights */}
-          {programs.length > 0 && <QuickInsights programs={programs} totalCount={totalCount} />}
+          {programs.length > 0 && (
+            <>
+              <div style={{ height: '2rem' }} />
+              <div>
+                <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Key Insights</h4>
+                <QuickInsights programs={programs} totalCount={totalCount} />
+              </div>
+            </>
+          )}
 
           {/* Error state */}
           {isError && (
@@ -163,12 +179,16 @@ const SearchPage: React.FC = () => {
           )}
 
           {/* Results */}
-          <SearchResults
-            programs={programs}
-            totalCount={totalCount}
-            loading={isLoading}
-            onLoadMore={handleLoadMore}
-          />
+          <div style={{ height: '2rem' }} />
+          <div>
+            <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Results</h4>
+            <SearchResults
+              programs={programs}
+              totalCount={totalCount}
+              loading={isLoading}
+              onLoadMore={handleLoadMore}
+            />
+          </div>
         </>
       )}
     </div>

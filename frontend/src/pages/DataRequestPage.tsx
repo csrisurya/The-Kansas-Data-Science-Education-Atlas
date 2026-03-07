@@ -110,6 +110,8 @@ const DataRequestPage: React.FC = () => {
   const [successMessage, setSuccessMessage] = useState('');
 
   const handleSubmitDataset = async () => {
+    setDatasetSuccess(false);
+    setSuccessMessage('');
     if (!validateDataset()) return;
     setDatasetErrors({});
     setSubmitError('');

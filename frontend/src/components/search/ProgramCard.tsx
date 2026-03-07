@@ -62,14 +62,11 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ program, courses = [] }) => {
       {/* ---- Header ---- */}
       <div className="px-5 pt-5 pb-3">
         <div className="flex items-start justify-between gap-3">
-          {/* School name + institution badge */}
+          {/* School name */}
           <div className="flex items-center gap-2 flex-wrap">
             <h3 className="text-base font-bold text-gray-900 leading-snug">
               {program.school_name}
             </h3>
-            <span className="inline-flex items-center rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700">
-              Institution
-            </span>
           </div>
 
           {/* Course count pill */}
@@ -119,6 +116,19 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ program, courses = [] }) => {
                       </span>
                     );
                   })}
+                  {c.course_url && c.course_url !== 'DNE' && (
+                    <a
+                      href={c.course_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="shrink-0 inline-flex items-center gap-0.5 text-[10px] font-medium text-indigo-600 hover:text-indigo-800 hover:underline ml-auto"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                      View Catalog
+                    </a>
+                  )}
                 </li>
               );
             })}
@@ -126,25 +136,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ program, courses = [] }) => {
         </div>
       )}
 
-      {/* ---- Footer actions ---- */}
-      <div className="flex items-center justify-between gap-3 px-5 py-3 border-t border-gray-100 bg-gray-50 rounded-b-lg">
-        <div className="flex items-center gap-3">
-          {/* View catalog link */}
-          {program.course_url && program.course_url !== 'DNE' && (
-            <a
-              href={program.course_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-medium text-indigo-600 hover:text-indigo-800 hover:underline"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-              View Catalog
-            </a>
-          )}
-        </div>
-      </div>
+
     </div>
   );
 };

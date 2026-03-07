@@ -34,20 +34,6 @@ def compare_counties(ids: Optional[str] = Query(None, description="Comma-separat
     result = [AtlasResponse.model_validate(c) for c in counties if c]
     return result
 
-@router.get("/counties/{county_id}", response_model=AtlasResponse)
-def get_county(county_id: int, db: Session = Depends(get_db)):
-    county = crud_counties.get_county(db, county_id)
-    if not county:
-        raise HTTPException(status_code=404, detail="County not found")
-    return AtlasResponse.model_validate(county)
-
-@router.get("/counties/by-name/{county_name}", response_model=AtlasResponse)
-def get_county_by_name(county_name: str, db: Session = Depends(get_db)):
-    county = crud_counties.get_county_by_name(db, county_name)
-    if not county:
-        raise HTTPException(status_code=404, detail="County not found")
-    return AtlasResponse.model_validate(county)
-
 @router.get("/counties/top-programs", response_model=List[AtlasSummary])
 def top_counties(limit: int = 10, db: Session = Depends(get_db)):
     counties = crud_counties.get_top_counties_by_impact(db, limit=limit)
@@ -71,3 +57,17 @@ def counties_statistics(db: Session = Depends(get_db)):
         "avg_impact_score": avg_impact,
         "highest_impact_county": AtlasSummary.model_validate(highest) if highest else None
     }
+
+@router.get("/counties/by-name/{county_name}", response_model=AtlasResponse)
+def get_county_by_name(county_name: str, db: Session = Depends(get_db)):
+    county = crud_counties.get_county_by_name(db, county_name)
+    if not county:
+        raise HTTPException(status_code=404, detail="County not found")
+    return AtlasResponse.model_validate(county)
+
+@router.get("/counties/{county_id}", response_model=AtlasResponse)
+def get_county(county_id: int, db: Session = Depends(get_db)):
+    county = crud_counties.get_county(db, county_id)
+    if not county:
+        raise HTTPException(status_code=404, detail="County not found")
+    return AtlasResponse.model_validate(county)
