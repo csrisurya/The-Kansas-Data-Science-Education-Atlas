@@ -55,6 +55,29 @@ const ComparePage: React.FC<ComparePageProps> = ({ selectedCounties, onCountyCha
         maxCounties={MAX_COUNTIES}
       />
 
+      <div style={{ height: '2rem' }} />
+
+      {/* Conditional formatting legend */}
+      <div className="bg-gray-50 border border-gray-200 rounded-lg px-5 py-4 text-sm text-gray-700">
+        <h4 className="font-semibold text-gray-800 mb-2">Color-Coded Metrics Guide</h4>
+        <p className="mb-2 text-gray-500">
+          Certain metrics use color coding to indicate relative performance.{' '}
+          <span className="text-green-600 font-medium">Green</span> = favorable,{' '}
+          <span className="text-yellow-600 font-medium">Yellow</span> = moderate,{' '}
+          <span className="text-red-600 font-medium">Red</span> = needs attention.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-1 text-xs text-gray-600">
+          <span><strong>Poverty Rate:</strong> ≤10% / 10–20% / &gt;20% (<a href="https://www.census.gov/topics/income-poverty/poverty/guidance/poverty-measures.html" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">U.S. Census threshold</a>)</span>
+          <span><strong>Unemployment:</strong> ≤4% / 4–7% / &gt;7% (<a href="https://www.bls.gov/cps/cps_htgm.htm" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">BLS full-employment benchmark</a>)</span>
+          <span><strong>Internet Adoption:</strong> ≥80% / 60–80% / &lt;60% (<a href="https://www.fcc.gov/reports-research/reports/broadband-progress-reports" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">FCC reference</a>)</span>
+          <span><strong>No Internet:</strong> ≤10% / 10–25% / &gt;25%</span>
+          <span><strong>Broadband Index:</strong> ≥0.7 / 0.4–0.7 / &lt;0.4</span>
+          <span><strong>Impact Score:</strong> &gt;5 / 1–5 / &lt;1 (project-defined)</span>
+        </div>
+      </div>
+
+      <div style={{ height: '2rem' }} />
+
       {/* Comparison Cards Grid */}
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {selectedCounties.map((id, idx) => {
