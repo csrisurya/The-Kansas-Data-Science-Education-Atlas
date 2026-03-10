@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import func, case
 from app.database import get_db
@@ -7,7 +7,7 @@ from app.models.atlas import Atlas
 
 router = APIRouter()
 
-@router.get("/visualizations/heat-map", response_model=Dict[str, List[Dict[str, Any]]])
+@router.get("/heat-map", response_model=Dict[str, List[Dict[str, Any]]])
 def heat_map(
     metric: str = Query("total_program_impact_score", description="Metric to visualize"),
     db: Session = Depends(get_db)
@@ -42,7 +42,7 @@ def heat_map(
         })
     return {"counties": result}
 
-@router.get("/visualizations/distributions", response_model=Dict[str, Any])
+@router.get("/distributions", response_model=Dict[str, Any])
 def distributions(db: Session = Depends(get_db)):
     # Impact score distribution (ranges: 0-20, 20-40, 40-60, 60-80, 80+)
     impact_bins = [0, 20, 40, 60, 80, 1e9]
@@ -98,7 +98,7 @@ def distributions(db: Session = Depends(get_db)):
         }
     }
 
-@router.get("/visualizations/gap-analysis", response_model=Dict[str, Any])
+@router.get("/gap-analysis", response_model=Dict[str, Any])
 def gap_analysis(db: Session = Depends(get_db)):
     # False positives: predicted to have programs but don't (placeholder: total_programs == 0 and impact_score > 30)
     false_positives = db.query(Atlas).filter(Atlas.total_programs == 0, Atlas.total_program_impact_score > 30).all()

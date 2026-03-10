@@ -20,7 +20,10 @@ export interface Program {
 }
 
 export interface HeatMapData {
-  county_id: number;
+  id: number;
+  county_name: string;
+  lat: number;
+  lng: number;
   value: number;
 }
 
@@ -56,6 +59,22 @@ export const apiService = {
       return res.data;
     } catch (error) {
       handleError(error);
+    }
+  },
+
+  async getCountyStatistics() {
+    try {
+      const res = await api.get('/api/v1/counties/statistics');
+      return res.data as {
+        total_counties: number;
+        counties_with_programs: number;
+        counties_without_programs: number;
+        avg_impact_score: number;
+        highest_impact_county: { id: number; county_name: string; county_population: number; total_program_impact_score: number; has_programs: number } | null;
+      };
+    } catch (error) {
+      handleError(error);
+      throw error;
     }
   },
 
@@ -98,8 +117,10 @@ export const apiService = {
 
   async getHeatMapData(metric: string) {
     try {
-      const res = await api.get<HeatMapData[]>(`/api/v1/heatmap/${metric}`);
-      return res.data;
+      const res = await api.get<{ counties: HeatMapData[] }>('/api/v1/visualizations/heat-map', {
+        params: { metric },
+      });
+      return res.data.counties;
     } catch (error) {
       handleError(error);
     }

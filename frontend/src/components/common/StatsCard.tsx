@@ -8,16 +8,16 @@ interface StatsCardProps {
 }
 
 const colorMap: Record<NonNullable<StatsCardProps['color']>, string> = {
-  blue: 'border-blue-500',
-  purple: 'border-ksu-purple',
-  yellow: 'border-yellow-400',
-  green: 'border-green-500',
+  blue: 'bg-blue-100',
+  purple: 'bg-purple-100',
+  yellow: 'bg-yellow-100',
+  green: 'bg-green-100',
 };
 
 const StatsCard: React.FC<StatsCardProps> = ({ title, value, icon, color = 'blue' }) => {
   return (
     <div
-      className={`flex items-center bg-white rounded-lg shadow p-4 border-l-8 ${colorMap[color]} min-w-[220px]`}
+      className={`flex items-center rounded-lg shadow p-4 ${colorMap[color]}`}
     >
       {icon && (
         <div className="mr-4 text-3xl text-gray-500 flex-shrink-0">{icon}</div>
