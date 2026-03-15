@@ -8,7 +8,7 @@ import MapControls from '../components/explore/MapControls';
 import QuickStats from '../components/explore/QuickStats';
 import Loading from '../components/common/Loading';
 
-const DEFAULT_METRIC = 'total_program_impact_score';
+const DEFAULT_METRIC = 'total_ds_ai_courses';
 
 const ExplorePage: React.FC = () => {
   const [selectedMetric, setSelectedMetric] = useState(DEFAULT_METRIC);
@@ -57,8 +57,7 @@ const ExplorePage: React.FC = () => {
   /* ---- Metric label for display ---- */
   const metricLabel = useMemo(() => {
     const labels: Record<string, string> = {
-      total_program_impact_score: 'Total Impact Score',
-      online_impact_score: 'Online Impact Score',
+      total_ds_ai_courses: 'Total DS/AI Courses',
       broadband_access_index: 'Broadband Access Index',
       median_income: 'Median Household Income',
       county_population: 'County Population',
@@ -114,6 +113,7 @@ const ExplorePage: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-6 w-full">
+      <div style={{ height: '1rem' }} />
       {/* Stat cards row */}
       <QuickStats />
 

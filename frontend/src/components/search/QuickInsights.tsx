@@ -97,7 +97,7 @@ const QuickInsights: React.FC<QuickInsightsProps> = ({ programs, totalCount }) =
   return (
     <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
       {/* Total Courses */}
-      <div className="flex items-start gap-3 rounded-lg border border-gray-200 bg-white px-4 py-3">
+      <div className="flex items-start gap-3 rounded-lg border border-indigo-300 bg-indigo-100 px-4 py-3">
         <span className="mt-0.5 flex items-center justify-center h-8 w-8 rounded-lg bg-indigo-100 text-indigo-600 shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -110,7 +110,7 @@ const QuickInsights: React.FC<QuickInsightsProps> = ({ programs, totalCount }) =
       </div>
 
       {/* % Online */}
-      <div className="flex items-start gap-3 rounded-lg border border-green-100 bg-green-50/60 px-4 py-3">
+      <div className="flex items-start gap-3 rounded-lg border border-green-300 bg-green-100 px-4 py-3">
         <span className="mt-0.5 flex items-center justify-center h-8 w-8 rounded-lg bg-green-100 text-green-600 shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
@@ -123,7 +123,7 @@ const QuickInsights: React.FC<QuickInsightsProps> = ({ programs, totalCount }) =
       </div>
 
       {/* % In-person */}
-      <div className="flex items-start gap-3 rounded-lg border border-blue-100 bg-blue-50/60 px-4 py-3">
+      <div className="flex items-start gap-3 rounded-lg border border-blue-300 bg-blue-100 px-4 py-3">
         <span className="mt-0.5 flex items-center justify-center h-8 w-8 rounded-lg bg-blue-100 text-blue-600 shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -136,7 +136,7 @@ const QuickInsights: React.FC<QuickInsightsProps> = ({ programs, totalCount }) =
       </div>
 
       {/* % Both */}
-      <div className="flex items-start gap-3 rounded-lg border border-violet-100 bg-violet-50/60 px-4 py-3">
+      <div className="flex items-start gap-3 rounded-lg border border-violet-300 bg-violet-100 px-4 py-3">
         <span className="mt-0.5 flex items-center justify-center h-8 w-8 rounded-lg bg-violet-100 text-violet-600 shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
@@ -149,7 +149,7 @@ const QuickInsights: React.FC<QuickInsightsProps> = ({ programs, totalCount }) =
       </div>
 
       {/* % Undergraduate */}
-      <div className="flex items-start gap-3 rounded-lg border border-sky-100 bg-sky-50/60 px-4 py-3">
+      <div className="flex items-start gap-3 rounded-lg border border-sky-300 bg-sky-100 px-4 py-3">
         <span className="mt-0.5 flex items-center justify-center h-8 w-8 rounded-lg bg-sky-100 text-sky-600 shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -163,7 +163,7 @@ const QuickInsights: React.FC<QuickInsightsProps> = ({ programs, totalCount }) =
       </div>
 
       {/* % Graduate */}
-      <div className="flex items-start gap-3 rounded-lg border border-amber-100 bg-amber-50/60 px-4 py-3">
+      <div className="flex items-start gap-3 rounded-lg border border-amber-300 bg-amber-100 px-4 py-3">
         <span className="mt-0.5 flex items-center justify-center h-8 w-8 rounded-lg bg-amber-100 text-amber-600 shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -177,7 +177,7 @@ const QuickInsights: React.FC<QuickInsightsProps> = ({ programs, totalCount }) =
       </div>
 
       {/* Top Keywords */}
-      <div className="flex items-start gap-3 rounded-lg border border-purple-100 bg-purple-50/60 px-4 py-3">
+      <div className="flex items-start gap-3 rounded-lg border border-purple-300 bg-purple-100 px-4 py-3">
         <span className="mt-0.5 flex items-center justify-center h-8 w-8 rounded-lg bg-purple-100 text-purple-600 shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z" />

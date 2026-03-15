@@ -70,6 +70,10 @@ def read_root():
         "docs": "/docs"
     }
 
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
+
 
 # --- New Endpoints ---
 # --- New Endpoints ---

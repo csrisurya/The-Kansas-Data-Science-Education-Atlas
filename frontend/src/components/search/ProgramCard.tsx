@@ -58,7 +58,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ program, courses = [] }) => {
   );
 
   return (
-    <div className="group rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-200">
+    <div className="group rounded-lg border shadow-sm hover:shadow-md transition-all duration-200" style={{ backgroundColor: '#f5f0e8', borderColor: '#ddd3c4' }}>
       {/* ---- Header ---- */}
       <div className="px-5 pt-5 pb-3">
         <div className="flex items-start justify-between gap-3">

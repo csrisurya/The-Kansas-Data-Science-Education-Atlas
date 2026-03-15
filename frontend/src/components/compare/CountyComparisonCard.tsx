@@ -14,50 +14,6 @@ const CARD_THEMES = [
   { bg: '#fefce8', border: '#fef08a', headerBg: '#fef9c3', headerBorder: '#fde047', headerText: '#713f12', subText: '#ca8a04' },
 ];
 
-/* ── Color helpers ── */
-
-function impactColor(score: number): string {
-  if (score > 5) return 'text-green-600';
-  if (score >= 1) return 'text-yellow-600';
-  return 'text-red-600';
-}
-
-function impactBg(score: number): string {
-  if (score > 5) return 'bg-green-100 text-green-700';
-  if (score >= 1) return 'bg-yellow-100 text-yellow-700';
-  return 'bg-red-100 text-red-700';
-}
-
-function povertyColor(rate: number): string {
-  if (rate <= 0.10) return 'text-green-600';
-  if (rate <= 0.20) return 'text-yellow-600';
-  return 'text-red-600';
-}
-
-function unemploymentColor(rate: number): string {
-  if (rate <= 0.04) return 'text-green-600';
-  if (rate <= 0.07) return 'text-yellow-600';
-  return 'text-red-600';
-}
-
-function broadbandColor(index: number): string {
-  if (index >= 0.7) return 'text-green-600';
-  if (index >= 0.4) return 'text-yellow-600';
-  return 'text-red-600';
-}
-
-function internetColor(pct: number): string {
-  if (pct >= 80) return 'text-green-600';
-  if (pct >= 60) return 'text-yellow-600';
-  return 'text-red-600';
-}
-
-function noInternetColor(pct: number): string {
-  if (pct <= 10) return 'text-green-600';
-  if (pct <= 25) return 'text-yellow-600';
-  return 'text-red-600';
-}
-
 /* ── Small reusable pieces ── */
 
 function StatRow({ label, value, color }: { label: string; value: string | number; color?: string }) {
@@ -164,17 +120,8 @@ const CountyComparisonCard: React.FC<CountyComparisonCardProps> = ({ county, onR
         {/* 🤖 DS/AI Programs */}
         <div className="pb-2">
           <SectionHeader icon="🤖" title="DS/AI Programs" />
-          <div className="flex items-center justify-between py-1">
-            <span className="text-gray-500 text-sm">Impact Score</span>
-            <span className={`text-sm font-bold px-2 py-0.5 rounded-full ${impactBg(county.total_program_impact_score)}`}>
-              {county.total_program_impact_score.toFixed(1)}
-            </span>
-          </div>
-          <StatRow
-            label="Online Impact"
-            value={county.online_impact_score.toFixed(1)}
-            color={impactColor(county.online_impact_score)}
-          />
+          <StatRow label="Impact Score" value={county.total_program_impact_score.toFixed(1)} />
+          <StatRow label="Online Impact" value={county.online_impact_score.toFixed(1)} />
           <StatRow label="4-Yr w/ DS/AI" value={fmt(county.four_year_colleges_with_ds_ai)} />
           <StatRow label="2-Yr w/ DS/AI" value={fmt(county.two_year_colleges_with_ds_ai)} />
           <StatRow label="<2-Yr w/ DS/AI" value={fmt(county.less_than_two_year_colleges_with_ds_ai)} />
@@ -184,36 +131,16 @@ const CountyComparisonCard: React.FC<CountyComparisonCardProps> = ({ county, onR
         <div className="pb-2">
           <SectionHeader icon="💰" title="Economic Indicators" />
           <StatRow label="Median Income" value={currency(county.median_household_income)} />
-          <StatRow
-            label="Poverty Rate"
-            value={`${(county.poverty_rate * 100).toFixed(1)}%`}
-            color={povertyColor(county.poverty_rate)}
-          />
-          <StatRow
-            label="Unemployment"
-            value={`${(county.unemployment_rate * 100).toFixed(1)}%`}
-            color={unemploymentColor(county.unemployment_rate)}
-          />
+          <StatRow label="Poverty Rate" value={`${(county.poverty_rate * 100).toFixed(1)}%`} />
+          <StatRow label="Unemployment" value={`${(county.unemployment_rate * 100).toFixed(1)}%`} />
         </div>
 
         {/* 🌐 Digital Access */}
         <div className="pb-1">
           <SectionHeader icon="🌐" title="Digital Access" />
-          <StatRow
-            label="Broadband Index"
-            value={county.broadband_access_index.toFixed(2)}
-            color={broadbandColor(county.broadband_access_index)}
-          />
-          <StatRow
-            label="Internet Adoption"
-            value={pct(county.internet_adoption_pct)}
-            color={internetColor(county.internet_adoption_pct)}
-          />
-          <StatRow
-            label="No Internet"
-            value={pct(county.pct_no_internet)}
-            color={noInternetColor(county.pct_no_internet)}
-          />
+          <StatRow label="Broadband Index" value={county.broadband_access_index.toFixed(2)} />
+          <StatRow label="Internet Adoption" value={pct(county.internet_adoption_pct)} />
+          <StatRow label="No Internet" value={pct(county.pct_no_internet)} />
         </div>
       </div>
     </div>

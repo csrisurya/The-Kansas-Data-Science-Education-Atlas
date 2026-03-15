@@ -25,14 +25,9 @@ interface MapControlsProps {
 
 const METRICS = [
   {
-    label: 'Total Impact Score',
-    value: 'total_program_impact_score',
-    description: 'Overall DS/AI program reach & quality',
-  },
-  {
-    label: 'Online Impact Score',
-    value: 'online_impact_score',
-    description: 'Online-only programme impact',
+    label: 'Total DS/AI Courses',
+    value: 'total_ds_ai_courses',
+    description: 'Number of DS/AI courses per county',
   },
   {
     label: 'Broadband Access Index',

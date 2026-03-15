@@ -114,6 +114,17 @@ const SearchPage: React.FC = () => {
 
   return (
     <div>
+      {/* Info note */}
+      <div>
+        <p className="flex items-center gap-1.5 text-sm text-indigo-600">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+          </svg>
+          For the search and filter inputs, results will be applied automatically. No need to press 'enter' or a button.
+        </p>
+      </div>
+      <div style={{ height: '2rem' }} />
+
       {/* Search bar */}
       <div>
         <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Search</h4>
@@ -160,34 +171,36 @@ const SearchPage: React.FC = () => {
       {/* Active search results */}
       {hasActiveSearch && (
         <>
-          {/* Quick insights */}
-          {programs.length > 0 && (
-            <>
-              <div style={{ height: '2rem' }} />
-              <div>
-                <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Key Insights</h4>
+          <div style={{ height: '2rem' }} />
+
+          {/* ── Results section ── */}
+          <div className="border-t-2 pt-6 px-6 pb-6 rounded-b-xl" style={{ backgroundColor: '#f2ece3', borderColor: '#ddd3c4' }}>
+
+            {/* Error state */}
+            {isError && (
+              <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700 mb-6">
+                {(error as Error)?.message ?? 'Something went wrong. Please try again.'}
+              </div>
+            )}
+
+            {/* Summary subsection */}
+            {programs.length > 0 && (
+              <div style={{ marginBottom: '1.5rem' }}>
+                <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Summary</h4>
                 <QuickInsights programs={programs} totalCount={totalCount} />
               </div>
-            </>
-          )}
+            )}
 
-          {/* Error state */}
-          {isError && (
-            <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-              {(error as Error)?.message ?? 'Something went wrong. Please try again.'}
+            {/* Breakdown subsection */}
+            <div>
+              <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Breakdown</h4>
+              <SearchResults
+                programs={programs}
+                totalCount={totalCount}
+                loading={isLoading}
+                onLoadMore={handleLoadMore}
+              />
             </div>
-          )}
-
-          {/* Results */}
-          <div style={{ height: '2rem' }} />
-          <div>
-            <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Results</h4>
-            <SearchResults
-              programs={programs}
-              totalCount={totalCount}
-              loading={isLoading}
-              onLoadMore={handleLoadMore}
-            />
           </div>
         </>
       )}

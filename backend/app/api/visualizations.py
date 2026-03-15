@@ -4,24 +4,55 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func, case
 from app.database import get_db
 from app.models.atlas import Atlas
+from app.models.course import Course
 
 router = APIRouter()
 
 @router.get("/heat-map", response_model=Dict[str, List[Dict[str, Any]]])
 def heat_map(
-    metric: str = Query("total_program_impact_score", description="Metric to visualize"),
+    metric: str = Query("total_ds_ai_courses", description="Metric to visualize"),
     db: Session = Depends(get_db)
 ):
-    allowed_metrics = {
+    # Metrics that map directly to an Atlas column
+    column_metrics = {
         "total_program_impact_score": Atlas.total_program_impact_score,
         "online_impact_score": Atlas.online_impact_score,
         "broadband_access_index": Atlas.broadband_access_index,
         "median_income": Atlas.median_household_income,
         "county_population": Atlas.county_population,
     }
-    if metric not in allowed_metrics:
+
+    # Special computed metric: count courses per county
+    if metric == "total_ds_ai_courses":
+        # Count courses grouped by county_name
+        course_counts = dict(
+            db.query(Course.county_name, func.count(Course.id))
+            .filter(Course.course_name != None, Course.course_name != "DNE")
+            .group_by(Course.county_name)
+            .all()
+        )
+        counties = db.query(
+            Atlas.id,
+            Atlas.county_name,
+            Atlas.county_latitude,
+            Atlas.county_longitude,
+        ).all()
+        result = []
+        for c in counties:
+            if c.county_latitude is None or c.county_longitude is None:
+                continue
+            result.append({
+                "id": c.id,
+                "county_name": c.county_name,
+                "lat": c.county_latitude,
+                "lng": c.county_longitude,
+                "value": course_counts.get(c.county_name, 0),
+            })
+        return {"counties": result}
+
+    if metric not in column_metrics:
         raise HTTPException(status_code=400, detail=f"Invalid metric: {metric}")
-    metric_col = allowed_metrics[metric]
+    metric_col = column_metrics[metric]
     counties = db.query(
         Atlas.id,
         Atlas.county_name,

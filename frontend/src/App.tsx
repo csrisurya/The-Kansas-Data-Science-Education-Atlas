@@ -66,14 +66,17 @@ const App: React.FC = () => {
       {/* Section Bar */}
       <div className="w-full px-6 py-3 flex items-center justify-between border border-indigo-200 bg-indigo-50">
         <span className="text-lg font-semibold" style={{ color: '#512888' }}>{activeSection}</span>
-        {activeTab !== 'datarequest' && (
-          <button
-            className="bg-transparent border-none outline-none cursor-pointer text-indigo-600 font-bold text-sm hover:underline"
-            type="button"
-          >
-            Export PDF
-          </button>
-        )}
+        <span className="text-sm font-semibold text-red-600">*** Data collected as of November 2025 ***</span>
+        <div className="flex items-center gap-4">
+          {activeTab !== 'datarequest' && (
+            <button
+              className="bg-transparent border-none outline-none cursor-pointer text-indigo-600 font-bold text-sm hover:underline"
+              type="button"
+            >
+              Export PDF
+            </button>
+          )}
+        </div>
       </div>
       {/* Main Content Area: Only show the active tab's content */}
       <main className="flex-1 w-full px-8 py-6">
