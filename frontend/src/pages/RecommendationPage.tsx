@@ -1,12 +1,17 @@
 import React from 'react';
+import FalsePositivesSection from '../components/recommendation/FalsePositivesSection';
+import EducationalDesertMap from '../components/recommendation/EducationalDesertMap';
+import InterventionStrategies from '../components/recommendation/InterventionStrategies';
 
 const RecommendationPage: React.FC = () => {
   return (
-    <div className="bg-white rounded-lg shadow p-8 relative min-h-[400px]">
-      {/* Main content area goes here */}
-      <div className="text-gray-600 text-lg">
-        Main content area coming soon.
-      </div>
+    <div className="space-y-8">
+      <div style={{ height: '2rem' }} />
+      <FalsePositivesSection />
+      <div style={{ height: '2rem' }} />
+      <EducationalDesertMap />
+      <div style={{ height: '2rem' }} />
+      <InterventionStrategies />
     </div>
   );
 };

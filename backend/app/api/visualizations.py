@@ -1,12 +1,24 @@
 from typing import List, Dict, Any
+import math
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import func, case
 from app.database import get_db
 from app.models.atlas import Atlas
 from app.models.course import Course
+from app.schemas.atlas import AtlasResponse
 
 router = APIRouter()
+
+
+def _haversine_miles(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    """Return great-circle distance in miles between two lat/lon points."""
+    R = 3958.8  # Earth radius in miles
+    rlat1, rlat2 = math.radians(lat1), math.radians(lat2)
+    dlat = math.radians(lat2 - lat1)
+    dlon = math.radians(lon2 - lon1)
+    a = math.sin(dlat / 2) ** 2 + math.cos(rlat1) * math.cos(rlat2) * math.sin(dlon / 2) ** 2
+    return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 @router.get("/heat-map", response_model=Dict[str, List[Dict[str, Any]]])
 def heat_map(
@@ -131,14 +143,72 @@ def distributions(db: Session = Depends(get_db)):
 
 @router.get("/gap-analysis", response_model=Dict[str, Any])
 def gap_analysis(db: Session = Depends(get_db)):
-    # False positives: predicted to have programs but don't (placeholder: total_programs == 0 and impact_score > 30)
-    false_positives = db.query(Atlas).filter(Atlas.total_programs == 0, Atlas.total_program_impact_score > 30).all()
-    # Counties with 0 programs
-    no_programs = db.query(Atlas).filter(Atlas.total_programs == 0).all()
-    # Educational deserts: placeholder for now
+    # False positives: counties the Random Forest ML model predicted to have
+    # DS/AI programs (based on demographic/institutional profiles) but that
+    # currently lack them.  Identified via 10-fold cross-validated Random
+    # Forest classification on Dataset 7 (see Research Paper, Fig. 8).
+    FALSE_POSITIVE_COUNTIES = [
+        "Wyandotte County",
+        "Harvey County",
+        "Reno County",
+        "Pottawatomie County",
+    ]
+    false_positives = (
+        db.query(Atlas)
+        .filter(Atlas.county_name.in_(FALSE_POSITIVE_COUNTIES))
+        .all()
+    )
+    # Preserve the canonical ordering above
+    order = {name: idx for idx, name in enumerate(FALSE_POSITIVE_COUNTIES)}
+    false_positives.sort(key=lambda a: order.get(a.county_name, 999))
+
+    # Counties with no programs at all
+    no_programs = db.query(Atlas).filter(Atlas.has_programs == 0).all()
+
+    # Counties WITH programs — used as reference points for distance calc
+    with_programs = db.query(Atlas).filter(Atlas.has_programs == 1).all()
+    program_coords = [
+        (float(c.county_latitude), float(c.county_longitude), c.county_name)
+        for c in with_programs
+        if c.county_latitude is not None and c.county_longitude is not None
+    ]
+
+    # Educational deserts: every no-program county with distance to nearest program county
     educational_deserts = []
+    for county in no_programs:
+        if county.county_latitude is None or county.county_longitude is None:
+            continue
+        lat, lon = float(county.county_latitude), float(county.county_longitude)
+        nearest_dist = float('inf')
+        nearest_name = ""
+        for plat, plon, pname in program_coords:
+            d = _haversine_miles(lat, lon, plat, plon)
+            if d < nearest_dist:
+                nearest_dist = d
+                nearest_name = pname
+        educational_deserts.append({
+            "county_id": county.id,
+            "county_name": county.county_name,
+            "county_population": county.county_population,
+            "latitude": lat,
+            "longitude": lon,
+            "distance_miles": round(nearest_dist, 1),
+            "distance_to_nearest_program": round(nearest_dist, 1),
+            "nearest_program_county": nearest_name,
+            "median_household_income": county.median_household_income,
+            "broadband_access_index": float(county.broadband_access_index) if county.broadband_access_index else 0,
+            "poverty_rate": float(county.poverty_rate) if county.poverty_rate else 0,
+            "unemployment_rate": float(county.unemployment_rate) if county.unemployment_rate else 0,
+            "total_households": county.total_households,
+            "four_year_colleges": county.four_year_colleges,
+            "two_year_colleges": county.two_year_colleges,
+        })
+
+    # Sort by distance descending (most isolated first)
+    educational_deserts.sort(key=lambda x: x["distance_miles"], reverse=True)
+
     return {
-        "false_positives": [a.county_name for a in false_positives],
+        "false_positives": [AtlasResponse.model_validate(a).model_dump() for a in false_positives],
         "no_programs": [a.county_name for a in no_programs],
         "educational_deserts": educational_deserts
     }

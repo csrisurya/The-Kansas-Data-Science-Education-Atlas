@@ -128,6 +128,70 @@ export const apiService = {
     }
   },
 
+  async getGapAnalysis() {
+    try {
+      const res = await api.get('/api/v1/visualizations/gap-analysis');
+      return res.data as {
+        false_positives: Array<{
+          id: number;
+          county_name: string;
+          county_population: number;
+          county_latitude: number;
+          county_longitude: number;
+          elementary_schools: number;
+          middle_schools: number;
+          high_schools: number;
+          virtual_schools: number;
+          other_schools: number;
+          four_year_colleges: number;
+          two_year_colleges: number;
+          less_than_two_year_colleges: number;
+          four_year_colleges_with_ds_ai: number;
+          two_year_colleges_with_ds_ai: number;
+          less_than_two_year_colleges_with_ds_ai: number;
+          online_impact_score: number;
+          total_program_impact_score: number;
+          broadband_access_index: number;
+          internet_adoption_pct: number;
+          avg_broadband_coverage_pct: number;
+          pct_no_internet: number;
+          total_households: number;
+          effective_access_score: number;
+          median_household_income: number;
+          poverty_rate: number;
+          unemployment_rate: number;
+          advanced_degree_rate: number;
+          young_adult_bachelors_plus_rate: number;
+          stem_employment_rate: number;
+          professional_services_rate: number;
+          low_income_digital_access_rate: number;
+          has_programs: number;
+        }>;
+        no_programs: string[];
+        educational_deserts: Array<{
+          county_id: number;
+          county_name: string;
+          county_population: number;
+          latitude: number;
+          longitude: number;
+          distance_miles: number;
+          distance_to_nearest_program: number;
+          nearest_program_county: string;
+          median_household_income: number;
+          broadband_access_index: number;
+          poverty_rate: number;
+          unemployment_rate: number;
+          total_households: number;
+          four_year_colleges: number;
+          two_year_colleges: number;
+        }>;
+      };
+    } catch (error) {
+      handleError(error);
+      throw error;
+    }
+  },
+
   async submitDataRequest(payload: {
     request_type: 'report' | 'dataset';
     report_type?: string;
