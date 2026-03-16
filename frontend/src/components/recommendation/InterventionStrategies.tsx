@@ -111,11 +111,6 @@ const InterventionStrategies: React.FC = () => (
   <section className="space-y-5">
     {/* Heading */}
     <div className="flex items-center gap-2">
-      <span className="inline-flex items-center justify-center rounded-lg bg-indigo-100 p-1.5 text-indigo-600">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.968 7.968 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.953 7.953 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
-        </svg>
-      </span>
       <h2 className="text-lg font-semibold text-gray-900">
         Intervention Strategies
       </h2>
