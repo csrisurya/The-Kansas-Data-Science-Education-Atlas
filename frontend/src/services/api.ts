@@ -9,9 +9,10 @@ const api: AxiosInstance = axios.create({
 
 export interface County {
   id: number;
-  name: string;
-  has_programs: boolean;
-  // Add more fields as needed
+  county_name: string;
+  county_population?: number;
+  total_program_impact_score?: number;
+  has_programs: number;
 }
 export interface Program {
   id: number;
@@ -46,8 +47,13 @@ export const apiService = {
 
   async getCounties(params?: { limit?: number; skip?: number; has_programs?: boolean }) {
     try {
-      const res = await api.get<County[]>('/api/v1/counties', { params });
-      return res.data;
+      const queryParams: Record<string, unknown> = { ...params };
+      // Backend expects has_programs as 0 or 1, not boolean
+      if (params?.has_programs !== undefined) {
+        queryParams.has_programs = params.has_programs ? 1 : 0;
+      }
+      const res = await api.get<{ total: number; counties: County[] }>('/api/v1/counties', { params: queryParams });
+      return res.data.counties;
     } catch (error) {
       handleError(error);
     }

@@ -189,9 +189,7 @@ const CountySelector: React.FC<CountySelectorProps> = ({
     queryKey: ['counties'],
     queryFn: async () => {
       const res = await apiService.getCounties({ limit: 200 });
-      // Backend returns { total, counties: [...] }
-      const data = res as unknown as { counties: County[] } | County[];
-      return Array.isArray(data) ? data : data?.counties ?? [];
+      return res ?? [];
     },
     staleTime: 1000 * 60 * 10,
   });

@@ -46,7 +46,7 @@ def counties_statistics(db: Session = Depends(get_db)):
     without_programs = crud_counties.get_counties_count(db, has_programs=0)
     counties = crud_counties.get_counties(db, limit=10000)
     avg_impact = (
-        sum(c.total_program_impact_score for c in counties) / len(counties)
+        float(sum(c.total_program_impact_score for c in counties) / len(counties))
         if counties else 0
     )
     highest = max(counties, key=lambda c: c.total_program_impact_score, default=None)

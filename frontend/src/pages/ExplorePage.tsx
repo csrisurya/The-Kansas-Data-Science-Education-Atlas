@@ -6,6 +6,7 @@ import KansasHeatMap from '../components/explore/KansasHeatMap';
 import type { HeatMapCounty } from '../components/explore/KansasHeatMap';
 import MapControls from '../components/explore/MapControls';
 import QuickStats from '../components/explore/QuickStats';
+import FeatureImportanceChart from '../components/explore/FeatureImportanceChart';
 import Loading from '../components/common/Loading';
 
 const DEFAULT_METRIC = 'total_ds_ai_courses';
@@ -165,6 +166,9 @@ const ExplorePage: React.FC = () => {
           />
         </div>
       </div>
+
+      {/* Feature Importance Ranking (from research paper) */}
+      <FeatureImportanceChart />
     </div>
   );
 };

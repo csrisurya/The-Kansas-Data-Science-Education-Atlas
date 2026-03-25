@@ -1,0 +1,74 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     dataset7-weka.filters.unsupervised.attribute.NumericToNominal-R32-weka.filters.unsupervised.attribute.Remove-R1,13,14,15,16,17
+Instances:    105
+Attributes:   26
+              County_Population
+              County_Latitude
+              County_Longitude
+              Elementary_Schools
+              Middle_Schools
+              High_Schools
+              Virtual_Schools
+              Other_Schools
+              Four_Year_Colleges
+              Two_Year_Colleges
+              Less_Than_Two_Year_Colleges
+              Broadband_Access_Index
+              Internet_Adoption_Pct
+              Avg_Broadband_Coverage_Pct
+              Pct_No_Internet
+              Total_Households
+              Effective_Access_Score
+              Median_Household_Income
+              Poverty_Rate
+              Unemployment_Rate
+              Advanced_Degree_Rate
+              Young_Adult_Bachelors_Plus_Rate
+              STEM_Employment_Rate
+              Professional_Services_Rate
+              Low_Income_Digital_Access_Rate
+              Has_Programs
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 26 Has_Programs):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.3096    9 Four_Year_Colleges
+ 0.2881   16 Total_Households
+ 0.2881    1 County_Population
+ 0.2562    4 Elementary_Schools
+ 0.2271   17 Effective_Access_Score
+ 0.2163    8 Other_Schools
+ 0.1951   11 Less_Than_Two_Year_Colleges
+ 0.1847   22 Young_Adult_Bachelors_Plus_Rate
+ 0.1764    6 High_Schools
+ 0.1762    5 Middle_Schools
+ 0.144    21 Advanced_Degree_Rate
+ 0.1426   23 STEM_Employment_Rate
+ 0.1019   20 Unemployment_Rate
+ 0.1003    7 Virtual_Schools
+ 0.0815   10 Two_Year_Colleges
+ 0         3 County_Longitude
+ 0         2 County_Latitude
+ 0        25 Low_Income_Digital_Access_Rate
+ 0        12 Broadband_Access_Index
+ 0        18 Median_Household_Income
+ 0        19 Poverty_Rate
+ 0        15 Pct_No_Internet
+ 0        24 Professional_Services_Rate
+ 0        14 Avg_Broadband_Coverage_Pct
+ 0        13 Internet_Adoption_Pct
+
+Selected attributes: 9,16,1,4,17,8,11,22,6,5,21,23,20,7,10,3,2,25,12,18,19,15,24,14,13 : 25
+
