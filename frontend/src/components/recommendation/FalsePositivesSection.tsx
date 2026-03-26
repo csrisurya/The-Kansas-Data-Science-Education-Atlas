@@ -79,14 +79,14 @@ const FalsePositivesSection: React.FC = () => {
         </div>
       </div>
 
-      {/* ── Explanation ── */}
+      {/* ── Stakeholder description ── */}
       <div className="rounded-lg border border-purple-200 bg-purple-50/60 px-4 py-3">
         <p className="text-sm leading-relaxed text-purple-900">
-          These counties were identified by using Claude Opus 4.6 (Anthropic) to replicate the paper's
-          WEKA 3.8 Random Forest model (maxDepth=5, 50 trees, seed=42) with 10-fold
-          cross-validation on 26 county-level features. During cross-validation, these four
-          counties were predicted to have DS/AI programs based on their socioeconomic,
-          educational, and digital-access profiles — but currently have none.
+          <span className="font-semibold">Stakeholder view:</span>{' '}
+          Based on each county's population, income levels, school infrastructure, and
+          internet connectivity, our model expected these four counties to already offer
+          Data Science / AI programs — yet none exist today. They represent the strongest
+          candidates for new program investment.
         </p>
       </div>
 
@@ -101,6 +101,20 @@ const FalsePositivesSection: React.FC = () => {
             onViewDetails={setDetailCounty}
           />
         ))}
+      </div>
+
+      <div style={{ height: '2rem' }} />
+
+      {/* ── Technical description (after cards) ── */}
+      <div className="rounded-lg border border-gray-200 bg-gray-50/60 px-4 py-3">
+        <p className="text-xs leading-relaxed text-gray-600">
+          <span className="font-semibold text-gray-700">Methodology:</span>{' '}
+          These counties were identified by using Claude Opus 4.6 (Anthropic) to replicate
+          the paper's WEKA 3.8 Random Forest model (maxDepth=5, 50 trees, seed=42) with
+          10-fold cross-validation on 26 county-level features. During cross-validation,
+          these four counties were predicted to have DS/AI programs based on their
+          socioeconomic, educational, and digital-access profiles — but currently have none.
+        </p>
       </div>
 
       {/* ── County detail modal ── */}

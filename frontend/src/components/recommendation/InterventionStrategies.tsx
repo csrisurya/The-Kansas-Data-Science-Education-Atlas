@@ -119,6 +119,7 @@ const InterventionStrategies: React.FC = () => (
     {/* Description */}
     <div className="rounded-lg border border-indigo-200 bg-indigo-50/60 px-4 py-3">
       <p className="text-sm leading-relaxed text-indigo-900">
+        <span className="font-semibold">Stakeholder view:</span>{' '}
         Based on the gap analysis and educational desert findings, the following
         evidence-based strategies are recommended to expand DS/AI education
         access across underserved Kansas counties.

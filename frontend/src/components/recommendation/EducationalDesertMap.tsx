@@ -361,9 +361,22 @@ const EducationalDesertMap: React.FC = () => {
       {/* Heading */}
       <div className="flex items-center gap-2">
         <h2 className="text-lg font-semibold text-gray-900">
-          Educational Desert Map
+          Data Science / Artificial Intelligence Availability
         </h2>
       </div>
+
+      {/* Student-view description */}
+      <div className="rounded-lg border border-blue-200 bg-blue-50/60 px-4 py-3">
+        <p className="text-sm leading-relaxed text-blue-900">
+          <span className="font-semibold">Student view:</span>{' '}
+          This map shows how far you may need to travel to reach the nearest Data Science
+          or AI program from any county in Kansas. Green counties already have programs,
+          while warmer colors indicate longer distances to the closest option — helping
+          students and families understand where access gaps exist.
+        </p>
+      </div>
+
+      <div style={{ height: '2rem' }} />
 
       {/* Quick stats bar */}
       <div className="grid grid-cols-2 sm:grid-cols-6 gap-3">
@@ -376,6 +389,14 @@ const EducationalDesertMap: React.FC = () => {
       </div>
 
       <div style={{ height: '2rem' }} />
+
+      {/* Info note */}
+      <p className="flex items-center gap-1.5 text-sm text-indigo-600">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+        </svg>
+        Click on a county on the map for more info.
+      </p>
 
       {/* Map + Sidebar layout */}
       <div className="flex gap-4 rounded-lg overflow-hidden border border-gray-200">

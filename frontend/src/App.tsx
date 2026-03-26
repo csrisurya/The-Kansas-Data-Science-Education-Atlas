@@ -12,12 +12,36 @@ import Footer from './components/common/Footer';
 const MAX_COUNTIES = 4;
 
 const navTabs = [
-  { name: 'Explore', key: 'explore', section: 'Geographic Distribution' },
-  { name: 'Compare', key: 'compare', section: 'County Profiles' },
-  { name: 'Search', key: 'search', section: 'Find DS/AI Offerings' },
-  { name: 'Analysis', key: 'analysis', section: 'Feature Importance Analysis' },
-  { name: 'Recommendations', key: 'recommendations', section: 'Gap Analysis & Opportunities' },
-  { name: 'Data Request', key: 'datarequest', section: 'Access Raw Data' },
+  {
+    name: 'Explore',
+    key: 'explore',
+    description: 'Explore the geographic distribution of Data Science/Artificial Intelligence education across all 105 Kansas counties.\nToggle between metrics like course counts, broadband access, and population to see how resources are spread across the state.',
+  },
+  {
+    name: 'Compare',
+    key: 'compare',
+    description: 'Compare Kansas counties side-by-side on demographics, educational infrastructure,\ndigital access, and Data Science/Artificial Intelligence program availability.',
+  },
+  {
+    name: 'Analysis',
+    key: 'analysis',
+    description: 'Review the machine learning analysis behind the Atlas — which county-level features\nmost predict Data Science/Artificial Intelligence program presence, and how the classification models performed.',
+  },
+  {
+    name: 'Recommendations',
+    key: 'recommendations',
+    description: 'Discover which counties are best positioned for new Data Science/Artificial Intelligence programs,\nwhere educational deserts exist, and strategies for expanding access.',
+  },
+  {
+    name: 'Search',
+    key: 'search',
+    description: 'Search and filter Data Science/Artificial Intelligence programs, courses, and institutions across Kansas.\nFind offerings by keyword, degree level, modality, or county.',
+  },
+  {
+    name: 'Data Request',
+    key: 'datarequest',
+    description: 'Request custom reports or raw datasets from the Atlas for your own research, policy analysis, or planning needs.',
+  },
 ];
 
 const App: React.FC = () => {
@@ -39,7 +63,7 @@ const App: React.FC = () => {
       return Array.from({ length: MAX_COUNTIES }, (_, i) => filled[i] ?? null);
     });
   }, []);
-  const activeSection = navTabs.find(tab => tab.key === activeTab)?.section || '';
+  const activeDescription = navTabs.find(tab => tab.key === activeTab)?.description || '';
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 text-gray-800 font-sans">
       {/* Global Header */}
@@ -66,19 +90,9 @@ const App: React.FC = () => {
           ))}
         </ul>
       </nav>
-      {/* Section Bar */}
-      <div className="w-full px-6 py-3 flex items-center justify-between border-b border-indigo-100 bg-indigo-50/60">
-        <span className="text-lg font-semibold" style={{ color: '#6d4c9e' }}>{activeSection}</span>
-        <div className="flex items-center gap-4">
-          {activeTab !== 'datarequest' && (
-            <button
-              className="bg-transparent border-none outline-none cursor-pointer text-indigo-600 font-bold text-sm hover:underline"
-              type="button"
-            >
-              Export PDF
-            </button>
-          )}
-        </div>
+      {/* Section Description Bar */}
+      <div className="w-full py-4 border-b border-indigo-100 bg-indigo-50/60 text-center">
+        <p className="text-base leading-relaxed m-0 mx-auto text-center" style={{ color: '#6d4c9e', whiteSpace: 'pre-line' }}>{activeDescription}</p>
       </div>
       {/* Main Content Area: Only show the active tab's content */}
       <main className="flex-1 w-full px-8 py-6">
