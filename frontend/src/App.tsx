@@ -4,8 +4,10 @@ import ErrorBoundary from './components/common/ErrorBoundary';
 import ExplorePage from './pages/ExplorePage';
 import ComparePage from './pages/ComparePage';
 import SearchPage from './pages/SearchPage';
+import AnalysisPage from './pages/AnalysisPage';
 import RecommendationPage from './pages/RecommendationPage';
 import DataRequestPage from './pages/DataRequestPage';
+import Footer from './components/common/Footer';
 
 const MAX_COUNTIES = 4;
 
@@ -13,6 +15,7 @@ const navTabs = [
   { name: 'Explore', key: 'explore', section: 'Geographic Distribution' },
   { name: 'Compare', key: 'compare', section: 'County Profiles' },
   { name: 'Search', key: 'search', section: 'Find DS/AI Offerings' },
+  { name: 'Analysis', key: 'analysis', section: 'Feature Importance Analysis' },
   { name: 'Recommendations', key: 'recommendations', section: 'Gap Analysis & Opportunities' },
   { name: 'Data Request', key: 'datarequest', section: 'Access Raw Data' },
 ];
@@ -66,7 +69,6 @@ const App: React.FC = () => {
       {/* Section Bar */}
       <div className="w-full px-6 py-3 flex items-center justify-between border-b border-indigo-100 bg-indigo-50/60">
         <span className="text-lg font-semibold" style={{ color: '#6d4c9e' }}>{activeSection}</span>
-        <span className="text-sm font-medium text-red-400">*** Data collected as of November 2025 ***</span>
         <div className="flex items-center gap-4">
           {activeTab !== 'datarequest' && (
             <button
@@ -85,11 +87,13 @@ const App: React.FC = () => {
             {activeTab === 'explore' && <ExplorePage />}
             {activeTab === 'compare' && <ComparePage selectedCounties={selectedCounties} onCountyChange={handleCountyChange} />}
             {activeTab === 'search' && <SearchPage />}
+            {activeTab === 'analysis' && <AnalysisPage />}
             {activeTab === 'recommendations' && <RecommendationPage />}
             {activeTab === 'datarequest' && <DataRequestPage />}
           </ErrorBoundary>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

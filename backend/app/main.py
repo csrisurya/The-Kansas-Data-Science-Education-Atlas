@@ -101,7 +101,3 @@ app.include_router(counties.router, prefix="/api/v1", tags=["counties"])
 app.include_router(programs.router, prefix="/api/v1", tags=["programs"])
 app.include_router(visualizations.router, prefix="/api/v1/visualizations", tags=["visualizations"])
 app.include_router(data_request.router, prefix="/api/v1", tags=["data-request"])
-
-@app.get("/health")
-def health_check():
-    return {"status": "healthy"}

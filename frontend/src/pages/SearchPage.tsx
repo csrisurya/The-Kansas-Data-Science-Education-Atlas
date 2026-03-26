@@ -186,14 +186,14 @@ const SearchPage: React.FC = () => {
             {/* Summary subsection */}
             {programs.length > 0 && (
               <div style={{ marginBottom: '1.5rem' }}>
-                <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Summary</h4>
+                <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#4f46e5', marginBottom: '0.75rem' }}>Summary</h4>
                 <QuickInsights programs={programs} totalCount={totalCount} />
               </div>
             )}
 
             {/* Breakdown subsection */}
             <div>
-              <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#1f2937', marginBottom: '0.75rem' }}>Breakdown</h4>
+              <h4 style={{ fontSize: '1.125rem', fontWeight: 600, color: '#4f46e5', marginBottom: '0.75rem' }}>Breakdown</h4>
               <SearchResults
                 programs={programs}
                 totalCount={totalCount}
