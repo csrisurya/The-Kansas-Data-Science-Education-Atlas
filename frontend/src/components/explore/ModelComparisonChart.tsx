@@ -82,9 +82,9 @@ const METRICS: MetricDef[] = [
 /* Chart dimensions */
 const CHART_HEIGHT = 350;
 const Y_TICKS = [0, 0.2, 0.4, 0.6, 0.8, 1.0];
-const BAR_WIDTH = 28;
-const GROUP_GAP = 48;
-const BAR_GAP = 4;
+const BAR_WIDTH = 56;
+const GROUP_GAP = 72;
+const BAR_GAP = 6;
 
 /* ------------------------------------------------------------------ */
 /*  Component                                                          */
@@ -115,8 +115,11 @@ const ModelComparisonChart: React.FC = () => {
           Machine Learning Model Comparison
         </h3>
         <p className="text-sm text-gray-500 mt-1">
-          10-fold cross-validation performance of three classifiers predicting
-          Data Science/Artificial Intelligence program presence across 105 Kansas counties.
+          Three classifiers — Random Forest, Support Vector Machine, and Naive Bayes — were trained
+          and evaluated in WEKA 3.8, an open-source machine learning toolkit, using 10-fold
+          cross-validation on the binary target variable (Has Programs) with 26 county-level predictors
+          across all 105 Kansas counties. Performance was measured by accuracy, precision, recall,
+          F1-score, and Cohen's Kappa.
         </p>
       </div>
 
@@ -137,15 +140,16 @@ const ModelComparisonChart: React.FC = () => {
         </div>
       </div>
 
-      {/* Chart + sidebar layout */}
-      <div className="flex gap-6 items-center w-full">
+      {/* Chart + info layout */}
+      <div className="flex flex-col gap-6 w-full">
       {/* Vertical grouped bar chart (SVG) */}
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto w-full">
         <svg
-          width={svgWidth}
+          width="100%"
           height={svgHeight}
-          className="mx-auto select-none"
-          style={{ minWidth: svgWidth }}
+          viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+          preserveAspectRatio="xMidYMid meet"
+          className="select-none"
         >
           {/* Y-axis gridlines & tick labels */}
           {Y_TICKS.map((tick) => {
@@ -301,8 +305,8 @@ const ModelComparisonChart: React.FC = () => {
         </svg>
       </div>
 
-      {/* Sidebar: ZeroR + Key finding */}
-      <div className="flex flex-col gap-4 flex-1 min-w-[280px]">
+      {/* ZeroR + Key finding underneath chart */}
+      <div className="grid grid-cols-2 gap-4 w-full">
         {/* ZeroR explanation note */}
         <div className="rounded-lg border border-gray-200 bg-gray-50/60 px-4 py-3">
           <p className="text-xs leading-relaxed text-gray-600">

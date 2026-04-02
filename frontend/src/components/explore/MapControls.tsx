@@ -1,4 +1,6 @@
 import React, { useCallback, useRef, useState } from 'react';
+import { toPng } from 'html-to-image';
+import type { Map as LeafletMap } from 'leaflet';
 import Button from '../common/Button';
 
 /* ------------------------------------------------------------------ */
@@ -17,6 +19,8 @@ interface MapControlsProps {
    * When provided, "Download Map as PNG" captures that element.
    */
   mapRef?: React.RefObject<HTMLDivElement | null>;
+  /** Optional ref to the Leaflet map instance for resetting view before capture */
+  mapInstanceRef?: React.RefObject<LeafletMap | null>;
 }
 
 /* ------------------------------------------------------------------ */
@@ -102,6 +106,7 @@ const MapControls: React.FC<MapControlsProps> = ({
   onMetricChange,
   onSearch,
   mapRef,
+  mapInstanceRef,
 }) => {
   const [search, setSearch] = useState('');
   const [isCapturing, setIsCapturing] = useState(false);
@@ -134,20 +139,9 @@ const MapControls: React.FC<MapControlsProps> = ({
 
   /* ---------- PNG download ---------- */
 
-  /** Parse a CSS transform: translate3d(Xpx, Ypx, 0px) or translate(Xpx, Ypx) */
-  const parseTranslate = (el: HTMLElement): [number, number] => {
-    const t = window.getComputedStyle(el).transform; // "matrix(1,0,0,1,tx,ty)"
-    if (!t || t === 'none') return [0, 0];
-    const m = t.match(/matrix.*\((.+)\)/);
-    if (!m) return [0, 0];
-    const vals = m[1].split(',').map(Number);
-    // matrix(a,b,c,d,tx,ty)
-    return [vals[4] ?? 0, vals[5] ?? 0];
-  };
-
   const handleDownloadPng = useCallback(async () => {
     const container =
-      mapRef?.current ?? document.querySelector<HTMLElement>('.leaflet-container');
+      mapRef?.current ?? document.querySelector<HTMLElement>('.leaflet-container')?.parentElement;
     if (!container) {
       alert('Map not found. Please wait for it to load.');
       return;
@@ -155,115 +149,22 @@ const MapControls: React.FC<MapControlsProps> = ({
 
     setIsCapturing(true);
     try {
-      const rect = container.getBoundingClientRect();
-      const w = rect.width;
-      const h = rect.height;
-      const scale = 2;
-      const canvas = document.createElement('canvas');
-      canvas.width = w * scale;
-      canvas.height = h * scale;
-      const ctx = canvas.getContext('2d')!;
-      ctx.scale(scale, scale);
-      ctx.fillStyle = '#ffffff';
-      ctx.fillRect(0, 0, w, h);
+      // Wait briefly for any pending tile loads at the current zoom
+      await new Promise((resolve) => setTimeout(resolve, 500));
 
-      /* --- Draw tile images --- */
-      const mapPane = container.querySelector('.leaflet-map-pane') as HTMLElement | null;
-      const tilePane = container.querySelector('.leaflet-tile-pane') as HTMLElement | null;
-      if (tilePane) {
-        // Accumulate transforms: map-pane → tile-pane → tile-container(s)
-        const [mpX, mpY] = mapPane ? parseTranslate(mapPane) : [0, 0];
+      const imgData = await toPng(container, {
+        cacheBust: true,
+        pixelRatio: 2,
+        backgroundColor: '#ffffff',
+        filter: (node) => {
+          if (node instanceof HTMLElement && node.classList?.contains('leaflet-control-zoom')) return false;
+          return true;
+        },
+      });
 
-        const tileContainers = tilePane.querySelectorAll<HTMLElement>('.leaflet-tile-container');
-        const allTiles: { src: string; x: number; y: number; tw: number; th: number }[] = [];
-
-        tileContainers.forEach((tc) => {
-          const [tcX, tcY] = parseTranslate(tc);
-          const imgs = tc.querySelectorAll<HTMLImageElement>('img.leaflet-tile');
-          imgs.forEach((img) => {
-            // Each tile has inline style "left: Xpx; top: Ypx" or a transform
-            const style = img.style;
-            let tileX = parseFloat(style.left) || 0;
-            let tileY = parseFloat(style.top) || 0;
-            // Some Leaflet versions use transform on individual tiles
-            if (!tileX && !tileY) {
-              [tileX, tileY] = parseTranslate(img);
-            }
-            const finalX = mpX + tcX + tileX;
-            const finalY = mpY + tcY + tileY;
-            allTiles.push({
-              src: img.src,
-              x: finalX,
-              y: finalY,
-              tw: img.naturalWidth || 256,
-              th: img.naturalHeight || 256,
-            });
-          });
-        });
-
-        /* Load all tiles with CORS */
-        const loaded = await Promise.all(
-          allTiles.map(
-            (t) =>
-              new Promise<{ img: HTMLImageElement; x: number; y: number; tw: number; th: number } | null>((resolve) => {
-                const clone = new Image();
-                clone.crossOrigin = 'anonymous';
-                clone.onload = () => resolve({ img: clone, x: t.x, y: t.y, tw: t.tw, th: t.th });
-                clone.onerror = () => resolve(null);
-                clone.src = t.src;
-              }),
-          ),
-        );
-        for (const tile of loaded) {
-          if (!tile) continue;
-          try {
-            ctx.drawImage(tile.img, tile.x, tile.y, tile.tw, tile.th);
-          } catch { /* skip tainted */ }
-        }
-      }
-
-      /* --- Draw SVG overlays (GeoJSON polygons) --- */
-      const overlayPane = container.querySelector('.leaflet-overlay-pane') as HTMLElement | null;
-      const svgOverlay = overlayPane?.querySelector('svg') as SVGSVGElement | null;
-      if (svgOverlay && mapPane) {
-        const [mpX, mpY] = parseTranslate(mapPane);
-        // SVG is positioned inside the overlay pane; read its transform or style
-        const svgStyle = svgOverlay.style;
-        const svgLeft = parseFloat(svgStyle.left) || 0;
-        const svgTop = parseFloat(svgStyle.top) || 0;
-        const [svgTx, svgTy] = parseTranslate(svgOverlay);
-
-        const svgClone = svgOverlay.cloneNode(true) as SVGSVGElement;
-        svgClone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-        // Set explicit dimensions
-        const svgW = svgOverlay.getAttribute('width') || String(svgOverlay.viewBox?.baseVal?.width || w);
-        const svgH = svgOverlay.getAttribute('height') || String(svgOverlay.viewBox?.baseVal?.height || h);
-        svgClone.setAttribute('width', svgW);
-        svgClone.setAttribute('height', svgH);
-
-        const svgStr = new XMLSerializer().serializeToString(svgClone);
-        const svgBlob = new Blob([svgStr], { type: 'image/svg+xml;charset=utf-8' });
-        const url = URL.createObjectURL(svgBlob);
-        const svgImg = await new Promise<HTMLImageElement>((resolve, reject) => {
-          const img = new Image();
-          img.onload = () => resolve(img);
-          img.onerror = reject;
-          img.src = url;
-        });
-        ctx.drawImage(
-          svgImg,
-          mpX + svgLeft + svgTx,
-          mpY + svgTop + svgTy,
-          parseFloat(svgW),
-          parseFloat(svgH),
-        );
-        URL.revokeObjectURL(url);
-      }
-
-      /* --- Trigger download --- */
       const link = document.createElement('a');
       link.download = `kansas-map-${selectedMetric}.png`;
-      link.href = canvas.toDataURL('image/png');
+      link.href = imgData;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

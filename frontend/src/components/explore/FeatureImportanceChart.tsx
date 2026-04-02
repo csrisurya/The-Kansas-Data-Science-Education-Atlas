@@ -87,8 +87,13 @@ const FeatureImportanceChart: React.FC = () => {
           Feature Importance Ranking
         </h3>
         <p className="text-sm text-gray-500 mt-1">
-          Information Gain scores indicating which county-level features are most
-          associated with DS/AI program presence.
+          Information Gain ranking measures how much each county-level feature reduces uncertainty
+          when predicting whether a county hosts DS/AI programs. Higher scores indicate stronger
+          predictive power. The analysis was performed using WEKA 3.8, an open-source machine learning
+          toolkit developed at the University of Waikato. WEKA's InfoGainAttributeEval evaluator was
+          applied with the Ranker search method across all 105 training instances to score each of the
+          26 predictor features. Institutional features — especially Four-Year Colleges — dominate the
+          ranking, while broadband and economic indicators contribute near-zero predictive value.
         </p>
       </div>
 

@@ -7,6 +7,7 @@ import type { HeatMapCounty } from '../components/explore/KansasHeatMap';
 import MapControls from '../components/explore/MapControls';
 import QuickStats from '../components/explore/QuickStats';
 import Loading from '../components/common/Loading';
+import type { Map as LeafletMap } from 'leaflet';
 
 const DEFAULT_METRIC = 'total_ds_ai_courses';
 
@@ -15,6 +16,7 @@ const ExplorePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCounty, setSelectedCounty] = useState<HeatMapCounty | null>(null);
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
+  const mapInstanceRef = useRef<LeafletMap | null>(null);
 
   /* ---- Fetch heat-map data from backend ---- */
   const {
@@ -126,6 +128,7 @@ const ExplorePage: React.FC = () => {
               counties={counties}
               metric={metricLabel}
               onCountyClick={handleCountyClick}
+              mapInstanceRef={mapInstanceRef}
             />
           </div>
 
@@ -162,6 +165,7 @@ const ExplorePage: React.FC = () => {
             onMetricChange={handleMetricChange}
             onSearch={handleSearch}
             mapRef={mapContainerRef}
+            mapInstanceRef={mapInstanceRef}
           />
         </div>
       </div>

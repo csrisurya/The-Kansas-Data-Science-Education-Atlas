@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { MapContainer, TileLayer, GeoJSON, ZoomControl } from 'react-leaflet';
-import type { LatLngExpression, Layer, LeafletMouseEvent, PathOptions } from 'leaflet';
+import { MapContainer, TileLayer, GeoJSON, ZoomControl, useMap } from 'react-leaflet';
+import type { LatLngExpression, Layer, LeafletMouseEvent, PathOptions, Map as LeafletMap } from 'leaflet';
 import type { Feature, GeoJsonProperties, Geometry } from 'geojson';
 import 'leaflet/dist/leaflet.css';
 
@@ -20,6 +20,8 @@ export interface KansasHeatMapProps {
   counties: HeatMapCounty[];
   metric: string;
   onCountyClick: (countyId: number) => void;
+  /** Optional ref to receive the Leaflet map instance */
+  mapInstanceRef?: React.MutableRefObject<LeafletMap | null>;
 }
 
 /* ------------------------------------------------------------------ */
@@ -129,6 +131,29 @@ const Legend: React.FC<{ min: number; max: number; metric: string }> = ({
 };
 
 /* ------------------------------------------------------------------ */
+/*  Helper to expose the Leaflet map instance via a ref                */
+/* ------------------------------------------------------------------ */
+
+const MapInstanceSetter: React.FC<{ mapInstanceRef: React.MutableRefObject<LeafletMap | null> }> = ({ mapInstanceRef }) => {
+  const map = useMap();
+  useEffect(() => {
+    mapInstanceRef.current = map;
+  }, [map, mapInstanceRef]);
+  return null;
+};
+
+/** Configure fine-grained zoom after mount */
+const ZoomConfigurator: React.FC = () => {
+  const map = useMap();
+  useEffect(() => {
+    map.options.zoomSnap = 0.1;
+    map.options.zoomDelta = 0.25;
+    map.options.wheelPxPerZoomLevel = 200;
+  }, [map]);
+  return null;
+};
+
+/* ------------------------------------------------------------------ */
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
@@ -136,6 +161,7 @@ const KansasHeatMap: React.FC<KansasHeatMapProps> = ({
   counties,
   metric,
   onCountyClick,
+  mapInstanceRef,
 }) => {
   const [geoJsonData, setGeoJsonData] = useState<GeoJSON.FeatureCollection | null>(null);
   const [geoJsonKey, setGeoJsonKey] = useState(0);
@@ -242,6 +268,9 @@ const KansasHeatMap: React.FC<KansasHeatMapProps> = ({
         zoom={INITIAL_ZOOM}
         minZoom={6}
         maxZoom={12}
+        zoomSnap={0.1}
+        zoomDelta={0.25}
+        wheelPxPerZoomLevel={200}
         style={{ height: '100%', width: '100%' }}
         zoomControl={false}
       >
@@ -260,6 +289,8 @@ const KansasHeatMap: React.FC<KansasHeatMapProps> = ({
         )}
 
         <ZoomControl position="topright" />
+        <ZoomConfigurator />
+        {mapInstanceRef && <MapInstanceSetter mapInstanceRef={mapInstanceRef} />}
       </MapContainer>
 
       <Legend min={min} max={max} metric={metric} />

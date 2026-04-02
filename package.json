@@ -8,6 +8,9 @@
     "test": "tests"
   },
   "scripts": {
+    "dev": "concurrently --names backend,frontend --prefix-colors blue,green \"cd backend && python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload\" \"cd frontend && npm run dev\"",
+    "backend": "cd backend && python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload",
+    "frontend": "cd frontend && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +31,7 @@
   "devDependencies": {
     "@types/node": "^25.3.0",
     "@vitest/ui": "^4.0.18",
+    "concurrently": "^9.2.1",
     "vitest": "^4.0.18"
   }
 }
