@@ -32,6 +32,19 @@ const AboutPage: React.FC = () => (
           College of Arts &amp; Sciences — Kansas State University
         </p>
       </section>
+
+      <div style={{ height: '2rem' }} />
+      <section>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">GitHub Repository</h3>
+        <a
+          href="https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas"
+          className="text-indigo-600 hover:underline font-medium text-base"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🔗 Link
+        </a>
+      </section>
     </div>
 
     {/* Right side */}

@@ -445,25 +445,7 @@ const DataRequestPage: React.FC = () => {
           </button>
         </div>
 
-        {/* Resource links */}
-        <div className="flex flex-wrap justify-between text-base">
-          <a
-            href="/docs/methodology.pdf"
-            className="text-indigo-600 hover:underline font-medium"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            📄 Methodology Documentation
-          </a>
-          <a
-            href="https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas"
-            className="text-indigo-600 hover:underline font-medium"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            🔗 GitHub Repository
-          </a>
-        </div>
+
       </div>
     </div>
   );
