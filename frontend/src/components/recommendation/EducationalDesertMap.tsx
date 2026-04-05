@@ -1,10 +1,21 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { MapContainer, TileLayer, GeoJSON, ZoomControl } from 'react-leaflet';
+import { MapContainer, TileLayer, GeoJSON, ZoomControl, useMap } from 'react-leaflet';
 import type { LatLngExpression, Layer, LeafletMouseEvent, PathOptions } from 'leaflet';
 import type { Feature, GeoJsonProperties, Geometry } from 'geojson';
 import { apiService } from '../../services/api';
 import 'leaflet/dist/leaflet.css';
+
+/** Configure fine-grained zoom after mount */
+const ZoomConfigurator: React.FC = () => {
+  const map = useMap();
+  useEffect(() => {
+    map.options.zoomSnap = 0.1;
+    map.options.zoomDelta = 0.25;
+    map.options.wheelPxPerZoomLevel = 200;
+  }, [map]);
+  return null;
+};
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -348,7 +359,6 @@ const EducationalDesertMap: React.FC = () => {
   const between50and100 = deserts.filter(
     (d) => d.distance_to_nearest_program > 50 && d.distance_to_nearest_program <= 100,
   ).length;
-  const under50 = deserts.filter((d) => d.distance_to_nearest_program <= 50).length;
   const maxDist = deserts.length
     ? Math.max(...deserts.map((d) => d.distance_to_nearest_program))
     : 0;
@@ -407,9 +417,13 @@ const EducationalDesertMap: React.FC = () => {
             zoom={INITIAL_ZOOM}
             minZoom={6}
             maxZoom={12}
+            zoomSnap={0.1}
+            zoomDelta={0.25}
+            wheelPxPerZoomLevel={200}
             style={{ height: '100%', width: '100%' }}
             zoomControl={false}
           >
+            <ZoomConfigurator />
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -33,16 +33,6 @@ function levelBadge(level: string) {
   return { label: 'Undergraduate', bg: 'bg-sky-100', text: 'text-sky-700' };
 }
 
-/** Deduplicate & collect unique values from an array of Courses */
-function uniqueValues(courses: Course[], key: keyof Course): string[] {
-  const set = new Set<string>();
-  for (const c of courses) {
-    const val = String(c[key] ?? '').trim();
-    if (val && val !== 'DNE') set.add(val);
-  }
-  return [...set];
-}
-
 /* ------------------------------------------------------------------ */
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */

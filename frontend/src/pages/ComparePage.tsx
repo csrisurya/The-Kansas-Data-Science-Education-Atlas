@@ -27,8 +27,6 @@ const ComparePage: React.FC<ComparePageProps> = ({ selectedCounties, onCountyCha
     })),
   });
 
-  const selectedCount = selectedCounties.filter((id) => id != null).length;
-
   return (
     <div className="min-h-[400px]">
       {/* Header */}

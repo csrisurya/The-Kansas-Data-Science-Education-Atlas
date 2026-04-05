@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { apiService } from '../../services/api';
-import type { County } from '../../types/atlas';
+import type { County } from '../../services/api';
 
 interface CountySelectorProps {
   /** Array of 4 slots: each is a county ID or null */

@@ -83,12 +83,6 @@ const FilterPanel: React.FC<FilterPanelProps> = ({ filters, onFilterChange }) =>
     onFilterChange({ ...EMPTY_FILTERS });
   }, [onFilterChange]);
 
-  const handleApply = useCallback(() => {
-    // Trigger search by calling onFilterChange with the current (already-set) filters.
-    // The parent can use this callback to fire a query.
-    onFilterChange({ ...filters });
-  }, [filters, onFilterChange]);
-
   /* ---------- (checkbox group rendered inline below) ---------- */
 
   /* ---------- active filter count ---------- */

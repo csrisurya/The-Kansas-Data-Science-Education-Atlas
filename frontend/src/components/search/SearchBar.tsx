@@ -50,11 +50,6 @@ const SearchBar: React.FC<SearchBarProps> = ({
     onSearch('');
   };
 
-  const handleSearchClick = () => {
-    if (debounceRef.current) clearTimeout(debounceRef.current);
-    onSearch(value.trim());
-  };
-
   return (
     <div className="relative flex items-center w-full">
       {/* Loading spinner (shown only while fetching) */}

@@ -148,9 +148,6 @@ const DataRequestPage: React.FC = () => {
   };
 
   /* ---- Shared UI pieces ---- */
-  const fieldError = (msg?: string) =>
-    msg ? <p className="text-red-500 text-sm mt-1">{msg}</p> : null;
-
   const radioBtn = (
     name: string,
     value: string,

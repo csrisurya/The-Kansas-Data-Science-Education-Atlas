@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useSearchParams } from 'react-router-dom';
-import FilterPanel, { EMPTY_FILTERS } from '../components/search/FilterPanel';
+import FilterPanel from '../components/search/FilterPanel';
 import type { FilterState } from '../components/search/FilterPanel';
 import SearchBar from '../components/search/SearchBar';
 import SearchResults from '../components/search/SearchResults';
