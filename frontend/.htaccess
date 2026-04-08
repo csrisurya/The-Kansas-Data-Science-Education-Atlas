@@ -1,4 +1,5 @@
-Options -MultiViews
 RewriteEngine On
+RewriteBase /~sschandr/atlas/
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.html [QL]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /~sschandr/atlas/index.html [L]
