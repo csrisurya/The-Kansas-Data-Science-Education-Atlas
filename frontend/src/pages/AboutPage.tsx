@@ -2,9 +2,9 @@ import React from 'react';
 
 const contributors = [
   { name: 'Srisurya Chandramouli', email: 'sschandr@ksu.edu' },
-  { name: 'Bharaneeshwar Balasubramaniyam', email: 'bharanibala@ksu.edu' },
   { name: 'Safia Malallah', email: 'safia@ksu.edu' },
   { name: 'Lior Shamir', email: 'lshamir@ksu.edu' },
+  { name: 'Bharaneeshwar Balasubramaniyam', email: 'bharanibala@ksu.edu' },
 ];
 
 const AboutPage: React.FC = () => (
