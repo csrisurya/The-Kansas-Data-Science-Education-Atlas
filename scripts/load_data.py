@@ -4,9 +4,8 @@ import psycopg2
 from psycopg2.extras import execute_values
 
 DB_PARAMS = {
-    'dbname': 'kansas_atlas',
-    'user': 'atlas_user',
-    'password': 'password',
+    'dbname': 'atlas',
+    'user': 'srisurya',
     'host': 'localhost',
     'port': 5432
 }
@@ -62,10 +61,45 @@ def print_summary(row_counts):
     for table, count in row_counts.items():
         print(f"{table:<30} | {count:>10}")
 
+def ensure_courses_columns(conn):
+    """Add county_name and institution_type to courses table if missing."""
+    with conn.cursor() as cur:
+        cur.execute("""
+            ALTER TABLE courses
+                ADD COLUMN IF NOT EXISTS county_name VARCHAR(255),
+                ADD COLUMN IF NOT EXISTS institution_type VARCHAR(50);
+        """)
+    conn.commit()
+    print("Ensured courses.county_name and courses.institution_type exist.")
+
+
+def populate_courses_county(conn):
+    """Populate county_name and institution_type in courses from institutions."""
+    with conn.cursor() as cur:
+        cur.execute("""
+            UPDATE courses c
+            SET
+                county_name      = i.county_name,
+                institution_type = i.college_type::varchar
+            FROM (
+                SELECT DISTINCT ON (college_name) college_name, county_name, college_type
+                FROM institutions
+                WHERE college_name != 'DNE'
+                ORDER BY college_name
+            ) i
+            WHERE c.school_name = i.college_name
+              AND c.county_name IS NULL;
+        """)
+        updated = cur.rowcount
+    conn.commit()
+    print(f"Populated county_name for {updated} course rows.")
+
+
 def main():
     row_counts = {}
     try:
         conn = psycopg2.connect(**DB_PARAMS)
+        ensure_courses_columns(conn)
         for csv_path, table_name in CSV_TABLES:
             if not os.path.exists(csv_path):
                 print(f"File not found: {csv_path}")
@@ -76,6 +110,7 @@ def main():
                 row_counts[table_name] = count
             except Exception as e:
                 print(f"Error loading {csv_path} into {table_name}: {e}")
+        populate_courses_county(conn)
         print_summary(row_counts)
     except Exception as e:
         print(f"Database connection error: {e}")

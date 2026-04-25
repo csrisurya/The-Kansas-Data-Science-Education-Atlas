@@ -250,7 +250,7 @@ const EducationalDesertMap: React.FC = () => {
   /* ---------- Load GeoJSON ---------- */
   useEffect(() => {
     let cancelled = false;
-    fetch('/kansas-counties.geojson')
+    fetch(`${import.meta.env.BASE_URL}kansas-counties.geojson`)
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
