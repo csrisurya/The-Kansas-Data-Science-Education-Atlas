@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: atlas-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://atlas_db_du1j_user:9vkrxE3URcfayNbaOOZKNuTq43G2P08Y@dpg-d7m6c5egvqtc73a5i7ug-a.oregon-postgres.render.com/atlas_db_du1j
+      - key: SECRET_KEY
+        value: 6bac69e385c61f467b845dfcad4709453db5fd6971ad3912ab61e1b100447b18
