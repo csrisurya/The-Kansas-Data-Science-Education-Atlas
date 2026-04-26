@@ -92,7 +92,8 @@ def _send_confirmation_email(
 
 def _read_and_filter(csv_path: Path, counties: list[str] | None) -> pd.DataFrame:
     """Read a CSV and optionally filter to specific counties."""
-    df = pd.read_csv(csv_path)
+    encoding = "latin1" if "dataset3" in csv_path.name else "utf-8"
+    df = pd.read_csv(csv_path, encoding=encoding)
     if not counties:
         return df
     # Try each known county column name
