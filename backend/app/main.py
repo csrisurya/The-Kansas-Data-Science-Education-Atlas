@@ -55,7 +55,12 @@ app = FastAPI(
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.BACKEND_CORS_ORIGINS,
+    allow_origins=[
+        "https://csk12.cs.ksu.edu",
+        "https://engg-cs-csk12-01.cs.ksu.edu",
+        "http://localhost:5173",
+        "https://atlas-frontend.onrender.com",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

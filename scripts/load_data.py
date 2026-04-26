@@ -3,12 +3,12 @@ import pandas as pd
 import psycopg2
 from psycopg2.extras import execute_values
 
-DB_PARAMS = {
-    'dbname': 'atlas',
-    'user': 'srisurya',
-    'host': 'localhost',
-    'port': 5432
-}
+import urllib.parse
+
+database_url = os.environ.get('DATABASE_URL', 'postgresql://localhost/atlas')
+
+def get_connection():
+    return psycopg2.connect(database_url)
 
 CSV_TABLES = [
     ("data/raw/dataset1.csv", "institutions"),
@@ -98,7 +98,7 @@ def populate_courses_county(conn):
 def main():
     row_counts = {}
     try:
-        conn = psycopg2.connect(**DB_PARAMS)
+        conn = get_connection()
         ensure_courses_columns(conn)
         for csv_path, table_name in CSV_TABLES:
             if not os.path.exists(csv_path):
