@@ -59,7 +59,7 @@ app.add_middleware(
         "https://csk12.cs.ksu.edu",
         "https://engg-cs-csk12-01.cs.ksu.edu",
         "http://localhost:5173",
-        "https://atlas-frontend.onrender.com",
+        "https://atlas-frontend-44fq.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
