@@ -9,7 +9,7 @@ https://atlas-frontend-44fq.onrender.com/
 
 ## Research Paper
 
-You can access the paper submitted at the American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition here: <INSERT>
+You can access the paper submitted at the American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition here:
 
 ---
 
