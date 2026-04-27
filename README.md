@@ -1,12 +1,9 @@
 # The Kansas Data Science Education Atlas
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/csrisurya/The-Kansas-Data-Science-Education-Atlas/ci.yml?branch=main)](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas/actions)
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas/actions)
-[![Coverage](https://img.shields.io/badge/coverage-90%25-green)](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas)
+## Dashboard Link
 
-## Live Demo
-
-**Coming soon!**
+You can access the public dashboard at:
+https://atlas-frontend-44fq.onrender.com/
 
 ---
 
@@ -26,7 +23,7 @@ npm install && npm run dev
 - **Backend:** FastAPI (Python), PostgreSQL
 - **Mapping:** Leaflet.js
 - **Testing:** Vitest, Pytest
-- **Deployment:** Vercel (frontend), Railway/Render (backend)
+- **Deployment:** Render (frontend & backend)
 
 ---
 
@@ -36,42 +33,22 @@ npm install && npm run dev
 
 ---
 
-## Contributing
-
-Contributions are welcome! Please:
-- Fork the repo and create a branch
-- Follow code style and add tests
-- Open a pull request with a clear description
-- See [DEPLOYMENT.md](docs/DEPLOYMENT.md) for setup
-
----
-
-## Screenshots
-
-_Coming soon!_
-
----
-
 ## Citation
 
 If you use this project, please cite:
 
-> Surya, S. (2026). The Kansas Data Science Education Atlas. Kansas State University. [GitHub Repository](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas)
+> Chandramouli, S. (2026). The Kansas Data Science Education Atlas. Kansas State University. [GitHub Repository](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas)
 
 ---
-
-## Repository Status
-This repository is currently under development. I am actively building out the interactive public dashboard to allow educators and policymakers to visualize these gaps in real-time.
 
 ## Project Overview
 This research project addresses geographic inequities in Data Science (DS) and Artificial Intelligence (AI) education access across Kansas. Using publicly available datasets, geospatial analysis, and machine learning classification, the study reveals that 88 of 105 counties lack any DS/AI academic offerings, with programs concentrated in counties hosting four-year universities (Lawrence, Manhattan, Wichita).
 
 ### Key Findings
 * Educational infrastructure (presence of four-year colleges) has the strongest association to DS/AI program availability
-* Population density shows strong correlation with program presence, but creates substantial rural-urban inequity
-* Economic indicators (e.g., median income, poverty rate) show minimal predictive power
+* Economic indicators (e.g., median income, poverty rate) show minimal correlation
 * Digital infrastructure is adequate statewide (e.g., avg broadband index: 0.79) but doesn't drive program creation
-* Machine Learning models achieved 83.8% accuracy (i.e., Random Forest) with 70.6% recall for minority class
+* Random Forest (ML model) achieved ~91% accuracy
 
 ## Research Questions
 * <i>RQ1:</i> How do population density and demographics correlate with DS/AI educational offerings, and what are the implications for educational equity?
@@ -87,7 +64,7 @@ This research project addresses geographic inequities in Data Science (DS) and A
 * <i>IPUMS NHGIS:</i> Census demographic and economic data (ACS 2019-2023)
 * <i>FCC Broadband Map:</i> Fixed broadband coverage metrics
 * <i>US Census Bureau:</i> County centroid lat/long coordinates
-* <i>Manual Collection:</i> DS/AI course inventory (AI-assisted web scraping)
+* <i>Manual Collection:</i> DS/AI course inventory (AI-assisted web scraping via Claude & ChatGPT)
 
 ### Analysis Pipeline
 1. <i>Data Gathering:</i> Multi-source public dataset collection
@@ -95,7 +72,7 @@ This research project addresses geographic inequities in Data Science (DS) and A
 3. <i>Feature Engineering:</i> Impact scores, demographic rates, digital access indices
 4. <i>Statistical Analysis:</i> Correlation matrices, p-value testing, effect size (Eta-squared)
 5. <i>Machine Learning:</i> Random Forest, SVM, Naive Bayes classification (WEKA 3.8)
-6. <i>Geospatial Visualization:</i> Heat maps and distribution analysis (R, Power BI)
+6. <i>Geospatial Visualization:</i> Heat maps and distribution analysis (R)
 
 ## Datasets
 The project integrates 7 interconnected datasets derived from multiple authoritative sources:
@@ -123,13 +100,15 @@ The project integrates 7 interconnected datasets derived from multiple authorita
 * <i>ML Platform:</i> WEKA 3.8
 * <i>Visualization:</i> R, Microsoft Power BI Desktop
 * <i>Development:</i> VS Code
-* <i>Remote Access:</i> Kansas State University Windows Server (via Global Protect VPN), Parallels Desktop software
+* <i>Remote Access:</i> Kansas State University Windows Server (via Global Protect VPN)
 * <i>Writing:</i> Microsoft Word, Overleaf
-
-## Acknowledgements
-* Kansas State University Research Foundation
+* <i>Dashbaord Hosting:</i> Render
 
 ## Recognitions
-* Winner of $1,500 Spring 2026 Undergraduate Research Scholarship (Kansas State University College of Arts & Sciences)
+* Winner of $1,500 Spring 2026 Undergraduate Research Scholarship (College of Arts & Sciences, Kansas State University)
 * Presented at MINK-WIC Conference 2025 (multi-state -> Missouri, Iowa, Nebraska, Kansas)
-* Nominated to be submitted in American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition
+* Research paper accepted into American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition
+* Presented as speaker at Kansas Data Science Conference 2026
+
+## Acknowledgements
+* National Science Foundation
