@@ -1,11 +1,14 @@
 # The Kansas Data Science Education Atlas
 
-## Dashboard Link
+## Dashboard Info
 
 You can access the public dashboard at:
 https://atlas-frontend-44fq.onrender.com/
 
 ---
+
+You can access the dashboard deployment guide at:
+[Render Deployment Guide](docs/Render_Deployment_Guide.docx)
 
 ## Research Paper
 
