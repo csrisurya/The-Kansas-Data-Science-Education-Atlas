@@ -18,7 +18,7 @@ const KANSAS_COUNTIES = [
   'Washington','Wichita','Wilson','Woodson','Wyandotte',
 ];
 
-const CITATION_TEXT = `Chandramouli S. (2026). The Kansas Data Science Education Atlas. Kansas State University. https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas`;
+const CITATION_TEXT = `Chandramouli S. S. (2026). The Kansas Data Science Education Atlas. Kansas State University. https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas`;
 
 /* ── Types ─────────────────────────────────────────────────── */
 interface DatasetRequestForm {
