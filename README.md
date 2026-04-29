@@ -1,18 +1,19 @@
 # The Kansas Data Science Education Atlas
 
-## Dashboard Info
+## Latest Developments
 
-You can access the public dashboard at:
-https://atlas-frontend-44fq.onrender.com/
+Here is the [public dashboard](https://atlas-frontend-44fq.onrender.com/).
 
 ---
 
-You can access the dashboard deployment guide at:
-[Render Deployment Guide](docs/Render_Deployment_Guide.docx)
+Here is the [dashboard deployment guide](docs/Render_Deployment_Guide.docx)
 
-## Research Paper
+---
 
-You can access the paper submitted at the American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition here:
+Here is the [research paper](docs/Research%20Paper%20-%20ASEE%20-%20Final%20-%20Overleaf.pdf) accepted into the American Society for Engineering Education (ASEE) 2026 Annual Conference & Exposition.
+
+---
+Here is the [demo video](docs/8%20Min%20Demo.mp4) my presentation for the Kansas Data Science Conference. 
 
 ---
 

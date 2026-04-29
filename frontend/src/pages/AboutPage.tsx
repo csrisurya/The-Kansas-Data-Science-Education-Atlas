@@ -2,9 +2,9 @@ import React from 'react';
 
 const contributors = [
   { name: 'Srisurya Chandramouli', email: 'sschandr@ksu.edu' },
+  { name: 'Bharaneeshwar Balasubramaniyam', email: 'bharanibala@ksu.edu' },
   { name: 'Safia Malallah', email: 'safia@ksu.edu' },
   { name: 'Lior Shamir', email: 'lshamir@ksu.edu' },
-  { name: 'Bharaneeshwar Balasubramaniyam', email: 'bharanibala@ksu.edu' },
 ];
 
 const AboutPage: React.FC = () => (
@@ -35,15 +35,29 @@ const AboutPage: React.FC = () => (
 
       <div style={{ height: '2rem' }} />
       <section>
-        <h3 className="text-lg font-semibold text-gray-800 mb-3">GitHub Repository</h3>
-        <a
-          href="https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas"
-          className="text-indigo-600 hover:underline font-medium text-base"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          🔗 Link
-        </a>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">Helpful References</h3>
+        <ul className="flex flex-col gap-2">
+          <li>
+            <a
+              href="https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas"
+              className="text-indigo-600 hover:underline font-medium text-base"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="/Research Paper - ASEE - Final - Overleaf.pdf"
+              className="text-indigo-600 hover:underline font-medium text-base"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Research Paper
+            </a>
+          </li>
+        </ul>
       </section>
     </div>
 
