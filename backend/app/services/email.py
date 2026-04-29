@@ -104,7 +104,7 @@ def _build_confirmation_html(
                 📌 Citation Information
               </p>
               <p style="margin:0;font-size:13px;font-style:italic;color:#555;">
-                Chandramouli S. (2026). The Kansas Data Science Education Atlas.
+                Chandramouli S. S. (2026). The Kansas Data Science Education Atlas.
                 Kansas State University.
                 <a href="https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas"
                    style="color:#512888;">GitHub Repository</a>
