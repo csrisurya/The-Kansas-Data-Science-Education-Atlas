@@ -33,7 +33,7 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 
 # Path to raw CSV datasets
-DATA_DIR = Path(__file__).resolve().parents[1] / "data_raw"
+DATA_DIR = Path(__file__).resolve().parents[2] / "data_raw"
 
 # Directory where generated ZIPs are saved for download
 EXPORTS_DIR = Path(__file__).resolve().parents[2] / ".." / "data" / "exports"
