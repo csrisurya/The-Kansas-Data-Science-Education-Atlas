@@ -188,6 +188,42 @@ def _send_via_resend(to_email: str, subject: str, html_content: str) -> None:
         "html": html_content,
     })
 
+def _send_via_gmail_oauth(to_email: str, subject: str, html_content: str) -> bool:
+    """Send email via Gmail API using OAuth2."""
+    try:
+        import base64
+        from email.mime.multipart import MIMEMultipart
+        from email.mime.text import MIMEText
+        from google.oauth2.credentials import Credentials
+        from googleapiclient.discovery import build
+
+        creds = Credentials(
+            token=None,
+            refresh_token=os.environ.get("GMAIL_REFRESH_TOKEN"),
+            client_id=os.environ.get("GMAIL_CLIENT_ID"),
+            client_secret=os.environ.get("GMAIL_CLIENT_SECRET"),
+            token_uri="https://oauth2.googleapis.com/token",
+        )
+
+        service = build("gmail", "v1", credentials=creds)
+
+        message = MIMEMultipart("alternative")
+        message["Subject"] = subject
+        message["From"] = "Kansas Data Science Atlas <csrisurya@gmail.com>"
+        message["To"] = to_email
+        message.attach(MIMEText(html_content, "html"))
+
+        raw = base64.urlsafe_b64encode(message.as_bytes()).decode()
+        service.users().messages().send(
+            userId="me", body={"raw": raw}
+        ).execute()
+
+        logger.info("Gmail OAuth email sent to %s", to_email)
+        return True
+    except Exception:
+        logger.exception("Gmail OAuth email failed for %s", to_email)
+        return False
+
 # ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
@@ -200,10 +236,6 @@ def send_data_request_confirmation(
     intended_use: str = "",
     download_url: str = "",
 ) -> bool:
-    """
-    Send a data-request confirmation email with a download link.
-    Uses Resend API as the primary email backend.
-    """
     subject = "Kansas Atlas – Your Datasets Are Ready!"
     html_body = _build_confirmation_html(
         recipient_name=recipient_name,
@@ -213,15 +245,19 @@ def send_data_request_confirmation(
         download_url=download_url,
     )
 
-    # Try Resend first
-    resend_key = os.environ.get("RESEND_API_KEY", "")
-    if resend_key:
+    # Try Gmail OAuth first
+    if os.environ.get("GMAIL_REFRESH_TOKEN"):
+        success = _send_via_gmail_oauth(recipient_email, subject, html_body)
+        if success:
+            return True
+
+    # Try Resend
+    if os.environ.get("RESEND_API_KEY"):
         try:
             _send_via_resend(recipient_email, subject, html_body)
-            logger.info("Resend email sent to %s", recipient_email)
             return True
         except Exception:
-            logger.exception("Resend email failed for %s", recipient_email)
+            logger.exception("Resend failed for %s", recipient_email)
 
     # Try SendGrid
     if settings.SENDGRID_API_KEY:
@@ -233,8 +269,5 @@ def send_data_request_confirmation(
     if settings.SMTP_HOST:
         return _send_via_smtp(recipient_email, subject, html_body)
 
-    logger.warning(
-        "No email backend configured. Confirmation email to %s was NOT sent.",
-        recipient_email,
-    )
+    logger.warning("No email backend configured for %s", recipient_email)
     return False
