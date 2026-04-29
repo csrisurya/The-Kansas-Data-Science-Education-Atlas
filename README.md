@@ -113,4 +113,4 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 If you use this project, please cite:
 
-> Chandramouli, S. (2026). The Kansas Data Science Education Atlas. Kansas State University. [GitHub Repository](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas)
+> Chandramouli, S. S. (2026). The Kansas Data Science Education Atlas. Kansas State University. [GitHub Repository](https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas)

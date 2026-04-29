@@ -97,7 +97,8 @@ def _query_table(table_name: str, counties: list[str] | None) -> pd.DataFrame:
     """Query a database table and optionally filter by county."""
     db = next(get_db())
     try:
-        df = pd.read_sql(text(f"SELECT * FROM {table_name}"), db.bind)
+        with db.bind.connect() as conn:
+            df = pd.read_sql(text(f"SELECT * FROM {table_name}"), conn)
         if not counties:
             return df
         for col in COUNTY_COLUMNS:
@@ -226,11 +227,6 @@ async def create_data_request(payload: DataRequestSchema):
 # GET /data-request/{request_id}/download
 # ---------------------------------------------------------------------------
 
-@router.get(
-    "/data-request/{request_id}/download",
-    summary="Download a prepared dataset ZIP",
-    description="Returns the ZIP file that was generated for the given request.",
-)
 @router.get(
     "/data-request/{request_id}/download",
     summary="Download a prepared dataset ZIP",
