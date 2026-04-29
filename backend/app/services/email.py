@@ -250,24 +250,20 @@ def send_data_request_confirmation(
         success = _send_via_gmail_oauth(recipient_email, subject, html_body)
         if success:
             return True
+        logger.warning("Gmail OAuth failed, trying Resend")
 
     # Try Resend
     if os.environ.get("RESEND_API_KEY"):
         try:
             _send_via_resend(recipient_email, subject, html_body)
+            logger.info("Resend email sent to %s", recipient_email)
             return True
         except Exception:
             logger.exception("Resend failed for %s", recipient_email)
 
     # Try SendGrid
     if settings.SENDGRID_API_KEY:
-        success = _send_via_sendgrid(recipient_email, subject, html_body)
-        if success:
-            return True
+        return _send_via_sendgrid(recipient_email, subject, html_body)
 
-    # Fallback to SMTP
-    if settings.SMTP_HOST:
-        return _send_via_smtp(recipient_email, subject, html_body)
-
-    logger.warning("No email backend configured for %s", recipient_email)
+    logger.warning("No email backend worked for %s", recipient_email)
     return False
