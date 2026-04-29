@@ -1,36 +1,40 @@
-# Web Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-
-# Database
-sqlalchemy==2.0.25
-psycopg2-binary==2.9.9
-alembic==1.13.1
-
-# Data Processing
-pandas>=2.2.3
-numpy==1.26.3
-
-# Validation
-pydantic==2.5.3
-pydantic-settings==2.1.0
-
-# CORS
-python-multipart==0.0.6
-
-# Environment Variables
-python-dotenv==1.0.0
-
-# Testing
-pytest==7.4.4
-pytest-asyncio==0.23.3
-
-# Utilities
-openpyxl==3.1.2  # For Excel file reading
-geojson==3.1.0   # For GeoJSON handling
-
-# Data Request & Report Generation
-email-validator==2.1.0  # For Pydantic EmailStr
-fpdf2==2.7.8            # PDF report generation
-python-pptx==0.6.23     # PowerPoint report generation
-sendgrid==6.11.0        # SendGrid email backend (optional)
+annotated-types==0.7.0
+anyio==4.12.1
+certifi==2026.1.4
+charset-normalizer==3.4.7
+click==8.3.1
+dnspython==2.8.0
+email-validator==2.3.0
+fastapi==0.110.0
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.27.0
+idna==3.11
+iniconfig==2.3.0
+joblib==1.5.3
+numpy==2.4.2
+packaging==26.0
+pandas==3.0.1
+pluggy==1.6.0
+psycopg2==2.9.11
+pydantic==2.12.5
+pydantic-settings==2.13.1
+pydantic_core==2.41.5
+Pygments==2.19.2
+PyPDF2==3.0.1
+pytest==9.0.2
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.1
+requests==2.33.1
+resend==2.29.0
+scikit-learn==1.8.0
+scipy==1.17.1
+six==1.17.0
+sniffio==1.3.1
+SQLAlchemy==2.0.46
+starlette==0.36.3
+threadpoolctl==3.6.0
+typing-inspection==0.4.2
+typing_extensions==4.15.0
+urllib3==2.6.3
+uvicorn==0.41.0

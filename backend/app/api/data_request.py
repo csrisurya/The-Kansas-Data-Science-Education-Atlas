@@ -93,20 +93,18 @@ DATASET_TABLES = {
     "dataset7": "atlas",
 }
 
+from app.database import get_db, engine
+
 def _query_table(table_name: str, counties: list[str] | None) -> pd.DataFrame:
     """Query a database table and optionally filter by county."""
-    db = next(get_db())
-    try:
-        with db.bind.connect() as conn:
-            df = pd.read_sql(text(f"SELECT * FROM {table_name}"), conn)
-        if not counties:
-            return df
-        for col in COUNTY_COLUMNS:
-            if col in df.columns:
-                return df[df[col].isin(counties)]
+    with engine.connect() as conn:
+        df = pd.read_sql(text(f"SELECT * FROM {table_name}"), conn)
+    if not counties:
         return df
-    finally:
-        db.close()
+    for col in COUNTY_COLUMNS:
+        if col in df.columns:
+            return df[df[col].isin(counties)]
+    return df
 
 def _build_datasets_zip(
     dataset_keys: list[str],

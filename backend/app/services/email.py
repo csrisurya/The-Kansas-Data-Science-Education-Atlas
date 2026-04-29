@@ -176,45 +176,17 @@ def _send_via_sendgrid(
         return False
 
 
-# ---------------------------------------------------------------------------
-# SMTP backend
-# ---------------------------------------------------------------------------
+import resend
+import os
 
-def _send_via_smtp(
-    to_email: str,
-    subject: str,
-    html_body: str,
-) -> bool:
-    """Send email via SMTP. Returns True on success."""
-    try:
-        msg = MIMEMultipart("alternative")
-        msg["From"] = settings.FROM_EMAIL
-        msg["To"] = to_email
-        msg["Subject"] = subject
-        msg.attach(MIMEText(html_body, "html"))
-
-        smtp_host = settings.SMTP_HOST
-        smtp_port = settings.SMTP_PORT
-
-        if smtp_port == 465:
-            server = smtplib.SMTP_SSL(smtp_host, smtp_port, timeout=15)
-        else:
-            server = smtplib.SMTP(smtp_host, smtp_port, timeout=15)
-            server.ehlo()
-            server.starttls()
-
-        if settings.SMTP_USER and settings.SMTP_PASSWORD:
-            server.login(settings.SMTP_USER, settings.SMTP_PASSWORD)
-
-        server.sendmail(settings.FROM_EMAIL, [to_email], msg.as_string())
-        server.quit()
-
-        logger.info("SMTP email sent to %s via %s:%s", to_email, smtp_host, smtp_port)
-        return True
-    except Exception:
-        logger.exception("SMTP email failed for %s", to_email)
-        return False
-
+def _send_via_resend(to_email: str, subject: str, html_content: str) -> None:
+    resend.api_key = os.environ.get("RESEND_API_KEY", "")
+    resend.Emails.send({
+        "from": "Kansas Data Science Atlas <onboarding@resend.dev>",
+        "to": [to_email],
+        "subject": subject,
+        "html": html_content,
+    })
 
 # ---------------------------------------------------------------------------
 # Public API
@@ -230,10 +202,7 @@ def send_data_request_confirmation(
 ) -> bool:
     """
     Send a data-request confirmation email with a download link.
-
-    Tries SendGrid first (if ``SENDGRID_API_KEY`` is configured), then falls
-    back to SMTP.  Returns ``True`` if the email was sent, ``False`` otherwise.
-    Errors are logged but never raised.
+    Uses Resend API as the primary email backend.
     """
     subject = "Kansas Atlas – Your Datasets Are Ready!"
     html_body = _build_confirmation_html(
@@ -244,21 +213,28 @@ def send_data_request_confirmation(
         download_url=download_url,
     )
 
-    # Try SendGrid first
+    # Try Resend first
+    resend_key = os.environ.get("RESEND_API_KEY", "")
+    if resend_key:
+        try:
+            _send_via_resend(recipient_email, subject, html_body)
+            logger.info("Resend email sent to %s", recipient_email)
+            return True
+        except Exception:
+            logger.exception("Resend email failed for %s", recipient_email)
+
+    # Try SendGrid
     if settings.SENDGRID_API_KEY:
         success = _send_via_sendgrid(recipient_email, subject, html_body)
         if success:
             return True
-        logger.warning("SendGrid failed; attempting SMTP fallback for %s", recipient_email)
 
     # Fallback to SMTP
     if settings.SMTP_HOST:
         return _send_via_smtp(recipient_email, subject, html_body)
 
-    # No email backend configured
     logger.warning(
-        "No email backend configured (SENDGRID_API_KEY or SMTP_HOST). "
-        "Confirmation email to %s was NOT sent.",
+        "No email backend configured. Confirmation email to %s was NOT sent.",
         recipient_email,
     )
     return False
