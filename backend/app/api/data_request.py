@@ -14,8 +14,6 @@ from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
 from typing import Optional
-from sqlalchemy import text
-from app.database import get_db
 
 import pandas as pd
 from fastapi import APIRouter, HTTPException, status
@@ -82,23 +80,20 @@ def _send_confirmation_email(
 # Helpers – dataset packaging
 # ---------------------------------------------------------------------------
 
-# Mapping from dataset key to database table name
-DATASET_TABLES = {
-    "dataset1": "institutions",
-    "dataset2": "county_aggregations",
-    "dataset3": "courses",
-    "dataset4": "college_locations",
-    "dataset5": "digital_infrastructure",
-    "dataset6": "socioeconomic",
-    "dataset7": "atlas",
+# Friendly names for the front-end keys
+DATASET_FILES = {
+    "dataset1": "dataset1.csv",
+    "dataset2": "dataset2.csv",
+    "dataset3": "dataset3.csv",
+    "dataset4": "dataset4.csv",
+    "dataset5": "dataset5.csv",
+    "dataset6": "dataset6.csv",
+    "dataset7": "dataset7.csv",
 }
 
-from app.database import get_db, engine
-
-def _query_table(table_name: str, counties: list[str] | None) -> pd.DataFrame:
-    """Query a database table and optionally filter by county."""
-    with engine.connect() as conn:
-        df = pd.read_sql(text(f"SELECT * FROM {table_name}"), conn)
+def _read_and_filter(csv_path: Path, counties: list[str] | None) -> pd.DataFrame:
+    encoding = "latin1" if "dataset3" in csv_path.name else "utf-8"
+    df = pd.read_csv(csv_path, encoding=encoding)
     if not counties:
         return df
     for col in COUNTY_COLUMNS:
@@ -111,26 +106,25 @@ def _build_datasets_zip(
     data_format: str,
     counties: list[str] | None,
 ) -> BytesIO:
-    """Build a ZIP archive by querying the database for each dataset."""
+    """Build a ZIP archive containing the requested datasets."""
     zip_buf = BytesIO()
     with zipfile.ZipFile(zip_buf, "w", zipfile.ZIP_DEFLATED) as zf:
         for key in dataset_keys:
-            table_name = DATASET_TABLES.get(key)
-            if not table_name:
+            filename = DATASET_FILES.get(key)
+            if not filename:
                 logger.warning("Unknown dataset key: %s – skipping", key)
                 continue
-            try:
-                df = _query_table(table_name, counties)
-                file_bytes, ext = _convert_df(df, data_format)
-                arc_name = f"{key}{ext}"
-                zf.writestr(arc_name, file_bytes)
-                logger.info("Added %s rows from %s to ZIP", len(df), table_name)
-            except Exception as e:
-                logger.error("Failed to query %s: %s", table_name, e)
+            csv_path = DATA_DIR / filename
+            if not csv_path.exists():
+                logger.warning("Dataset file not found: %s – skipping", csv_path)
                 continue
+            df = _read_and_filter(csv_path, counties)
+            file_bytes, ext = _convert_df(df, data_format)
+            arc_name = f"{key}{ext}"
+            zf.writestr(arc_name, file_bytes)
+            logger.info("Added %s rows from %s to ZIP", len(df), filename)
     zip_buf.seek(0)
     return zip_buf
-
 
 def _convert_df(df: pd.DataFrame, fmt: str) -> tuple[bytes, str]:
     """
