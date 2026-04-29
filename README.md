@@ -107,7 +107,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 - [Public Dashboard](https://atlas-frontend-44fq.onrender.com/)
 - [Research Paper](docs/Research%20Paper%20-%20ASEE%20-%20Final%20-%20Overleaf.pdf) — accepted into ASEE 2026 Annual Conference & Exposition
 - [Demo Video](docs/8%20Min%20Demo.mp4) — Kansas Data Science Conference 2026 presentation
-- [Deployment Guide](docs/Render_Deployment_Guide.docx)
+- [Dashboard Deployment Guide](docs/Render_Deployment_Guide.docx)
 
 ## Citation
 
