@@ -14,6 +14,8 @@ from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
 from typing import Optional
+from sqlalchemy import text
+from app.database import get_db
 
 import pandas as pd
 from fastapi import APIRouter, HTTPException, status
@@ -39,16 +41,6 @@ DATA_DIR = Path(__file__).resolve().parents[2] / ".." / "data" / "raw"
 EXPORTS_DIR = Path(__file__).resolve().parents[2] / ".." / "data" / "exports"
 EXPORTS_DIR.resolve().mkdir(parents=True, exist_ok=True)
 
-# Friendly names for the front-end keys
-DATASET_FILES = {
-    "dataset1": "dataset1.csv",
-    "dataset2": "dataset2.csv",
-    "dataset3": "dataset3.csv",
-    "dataset4": "dataset4.csv",
-    "dataset5": "dataset5.csv",
-    "dataset6": "dataset6.csv",
-    "dataset7": "dataset7.csv",
-}
 
 # Columns that contain county information (used for geographic filtering)
 COUNTY_COLUMNS = ["County_Name", "County", "COUNTYNM"]
@@ -90,18 +82,55 @@ def _send_confirmation_email(
 # Helpers – dataset packaging
 # ---------------------------------------------------------------------------
 
-def _read_and_filter(csv_path: Path, counties: list[str] | None) -> pd.DataFrame:
-    """Read a CSV and optionally filter to specific counties."""
-    encoding = "latin1" if "dataset3" in csv_path.name else "utf-8"
-    df = pd.read_csv(csv_path, encoding=encoding)
-    if not counties:
+# Mapping from dataset key to database table name
+DATASET_TABLES = {
+    "dataset1": "institutions",
+    "dataset2": "county_aggregations",
+    "dataset3": "courses",
+    "dataset4": "college_locations",
+    "dataset5": "digital_infrastructure",
+    "dataset6": "socioeconomic",
+    "dataset7": "atlas",
+}
+
+def _query_table(table_name: str, counties: list[str] | None) -> pd.DataFrame:
+    """Query a database table and optionally filter by county."""
+    db = next(get_db())
+    try:
+        df = pd.read_sql(text(f"SELECT * FROM {table_name}"), db.bind)
+        if not counties:
+            return df
+        for col in COUNTY_COLUMNS:
+            if col in df.columns:
+                return df[df[col].isin(counties)]
         return df
-    # Try each known county column name
-    for col in COUNTY_COLUMNS:
-        if col in df.columns:
-            return df[df[col].isin(counties)]
-    # No county column found → return unfiltered
-    return df
+    finally:
+        db.close()
+
+def _build_datasets_zip(
+    dataset_keys: list[str],
+    data_format: str,
+    counties: list[str] | None,
+) -> BytesIO:
+    """Build a ZIP archive by querying the database for each dataset."""
+    zip_buf = BytesIO()
+    with zipfile.ZipFile(zip_buf, "w", zipfile.ZIP_DEFLATED) as zf:
+        for key in dataset_keys:
+            table_name = DATASET_TABLES.get(key)
+            if not table_name:
+                logger.warning("Unknown dataset key: %s – skipping", key)
+                continue
+            try:
+                df = _query_table(table_name, counties)
+                file_bytes, ext = _convert_df(df, data_format)
+                arc_name = f"{key}{ext}"
+                zf.writestr(arc_name, file_bytes)
+                logger.info("Added %s rows from %s to ZIP", len(df), table_name)
+            except Exception as e:
+                logger.error("Failed to query %s: %s", table_name, e)
+                continue
+    zip_buf.seek(0)
+    return zip_buf
 
 
 def _convert_df(df: pd.DataFrame, fmt: str) -> tuple[bytes, str]:
@@ -120,30 +149,6 @@ def _convert_df(df: pd.DataFrame, fmt: str) -> tuple[bytes, str]:
         content = df.to_csv(index=False)
         return content.encode("utf-8"), ".csv"
 
-
-def _build_datasets_zip(
-    dataset_keys: list[str],
-    data_format: str,
-    counties: list[str] | None,
-) -> BytesIO:
-    """Build a ZIP archive containing the requested datasets."""
-    zip_buf = BytesIO()
-    with zipfile.ZipFile(zip_buf, "w", zipfile.ZIP_DEFLATED) as zf:
-        for key in dataset_keys:
-            filename = DATASET_FILES.get(key)
-            if not filename:
-                logger.warning("Unknown dataset key: %s – skipping", key)
-                continue
-            csv_path = DATA_DIR / filename
-            if not csv_path.exists():
-                logger.warning("Dataset file not found: %s – skipping", csv_path)
-                continue
-            df = _read_and_filter(csv_path, counties)
-            file_bytes, ext = _convert_df(df, data_format)
-            arc_name = f"{key}{ext}"
-            zf.writestr(arc_name, file_bytes)
-    zip_buf.seek(0)
-    return zip_buf
 
 
 # ---------------------------------------------------------------------------
@@ -187,13 +192,13 @@ async def create_data_request(payload: DataRequestSchema):
     _requests_store.append(record)
     logger.info("Data request %s created by %s <%s>", request_id, payload.name, payload.email)
 
-    # --- Build the ZIP of datasets and save to disk ---
+    # --- Build the ZIP of datasets ---
     counties = payload.counties if payload.geographic_scope == "specific" else None
     zip_buf = _build_datasets_zip(payload.datasets, payload.data_format, counties)
 
-    export_path = EXPORTS_DIR.resolve() / f"{request_id}.zip"
-    export_path.write_bytes(zip_buf.read())
-    logger.info("Saved dataset ZIP to %s", export_path)
+    # --- Store ZIP in memory store for download ---
+    _requests_store[-1]["zip_data"] = zip_buf.getvalue()
+    logger.info("Built dataset ZIP for request %s", request_id)
 
     # --- Build the download URL ---
     download_url = f"{settings.BACKEND_URL}{settings.API_V1_STR}/data-request/{request_id}/download"
@@ -226,18 +231,23 @@ async def create_data_request(payload: DataRequestSchema):
     summary="Download a prepared dataset ZIP",
     description="Returns the ZIP file that was generated for the given request.",
 )
+@router.get(
+    "/data-request/{request_id}/download",
+    summary="Download a prepared dataset ZIP",
+)
+
 async def download_data_request(request_id: str):
-    """Serve a previously generated dataset ZIP."""
-    export_path = EXPORTS_DIR.resolve() / f"{request_id}.zip"
-    if not export_path.exists():
+    """Serve a previously generated dataset ZIP from memory."""
+    record = next((r for r in _requests_store if r["request_id"] == request_id), None)
+    if not record or "zip_data" not in record:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Download not found. The link may have expired or the request ID is invalid.",
         )
-    return FileResponse(
-        path=str(export_path),
+    return StreamingResponse(
+        BytesIO(record["zip_data"]),
         media_type="application/zip",
-        filename=f"atlas_data_{request_id[:8]}.zip",
+        headers={"Content-Disposition": f'attachment; filename="atlas_data_{request_id[:8]}.zip"'},
     )
 
 
