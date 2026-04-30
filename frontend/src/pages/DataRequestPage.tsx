@@ -1,31 +1,10 @@
 import { useState } from 'react';
 
-/* ── Kansas Counties (105) ─────────────────────────────────── */
-const KANSAS_COUNTIES = [
-  'Allen','Anderson','Atchison','Barber','Barton','Bourbon','Brown','Butler',
-  'Chase','Chautauqua','Cherokee','Cheyenne','Clark','Clay','Cloud','Coffey',
-  'Comanche','Cowley','Crawford','Decatur','Dickinson','Doniphan','Douglas',
-  'Edwards','Elk','Ellis','Ellsworth','Finney','Ford','Franklin','Geary',
-  'Gove','Graham','Grant','Gray','Greeley','Greenwood','Hamilton','Harper',
-  'Harvey','Haskell','Hodgeman','Jackson','Jefferson','Jewell','Johnson',
-  'Kearny','Kingman','Kiowa','Labette','Lane','Leavenworth','Lincoln','Linn',
-  'Logan','Lyon','Marion','Marshall','McPherson','Meade','Miami','Mitchell',
-  'Montgomery','Morris','Morton','Nemaha','Neosho','Ness','Norton','Osage',
-  'Osborne','Ottawa','Pawnee','Phillips','Pottawatomie','Pratt','Rawlins',
-  'Reno','Republic','Rice','Riley','Rooks','Rush','Russell','Saline',
-  'Scott','Sedgwick','Seward','Shawnee','Sheridan','Sherman','Smith','Stafford',
-  'Stanton','Stevens','Sumner','Thomas','Trego','Wabaunsee','Wallace',
-  'Washington','Wichita','Wilson','Woodson','Wyandotte',
-];
-
 const CITATION_TEXT = `Chandramouli S. S. (2026). The Kansas Data Science Education Atlas. Kansas State University. https://github.com/csrisurya/The-Kansas-Data-Science-Education-Atlas`;
 
 /* ── Types ─────────────────────────────────────────────────── */
 interface DatasetRequestForm {
   datasets: string[];
-  geoScope: string;
-  specificCounties: string[];
-  regionType: string;
   dataFormat: string;
   intendedUse: string;
   name: string;
@@ -58,9 +37,6 @@ const DataRequestPage: React.FC = () => {
   /* ---- Dataset form state ---- */
   const [dataset, setDataset] = useState<DatasetRequestForm>({
     datasets: [],
-    geoScope: 'all',
-    specificCounties: [],
-    regionType: '',
     dataFormat: 'CSV',
     intendedUse: '',
     name: '',
@@ -82,22 +58,10 @@ const DataRequestPage: React.FC = () => {
       datasets: prev.datasets.includes(d) ? prev.datasets.filter(x => x !== d) : [...prev.datasets, d],
     }));
 
-  const toggleDatasetCounty = (c: string) =>
-    setDataset(prev => ({
-      ...prev,
-      specificCounties: prev.specificCounties.includes(c)
-        ? prev.specificCounties.filter(x => x !== c)
-        : [...prev.specificCounties, c],
-    }));
-
   const validateDataset = (): boolean => {
     const errors: FormErrors = {};
     if (dataset.datasets.length === 0) errors.datasets = 'Dataset Selection';
     if (!dataset.intendedUse.trim()) errors.intendedUse = 'Intended Use';
-    if (!dataset.geoScope) errors.geoScope = 'Geographic Scope';
-    if (dataset.geoScope === 'specific' && dataset.specificCounties.length === 0)
-      errors.specificCounties = 'Specific Counties';
-    if (dataset.geoScope === 'region' && !dataset.regionType) errors.regionType = 'Region Type';
     if (!dataset.dataFormat) errors.dataFormat = 'Data Format';
     if (!dataset.name.trim()) errors.name = 'Contact Name';
     if (!dataset.email.trim()) errors.email = 'Contact Email';
@@ -122,8 +86,6 @@ const DataRequestPage: React.FC = () => {
       const result = await apiService.submitDataRequest({
         request_type: 'dataset',
         datasets: dataset.datasets,
-        geographic_scope: dataset.geoScope,
-        counties: dataset.geoScope === 'specific' ? dataset.specificCounties : undefined,
         data_format: dataset.dataFormat,
         intended_use: dataset.intendedUse,
         name: dataset.name,
@@ -187,60 +149,6 @@ const DataRequestPage: React.FC = () => {
     <h4 className="text-lg font-semibold text-gray-800 mb-3">{text}</h4>
   );
 
-  /* ---- Multi-select dropdown ---- */
-  const CountyMultiSelect = ({
-    selected,
-    toggle,
-    id,
-  }: {
-    selected: string[];
-    toggle: (c: string) => void;
-    id: string;
-  }) => {
-    const [open, setOpen] = useState(false);
-    const [filter, setFilter] = useState('');
-    const filtered = KANSAS_COUNTIES.filter(c => c.toLowerCase().includes(filter.toLowerCase()));
-    return (
-      <div className="relative">
-        <button
-          type="button"
-          onClick={() => setOpen(!open)}
-          className="w-full border border-gray-300 rounded-md px-4 py-3 text-base text-left bg-white hover:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-300 transition"
-        >
-          {selected.length === 0 ? 'Select counties…' : `${selected.length} count${selected.length === 1 ? 'y' : 'ies'} selected`}
-          <span className="float-right text-gray-400">▾</span>
-        </button>
-        {open && (
-          <div className="absolute z-20 mt-1 w-full bg-white border border-gray-200 rounded-md shadow-lg max-h-56 overflow-auto">
-            <div className="sticky top-0 bg-white p-2 border-b border-gray-100">
-              <input
-                type="text"
-                placeholder="Search counties…"
-                value={filter}
-                onChange={e => setFilter(e.target.value)}
-                className="w-full border border-gray-200 rounded px-3 py-2 text-base focus:outline-none focus:ring-1 focus:ring-indigo-300"
-              />
-            </div>
-            {filtered.map(c => (
-              <label
-                key={`${id}-${c}`}
-                className="flex items-center gap-3 px-3 py-2 text-base hover:bg-indigo-50 cursor-pointer"
-              >
-                <input
-                  type="checkbox"
-                  checked={selected.includes(c)}
-                  onChange={() => toggle(c)}
-                  className="accent-indigo-600 w-3.5 h-3.5"
-                />
-                {c}
-              </label>
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  };
-
   /* ============================================================
      RENDER
      ============================================================ */
@@ -290,40 +198,8 @@ const DataRequestPage: React.FC = () => {
           </div>
         </div>
 
-        {/* ─── RIGHT PANEL: Geographic Scope, Data Format, Contact ──── */}
+        {/* ─── RIGHT PANEL: Data Format, Contact ──── */}
         <div className="bg-white border border-gray-200 rounded-xl p-8 space-y-6">
-          {/* Geographic scope */}
-          <div>
-            {sectionLabel('Geographic Scope')}
-            <div className="space-y-2.5">
-              {radioBtn('geoScope', 'All Kansas Counties', dataset.geoScope === 'all', () =>
-                setDataset(prev => ({ ...prev, geoScope: 'all', specificCounties: [], regionType: '' })),
-              )}
-              {radioBtn('geoScope', 'Specific Counties', dataset.geoScope === 'specific', () =>
-                setDataset(prev => ({ ...prev, geoScope: 'specific', regionType: '' })),
-              )}
-            </div>
-
-            {dataset.geoScope === 'specific' && (
-              <div className="mt-2">
-                <CountyMultiSelect selected={dataset.specificCounties} toggle={toggleDatasetCounty} id="dataset" />
-                {datasetErrors.specificCounties && <p className="text-red-500 text-sm mt-1">⚠ Select at least one county</p>}
-              </div>
-            )}
-
-            {dataset.geoScope === 'region' && (
-              <div className="mt-2 flex gap-4">
-                {radioBtn('regionType', 'Metro', dataset.regionType === 'Metro', () =>
-                  setDataset(prev => ({ ...prev, regionType: 'Metro' })),
-                )}
-                {radioBtn('regionType', 'Rural', dataset.regionType === 'Rural', () =>
-                  setDataset(prev => ({ ...prev, regionType: 'Rural' })),
-                )}
-                {datasetErrors.regionType && <p className="text-red-500 text-sm mt-1">⚠ Select a region type</p>}
-              </div>
-            )}
-          </div>
-
           {/* Data format */}
           <div>
             {sectionLabel('Data Format')}

@@ -202,7 +202,7 @@ export const apiService = {
     request_type: 'report' | 'dataset';
     report_type?: string;
     counties?: string[];
-    geographic_scope: string;
+    geographic_scope?: string;
     data_format: string;
     datasets?: string[];
     intended_use: string;
