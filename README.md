@@ -27,6 +27,8 @@ This research project addresses geographic inequities in Data Science (DS) and A
 - *US Census Bureau:* County centroid lat/long coordinates
 - *Manual Collection:* DS/AI course inventory (AI-assisted web scraping via Claude & ChatGPT)
 
+Refer to the [Methodology Process](docs/ATLAS_Methodology.md) for more information regarding data collection and ML experiment steps.
+
 ## Datasets
 
 The project integrates 7 interconnected datasets derived from multiple authoritative sources:
