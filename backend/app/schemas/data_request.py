@@ -15,7 +15,7 @@ class DataRequestSchema(BaseModel):
     report_type: Optional[str] = None
 
     counties: Optional[List[str]] = None
-    geographic_scope: str  # "all", "specific", "region"
+    geographic_scope: str = "all"  # "all", "specific", "region"
     data_format: str  # "CSV", "Excel", "JSON", "PDF", "PowerPoint"
     intended_use: str
     name: str
