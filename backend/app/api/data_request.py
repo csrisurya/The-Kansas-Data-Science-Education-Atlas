@@ -186,7 +186,7 @@ async def create_data_request(payload: DataRequestSchema):
     logger.info("Data request %s created by %s <%s>", request_id, payload.name, payload.email)
 
     # --- Build the ZIP of datasets ---
-    counties = payload.counties if payload.geographic_scope == "specific" else None
+    counties = None
     zip_buf = _build_datasets_zip(payload.datasets, payload.data_format, counties)
 
     # --- Store ZIP in memory store for download ---
@@ -288,7 +288,7 @@ def _generate_pdf_report(payload: ReportGenerateRequest) -> StreamingResponse:
 
     # Counties
     pdf.set_font("Helvetica", "", 11)
-    counties_text = "All Counties" if payload.all_counties else ", ".join(payload.counties or [])
+    counties_text = "All Counties"
     pdf.cell(0, 8, f"Counties: {counties_text}", new_x="LMARGIN", new_y="NEXT")
     pdf.ln(2)
 
@@ -341,7 +341,7 @@ def _generate_pptx_report(payload: ReportGenerateRequest) -> StreamingResponse:
 
     body = slide.placeholders[1]
     tf = body.text_frame
-    tf.text = f"Counties: {'All Counties' if payload.all_counties else ', '.join(payload.counties or [])}"
+    tf.text = "Counties: All Counties"
 
     for section in payload.sections:
         p = tf.add_paragraph()
