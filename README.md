@@ -1,5 +1,21 @@
 # The Kansas Data Science Education Atlas
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Key Findings](#key-findings)
+- [Research Questions](#research-questions)
+- [Data Sources](#data-sources)
+- [Datasets](#datasets)
+- [Policy Recommendations](#policy-recommendations)
+- [Quick Start](#quick-start)
+- [Tech Stack](#tech-stack)
+- [API Documentation](#api-documentation)
+- [Recognitions](#recognitions)
+- [Acknowledgements](#acknowledgements)
+- [Helpful Links](#helpful-links)
+- [Citation](#citation)
+
 ## Overview
 
 This research project addresses geographic inequities in Data Science (DS) and Artificial Intelligence (AI) education access across Kansas. Using publicly available datasets, geospatial analysis, and machine learning classification, the study reveals that 88 of 105 counties lack any DS/AI academic offerings, with programs concentrated in counties hosting four-year universities (Lawrence, Manhattan, Wichita).

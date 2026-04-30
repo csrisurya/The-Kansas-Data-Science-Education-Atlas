@@ -1,9 +1,5 @@
 # ATLAS — Data Collection & ML Methodology
 
-> **Project Goal:** Identify and document where data science is being taught across Kansas — spanning universities, community colleges, and high schools — and apply data science techniques to analyze trends, patterns, and gaps.
-
----
-
 ## Table of Contents
 
 1. [Dataset 1 — K-12 Schools & Colleges](#dataset-1--k-12-schools--colleges)
