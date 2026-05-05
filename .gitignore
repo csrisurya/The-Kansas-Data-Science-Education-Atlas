@@ -8,3 +8,4 @@ venv/
 *.model
 client_secret_*.json
 get_token.py
+*.mp4
