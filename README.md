@@ -121,11 +121,11 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ---
 
 ## Helpful Links
-- [KSDCon Presentation Demo](https://drive.google.com/file/d/1Relxpo-TicxyfL3uYqwHDvRXOLlcNusI/view?usp=share_link)
-- [ASEE Presentation Demo](https://drive.google.com/file/d/1smfvQuwqtYpU1RjleMCE5AjPyZQKQDcc/view?usp=share_link)
+- [KSDCon Presentation Demo](https://youtu.be/KVLEbQzL_g8)
+- [ASEE Presentation Demo](https://youtu.be/tEcJ6soxCTc)
 - [Research Paper](docs/Research%20Paper%20-%20ASEE%20-%20Final%20-%20Overleaf.pdf) — accepted into ASEE 2026 Annual Conference & Exposition
 - [Public Dashboard](https://atlas-frontend-44fq.onrender.com/)
-- [Dashboard Deployment Guide](docs/Render_Deployment_Guide.docx)
+- [Dashboard Deployment Guide](docs/Render_Deployment_Guide.pdf)
 
 ## Citation
 
